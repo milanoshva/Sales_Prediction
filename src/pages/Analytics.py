@@ -267,11 +267,6 @@ else:
                 </div>
                 """, unsafe_allow_html=True)
             st.stop()
-        
-        if lang == "ID":
-            st.success(f"✅ {len(df_filtered):,} transaksi ditemukan")
-        else:
-            st.success(f"✅ {len(df_filtered):,} transactions found")
 
     # 1. Sales Summary
     st.subheader("📊 Ringkasan Penjualan" if lang == "ID" else "Sales Summary")
@@ -304,7 +299,7 @@ else:
     with col2:
         st.markdown(f"""
         <div class="metric-card">
-            <div class="metric-label">{"Jumlah Transaksi Unik" if lang == "ID" else "Unique Transactions"}</div>
+            <div class="metric-label">{"Jumlah transaksi" if lang == "ID" else "Total Transactions"}</div>
             <div class="metric-value">{total_transactions:,}</div>
         </div>
         """, unsafe_allow_html=True)
@@ -333,23 +328,29 @@ else:
     st.subheader("🛒 Performa Produk" if lang == "ID" else "Product Performance")
     with st.container():
         st.markdown('<div class="card">', unsafe_allow_html=True)
-        top_products = df_filtered.groupby('nama_produk')['jumlah'].sum().sort_values(ascending=False).head(10).reset_index()
-        fig = px.bar(top_products, x='jumlah', y='nama_produk', orientation='h',
-                     title="10 Produk Terlaris (Unit)" if lang == "ID" else "Top 10 Products (Units Sold)",
-                     labels={'nama_produk': 'Produk' if lang == "ID" else 'Product', 'jumlah': 'Unit Terjual' if lang == "ID" else 'Units Sold'},
-                     template=plotly_template, color_discrete_sequence=['#4169E1'])
-        fig.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=20), yaxis={'categoryorder':'total ascending'})
-        fig.update_traces(hovertemplate='%{y}<br>Units: %{x:,.0f}')
-        st.plotly_chart(fig, use_container_width=True)
+        
+        col1, col2 = st.columns(2)
 
-        top_revenue_products = df_filtered.groupby('nama_produk')['harga_setelah_pajak'].sum().sort_values(ascending=False).head(10).reset_index()
-        fig_rev = px.bar(top_revenue_products, x='harga_setelah_pajak', y='nama_produk', orientation='h',
-                     title="10 Produk dengan Pendapatan Tertinggi" if lang == "ID" else "Top 10 Products by Revenue",
-                     labels={'nama_produk': 'Produk' if lang == "ID" else 'Product', 'harga_setelah_pajak': 'Pendapatan (Rp)' if lang == "ID" else 'Revenue (Rp)'},
-                     template=plotly_template, color_discrete_sequence=['#28a745'])
-        fig_rev.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=20), yaxis={'categoryorder':'total ascending'})
-        fig_rev.update_traces(hovertemplate='%{y}<br>Revenue: Rp %{x:,.0f}')
-        st.plotly_chart(fig_rev, use_container_width=True)
+        with col1:
+            top_products = df_filtered.groupby('nama_produk')['jumlah'].sum().sort_values(ascending=False).head(5).reset_index()
+            fig = px.bar(top_products, x='jumlah', y='nama_produk', orientation='h',
+                         title="5 Produk Terlaris (Unit)" if lang == "ID" else "Top 5 Products (Units Sold)",
+                         labels={'nama_produk': 'Produk' if lang == "ID" else 'Product', 'jumlah': 'Unit Terjual' if lang == "ID" else 'Units Sold'},
+                         template=plotly_template, color_discrete_sequence=['#4169E1'])
+            fig.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=20), yaxis={'categoryorder':'total ascending'})
+            fig.update_traces(hovertemplate='%{y}<br>Units: %{x:,.0f}')
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            top_revenue_products = df_filtered.groupby('nama_produk')['harga_setelah_pajak'].sum().sort_values(ascending=False).head(5).reset_index()
+            fig_rev = px.bar(top_revenue_products, x='harga_setelah_pajak', y='nama_produk', orientation='h',
+                         title="5 Produk dengan Pendapatan Tertinggi" if lang == "ID" else "Top 5 Products by Revenue",
+                         labels={'nama_produk': 'Produk' if lang == "ID" else 'Product', 'harga_setelah_pajak': 'Pendapatan (Rp)' if lang == "ID" else 'Revenue (Rp)'},
+                         template=plotly_template, color_discrete_sequence=['#28a745'])
+            fig_rev.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=20), yaxis={'categoryorder':'total ascending'})
+            fig_rev.update_traces(hovertemplate='%{y}<br>Revenue: Rp %{x:,.0f}')
+            st.plotly_chart(fig_rev, use_container_width=True)
+            
         st.markdown('</div>', unsafe_allow_html=True)
 
     # 3. Sales Trends

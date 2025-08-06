@@ -755,20 +755,32 @@ else:
                             pred_result = max(0, round(pred_result))
                             pred_revenue = pred_result * pred_harga
                             
-                            # Historical context
+                            # Historical context for delta calculation
+                            historical_data_last_year = df_agg[
+                                (df_agg['nama_produk'] == pred_nama_produk) &
+                                (df_agg['bulan'] == pred_bulan) &
+                                (df_agg['tahun'] == pred_tahun - 1)
+                            ]
+
+                            delta_value = None
+                            if not historical_data_last_year.empty:
+                                last_year_sales = historical_data_last_year['jumlah'].iloc[0]
+                                delta_value = pred_result - last_year_sales
+
+                            # Historical context for trend and confidence
                             historical_data = df_agg[
-                                (df_agg['nama_produk'] == pred_nama_produk) & 
+                                (df_agg['nama_produk'] == pred_nama_produk) &
                                 (df_agg['bulan'] == pred_bulan)
                             ]
-                            
+
                             if not historical_data.empty:
                                 historical_avg = historical_data['jumlah'].mean()
                                 historical_std = historical_data['jumlah'].std()
-                                
+
                                 # Calculate confidence interval (approximate)
                                 confidence_lower = max(0, pred_result - 1.96 * historical_std)
                                 confidence_upper = pred_result + 1.96 * historical_std
-                                
+
                                 # Trend analysis
                                 if len(historical_data) > 1:
                                     recent_trend = historical_data.tail(3)['jumlah'].mean()
@@ -783,18 +795,18 @@ else:
                                 confidence_lower = pred_result * 0.8
                                 confidence_upper = pred_result * 1.2
                                 trend_direction = "❓ No historical data"
-                            
+
                             # Display results
                             st.success(f"✅ {'Prediksi berhasil dibuat!' if lang == 'ID' else 'Prediction generated successfully!'}")
-                            
+
                             # Main prediction results
                             col1, col2, col3 = st.columns(3)
-                            
+
                             with col1:
                                 st.metric(
-                                    f"{'Prediksi Penjualan' if lang == 'ID' else 'Predicted Sales'}", 
+                                    f"{'Prediksi Penjualan' if lang == 'ID' else 'Predicted Sales'}",
                                     f"{pred_result:,.0f}",
-                                    delta=f"{pred_result - historical_avg:.0f}" if historical_avg > 0 else None
+                                    delta=f"{delta_value:.0f}" if delta_value is not None else None
                                 )
                             
                             with col2:

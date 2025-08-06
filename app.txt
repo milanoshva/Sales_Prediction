@@ -1281,3 +1281,56 @@ Feature names seen at fit time, yet now missing:
 2025-08-06 21:32:06,174 - INFO - Data processed successfully, 113181 rows remaining
 2025-08-06 21:32:14,910 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
 2025-08-06 21:32:32,074 - INFO - Prediction made for Air Mineral in 1/2025: 760
+2025-08-06 23:46:30,858 - INFO - Mode set to: Normal
+2025-08-06 23:46:40,576 - INFO - Mode set to: Normal
+2025-08-06 23:46:40,597 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 23:46:41,021 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 23:46:41,079 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 23:46:41,202 - INFO - Cleaning currency column: harga
+2025-08-06 23:46:41,344 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 23:46:41,462 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 23:46:41,687 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 23:46:41,687 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 23:46:42,011 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 23:46:42,058 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 23:46:42,190 - INFO - Cleaning currency column: harga
+2025-08-06 23:46:42,303 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 23:46:42,408 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 23:46:42,656 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 23:47:06,415 - INFO - Analytics page accessed at: 2025-08-06 23:47:06
+2025-08-06 23:48:58,950 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
+2025-08-06 23:49:37,941 - INFO - Analytics page accessed at: 2025-08-06 23:49:37
+2025-08-06 23:50:09,704 - INFO - Analytics page accessed at: 2025-08-06 23:50:09
+2025-08-06 23:52:20,092 - INFO - Analytics page accessed at: 2025-08-06 23:52:20
+2025-08-06 23:54:12,113 - INFO - Analytics page accessed at: 2025-08-06 23:54:12
+2025-08-06 23:54:27,640 - INFO - Mode set to: Normal
+2025-08-06 23:55:14,928 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
+2025-08-07 00:04:26,329 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
+2025-08-07 00:04:50,241 - INFO - Prediction made for Chicken Sambal Mercon in 6/2025: 21
+2025-08-07 00:05:02,412 - INFO - Prediction made for Air Mineral in 6/2025: 682
+2025-08-07 00:05:08,037 - INFO - Prediction made for Air Mineral in 1/2025: 760
+2025-08-07 00:05:16,607 - INFO - Mode set to: Normal
+2025-08-07 00:05:20,463 - INFO - Analytics page accessed at: 2025-08-07 00:05:20
+2025-08-07 00:09:34,550 - INFO - Mode set to: Normal
+2025-08-07 00:09:41,271 - INFO - Mode set to: Normal
+2025-08-07 00:09:41,283 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-07 00:09:41,563 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-07 00:09:41,599 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 00:09:41,712 - INFO - Cleaning currency column: harga
+2025-08-07 00:09:41,838 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 00:09:41,968 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 00:09:42,140 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-07 00:09:42,141 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-07 00:09:42,405 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-07 00:09:42,443 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 00:09:42,563 - INFO - Cleaning currency column: harga
+2025-08-07 00:09:42,687 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 00:09:42,812 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 00:09:42,988 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-07 00:09:46,744 - INFO - Analytics page accessed at: 2025-08-07 00:09:46
+2025-08-07 00:10:07,066 - INFO - Analytics page accessed at: 2025-08-07 00:10:07
+2025-08-07 00:13:06,207 - INFO - Mode set to: Normal
+2025-08-07 00:13:06,929 - INFO - Analytics page accessed at: 2025-08-07 00:13:06
+2025-08-07 00:13:13,840 - INFO - Mode set to: Normal
+2025-08-07 00:13:14,649 - INFO - Analytics page accessed at: 2025-08-07 00:13:14
+2025-08-07 00:13:18,210 - INFO - Mode set to: Normal
