@@ -1045,3 +1045,239 @@ ERROR:__main__:Prediction error: name 'logger' is not defined
 2025-08-06 15:21:05,810 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
 2025-08-06 15:21:05,813 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
 2025-08-06 15:21:05,815 - ERROR - Prediction error: "['tahun', 'bulan', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'price_rank', 'price_vs_category_avg', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'seasonal_price_interaction', 'kategori_encoded'] not in index"
+2025-08-06 19:49:42,357 - INFO - Mode set to: Normal
+2025-08-06 19:49:58,623 - INFO - Mode set to: Normal
+2025-08-06 19:49:58,641 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 19:49:58,984 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 19:49:59,032 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 19:49:59,162 - INFO - Cleaning currency column: harga
+2025-08-06 19:49:59,280 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 19:49:59,403 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 19:49:59,645 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 19:49:59,646 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 19:49:59,925 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 19:49:59,967 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 19:50:00,097 - INFO - Cleaning currency column: harga
+2025-08-06 19:50:00,198 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 19:50:00,307 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 19:50:00,464 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 19:51:17,156 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 19:51:21,780 - INFO - Analytics page accessed at: 2025-08-06 19:51:21
+2025-08-06 19:55:46,240 - INFO - Analytics page accessed at: 2025-08-06 19:55:46
+2025-08-06 19:55:49,216 - INFO - Mode set to: Normal
+2025-08-06 19:55:56,350 - INFO - Mode set to: Normal
+2025-08-06 19:55:56,365 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 19:55:56,642 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 19:55:56,682 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 19:55:56,804 - INFO - Cleaning currency column: harga
+2025-08-06 19:55:56,920 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 19:55:57,047 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 19:55:57,227 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 19:55:57,227 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 19:55:57,480 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 19:55:57,517 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 19:55:57,641 - INFO - Cleaning currency column: harga
+2025-08-06 19:55:57,755 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 19:55:57,873 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 19:55:58,046 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 19:56:00,762 - INFO - Analytics page accessed at: 2025-08-06 19:56:00
+2025-08-06 19:56:12,200 - INFO - Analytics page accessed at: 2025-08-06 19:56:12
+2025-08-06 19:56:12,632 - INFO - Analytics page accessed at: 2025-08-06 19:56:12
+2025-08-06 19:56:12,924 - INFO - Analytics page accessed at: 2025-08-06 19:56:12
+2025-08-06 19:56:14,686 - INFO - Analytics page accessed at: 2025-08-06 19:56:14
+2025-08-06 19:56:15,430 - INFO - Analytics page accessed at: 2025-08-06 19:56:15
+2025-08-06 19:56:17,209 - INFO - Analytics page accessed at: 2025-08-06 19:56:17
+2025-08-06 19:56:18,080 - INFO - Analytics page accessed at: 2025-08-06 19:56:18
+2025-08-06 19:56:19,523 - INFO - Analytics page accessed at: 2025-08-06 19:56:19
+2025-08-06 19:56:30,911 - INFO - Analytics page accessed at: 2025-08-06 19:56:30
+2025-08-06 19:56:33,242 - INFO - Analytics page accessed at: 2025-08-06 19:56:33
+2025-08-06 19:56:34,488 - INFO - Analytics page accessed at: 2025-08-06 19:56:34
+2025-08-06 19:56:35,972 - INFO - Analytics page accessed at: 2025-08-06 19:56:35
+2025-08-06 19:56:36,856 - INFO - Analytics page accessed at: 2025-08-06 19:56:36
+2025-08-06 19:56:38,866 - INFO - Analytics page accessed at: 2025-08-06 19:56:38
+2025-08-06 19:56:39,514 - INFO - Analytics page accessed at: 2025-08-06 19:56:39
+2025-08-06 19:56:44,906 - INFO - Analytics page accessed at: 2025-08-06 19:56:44
+2025-08-06 19:56:44,971 - INFO - All filters reset from expander
+2025-08-06 19:56:45,046 - INFO - Analytics page accessed at: 2025-08-06 19:56:45
+2025-08-06 19:56:48,961 - INFO - Analytics page accessed at: 2025-08-06 19:56:48
+2025-08-06 19:56:55,062 - INFO - Analytics page accessed at: 2025-08-06 19:56:55
+2025-08-06 19:56:57,068 - INFO - Analytics page accessed at: 2025-08-06 19:56:57
+2025-08-06 19:56:59,836 - INFO - Analytics page accessed at: 2025-08-06 19:56:59
+2025-08-06 19:57:02,356 - INFO - Analytics page accessed at: 2025-08-06 19:57:02
+2025-08-06 19:57:07,457 - INFO - Analytics page accessed at: 2025-08-06 19:57:07
+2025-08-06 19:57:09,082 - INFO - Analytics page accessed at: 2025-08-06 19:57:09
+2025-08-06 19:57:14,013 - INFO - Analytics page accessed at: 2025-08-06 19:57:14
+2025-08-06 20:01:17,197 - INFO - Analytics page accessed at: 2025-08-06 20:01:17
+2025-08-06 20:02:06,639 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:02:11,086 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:02:12,354 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:02:12,358 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:02:12,360 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:02:12,362 - ERROR - Prediction error: "['tahun', 'bulan', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'price_rank', 'price_vs_category_avg', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'seasonal_price_interaction', 'kategori_encoded'] not in index"
+2025-08-06 20:03:18,611 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:20,252 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:21,930 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:23,054 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:23,054 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:23,057 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:24,001 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:24,002 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:24,004 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:24,976 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:24,977 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:24,979 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:25,962 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:25,964 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:25,969 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:26,963 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:26,964 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:26,967 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:27,932 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:27,933 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:27,935 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:28,905 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:28,906 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:28,908 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:03:29,914 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 20:03:29,915 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 20:03:29,918 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:07:10,946 - INFO - Mode set to: Normal
+2025-08-06 20:07:21,696 - INFO - Mode set to: Normal
+2025-08-06 20:07:21,709 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 20:07:22,026 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 20:07:22,071 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 20:07:22,210 - INFO - Cleaning currency column: harga
+2025-08-06 20:07:22,346 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 20:07:22,464 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 20:07:22,670 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 20:07:22,671 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 20:07:22,995 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 20:07:23,041 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 20:07:23,179 - INFO - Cleaning currency column: harga
+2025-08-06 20:07:23,322 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 20:07:23,467 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 20:07:23,667 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 20:07:27,616 - INFO - Analytics page accessed at: 2025-08-06 20:07:27
+2025-08-06 20:09:21,425 - INFO - Model trained successfully. Test R²: 0.961, Test MAPE: 7.73%
+2025-08-06 20:09:21,446 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:10:07,153 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:10:08,372 - ERROR - Prediction error: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- bulan
+- bulan_cos
+- bulan_sin
+- category_performance
+- harga_satuan
+- ...
+
+2025-08-06 20:10:16,338 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:10:18,089 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:10:19,464 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:10:38,307 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:10:51,082 - INFO - Model trained successfully. Test R²: 0.952, Test MAPE: 6.57%
+2025-08-06 20:10:51,103 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:11:12,991 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:11:15,407 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:11:16,480 - ERROR - Prediction error: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- bulan
+- bulan_cos
+- bulan_sin
+- category_performance
+- harga_satuan
+- ...
+
+2025-08-06 20:11:20,626 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:11:26,824 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 20:11:27,891 - ERROR - Prediction error: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- bulan
+- bulan_cos
+- bulan_sin
+- category_performance
+- harga_satuan
+- ...
+
+2025-08-06 20:21:52,495 - INFO - Mode set to: Normal
+2025-08-06 20:21:58,693 - INFO - Mode set to: Normal
+2025-08-06 20:21:58,703 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 20:21:58,975 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 20:21:59,019 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 20:21:59,155 - INFO - Cleaning currency column: harga
+2025-08-06 20:21:59,260 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 20:21:59,380 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 20:21:59,573 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 20:21:59,574 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 20:21:59,866 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 20:21:59,909 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 20:22:00,018 - INFO - Cleaning currency column: harga
+2025-08-06 20:22:00,145 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 20:22:00,285 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 20:22:00,489 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 20:23:01,206 - INFO - Model trained successfully. Test R²: 0.961, Test MAPE: 7.73%
+2025-08-06 20:23:33,931 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
+2025-08-06 20:24:37,495 - ERROR - Model loading error: 'Figure' object has no attribute 'update_xaxis'
+2025-08-06 20:25:18,130 - ERROR - Model loading error: 'Figure' object has no attribute 'update_xaxis'
+2025-08-06 20:28:12,857 - ERROR - Model loading error: 'Figure' object has no attribute 'update_xaxis'
+2025-08-06 20:29:02,745 - INFO - Model trained successfully. Test R²: 0.917, Test MAPE: 9.59%
+2025-08-06 20:31:44,644 - INFO - Model trained successfully. Test R²: 0.952, Test MAPE: 6.57%
+2025-08-06 20:38:40,252 - INFO - Model trained successfully. Test R²: 0.952, Test MAPE: 6.57%
+2025-08-06 20:39:48,781 - INFO - Model trained successfully. Test R²: 0.952, Test MAPE: 6.57%
+2025-08-06 20:40:09,462 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 21
+2025-08-06 20:40:32,647 - INFO - Prediction made for AGLIO e OLIO in 7/2025: 33
+2025-08-06 20:41:15,620 - INFO - Prediction made for AGLIO e OLIO in 6/2025: 23
+2025-08-06 20:52:53,140 - INFO - Model trained successfully. Test R²: 0.952, Test MAPE: 6.57%
+2025-08-06 20:53:01,450 - INFO - Prediction made for AGLIO e OLIO in 6/2025: 23
+2025-08-06 20:54:16,032 - INFO - Mode set to: Normal
+2025-08-06 20:54:19,454 - INFO - Mode set to: Advanced
+2025-08-06 20:54:20,549 - INFO - Mode set to: Advanced
+2025-08-06 20:54:24,766 - INFO - Analytics page accessed at: 2025-08-06 20:54:24
+2025-08-06 20:55:41,576 - INFO - Analytics page accessed at: 2025-08-06 20:55:41
+2025-08-06 20:57:36,455 - INFO - Analytics page accessed at: 2025-08-06 20:57:36
+2025-08-06 20:59:53,107 - INFO - Model trained successfully. Test R²: 0.961, Test MAPE: 7.73%
+2025-08-06 21:01:08,465 - INFO - Prediction made for Double Beef Curry Sauce in 2/2025: 17
+2025-08-06 21:01:26,010 - INFO - Prediction made for Double Beef Curry Sauce in 5/2025: 19
+2025-08-06 21:03:35,227 - INFO - Mode set to: Advanced
+2025-08-06 21:03:36,603 - INFO - Mode set to: Normal
+2025-08-06 21:03:43,163 - INFO - Mode set to: Normal
+2025-08-06 21:03:44,446 - INFO - Mode set to: Advanced
+2025-08-06 21:03:45,943 - INFO - Mode set to: Advanced
+2025-08-06 21:03:51,953 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
+2025-08-06 21:04:19,044 - INFO - Prediction made for Air Mineral in 1/2025: 760
+2025-08-06 21:06:53,246 - INFO - Prediction made for Air Mineral in 2/2025: 663
+2025-08-06 21:07:05,455 - INFO - Prediction made for Air Mineral in 1/2025: 760
+2025-08-06 21:31:35,930 - INFO - Analytics page accessed at: 2025-08-06 21:31:35
+2025-08-06 21:31:36,651 - INFO - Mode set to: Normal
+2025-08-06 21:31:49,784 - INFO - Mode set to: Normal
+2025-08-06 21:31:49,804 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 21:31:50,354 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 21:31:50,445 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 21:31:50,724 - INFO - Cleaning currency column: harga
+2025-08-06 21:31:51,013 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 21:31:51,279 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 21:31:51,660 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 21:31:51,661 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 21:31:52,356 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 21:31:52,461 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 21:31:52,749 - INFO - Cleaning currency column: harga
+2025-08-06 21:31:53,054 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 21:31:53,429 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 21:31:54,140 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 21:31:54,782 - INFO - Mode set to: Normal
+2025-08-06 21:32:02,604 - INFO - Mode set to: Normal
+2025-08-06 21:32:02,628 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 21:32:03,236 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 21:32:03,329 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 21:32:03,633 - INFO - Cleaning currency column: harga
+2025-08-06 21:32:03,886 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 21:32:04,107 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 21:32:04,431 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 21:32:04,432 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 21:32:04,972 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 21:32:05,057 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 21:32:05,315 - INFO - Cleaning currency column: harga
+2025-08-06 21:32:05,560 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 21:32:05,810 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 21:32:06,174 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 21:32:14,910 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 28
+2025-08-06 21:32:32,074 - INFO - Prediction made for Air Mineral in 1/2025: 760

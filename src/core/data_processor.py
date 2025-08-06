@@ -200,8 +200,10 @@ def optimize_hyperparameters(X, y, model_name, cv_folds):
 
 def create_prediction_input(df_original, df_agg, scaler, feature_maps, kategori_mapping,
                             product_name, year, month, harga_satuan_per_produk,
-                            selected_features, numeric_columns):
-    # ... (kode tidak berubah)
+                            all_features, numeric_columns):
+    """
+    Prepares a single data point for prediction by creating all necessary features.
+    """
     # Create a dummy DataFrame for the single prediction point
     pred_df = pd.DataFrame([{
         'nama_produk': product_name,
@@ -218,8 +220,7 @@ def create_prediction_input(df_original, df_agg, scaler, feature_maps, kategori_
     if pred_df['harga_satuan'].isnull().any():
         pred_df['harga_satuan'].fillna(df_original['harga_satuan'].mean(), inplace=True)
 
-    # Combine with historical data for feature engineering, ensuring correct order
-    # Only take relevant columns from df_agg for feature engineering context
+    # Combine with historical data for feature engineering
     df_for_features = df_agg[['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan']].copy()
     combined_df = pd.concat([df_for_features, pred_df], ignore_index=True)
     combined_df = combined_df.sort_values(by=['nama_produk', 'tahun', 'bulan']).reset_index(drop=True)
@@ -232,63 +233,40 @@ def create_prediction_input(df_original, df_agg, scaler, feature_maps, kategori_
         (combined_df_enhanced['nama_produk'] == product_name) &
         (combined_df_enhanced['tahun'] == year) &
         (combined_df_enhanced['bulan'] == month)
-    ].iloc[-1:] # Use iloc[-1:] to get the last matching row, ensuring it's the one we just added/engineered
-    logger.info(f"pred_input_row columns before categorical encoding: {pred_input_row.columns.tolist()}")
+    ].iloc[-1:].copy() # Use .copy() to avoid SettingWithCopyWarning
 
     # Handle categorical encoding for the prediction input
     if 'all_categories' in feature_maps:
-        # Ensure pred_input_row is not empty before attempting to modify 'kategori_produk'
         if not pred_input_row.empty:
             pred_input_row['kategori_produk'] = pd.Categorical(
                 pred_input_row['kategori_produk'],
                 categories=feature_maps['all_categories']
             )
             pred_input_row['kategori_encoded'] = pred_input_row['kategori_produk'].cat.codes
-        else:
-            # If pred_input_row is empty, create a dummy row with encoded category
-            # This handles cases where a product might be entirely new or not in historical data
-            dummy_kategori_encoded = -1 # Default for unknown category
-            if product_name in kategori_mapping:
-                cat = kategori_mapping[product_name]
-                if cat in feature_maps['all_categories']:
-                    dummy_kategori_encoded = feature_maps['all_categories'].get_loc(cat)
-            
-            # Create a dummy DataFrame with the required columns for feature alignment
-            # This ensures 'kategori_encoded' is present even if pred_input_row was empty
-            pred_input_row = pd.DataFrame([{
-                'nama_produk': product_name,
-                'tahun': year,
-                'bulan': month,
-                'jumlah': 0, # Placeholder
-                'kategori_produk': kategori_mapping.get(product_name, 'N/A'),
-                'harga_satuan': harga_satuan_per_produk.get(product_name, df_original['harga_satuan'].mean()),
-                'kategori_encoded': dummy_kategori_encoded
-            }])
-    logger.info(f"pred_input_row columns after categorical encoding: {pred_input_row.columns.tolist()}")
+    
+    # --- CORE FIX ---
+    # Create a DataFrame with all the columns the model expects (before selection)
+    final_pred_input = pd.DataFrame(columns=all_features, index=pred_input_row.index)
 
-    # Create a new DataFrame with the selected_features and populate it
-    final_pred_input = pd.DataFrame(0.0, index=pred_input_row.index, columns=selected_features)
-
-    for col in selected_features:
+    # Populate the DataFrame, ensuring all expected columns are present
+    for col in all_features:
         if col in pred_input_row.columns:
             final_pred_input[col] = pred_input_row[col]
-        # If a selected_feature is not in pred_input_row, it remains 0.0 as initialized
-    logger.info(f"final_pred_input columns before scaling: {final_pred_input.columns.tolist()}")
-
-    # Ensure numeric_columns are actually numeric in final_pred_input before scaling
-    for col in numeric_columns:
-        if col in final_pred_input.columns and not pd.api.types.is_numeric_dtype(final_pred_input[col]):
-            final_pred_input[col] = pd.to_numeric(final_pred_input[col], errors='coerce').fillna(0) # Fallback
-
-    # Apply scaling
-    pred_input_scaled = final_pred_input.copy()
-    pred_input_scaled[numeric_columns] = scaler.transform(final_pred_input[numeric_columns])
     
-    # Fill any remaining NaNs after scaling (e.g., from new features that were all NaN)
-    pred_input_scaled = pred_input_scaled.fillna(0) # Or a more robust imputation
-    logger.info(f"pred_input_scaled columns after scaling: {pred_input_scaled.columns.tolist()}")
+    # Fill any missing values that might have resulted from the join/engineering
+    final_pred_input.fillna(0, inplace=True)
 
+    # Ensure numeric columns are of a numeric type before scaling
+    for col in numeric_columns:
+        if col in final_pred_input.columns:
+            final_pred_input[col] = pd.to_numeric(final_pred_input[col], errors='coerce').fillna(0)
+
+    # Apply scaling only to the numeric columns that exist in the final input
+    cols_to_scale = [col for col in numeric_columns if col in final_pred_input.columns]
+    if cols_to_scale:
+        final_pred_input[cols_to_scale] = scaler.transform(final_pred_input[cols_to_scale])
+    
     # Get the unit price for revenue calculation
     unit_price = pred_input_row['harga_satuan'].iloc[0] if not pred_input_row.empty else 0
 
-    return pred_input_scaled, unit_price
+    return final_pred_input, unit_price

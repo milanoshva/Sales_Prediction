@@ -69,16 +69,10 @@ else:
     # --- START Filter Section inside an expander ---
     # Wrap the entire filter section in st.expander
     with st.expander("📅 Tampilkan Filter Analisis" if lang == "ID" else "📅 Show Analysis Filters", expanded=False):
-        # The content here is identical to the previous filter section, just indented.
-        # This makes it collapsible.
-
         col_time, col_product, col_transaction = st.columns(3)
 
         with col_time:
             st.markdown("### ⏳ Periode" if lang == "ID" else "### ⏳ Period")
-            if 'show_date_picker' not in st.session_state:
-                st.session_state.show_date_picker = False
-            
             if not pd.api.types.is_datetime64_any_dtype(df['waktu']):
                 df['waktu'] = pd.to_datetime(df['waktu'], errors='coerce')
                 df.dropna(subset=['waktu'], inplace=True)
@@ -90,42 +84,47 @@ else:
                                     value=st.session_state.date_range,
                                     min_value=df['waktu'].min().date(),
                                     max_value=df['waktu'].max().date(),
-                                    key="date_range_input_expander")
+                                    key="date_range_input")
 
             if date_range_tuple and len(date_range_tuple) == 2:
                 st.session_state.date_range = list(date_range_tuple)
 
             time_granularity_options = ["Harian", "Mingguan", "Bulanan", "Tahunan"]
-            if 'time_granularity_radio' not in st.session_state:
-                st.session_state.time_granularity_radio = time_granularity_options[2]
+            if 'time_granularity' not in st.session_state:
+                st.session_state.time_granularity = time_granularity_options[2]
 
             time_granularity = st.radio("Granularitas Waktu" if lang == "ID" else "Time Granularity",
                                         time_granularity_options,
-                                        index=time_granularity_options.index(st.session_state.time_granularity_radio),
+                                        index=time_granularity_options.index(st.session_state.time_granularity),
                                         horizontal=True,
-                                        key="time_granularity_radio_expander", # Unique key
+                                        key="time_granularity_radio",
                                         help="Pilih granularitas waktu untuk analisis" if lang == "ID" else "Select time granularity for analysis")
-            st.session_state.time_granularity_radio = time_granularity
+            st.session_state.time_granularity = time_granularity
 
         with col_product:
             st.markdown("### 🛒 Produk" if lang == "ID" else "### 🛒 Product")
             
             selected_products = st.multiselect("Pilih Produk" if lang == "ID" else "Select Products",
                                               sorted(df['nama_produk'].unique()),
-                                              key="selected_products_expander", # Unique key
-                                              help="Pilih satu atau beberapa produk untuk analisis" if lang == "ID" else "Select one or more products for analysis")
+                                              default=st.session_state.get('selected_products', []),
+                                              key="selected_products_multiselect")
+            st.session_state.selected_products = selected_products
             
             if 'kategori_produk' in df.columns:
                 categories = sorted(df['kategori_produk'].unique())
-                include_categories = st.checkbox("Saring berdasarkan Kategori" if lang == "ID" else "Filter by Category", key="include_categories_checkbox_expander") # Unique key
+                include_categories = st.checkbox("Saring berdasarkan Kategori" if lang == "ID" else "Filter by Category", 
+                                                 value=st.session_state.get('include_categories', False),
+                                                 key="include_categories_checkbox")
+                st.session_state.include_categories = include_categories
                 
                 selected_categories = st.radio("Pilih Kategori" if lang == "ID" else "Select Category",
                                               categories,
-                                              index=0,
+                                              index=categories.index(st.session_state.get('selected_categories', categories[0])) if st.session_state.get('selected_categories') in categories else 0,
                                               horizontal=True,
-                                              key="selected_categories_radio_expander", # Unique key
+                                              key="selected_categories_radio",
                                               disabled=not include_categories,
                                               help="Pilih kategori produk untuk analisis" if lang == "ID" else "Select product category for analysis")
+                st.session_state.selected_categories = selected_categories
             else:
                 selected_categories = None
             
@@ -135,51 +134,51 @@ else:
             st.markdown("### 💳 Transaksi" if lang == "ID" else "### 💳 Transaction")
             
             if 'metode_pembayaran' in df.columns:
-                enable_payment_filter = st.checkbox("Saring berdasarkan Pembayaran" if lang == "ID" else "Filter by Payment Method", key="enable_payment_filter_checkbox_expander") # Unique key
                 payment_methods = sorted(df['metode_pembayaran'].unique())
+                enable_payment_filter = st.checkbox("Saring berdasarkan Pembayaran" if lang == "ID" else "Filter by Payment Method", 
+                                                    value=st.session_state.get('enable_payment_filter', False),
+                                                    key="enable_payment_filter_checkbox")
+                st.session_state.enable_payment_filter = enable_payment_filter
+                
                 selected_payment_method = st.radio("Pilih Metode Pembayaran" if lang == "ID" else "Select Payment Method",
                                                   payment_methods,
-                                                  index=0,
+                                                  index=payment_methods.index(st.session_state.get('selected_payment_method', payment_methods[0])) if st.session_state.get('selected_payment_method') in payment_methods else 0,
                                                   horizontal=True,
-                                                  key="selected_payment_method_radio_expander", # Unique key
+                                                  key="selected_payment_method_radio",
                                                   disabled=not enable_payment_filter,
                                                   help="Pilih metode pembayaran untuk analisis" if lang == "ID" else "Select payment method for analysis")
+                st.session_state.selected_payment_method = selected_payment_method
             else:
                 selected_payment_method = None
             
             if 'tipe_pesanan' in df.columns:
-                enable_order_type_filter = st.checkbox("Saring berdasarkan Tipe Pesanan" if lang == "ID" else "Filter by Order Type", key="enable_order_type_filter_checkbox_expander") # Unique key
                 order_types = sorted(df['tipe_pesanan'].unique())
+                enable_order_type_filter = st.checkbox("Saring berdasarkan Tipe Pesanan" if lang == "ID" else "Filter by Order Type", 
+                                                       value=st.session_state.get('enable_order_type_filter', False),
+                                                       key="enable_order_type_filter_checkbox")
+                st.session_state.enable_order_type_filter = enable_order_type_filter
+                
                 selected_order_type = st.radio("Pilih Tipe Pesanan" if lang == "ID" else "Select Order Type",
                                               order_types,
-                                              index=0,
+                                              index=order_types.index(st.session_state.get('selected_order_type', order_types[0])) if st.session_state.get('selected_order_type') in order_types else 0,
                                               horizontal=True,
-                                              key="selected_order_type_radio_expander", # Unique key
+                                              key="selected_order_type_radio",
                                               disabled=not enable_order_type_filter,
                                               help="Pilih tipe pesanan (Dine-in, Takeaway) untuk analisis" if lang == "ID" else "Select order type (Dine-in, Takeaway) for analysis")
+                st.session_state.selected_order_type = selected_order_type
             else:
                 selected_order_type = None
 
         # Reset Button inside the expander
-        if st.button("Reset Semua Filter" if lang == "ID" else "Reset All Filters", key="reset_filters_expander"): # Unique key
-            filter_keys = ['date_range', 'time_granularity_radio', 'selected_products', 'include_categories_checkbox',
-                           'selected_categories_radio', 'selected_skus', 'enable_payment_filter_checkbox',
-                           'selected_payment_method_radio', 'show_date_picker', 'enable_order_type_filter_checkbox', 'selected_order_type_radio']
-            for key in filter_keys:
-                # Remove suffix '_expander' for general session_state keys if it was used that way
-                # Or just pop all keys regardless of suffix if that's easier.
-                # For safety, let's pop both original and new keys in case
+        if st.button("Reset Semua Filter" if lang == "ID" else "Reset All Filters", key="reset_filters_button"):
+            keys_to_reset = [
+                'date_range', 'time_granularity', 'selected_products', 'include_categories', 
+                'selected_categories', 'enable_payment_filter', 'selected_payment_method', 
+                'enable_order_type_filter', 'selected_order_type'
+            ]
+            for key in keys_to_reset:
                 st.session_state.pop(key, None)
-                st.session_state.pop(key + "_expander", None) # Pop keys with _expander suffix
-
-            # Reinitialize defaults (make sure these keys match the radio buttons' keys directly, without _expander)
-            st.session_state.date_range = [df['waktu'].min().date(), df['waktu'].max().date()]
-            st.session_state.time_granularity_radio = "Bulanan" # Match the radio button's actual key name
-            st.session_state.selected_products = [] # Reset multiselect
-            st.session_state.include_categories_checkbox = False # Reset checkbox
-            st.session_state.enable_payment_filter_checkbox = False # Reset checkbox
-            st.session_state.enable_order_type_filter_checkbox = False # Reset checkbox
-
+            
             if lang == "ID":
                 st.info("Filter direset")
             else:
@@ -190,20 +189,36 @@ else:
     # --- END Filter Section inside an expander ---
 
     # Retrieve values from session state / widget values for filtering
-    # These variables need to be accessed from outside the expander context to apply filters
-    # Streamlit widgets return their value directly, so use the variable names
     default_range = [df['waktu'].min().date(), df['waktu'].max().date()]
     date_range = st.session_state.get('date_range', default_range)
-
     start_date, end_date = date_range
-    time_granularity = st.session_state.get('time_granularity_radio', 'Bulanan')
-    selected_products = st.session_state.get('selected_products', []) # Default to empty list
-    include_categories = st.session_state.get('include_categories_checkbox', False)
-    selected_categories = st.session_state.get('selected_categories_radio', categories[0] if 'kategori_produk' in df.columns and categories else None) # Default to first category
-    enable_payment_filter = st.session_state.get('enable_payment_filter_checkbox', False)
-    selected_payment_method = st.session_state.get('selected_payment_method_radio', payment_methods[0] if 'metode_pembayaran' in df.columns and payment_methods else None)
-    enable_order_type_filter = st.session_state.get('enable_order_type_filter_checkbox', False)
-    selected_order_type = st.session_state.get('selected_order_type_radio', order_types[0] if 'tipe_pesanan' in df.columns and order_types else None)
+
+    time_granularity = st.session_state.get('time_granularity', 'Bulanan')
+    selected_products = st.session_state.get('selected_products', [])
+    
+    if 'kategori_produk' in df.columns:
+        categories = sorted(df['kategori_produk'].unique())
+        include_categories = st.session_state.get('include_categories', False)
+        selected_categories = st.session_state.get('selected_categories', categories[0] if categories else None)
+    else:
+        include_categories = False
+        selected_categories = None
+
+    if 'metode_pembayaran' in df.columns:
+        payment_methods = sorted(df['metode_pembayaran'].unique())
+        enable_payment_filter = st.session_state.get('enable_payment_filter', False)
+        selected_payment_method = st.session_state.get('selected_payment_method', payment_methods[0] if payment_methods else None)
+    else:
+        enable_payment_filter = False
+        selected_payment_method = None
+
+    if 'tipe_pesanan' in df.columns:
+        order_types = sorted(df['tipe_pesanan'].unique())
+        enable_order_type_filter = st.session_state.get('enable_order_type_filter', False)
+        selected_order_type = st.session_state.get('selected_order_type', order_types[0] if order_types else None)
+    else:
+        enable_order_type_filter = False
+        selected_order_type = None
 
 
     # Filter data with improved logic (this part remains outside the expander)
@@ -373,6 +388,75 @@ else:
         fig.update_layout(margin=dict(l=20, r=20, t=30, b=20))
         st.plotly_chart(fig, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
+
+    # 4. Category and Transaction Analysis
+    st.subheader("📋 Analisis Kategori & Transaksi" if lang == "ID" else "Category & Transaction Analysis")
+    
+    col_cat, col_trans_dist = st.columns(2)
+
+    with col_cat:
+        with st.container():
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            if 'kategori_produk' in df_filtered.columns:
+                category_sales = df_filtered.groupby('kategori_produk')['total_pembayaran'].sum().sort_values(ascending=True).reset_index()
+                
+                fig_cat = px.bar(category_sales, 
+                                 y='kategori_produk', 
+                                 x='total_pembayaran', 
+                                 orientation='h',
+                                 title="Pendapatan per Kategori" if lang == "ID" else "Revenue by Category",
+                                 labels={'kategori_produk': 'Kategori' if lang == "ID" else 'Category', 'total_pembayaran': 'Pendapatan (Rp)' if lang == "ID" else 'Revenue (Rp)'},
+                                 template=plotly_template,
+                                 color_discrete_sequence=['#ff7f0e'])
+                fig_cat.update_layout(showlegend=False, margin=dict(l=20, r=20, t=30, b=20))
+                fig_cat.update_traces(hovertemplate='Category: %{y}<br>Revenue: Rp %{x:,.0f}')
+                st.plotly_chart(fig_cat, use_container_width=True)
+            else:
+                st.info("Kolom 'kategori_produk' tidak ditemukan." if lang == "ID" else "'kategori_produk' column not found.")
+            st.markdown('</div>', unsafe_allow_html=True)
+
+    with col_trans_dist:
+        with st.container():
+            st.markdown('<div class="card">', unsafe_allow_html=True)
+            
+            tab_payment, tab_order = st.tabs(["Metode Pembayaran" if lang == "ID" else "Payment Method", "Tipe Pesanan" if lang == "ID" else "Order Type"])
+
+            with tab_payment:
+                if 'metode_pembayaran' in df_filtered.columns:
+                    payment_dist = df_filtered['metode_pembayaran'].value_counts().reset_index()
+                    payment_dist.columns = ['metode', 'jumlah']
+                    
+                    fig_payment = go.Figure(data=[go.Pie(labels=payment_dist['metode'], 
+                                                         values=payment_dist['jumlah'], 
+                                                         hole=.4,
+                                                         marker_colors=px.colors.sequential.Blues_r)])
+                    fig_payment.update_layout(title_text="Distribusi Metode Pembayaran" if lang == "ID" else "Payment Method Distribution",
+                                              template=plotly_template,
+                                              showlegend=True,
+                                              margin=dict(l=20, r=20, t=40, b=20))
+                    fig_payment.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
+                    st.plotly_chart(fig_payment, use_container_width=True)
+                else:
+                    st.info("Kolom 'metode_pembayaran' tidak ditemukan." if lang == "ID" else "'metode_pembayaran' column not found.")
+
+            with tab_order:
+                if 'tipe_pesanan' in df_filtered.columns:
+                    order_type_dist = df_filtered['tipe_pesanan'].value_counts().reset_index()
+                    order_type_dist.columns = ['tipe', 'jumlah']
+
+                    fig_order = go.Figure(data=[go.Pie(labels=order_type_dist['tipe'], 
+                                                       values=order_type_dist['jumlah'], 
+                                                       hole=.4,
+                                                       marker_colors=px.colors.sequential.Greens_r)])
+                    fig_order.update_layout(title_text="Distribusi Tipe Pesanan" if lang == "ID" else "Order Type Distribution",
+                                            template=plotly_template,
+                                            showlegend=True,
+                                            margin=dict(l=20, r=20, t=40, b=20))
+                    fig_order.update_traces(hovertemplate='%{label}: %{value} (%{percent})')
+                    st.plotly_chart(fig_order, use_container_width=True)
+                else:
+                    st.info("Kolom 'tipe_pesanan' tidak ditemukan." if lang == "ID" else "'tipe_pesanan' column not found.")
+            st.markdown('</div>', unsafe_allow_html=True)
 
     # Advanced Mode: Enhanced Features
     if mode == 'Advanced':

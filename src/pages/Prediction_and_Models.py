@@ -134,13 +134,13 @@ else:
         else:
             n_estimators, max_depth = 300, 15
 
-    st.subheader(f"🛠️ {'Latih Model Prediksi Enhanced' if lang == 'ID' else 'Train Enhanced Prediction Model'}")
+    st.subheader(f"🛠️ {'Latih Model Prediksi' if lang == 'ID' else 'Train Prediction Model'}")
     
     if df_agg.empty or len(df_agg) < 30:
         st.warning(f"{'Tidak cukup data untuk melatih model. Minimal 30 data point diperlukan.' if lang == 'ID' else 'Not enough data to train the model. Minimum 30 data points required.'}")
     else:
-        if st.button(f"{'🚀 Latih Model Enhanced' if lang == 'ID' else '🚀 Train Enhanced Model'}"):
-            with st.spinner(f"{'Mempersiapkan model enhanced...' if lang == 'ID' else 'Preparing enhanced model...'}"):
+        if st.button(f"{'🚀 Latih Model' if lang == 'ID' else '🚀 Train Model'}"):
+            with st.spinner(f"{'Mempersiapkan model...' if lang == 'ID' else 'Preparing model...'}"):
                 progress_bar = st.progress(0)
                 status_text = st.empty()
                 
@@ -187,7 +187,6 @@ else:
                     outlier_mask = z_scores < outlier_threshold
                     X_train_features = X_train_features[outlier_mask]
                     y_train = y_train[outlier_mask]
-                    st.info(f"Removed {sum(~outlier_mask)} outliers from training data")
 
                 # Log transformation
                 if use_log_transform:
@@ -228,7 +227,6 @@ else:
                         X_test_selected = selector.transform(X_test_scaled)
 
                         selected_features = [feature_columns[i] for i in selector.get_support(indices=True)]
-                        st.info(f"Selected {len(selected_features)} best features")
 
                     except ValueError as e:
                         st.warning(f"⚠️ Feature selection skipped due to: {e}")
@@ -329,6 +327,7 @@ else:
                 joblib.dump(scaler, SCALER_PATH)
                 joblib.dump({
                     'feature_maps': feature_maps,
+                    'all_features': feature_columns,
                     'selected_features': selected_features,
                     'numeric_columns': numeric_columns.tolist(),
                     'use_log_transform': use_log_transform,
@@ -365,71 +364,51 @@ else:
                             st.metric("MAE", f"{perf['test_mae']:.2f}")
                             st.metric("RMSE", f"{perf['test_rmse']:.2f}")
                             st.metric("R²", f"{perf['test_r2']:.3f}")
-                            st.metric("MAPE", f"{perf['test_mape']:.2f}%")
-                            st.metric(f"{'RMSE (Validasi)' if lang == 'ID' else 'RMSE (Validation)'}", f"{perf['test_rmse']:.2f}")
-                            st.metric(f"{'R² (Validasi)' if lang == 'ID' else 'R² (Validation)'}", f"{perf['test_r2']:.3f}")
-                            st.metric(f"{'MAPE (Validasi)' if lang == 'ID' else 'MAPE (Validation)'}", f"{perf['test_mape']:.2f}%")
-                                                                                                                                        
-                # Performance Metrics
-                col1, col2 = st.columns(2)
+                            st.metric("MAPE", f"{perf['test_mape']:.2f}%")                                                                                                                            
                 
-                with col1:
-                    st.markdown("### 📊 Training Performance")
-                    st.metric("MAE", f"{train_mae:.2f}")
-                    st.metric("RMSE", f"{train_rmse:.2f}")
-                    st.metric("R²", f"{train_r2:.3f}")
-                    st.metric("MAPE", f"{train_mape:.2f}%")
-                
-                with col2:
-                    st.markdown("### 🎯 Validation Performance")
-                    st.metric("MAE", f"{test_mae:.2f}")
-                    st.metric("RMSE", f"{test_rmse:.2f}")
-                    st.metric("R²", f"{test_r2:.3f}")
-                    st.metric("MAPE", f"{test_mape:.2f}%")
-                
-                # Performance Visualization
-                fig_performance = go.Figure()
-                
-                # Add training predictions
-                fig_performance.add_trace(go.Scatter(
-                    x=y_train_eval,
-                    y=y_pred_train,
-                    mode='markers',
-                    name='Training',
-                    opacity=0.6,
-                    marker=dict(color='blue', size=6)
-                ))
-                
-                # Add test predictions
-                fig_performance.add_trace(go.Scatter(
-                    x=y_test_eval,
-                    y=y_pred_test,
-                    mode='markers',
-                    name='Validation',
-                    opacity=0.8,
-                    marker=dict(color='red', size=8)
-                ))
-                
-                # Add perfect prediction line
-                max_val = max(max(y_train_eval.max(), y_test_eval.max()), 
-                             max(y_pred_train.max(), y_pred_test.max()))
-                fig_performance.add_trace(go.Scatter(
-                    x=[0, max_val],
-                    y=[0, max_val],
-                    mode='lines',
-                    name='Perfect Prediction',
-                    line=dict(dash='dash', color='gray')
-                ))
-                
-                fig_performance.update_layout(
-                    title='Model Performance: Actual vs Predicted',
-                    xaxis_title='Actual Sales',
-                    yaxis_title='Predicted Sales',
-                    template=plotly_template,
-                    showlegend=True
-                )
-                
-                st.plotly_chart(fig_performance, use_container_width=True)
+                        # Performance Visualization
+                        fig_performance = go.Figure()
+                        
+                        # Add training predictions
+                        fig_performance.add_trace(go.Scatter(
+                            x=y_train_eval,
+                            y=y_pred_train,
+                            mode='markers',
+                            name='Training',
+                            opacity=0.6,
+                            marker=dict(color='blue', size=6)
+                        ))
+                        
+                        # Add test predictions
+                        fig_performance.add_trace(go.Scatter(
+                            x=y_test_eval,
+                            y=y_pred_test,
+                            mode='markers',
+                            name='Validation',
+                            opacity=0.8,
+                            marker=dict(color='red', size=8)
+                        ))
+                        
+                        # Add perfect prediction line
+                        max_val = max(max(y_train_eval.max(), y_test_eval.max()), 
+                                    max(y_pred_train.max(), y_pred_test.max()))
+                        fig_performance.add_trace(go.Scatter(
+                            x=[0, max_val],
+                            y=[0, max_val],
+                            mode='lines',
+                            name='Perfect Prediction',
+                            line=dict(dash='dash', color='gray')
+                        ))
+                        
+                        fig_performance.update_layout(
+                            title='Model Performance: Actual vs Predicted',
+                            xaxis_title='Actual Sales',
+                            yaxis_title='Predicted Sales',
+                            template=plotly_template,
+                            showlegend=True
+                        )
+                        
+                        st.plotly_chart(fig_performance, use_container_width=True)
                 
                 # Feature Importance (if available)
                 if hasattr(trained_model, 'feature_importances_'):
@@ -489,13 +468,16 @@ else:
             if os.path.exists(FEATURE_MAP_PATH):
                 saved_artifacts = joblib.load(FEATURE_MAP_PATH)
                 feature_maps = saved_artifacts['feature_maps']
+                all_features = saved_artifacts.get('all_features', []) 
                 selected_features = saved_artifacts['selected_features']
                 numeric_columns = saved_artifacts['numeric_columns']
                 use_log_transform = saved_artifacts['use_log_transform']
                 feature_selection = saved_artifacts['feature_selection']
                 selector = saved_artifacts.get('selector')
                 saved_model_choice = saved_artifacts.get('model_choice', 'Random Forest')
-                logger.info(f"Loaded selected_features from artifacts: {selected_features}")
+                if not all_features:
+                    st.warning("Feature list not found in artifact, using selected_features as fallback. Please retrain model.")
+                    all_features = selected_features
             else:
                 st.error("Feature maps not found. Please retrain the model.")
                 st.stop()
@@ -600,23 +582,18 @@ else:
                                     pred_input, pred_harga = create_prediction_input(
                                         df, df_agg, loaded_scaler, feature_maps, kategori_mapping,
                                         product, target_date.year, target_date.month,
-                                        harga_satuan_per_produk, selected_features, numeric_columns
+                                        harga_satuan_per_produk, all_features, numeric_columns
                                     )
 
-                                    # Ensure pred_input has all selected_features and in the correct order
-                                    pred_input_aligned = pred_input.reindex(columns=selected_features, fill_value=0)
+                                    # --- FIX: Align columns and select features correctly ---
+                                    pred_input_aligned = pred_input.reindex(columns=all_features, fill_value=0)
 
-                                    # Apply feature selection
                                     if feature_selection and selector is not None:
-                                        # Apply selector.transform to the aligned input
-                                        pred_input_transformed_array = selector.transform(pred_input_aligned)
-                                        # Convert back to DataFrame with selected_features as columns
-                                        pred_input_selected = pd.DataFrame(pred_input_transformed_array, columns=selected_features, index=pred_input.index)
+                                        prediction_data = selector.transform(pred_input_aligned)
                                     else:
-                                        # If no feature selection, just use the aligned input
-                                        pred_input_selected = pred_input_aligned
+                                        prediction_data = pred_input_aligned[selected_features]
 
-                                    pred_result = loaded_model.predict(pred_input_selected)[0]
+                                    pred_result = loaded_model.predict(prediction_data)[0]
 
                                     if use_log_transform:
                                         pred_result = np.expm1(pred_result)
@@ -632,7 +609,6 @@ else:
                                         'Harga_Satuan': pred_harga,
                                         'Prediksi_Revenue': pred_result * pred_harga
                                     })
-
                                 except Exception as e:
                                     st.error(f"❌ Error predicting for {product}: {str(e)}")
                                     continue
@@ -718,7 +694,7 @@ else:
                                 title='Top 10 Products by Predicted Revenue',
                                 template=plotly_template
                             )
-                            fig_product.update_xaxis(tickangle=45)
+                            fig_product.update_layout(xaxis_tickangle=45)
                             st.plotly_chart(fig_product, use_container_width=True)
                             
                             # Detailed table
@@ -750,20 +726,27 @@ else:
                     else:
                         # Single prediction
                         try:
+                            # Create the feature set for the prediction
                             pred_input, pred_harga = create_prediction_input(
                                 df, df_agg, loaded_scaler, feature_maps, kategori_mapping,
                                 pred_nama_produk, pred_tahun, pred_bulan,
-                                harga_satuan_per_produk, selected_features, numeric_columns
+                                harga_satuan_per_produk, all_features, numeric_columns
                             )
-                            
-                            # Apply feature selection if used
-                            if feature_selection and selector is not None:
-                                pred_input_transformed_array = selector.transform(pred_input)
-                                pred_input_selected = pd.DataFrame(pred_input_transformed_array, columns=selected_features, index=pred_input.index)
-                            else:
-                                pred_input_selected = safe_feature_selection(pred_input, selected_features)
 
-                            pred_result = loaded_model.predict(pred_input_selected)[0]
+                            # --- FIX: Align columns and select features correctly ---
+                            # Ensure the input has the exact same columns as the training data
+                            pred_input_aligned = pred_input.reindex(columns=all_features, fill_value=0)
+
+                            # Apply feature selection if it was used during training
+                            if feature_selection and selector is not None:
+                                # The selector returns a NumPy array of the selected features
+                                prediction_data = selector.transform(pred_input_aligned)
+                            else:
+                                # No selector, the model expects a DataFrame with all features in the correct order
+                                prediction_data = pred_input_aligned[selected_features]
+                            
+                            # Make the prediction
+                            pred_result = loaded_model.predict(prediction_data)[0]
                             
                             # Inverse transform if log was used
                             if use_log_transform:
