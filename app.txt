@@ -1,0 +1,1047 @@
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:app.py - Current mode: Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:app.py - Current mode: Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:app.py - Current mode: Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:app.py - Current mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 21:56:40
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:app.py - Current mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:00:21
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:00:23
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:01:04
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:Initialized mode to Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:13:46
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:13:49
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:13:57
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:14:01
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:14:01
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:14:25
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:14:47
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:03
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:05
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:07
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:09
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:11
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:11
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:13
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:15
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:16
+INFO:__main__:Analytics page accessed at: 2025-07-03 22:15:18
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:harga_satuan_per_produk: {'Lemon Tea': 15506.0, 'Beef Sambal Matah': 38136.0, 'Strawberry Sparkling': 18762.0, 'Chicken Eggna 2 Sambal Matah': 37700.0, 'Chicken Ricebowl': 26672.0, 'Caramel Latte': 18134.0, 'Mie Hotplate Nusantara Lv 1-5': 26684.0, 'Double Chicken Sambal Matah': 34422.0, 'Chicken Eggna 1 Sambal Mercon': 28242.0, 'Kopi Susu Gula Aren': 18290.0, 'Mocaccino': 18189.0, 'Original Chicken BBQ': 28770.0, 'Beef Eggna 2 Sambal Mercon': 43863.0, 'Spaghetti Carbonara': 25289.0, 'Beef Crispy Sambal Matah': 42012.0, 'Single Beef Blackpepper': 31152.0, 'Air Mineral': 6875.0, 'Nasi Putih': 6644.0, 'Luna 1 Chicken Matah': 36581.0, 'Teh Tarik': 14920.0, 'Chicken Crunchy Chilli': 20899.0, 'Mushroom': 9786.0, 'Chicken Crispy Sambal Matah': 28195.0, 'Blackpepper': 6964.0, 'Taro': 17303.0, 'Original Chicken Curry Sauce': 25276.0, 'Pak Rahmat 3 (Chicken Rice Bowl Curry / Cheese, Chicken Teriyaki, Free 2 Ice Tea)': 53885.0, 'Double Beef Mushroom': 41693.0, 'Halu 1 Chicken': 30447.0, 'AGLIO e OLIO': 27056.0, 'Lychee Spark': 18280.0, 'Chicken Teriyaki': 27442.0, 'Teh Manis': 6936.0, 'Onion Ring BBQ': 20346.0, 'Single Chicken Curry Sauce': 23111.0, 'Red Velvet': 17303.0, 'SteakGhetti Chicken Blackpepper Original': 32035.0, 'Crispy Mushroom Blackpepper': 16786.0, 'Double Chicken Mushroom': 37191.0, 'Halu 2 Beef': 35037.0, 'Beef Sambal Mercon': 42741.0, 'Choco Vanilla': 19632.0, 'Original Beef Sambal Mercon': 45381.0, 'SteakGhetti Chicken BBQ Original': 32571.0, 'Lychee Tea': 15594.0, 'Chicken Eggna 2 Sambal Mercon': 33513.0, 'Onion Ring Blackpepper': 18670.0, 'Sambal Mercon': 8656.0, 'Sambal Matah': 10679.0, 'Choco Caramel': 19632.0, 'Original Chicken Cheese Sauce': 24488.0, 'French Fries BBQ': 20576.0, 'Beef Crispy Sambal Mercon': 37826.0, 'Single Chicken Blackpepper': 25656.0, 'Chicken Eggna 2 BBQ': 34667.0, 'Original Chicken Blackpepper': 27179.0, 'Original Chicken Sambal Matah': 32317.0, 'Cappuccino': 16345.0, 'Original Beef Mushroom': 43038.0, 'Double Chicken Cheese Sauce': 25404.0, 'Double Beef Curry Sauce': 37570.0, 'Double Beef BBQ': 38619.0, 'SteakGhetti Beef BBQ Crispy': 38239.0, 'French Fries Blackpepper': 18775.0, 'Beef Teriyaki': 32885.0, 'Single Beef Cheese Sauce': 30685.0, 'Americano': 16980.0, 'BBQ': 7433.0, 'Single Beef Curry Sauce': 31360.0, 'Matcha': 17303.0, 'Pak Rahmat 1 (Chicken Crispy Curry / Cheese, Aglio e Olio BBQ, Free 2 Ice Tea, French Fries, Crispy Mushroom)': 85771.0, 'Telur': 6818.0, 'Crispy Mushroom BBQ': 18494.0, 'Luna 2 Chicken Mercon': 31976.0, 'Double Chicken Sambal Mercon': 30236.0, 'Potato Wedges BBQ': 20873.0, 'Single Chicken BBQ': 27206.0, 'Vanilla Latte': 18134.0, 'Sunkissed': 18539.0, 'Original Beef Curry Sauce': 38915.0, 'Single Chicken Mushroom': 30998.0, 'French Fries Chilli': 16048.0, 'Onion Ring Chilli': 17253.0, 'Chocolate': 17993.0, 'Beef Eggna 2 BBQ': 41670.0, 'Cafe Latte': 15336.0, 'Aglio e Olio Blackpepper': 23880.0, 'Teh Tawar': 6725.0, 'Aglio e Olio Mushroom': 29075.0, 'Double Beef Cheese Sauce': 36895.0, 'SteakGhetti Chicken Blackpepper Crispy': 29484.0, 'Beef Eggna 1 Sambal Matah': 43185.0, 'Original Beef Sambal Matah': 49567.0, 'Double Beef Blackpepper': 37362.0, 'Chicken Sambal Matah': 29085.0, 'Potato Wedges Chilli': 18013.0, 'Beef Eggna 2 Sambal Matah': 48050.0, 'Chicken Eggna 1 BBQ': 28868.0, 'Single Beef Mushroom': 35483.0, 'Kopi Susu': 16700.0, 'Double Beef Sambal Mercon': 44036.0, 'Single Beef BBQ': 32409.0, 'Aglio e Olio BBQ': 25289.0, 'Chicken Eggna 1 Sambal Matah': 32429.0, 'Choco Hazelnut': 19632.0, 'Pak Rahmat 4 Original Chicken BBQ, Mie Hotplate Kuah Kari, Free 2 Ice Tea': 50105.0, 'Original Beef Blackpepper': 38707.0, 'Chicken Crunchy Blackpepper': 22210.0, 'Original Chicken Sambal Mercon': 28131.0, 'Chicken Crunchy BBQ': 23759.0, 'Beef Ricebowl': 34598.0, 'Chicken Grill 1': 31255.0, 'Mie Hotplate Kuah Kari': 24136.0, 'SteakGhetti Beef Blackpepper Original': 44538.0, 'SteakGhetti Beef Blackpepper Crispy': 36983.0, 'Double Chicken Blackpepper': 31416.0, 'Original Beef Cheese Sauce': 38240.0, 'Double Chicken BBQ': 33092.0, 'Hazelnut Latte': 18134.0, 'Original Chicken Mushroom': 32665.0, 'Mie Hotplate Sambal Matah': 28554.0, 'Pink Yupi': 17965.0, 'SteakGhetti Chicken BBQ Crispy': 30893.0, 'Beef Eggna 1 Sambal Mercon': 38998.0, 'Pak Rahmat 2 (Chicken Crispy Curry / Cheese, Mie Hotplate Nusantara, Free 2 Ice Tea, Onion Ring, Crispy Mushroom)': 84098.0, 'Crispy Mushroom Chilli': 15141.0, 'Potato Wedges Blackpepper': 19323.0, 'Chicken Sambal Mercon': 33690.0, 'Double Beef Sambal Matah': 48222.0, 'Black Yupi': 18896.0, 'Beef Eggna 1 BBQ': 36805.0, 'Chicken Crispy Sambal Mercon': 24008.0, 'Double Chicken Curry Sauce': 26147.0, 'Original Beef BBQ': 39964.0, 'Single Chicken Cheese Sauce': 22368.0, 'Chicken Grill 2': 38684.0, 'SteakGhetti Beef BBQ Original': 45794.0, 'Mie Hotplate Sapi Lada Hitam': 29254.0}
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:harga_satuan_per_produk: {'Lemon Tea': 15506.0, 'Beef Sambal Matah': 38136.0, 'Strawberry Sparkling': 18762.0, 'Chicken Eggna 2 Sambal Matah': 37700.0, 'Chicken Ricebowl': 26672.0, 'Caramel Latte': 18134.0, 'Mie Hotplate Nusantara Lv 1-5': 26684.0, 'Double Chicken Sambal Matah': 34422.0, 'Chicken Eggna 1 Sambal Mercon': 28242.0, 'Kopi Susu Gula Aren': 18290.0, 'Mocaccino': 18189.0, 'Original Chicken BBQ': 28770.0, 'Beef Eggna 2 Sambal Mercon': 43863.0, 'Spaghetti Carbonara': 25289.0, 'Beef Crispy Sambal Matah': 42012.0, 'Single Beef Blackpepper': 31152.0, 'Air Mineral': 6875.0, 'Nasi Putih': 6644.0, 'Luna 1 Chicken Matah': 36581.0, 'Teh Tarik': 14920.0, 'Chicken Crunchy Chilli': 20899.0, 'Mushroom': 9786.0, 'Chicken Crispy Sambal Matah': 28195.0, 'Blackpepper': 6964.0, 'Taro': 17303.0, 'Original Chicken Curry Sauce': 25276.0, 'Pak Rahmat 3 (Chicken Rice Bowl Curry / Cheese, Chicken Teriyaki, Free 2 Ice Tea)': 53885.0, 'Double Beef Mushroom': 41693.0, 'Halu 1 Chicken': 30447.0, 'AGLIO e OLIO': 27056.0, 'Lychee Spark': 18280.0, 'Chicken Teriyaki': 27442.0, 'Teh Manis': 6936.0, 'Onion Ring BBQ': 20346.0, 'Single Chicken Curry Sauce': 23111.0, 'Red Velvet': 17303.0, 'SteakGhetti Chicken Blackpepper Original': 32035.0, 'Crispy Mushroom Blackpepper': 16786.0, 'Double Chicken Mushroom': 37191.0, 'Halu 2 Beef': 35037.0, 'Beef Sambal Mercon': 42741.0, 'Choco Vanilla': 19632.0, 'Original Beef Sambal Mercon': 45381.0, 'SteakGhetti Chicken BBQ Original': 32571.0, 'Lychee Tea': 15594.0, 'Chicken Eggna 2 Sambal Mercon': 33513.0, 'Onion Ring Blackpepper': 18670.0, 'Sambal Mercon': 8656.0, 'Sambal Matah': 10679.0, 'Choco Caramel': 19632.0, 'Original Chicken Cheese Sauce': 24488.0, 'French Fries BBQ': 20576.0, 'Beef Crispy Sambal Mercon': 37826.0, 'Single Chicken Blackpepper': 25656.0, 'Chicken Eggna 2 BBQ': 34667.0, 'Original Chicken Blackpepper': 27179.0, 'Original Chicken Sambal Matah': 32317.0, 'Cappuccino': 16345.0, 'Original Beef Mushroom': 43038.0, 'Double Chicken Cheese Sauce': 25404.0, 'Double Beef Curry Sauce': 37570.0, 'Double Beef BBQ': 38619.0, 'SteakGhetti Beef BBQ Crispy': 38239.0, 'French Fries Blackpepper': 18775.0, 'Beef Teriyaki': 32885.0, 'Single Beef Cheese Sauce': 30685.0, 'Americano': 16980.0, 'BBQ': 7433.0, 'Single Beef Curry Sauce': 31360.0, 'Matcha': 17303.0, 'Pak Rahmat 1 (Chicken Crispy Curry / Cheese, Aglio e Olio BBQ, Free 2 Ice Tea, French Fries, Crispy Mushroom)': 85771.0, 'Telur': 6818.0, 'Crispy Mushroom BBQ': 18494.0, 'Luna 2 Chicken Mercon': 31976.0, 'Double Chicken Sambal Mercon': 30236.0, 'Potato Wedges BBQ': 20873.0, 'Single Chicken BBQ': 27206.0, 'Vanilla Latte': 18134.0, 'Sunkissed': 18539.0, 'Original Beef Curry Sauce': 38915.0, 'Single Chicken Mushroom': 30998.0, 'French Fries Chilli': 16048.0, 'Onion Ring Chilli': 17253.0, 'Chocolate': 17993.0, 'Beef Eggna 2 BBQ': 41670.0, 'Cafe Latte': 15336.0, 'Aglio e Olio Blackpepper': 23880.0, 'Teh Tawar': 6725.0, 'Aglio e Olio Mushroom': 29075.0, 'Double Beef Cheese Sauce': 36895.0, 'SteakGhetti Chicken Blackpepper Crispy': 29484.0, 'Beef Eggna 1 Sambal Matah': 43185.0, 'Original Beef Sambal Matah': 49567.0, 'Double Beef Blackpepper': 37362.0, 'Chicken Sambal Matah': 29085.0, 'Potato Wedges Chilli': 18013.0, 'Beef Eggna 2 Sambal Matah': 48050.0, 'Chicken Eggna 1 BBQ': 28868.0, 'Single Beef Mushroom': 35483.0, 'Kopi Susu': 16700.0, 'Double Beef Sambal Mercon': 44036.0, 'Single Beef BBQ': 32409.0, 'Aglio e Olio BBQ': 25289.0, 'Chicken Eggna 1 Sambal Matah': 32429.0, 'Choco Hazelnut': 19632.0, 'Pak Rahmat 4 Original Chicken BBQ, Mie Hotplate Kuah Kari, Free 2 Ice Tea': 50105.0, 'Original Beef Blackpepper': 38707.0, 'Chicken Crunchy Blackpepper': 22210.0, 'Original Chicken Sambal Mercon': 28131.0, 'Chicken Crunchy BBQ': 23759.0, 'Beef Ricebowl': 34598.0, 'Chicken Grill 1': 31255.0, 'Mie Hotplate Kuah Kari': 24136.0, 'SteakGhetti Beef Blackpepper Original': 44538.0, 'SteakGhetti Beef Blackpepper Crispy': 36983.0, 'Double Chicken Blackpepper': 31416.0, 'Original Beef Cheese Sauce': 38240.0, 'Double Chicken BBQ': 33092.0, 'Hazelnut Latte': 18134.0, 'Original Chicken Mushroom': 32665.0, 'Mie Hotplate Sambal Matah': 28554.0, 'Pink Yupi': 17965.0, 'SteakGhetti Chicken BBQ Crispy': 30893.0, 'Beef Eggna 1 Sambal Mercon': 38998.0, 'Pak Rahmat 2 (Chicken Crispy Curry / Cheese, Mie Hotplate Nusantara, Free 2 Ice Tea, Onion Ring, Crispy Mushroom)': 84098.0, 'Crispy Mushroom Chilli': 15141.0, 'Potato Wedges Blackpepper': 19323.0, 'Chicken Sambal Mercon': 33690.0, 'Double Beef Sambal Matah': 48222.0, 'Black Yupi': 18896.0, 'Beef Eggna 1 BBQ': 36805.0, 'Chicken Crispy Sambal Mercon': 24008.0, 'Double Chicken Curry Sauce': 26147.0, 'Original Beef BBQ': 39964.0, 'Single Chicken Cheese Sauce': 22368.0, 'Chicken Grill 2': 38684.0, 'SteakGhetti Beef BBQ Original': 45794.0, 'Mie Hotplate Sapi Lada Hitam': 29254.0}
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:harga_satuan_per_produk: {'Lemon Tea': 15506.0, 'Beef Sambal Matah': 38136.0, 'Strawberry Sparkling': 18762.0, 'Chicken Eggna 2 Sambal Matah': 37700.0, 'Chicken Ricebowl': 26672.0, 'Caramel Latte': 18134.0, 'Mie Hotplate Nusantara Lv 1-5': 26684.0, 'Double Chicken Sambal Matah': 34422.0, 'Chicken Eggna 1 Sambal Mercon': 28242.0, 'Kopi Susu Gula Aren': 18290.0, 'Mocaccino': 18189.0, 'Original Chicken BBQ': 28770.0, 'Beef Eggna 2 Sambal Mercon': 43863.0, 'Spaghetti Carbonara': 25289.0, 'Beef Crispy Sambal Matah': 42012.0, 'Single Beef Blackpepper': 31152.0, 'Air Mineral': 6875.0, 'Nasi Putih': 6644.0, 'Luna 1 Chicken Matah': 36581.0, 'Teh Tarik': 14920.0, 'Chicken Crunchy Chilli': 20899.0, 'Mushroom': 9786.0, 'Chicken Crispy Sambal Matah': 28195.0, 'Blackpepper': 6964.0, 'Taro': 17303.0, 'Original Chicken Curry Sauce': 25276.0, 'Pak Rahmat 3 (Chicken Rice Bowl Curry / Cheese, Chicken Teriyaki, Free 2 Ice Tea)': 53885.0, 'Double Beef Mushroom': 41693.0, 'Halu 1 Chicken': 30447.0, 'AGLIO e OLIO': 27056.0, 'Lychee Spark': 18280.0, 'Chicken Teriyaki': 27442.0, 'Teh Manis': 6936.0, 'Onion Ring BBQ': 20346.0, 'Single Chicken Curry Sauce': 23111.0, 'Red Velvet': 17303.0, 'SteakGhetti Chicken Blackpepper Original': 32035.0, 'Crispy Mushroom Blackpepper': 16786.0, 'Double Chicken Mushroom': 37191.0, 'Halu 2 Beef': 35037.0, 'Beef Sambal Mercon': 42741.0, 'Choco Vanilla': 19632.0, 'Original Beef Sambal Mercon': 45381.0, 'SteakGhetti Chicken BBQ Original': 32571.0, 'Lychee Tea': 15594.0, 'Chicken Eggna 2 Sambal Mercon': 33513.0, 'Onion Ring Blackpepper': 18670.0, 'Sambal Mercon': 8656.0, 'Sambal Matah': 10679.0, 'Choco Caramel': 19632.0, 'Original Chicken Cheese Sauce': 24488.0, 'French Fries BBQ': 20576.0, 'Beef Crispy Sambal Mercon': 37826.0, 'Single Chicken Blackpepper': 25656.0, 'Chicken Eggna 2 BBQ': 34667.0, 'Original Chicken Blackpepper': 27179.0, 'Original Chicken Sambal Matah': 32317.0, 'Cappuccino': 16345.0, 'Original Beef Mushroom': 43038.0, 'Double Chicken Cheese Sauce': 25404.0, 'Double Beef Curry Sauce': 37570.0, 'Double Beef BBQ': 38619.0, 'SteakGhetti Beef BBQ Crispy': 38239.0, 'French Fries Blackpepper': 18775.0, 'Beef Teriyaki': 32885.0, 'Single Beef Cheese Sauce': 30685.0, 'Americano': 16980.0, 'BBQ': 7433.0, 'Single Beef Curry Sauce': 31360.0, 'Matcha': 17303.0, 'Pak Rahmat 1 (Chicken Crispy Curry / Cheese, Aglio e Olio BBQ, Free 2 Ice Tea, French Fries, Crispy Mushroom)': 85771.0, 'Telur': 6818.0, 'Crispy Mushroom BBQ': 18494.0, 'Luna 2 Chicken Mercon': 31976.0, 'Double Chicken Sambal Mercon': 30236.0, 'Potato Wedges BBQ': 20873.0, 'Single Chicken BBQ': 27206.0, 'Vanilla Latte': 18134.0, 'Sunkissed': 18539.0, 'Original Beef Curry Sauce': 38915.0, 'Single Chicken Mushroom': 30998.0, 'French Fries Chilli': 16048.0, 'Onion Ring Chilli': 17253.0, 'Chocolate': 17993.0, 'Beef Eggna 2 BBQ': 41670.0, 'Cafe Latte': 15336.0, 'Aglio e Olio Blackpepper': 23880.0, 'Teh Tawar': 6725.0, 'Aglio e Olio Mushroom': 29075.0, 'Double Beef Cheese Sauce': 36895.0, 'SteakGhetti Chicken Blackpepper Crispy': 29484.0, 'Beef Eggna 1 Sambal Matah': 43185.0, 'Original Beef Sambal Matah': 49567.0, 'Double Beef Blackpepper': 37362.0, 'Chicken Sambal Matah': 29085.0, 'Potato Wedges Chilli': 18013.0, 'Beef Eggna 2 Sambal Matah': 48050.0, 'Chicken Eggna 1 BBQ': 28868.0, 'Single Beef Mushroom': 35483.0, 'Kopi Susu': 16700.0, 'Double Beef Sambal Mercon': 44036.0, 'Single Beef BBQ': 32409.0, 'Aglio e Olio BBQ': 25289.0, 'Chicken Eggna 1 Sambal Matah': 32429.0, 'Choco Hazelnut': 19632.0, 'Pak Rahmat 4 Original Chicken BBQ, Mie Hotplate Kuah Kari, Free 2 Ice Tea': 50105.0, 'Original Beef Blackpepper': 38707.0, 'Chicken Crunchy Blackpepper': 22210.0, 'Original Chicken Sambal Mercon': 28131.0, 'Chicken Crunchy BBQ': 23759.0, 'Beef Ricebowl': 34598.0, 'Chicken Grill 1': 31255.0, 'Mie Hotplate Kuah Kari': 24136.0, 'SteakGhetti Beef Blackpepper Original': 44538.0, 'SteakGhetti Beef Blackpepper Crispy': 36983.0, 'Double Chicken Blackpepper': 31416.0, 'Original Beef Cheese Sauce': 38240.0, 'Double Chicken BBQ': 33092.0, 'Hazelnut Latte': 18134.0, 'Original Chicken Mushroom': 32665.0, 'Mie Hotplate Sambal Matah': 28554.0, 'Pink Yupi': 17965.0, 'SteakGhetti Chicken BBQ Crispy': 30893.0, 'Beef Eggna 1 Sambal Mercon': 38998.0, 'Pak Rahmat 2 (Chicken Crispy Curry / Cheese, Mie Hotplate Nusantara, Free 2 Ice Tea, Onion Ring, Crispy Mushroom)': 84098.0, 'Crispy Mushroom Chilli': 15141.0, 'Potato Wedges Blackpepper': 19323.0, 'Chicken Sambal Mercon': 33690.0, 'Double Beef Sambal Matah': 48222.0, 'Black Yupi': 18896.0, 'Beef Eggna 1 BBQ': 36805.0, 'Chicken Crispy Sambal Mercon': 24008.0, 'Double Chicken Curry Sauce': 26147.0, 'Original Beef BBQ': 39964.0, 'Single Chicken Cheese Sauce': 22368.0, 'Chicken Grill 2': 38684.0, 'SteakGhetti Beef BBQ Original': 45794.0, 'Mie Hotplate Sapi Lada Hitam': 29254.0}
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:harga_satuan_per_produk: {'Lemon Tea': 15506.0, 'Beef Sambal Matah': 38136.0, 'Strawberry Sparkling': 18762.0, 'Chicken Eggna 2 Sambal Matah': 37700.0, 'Chicken Ricebowl': 26672.0, 'Caramel Latte': 18134.0, 'Mie Hotplate Nusantara Lv 1-5': 26684.0, 'Double Chicken Sambal Matah': 34422.0, 'Chicken Eggna 1 Sambal Mercon': 28242.0, 'Kopi Susu Gula Aren': 18290.0, 'Mocaccino': 18189.0, 'Original Chicken BBQ': 28770.0, 'Beef Eggna 2 Sambal Mercon': 43863.0, 'Spaghetti Carbonara': 25289.0, 'Beef Crispy Sambal Matah': 42012.0, 'Single Beef Blackpepper': 31152.0, 'Air Mineral': 6875.0, 'Nasi Putih': 6644.0, 'Luna 1 Chicken Matah': 36581.0, 'Teh Tarik': 14920.0, 'Chicken Crunchy Chilli': 20899.0, 'Mushroom': 9786.0, 'Chicken Crispy Sambal Matah': 28195.0, 'Blackpepper': 6964.0, 'Taro': 17303.0, 'Original Chicken Curry Sauce': 25276.0, 'Pak Rahmat 3 (Chicken Rice Bowl Curry / Cheese, Chicken Teriyaki, Free 2 Ice Tea)': 53885.0, 'Double Beef Mushroom': 41693.0, 'Halu 1 Chicken': 30447.0, 'AGLIO e OLIO': 27056.0, 'Lychee Spark': 18280.0, 'Chicken Teriyaki': 27442.0, 'Teh Manis': 6936.0, 'Onion Ring BBQ': 20346.0, 'Single Chicken Curry Sauce': 23111.0, 'Red Velvet': 17303.0, 'SteakGhetti Chicken Blackpepper Original': 32035.0, 'Crispy Mushroom Blackpepper': 16786.0, 'Double Chicken Mushroom': 37191.0, 'Halu 2 Beef': 35037.0, 'Beef Sambal Mercon': 42741.0, 'Choco Vanilla': 19632.0, 'Original Beef Sambal Mercon': 45381.0, 'SteakGhetti Chicken BBQ Original': 32571.0, 'Lychee Tea': 15594.0, 'Chicken Eggna 2 Sambal Mercon': 33513.0, 'Onion Ring Blackpepper': 18670.0, 'Sambal Mercon': 8656.0, 'Sambal Matah': 10679.0, 'Choco Caramel': 19632.0, 'Original Chicken Cheese Sauce': 24488.0, 'French Fries BBQ': 20576.0, 'Beef Crispy Sambal Mercon': 37826.0, 'Single Chicken Blackpepper': 25656.0, 'Chicken Eggna 2 BBQ': 34667.0, 'Original Chicken Blackpepper': 27179.0, 'Original Chicken Sambal Matah': 32317.0, 'Cappuccino': 16345.0, 'Original Beef Mushroom': 43038.0, 'Double Chicken Cheese Sauce': 25404.0, 'Double Beef Curry Sauce': 37570.0, 'Double Beef BBQ': 38619.0, 'SteakGhetti Beef BBQ Crispy': 38239.0, 'French Fries Blackpepper': 18775.0, 'Beef Teriyaki': 32885.0, 'Single Beef Cheese Sauce': 30685.0, 'Americano': 16980.0, 'BBQ': 7433.0, 'Single Beef Curry Sauce': 31360.0, 'Matcha': 17303.0, 'Pak Rahmat 1 (Chicken Crispy Curry / Cheese, Aglio e Olio BBQ, Free 2 Ice Tea, French Fries, Crispy Mushroom)': 85771.0, 'Telur': 6818.0, 'Crispy Mushroom BBQ': 18494.0, 'Luna 2 Chicken Mercon': 31976.0, 'Double Chicken Sambal Mercon': 30236.0, 'Potato Wedges BBQ': 20873.0, 'Single Chicken BBQ': 27206.0, 'Vanilla Latte': 18134.0, 'Sunkissed': 18539.0, 'Original Beef Curry Sauce': 38915.0, 'Single Chicken Mushroom': 30998.0, 'French Fries Chilli': 16048.0, 'Onion Ring Chilli': 17253.0, 'Chocolate': 17993.0, 'Beef Eggna 2 BBQ': 41670.0, 'Cafe Latte': 15336.0, 'Aglio e Olio Blackpepper': 23880.0, 'Teh Tawar': 6725.0, 'Aglio e Olio Mushroom': 29075.0, 'Double Beef Cheese Sauce': 36895.0, 'SteakGhetti Chicken Blackpepper Crispy': 29484.0, 'Beef Eggna 1 Sambal Matah': 43185.0, 'Original Beef Sambal Matah': 49567.0, 'Double Beef Blackpepper': 37362.0, 'Chicken Sambal Matah': 29085.0, 'Potato Wedges Chilli': 18013.0, 'Beef Eggna 2 Sambal Matah': 48050.0, 'Chicken Eggna 1 BBQ': 28868.0, 'Single Beef Mushroom': 35483.0, 'Kopi Susu': 16700.0, 'Double Beef Sambal Mercon': 44036.0, 'Single Beef BBQ': 32409.0, 'Aglio e Olio BBQ': 25289.0, 'Chicken Eggna 1 Sambal Matah': 32429.0, 'Choco Hazelnut': 19632.0, 'Pak Rahmat 4 Original Chicken BBQ, Mie Hotplate Kuah Kari, Free 2 Ice Tea': 50105.0, 'Original Beef Blackpepper': 38707.0, 'Chicken Crunchy Blackpepper': 22210.0, 'Original Chicken Sambal Mercon': 28131.0, 'Chicken Crunchy BBQ': 23759.0, 'Beef Ricebowl': 34598.0, 'Chicken Grill 1': 31255.0, 'Mie Hotplate Kuah Kari': 24136.0, 'SteakGhetti Beef Blackpepper Original': 44538.0, 'SteakGhetti Beef Blackpepper Crispy': 36983.0, 'Double Chicken Blackpepper': 31416.0, 'Original Beef Cheese Sauce': 38240.0, 'Double Chicken BBQ': 33092.0, 'Hazelnut Latte': 18134.0, 'Original Chicken Mushroom': 32665.0, 'Mie Hotplate Sambal Matah': 28554.0, 'Pink Yupi': 17965.0, 'SteakGhetti Chicken BBQ Crispy': 30893.0, 'Beef Eggna 1 Sambal Mercon': 38998.0, 'Pak Rahmat 2 (Chicken Crispy Curry / Cheese, Mie Hotplate Nusantara, Free 2 Ice Tea, Onion Ring, Crispy Mushroom)': 84098.0, 'Crispy Mushroom Chilli': 15141.0, 'Potato Wedges Blackpepper': 19323.0, 'Chicken Sambal Mercon': 33690.0, 'Double Beef Sambal Matah': 48222.0, 'Black Yupi': 18896.0, 'Beef Eggna 1 BBQ': 36805.0, 'Chicken Crispy Sambal Mercon': 24008.0, 'Double Chicken Curry Sauce': 26147.0, 'Original Beef BBQ': 39964.0, 'Single Chicken Cheese Sauce': 22368.0, 'Chicken Grill 2': 38684.0, 'SteakGhetti Beef BBQ Original': 45794.0, 'Mie Hotplate Sapi Lada Hitam': 29254.0}
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:harga_satuan_per_produk: {'Lemon Tea': 15506.0, 'Beef Sambal Matah': 38136.0, 'Strawberry Sparkling': 18762.0, 'Chicken Eggna 2 Sambal Matah': 37700.0, 'Chicken Ricebowl': 26672.0, 'Caramel Latte': 18134.0, 'Mie Hotplate Nusantara Lv 1-5': 26684.0, 'Double Chicken Sambal Matah': 34422.0, 'Chicken Eggna 1 Sambal Mercon': 28242.0, 'Kopi Susu Gula Aren': 18290.0, 'Mocaccino': 18189.0, 'Original Chicken BBQ': 28770.0, 'Beef Eggna 2 Sambal Mercon': 43863.0, 'Spaghetti Carbonara': 25289.0, 'Beef Crispy Sambal Matah': 42012.0, 'Single Beef Blackpepper': 31152.0, 'Air Mineral': 6875.0, 'Nasi Putih': 6644.0, 'Luna 1 Chicken Matah': 36581.0, 'Teh Tarik': 14920.0, 'Chicken Crunchy Chilli': 20899.0, 'Mushroom': 9786.0, 'Chicken Crispy Sambal Matah': 28195.0, 'Blackpepper': 6964.0, 'Taro': 17303.0, 'Original Chicken Curry Sauce': 25276.0, 'Pak Rahmat 3 (Chicken Rice Bowl Curry / Cheese, Chicken Teriyaki, Free 2 Ice Tea)': 53885.0, 'Double Beef Mushroom': 41693.0, 'Halu 1 Chicken': 30447.0, 'AGLIO e OLIO': 27056.0, 'Lychee Spark': 18280.0, 'Chicken Teriyaki': 27442.0, 'Teh Manis': 6936.0, 'Onion Ring BBQ': 20346.0, 'Single Chicken Curry Sauce': 23111.0, 'Red Velvet': 17303.0, 'SteakGhetti Chicken Blackpepper Original': 32035.0, 'Crispy Mushroom Blackpepper': 16786.0, 'Double Chicken Mushroom': 37191.0, 'Halu 2 Beef': 35037.0, 'Beef Sambal Mercon': 42741.0, 'Choco Vanilla': 19632.0, 'Original Beef Sambal Mercon': 45381.0, 'SteakGhetti Chicken BBQ Original': 32571.0, 'Lychee Tea': 15594.0, 'Chicken Eggna 2 Sambal Mercon': 33513.0, 'Onion Ring Blackpepper': 18670.0, 'Sambal Mercon': 8656.0, 'Sambal Matah': 10679.0, 'Choco Caramel': 19632.0, 'Original Chicken Cheese Sauce': 24488.0, 'French Fries BBQ': 20576.0, 'Beef Crispy Sambal Mercon': 37826.0, 'Single Chicken Blackpepper': 25656.0, 'Chicken Eggna 2 BBQ': 34667.0, 'Original Chicken Blackpepper': 27179.0, 'Original Chicken Sambal Matah': 32317.0, 'Cappuccino': 16345.0, 'Original Beef Mushroom': 43038.0, 'Double Chicken Cheese Sauce': 25404.0, 'Double Beef Curry Sauce': 37570.0, 'Double Beef BBQ': 38619.0, 'SteakGhetti Beef BBQ Crispy': 38239.0, 'French Fries Blackpepper': 18775.0, 'Beef Teriyaki': 32885.0, 'Single Beef Cheese Sauce': 30685.0, 'Americano': 16980.0, 'BBQ': 7433.0, 'Single Beef Curry Sauce': 31360.0, 'Matcha': 17303.0, 'Pak Rahmat 1 (Chicken Crispy Curry / Cheese, Aglio e Olio BBQ, Free 2 Ice Tea, French Fries, Crispy Mushroom)': 85771.0, 'Telur': 6818.0, 'Crispy Mushroom BBQ': 18494.0, 'Luna 2 Chicken Mercon': 31976.0, 'Double Chicken Sambal Mercon': 30236.0, 'Potato Wedges BBQ': 20873.0, 'Single Chicken BBQ': 27206.0, 'Vanilla Latte': 18134.0, 'Sunkissed': 18539.0, 'Original Beef Curry Sauce': 38915.0, 'Single Chicken Mushroom': 30998.0, 'French Fries Chilli': 16048.0, 'Onion Ring Chilli': 17253.0, 'Chocolate': 17993.0, 'Beef Eggna 2 BBQ': 41670.0, 'Cafe Latte': 15336.0, 'Aglio e Olio Blackpepper': 23880.0, 'Teh Tawar': 6725.0, 'Aglio e Olio Mushroom': 29075.0, 'Double Beef Cheese Sauce': 36895.0, 'SteakGhetti Chicken Blackpepper Crispy': 29484.0, 'Beef Eggna 1 Sambal Matah': 43185.0, 'Original Beef Sambal Matah': 49567.0, 'Double Beef Blackpepper': 37362.0, 'Chicken Sambal Matah': 29085.0, 'Potato Wedges Chilli': 18013.0, 'Beef Eggna 2 Sambal Matah': 48050.0, 'Chicken Eggna 1 BBQ': 28868.0, 'Single Beef Mushroom': 35483.0, 'Kopi Susu': 16700.0, 'Double Beef Sambal Mercon': 44036.0, 'Single Beef BBQ': 32409.0, 'Aglio e Olio BBQ': 25289.0, 'Chicken Eggna 1 Sambal Matah': 32429.0, 'Choco Hazelnut': 19632.0, 'Pak Rahmat 4 Original Chicken BBQ, Mie Hotplate Kuah Kari, Free 2 Ice Tea': 50105.0, 'Original Beef Blackpepper': 38707.0, 'Chicken Crunchy Blackpepper': 22210.0, 'Original Chicken Sambal Mercon': 28131.0, 'Chicken Crunchy BBQ': 23759.0, 'Beef Ricebowl': 34598.0, 'Chicken Grill 1': 31255.0, 'Mie Hotplate Kuah Kari': 24136.0, 'SteakGhetti Beef Blackpepper Original': 44538.0, 'SteakGhetti Beef Blackpepper Crispy': 36983.0, 'Double Chicken Blackpepper': 31416.0, 'Original Beef Cheese Sauce': 38240.0, 'Double Chicken BBQ': 33092.0, 'Hazelnut Latte': 18134.0, 'Original Chicken Mushroom': 32665.0, 'Mie Hotplate Sambal Matah': 28554.0, 'Pink Yupi': 17965.0, 'SteakGhetti Chicken BBQ Crispy': 30893.0, 'Beef Eggna 1 Sambal Mercon': 38998.0, 'Pak Rahmat 2 (Chicken Crispy Curry / Cheese, Mie Hotplate Nusantara, Free 2 Ice Tea, Onion Ring, Crispy Mushroom)': 84098.0, 'Crispy Mushroom Chilli': 15141.0, 'Potato Wedges Blackpepper': 19323.0, 'Chicken Sambal Mercon': 33690.0, 'Double Beef Sambal Matah': 48222.0, 'Black Yupi': 18896.0, 'Beef Eggna 1 BBQ': 36805.0, 'Chicken Crispy Sambal Mercon': 24008.0, 'Double Chicken Curry Sauce': 26147.0, 'Original Beef BBQ': 39964.0, 'Single Chicken Cheese Sauce': 22368.0, 'Chicken Grill 2': 38684.0, 'SteakGhetti Beef BBQ Original': 45794.0, 'Mie Hotplate Sapi Lada Hitam': 29254.0}
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:harga_satuan_per_produk: {'Lemon Tea': 15506.0, 'Beef Sambal Matah': 38136.0, 'Strawberry Sparkling': 18762.0, 'Chicken Eggna 2 Sambal Matah': 37700.0, 'Chicken Ricebowl': 26672.0, 'Caramel Latte': 18134.0, 'Mie Hotplate Nusantara Lv 1-5': 26684.0, 'Double Chicken Sambal Matah': 34422.0, 'Chicken Eggna 1 Sambal Mercon': 28242.0, 'Kopi Susu Gula Aren': 18290.0, 'Mocaccino': 18189.0, 'Original Chicken BBQ': 28770.0, 'Beef Eggna 2 Sambal Mercon': 43863.0, 'Spaghetti Carbonara': 25289.0, 'Beef Crispy Sambal Matah': 42012.0, 'Single Beef Blackpepper': 31152.0, 'Air Mineral': 6875.0, 'Nasi Putih': 6644.0, 'Luna 1 Chicken Matah': 36581.0, 'Teh Tarik': 14920.0, 'Chicken Crunchy Chilli': 20899.0, 'Mushroom': 9786.0, 'Chicken Crispy Sambal Matah': 28195.0, 'Blackpepper': 6964.0, 'Taro': 17303.0, 'Original Chicken Curry Sauce': 25276.0, 'Pak Rahmat 3 (Chicken Rice Bowl Curry / Cheese, Chicken Teriyaki, Free 2 Ice Tea)': 53885.0, 'Double Beef Mushroom': 41693.0, 'Halu 1 Chicken': 30447.0, 'AGLIO e OLIO': 27056.0, 'Lychee Spark': 18280.0, 'Chicken Teriyaki': 27442.0, 'Teh Manis': 6936.0, 'Onion Ring BBQ': 20346.0, 'Single Chicken Curry Sauce': 23111.0, 'Red Velvet': 17303.0, 'SteakGhetti Chicken Blackpepper Original': 32035.0, 'Crispy Mushroom Blackpepper': 16786.0, 'Double Chicken Mushroom': 37191.0, 'Halu 2 Beef': 35037.0, 'Beef Sambal Mercon': 42741.0, 'Choco Vanilla': 19632.0, 'Original Beef Sambal Mercon': 45381.0, 'SteakGhetti Chicken BBQ Original': 32571.0, 'Lychee Tea': 15594.0, 'Chicken Eggna 2 Sambal Mercon': 33513.0, 'Onion Ring Blackpepper': 18670.0, 'Sambal Mercon': 8656.0, 'Sambal Matah': 10679.0, 'Choco Caramel': 19632.0, 'Original Chicken Cheese Sauce': 24488.0, 'French Fries BBQ': 20576.0, 'Beef Crispy Sambal Mercon': 37826.0, 'Single Chicken Blackpepper': 25656.0, 'Chicken Eggna 2 BBQ': 34667.0, 'Original Chicken Blackpepper': 27179.0, 'Original Chicken Sambal Matah': 32317.0, 'Cappuccino': 16345.0, 'Original Beef Mushroom': 43038.0, 'Double Chicken Cheese Sauce': 25404.0, 'Double Beef Curry Sauce': 37570.0, 'Double Beef BBQ': 38619.0, 'SteakGhetti Beef BBQ Crispy': 38239.0, 'French Fries Blackpepper': 18775.0, 'Beef Teriyaki': 32885.0, 'Single Beef Cheese Sauce': 30685.0, 'Americano': 16980.0, 'BBQ': 7433.0, 'Single Beef Curry Sauce': 31360.0, 'Matcha': 17303.0, 'Pak Rahmat 1 (Chicken Crispy Curry / Cheese, Aglio e Olio BBQ, Free 2 Ice Tea, French Fries, Crispy Mushroom)': 85771.0, 'Telur': 6818.0, 'Crispy Mushroom BBQ': 18494.0, 'Luna 2 Chicken Mercon': 31976.0, 'Double Chicken Sambal Mercon': 30236.0, 'Potato Wedges BBQ': 20873.0, 'Single Chicken BBQ': 27206.0, 'Vanilla Latte': 18134.0, 'Sunkissed': 18539.0, 'Original Beef Curry Sauce': 38915.0, 'Single Chicken Mushroom': 30998.0, 'French Fries Chilli': 16048.0, 'Onion Ring Chilli': 17253.0, 'Chocolate': 17993.0, 'Beef Eggna 2 BBQ': 41670.0, 'Cafe Latte': 15336.0, 'Aglio e Olio Blackpepper': 23880.0, 'Teh Tawar': 6725.0, 'Aglio e Olio Mushroom': 29075.0, 'Double Beef Cheese Sauce': 36895.0, 'SteakGhetti Chicken Blackpepper Crispy': 29484.0, 'Beef Eggna 1 Sambal Matah': 43185.0, 'Original Beef Sambal Matah': 49567.0, 'Double Beef Blackpepper': 37362.0, 'Chicken Sambal Matah': 29085.0, 'Potato Wedges Chilli': 18013.0, 'Beef Eggna 2 Sambal Matah': 48050.0, 'Chicken Eggna 1 BBQ': 28868.0, 'Single Beef Mushroom': 35483.0, 'Kopi Susu': 16700.0, 'Double Beef Sambal Mercon': 44036.0, 'Single Beef BBQ': 32409.0, 'Aglio e Olio BBQ': 25289.0, 'Chicken Eggna 1 Sambal Matah': 32429.0, 'Choco Hazelnut': 19632.0, 'Pak Rahmat 4 Original Chicken BBQ, Mie Hotplate Kuah Kari, Free 2 Ice Tea': 50105.0, 'Original Beef Blackpepper': 38707.0, 'Chicken Crunchy Blackpepper': 22210.0, 'Original Chicken Sambal Mercon': 28131.0, 'Chicken Crunchy BBQ': 23759.0, 'Beef Ricebowl': 34598.0, 'Chicken Grill 1': 31255.0, 'Mie Hotplate Kuah Kari': 24136.0, 'SteakGhetti Beef Blackpepper Original': 44538.0, 'SteakGhetti Beef Blackpepper Crispy': 36983.0, 'Double Chicken Blackpepper': 31416.0, 'Original Beef Cheese Sauce': 38240.0, 'Double Chicken BBQ': 33092.0, 'Hazelnut Latte': 18134.0, 'Original Chicken Mushroom': 32665.0, 'Mie Hotplate Sambal Matah': 28554.0, 'Pink Yupi': 17965.0, 'SteakGhetti Chicken BBQ Crispy': 30893.0, 'Beef Eggna 1 Sambal Mercon': 38998.0, 'Pak Rahmat 2 (Chicken Crispy Curry / Cheese, Mie Hotplate Nusantara, Free 2 Ice Tea, Onion Ring, Crispy Mushroom)': 84098.0, 'Crispy Mushroom Chilli': 15141.0, 'Potato Wedges Blackpepper': 19323.0, 'Chicken Sambal Mercon': 33690.0, 'Double Beef Sambal Matah': 48222.0, 'Black Yupi': 18896.0, 'Beef Eggna 1 BBQ': 36805.0, 'Chicken Crispy Sambal Mercon': 24008.0, 'Double Chicken Curry Sauce': 26147.0, 'Original Beef BBQ': 39964.0, 'Single Chicken Cheese Sauce': 22368.0, 'Chicken Grill 2': 38684.0, 'SteakGhetti Beef BBQ Original': 45794.0, 'Mie Hotplate Sapi Lada Hitam': 29254.0}
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model Random Forest to C:\Skripsi_Prediksi_Penjualan\pages\models\model_rf_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model XGBoost to C:\Skripsi_Prediksi_Penjualan\pages\models\model_xgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model LightGBM to C:\Skripsi_Prediksi_Penjualan\pages\models\model_lgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-03 23:48:09
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model XGBoost to C:\Skripsi_Prediksi_Penjualan\pages\models\model_xgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model LightGBM to C:\Skripsi_Prediksi_Penjualan\pages\models\model_lgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-04 00:30:11
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model Random Forest to C:\Skripsi_Prediksi_Penjualan\pages\models\model_rf_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model XGBoost to C:\Skripsi_Prediksi_Penjualan\pages\models\model_xgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model LightGBM to C:\Skripsi_Prediksi_Penjualan\pages\models\model_lgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Analytics page accessed at: 2025-07-04 00:58:36
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model Random Forest to C:\Skripsi_Prediksi_Penjualan\pages\models\model_rf_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model XGBoost to C:\Skripsi_Prediksi_Penjualan\pages\models\model_xgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model Gabungan to C:\Skripsi_Prediksi_Penjualan\pages\models\model_ensemble_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:04:06
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:04:15
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:10:17
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:11:20
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:12:12
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:13:38
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:15:52
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:17:24
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model Random Forest to C:\Skripsi_Prediksi_Penjualan\pages\models\model_rf_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model XGBoost to C:\Skripsi_Prediksi_Penjualan\pages\models\model_xgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model LightGBM to C:\Skripsi_Prediksi_Penjualan\pages\models\model_lgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model XGBoost to C:\Skripsi_Prediksi_Penjualan\pages\models\model_xgb_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Prediction page mode: Normal
+INFO:__main__:Saved model Random Forest to C:\Skripsi_Prediksi_Penjualan\pages\models\model_rf_jumlah.pkl
+INFO:__main__:Saved scaler to C:\Skripsi_Prediksi_Penjualan\pages\models\robust_scaler.pkl
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:18:52
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:24:31
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:25:22
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:27:10
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:30:01
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:30:14
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:30:44
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:31:02
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:33:27
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:33:40
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:34:09
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:35:29
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:36:51
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-04 01:41:13
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-05 21:43:58
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: igangebul_transaksi_2025_realistis.csv
+INFO:__main__:Successfully read igangebul_transaksi_2025_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in igangebul_transaksi_2025_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 15411 rows remaining
+INFO:__main__:Processed file: igangebul_transaksi_2025_realistis.csv
+INFO:__main__:Combined 1 files into DataFrame with 15411 rows
+INFO:__main__:Analytics page accessed at: 2025-07-05 21:44:09
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-05 22:04:45
+ERROR:__main__:Model loading error: 'feature_maps'
+INFO:__main__:Analytics page accessed at: 2025-07-05 22:26:00
+ERROR:__main__:Model loading error: 'feature_maps'
+WARNING:__main__:Feature selection failed: X_train_scaled contains NaN even after fillna.
+INFO:__main__:Model trained successfully. Test R²: 0.997, Test MAPE: 0.88%
+ERROR:__main__:Prediction error: "['harga'] not in index"
+INFO:__main__:Analytics page accessed at: 2025-07-05 22:28:16
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Model trained successfully. Test R²: 0.916, Test MAPE: 7.63%
+ERROR:__main__:Prediction error: "['harga'] not in index"
+INFO:__main__:Analytics page accessed at: 2025-07-05 22:30:19
+INFO:__main__:Model trained successfully. Test R²: 0.971, Test MAPE: 7.98%
+ERROR:__main__:Prediction error: "['harga'] not in index"
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:13
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:25
+INFO:__main__:Date range applied: (datetime.date(2023, 1, 2), datetime.date(2024, 12, 31))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:25
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:39
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:41
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:42
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:43
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:47
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:29:49
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:30:03
+INFO:__main__:Date range applied: (datetime.date(2024, 9, 30),)
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:30:03
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:30:26
+INFO:__main__:All filters reset from expander
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:30:26
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:31:27
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 1 files into DataFrame with 113070 rows
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:29
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:35
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 2), datetime.date(2024, 12, 31))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:35
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:37
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:40
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 31),)
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:40
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:43
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:48
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 2), datetime.date(2024, 1, 31))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:48
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:50:52
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:01
+INFO:__main__:Date range applied: (datetime.date(2024, 6, 30),)
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:01
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:02
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:06
+INFO:__main__:Date range applied: (datetime.date(2024, 6, 30), datetime.date(2024, 6, 30))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:06
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:07
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:12
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 2),)
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:12
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:13
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:21
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 2), datetime.date(2024, 8, 31))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:21
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:26
+INFO:__main__:All filters reset from expander
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:26
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:29
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 2), datetime.date(2024, 12, 31))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:29
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:30
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:56
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:51:59
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:01
+INFO:__main__:All filters reset from expander
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:01
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:01
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:01
+INFO:__main__:All filters reset from expander
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:02
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:05
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 2), datetime.date(2024, 12, 31))
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:05
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:08
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:42
+INFO:__main__:Date range applied: (datetime.date(2024, 1, 3),)
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:52:42
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:54:51
+INFO:__main__:Analytics page accessed at: 2025-07-06 18:54:59
+INFO:__main__:Analytics page accessed at: 2025-07-06 19:45:19
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-20 00:32:09
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-20 00:33:05
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Analytics page accessed at: 2025-07-20 01:50:08
+INFO:__main__:Analytics page accessed at: 2025-07-20 01:50:54
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226251 rows
+INFO:__main__:Model trained successfully. Test R²: 0.971, Test MAPE: 7.98%
+ERROR:__main__:Prediction error: "['harga'] not in index"
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113070 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis.csv
+INFO:__main__:Combined 1 files into DataFrame with 113070 rows
+INFO:__main__:Analytics page accessed at: 2025-07-20 02:05:13
+2025-07-20 02:09:36,149 - INFO - Mode set to: Normal
+2025-07-20 02:09:40,971 - INFO - Mode set to: Normal
+2025-07-20 02:09:40,986 - INFO - Reading file: haluna_transaksi_2024_realistis.csv
+2025-07-20 02:09:41,392 - INFO - Successfully read haluna_transaksi_2024_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+2025-07-20 02:09:41,395 - INFO - Columns in haluna_transaksi_2024_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+2025-07-20 02:09:41,438 - INFO - Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+2025-07-20 02:09:41,438 - INFO - Cleaning currency column: harga_satuan
+2025-07-20 02:09:41,596 - INFO - Cleaning currency column: harga
+2025-07-20 02:09:41,708 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-07-20 02:09:41,816 - INFO - Cleaning currency column: total_pembayaran
+2025-07-20 02:09:42,003 - INFO - Data processed successfully, 113070 rows remaining
+2025-07-20 02:09:42,003 - INFO - Processed file: haluna_transaksi_2024_realistis.csv
+2025-07-20 02:09:42,055 - INFO - Combined 1 files into DataFrame with 113070 rows
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-20 02:14:52
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-20 02:15:06
+INFO:__main__:Analytics page accessed at: 2025-07-20 02:16:00
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-07-20 02:20:29
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis (1).csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113161 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226342 rows
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:46:32
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis (1).csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113161 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226342 rows
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:52:20
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:52:39
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:53:02
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:53:28
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:53:35
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis (1).csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113161 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226342 rows
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis (1).csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113161 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226342 rows
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis (1).csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113161 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226342 rows
+INFO:__main__:Analytics page accessed at: 2025-08-04 20:59:02
+ERROR:__main__:Training error: name 'create_advanced_features' is not defined
+INFO:__main__:Model trained successfully. Test R²: 0.964, Test MAPE: 8.83%
+INFO:__main__:Analytics page accessed at: 2025-08-04 21:00:52
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2024_realistis (1).csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113161 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','. Columns: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:__main__:Columns in haluna_transaksi_2023_realistis.csv: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+INFO:utils.Data_Processing:Cleaning currency column: harga_satuan
+INFO:utils.Data_Processing:Cleaning currency column: harga
+INFO:utils.Data_Processing:Cleaning currency column: harga_setelah_pajak
+INFO:utils.Data_Processing:Cleaning currency column: total_pembayaran
+INFO:utils.Data_Processing:Data processed successfully, 113181 rows remaining
+INFO:__main__:Processed file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Combined 2 files into DataFrame with 226342 rows
+ERROR:__main__:Training error: could not convert string to float: 'TRX00072'
+INFO:__main__:Analytics page accessed at: 2025-08-04 21:21:33
+INFO:__main__:Mode set to: Normal
+2025-08-04 21:57:12,086 - utils.Data_Processing - ERROR - Failed to clean currency value 'invalid': could not convert string to float: 'invalid'
+2025-08-04 21:57:12,089 - utils.Data_Processing - INFO - Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+2025-08-04 21:57:12,089 - utils.Data_Processing - INFO - Cleaning currency column: harga_satuan
+2025-08-04 21:57:12,092 - utils.Data_Processing - INFO - Cleaning currency column: harga
+2025-08-04 21:57:12,093 - utils.Data_Processing - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-04 21:57:12,094 - utils.Data_Processing - INFO - Cleaning currency column: total_pembayaran
+2025-08-04 21:57:12,101 - utils.Data_Processing - INFO - Data processed successfully, 3 rows remaining
+2025-08-04 22:13:52,692 - utils.Data_Processing - ERROR - Failed to clean currency value 'invalid': could not convert string to float: 'invalid'
+2025-08-04 22:13:52,694 - utils.Data_Processing - INFO - Columns found before processing: ['id_transaksi', 'waktu', 'nama_pembeli', 'nama_kasir', 'nama_produk', 'kategori_produk', 'harga_satuan', 'jumlah', 'harga', 'harga_setelah_pajak', 'tipe_pesanan', 'metode_pembayaran', 'total_pembayaran']
+2025-08-04 22:13:52,694 - utils.Data_Processing - INFO - Cleaning currency column: harga_satuan
+2025-08-04 22:13:52,696 - utils.Data_Processing - INFO - Cleaning currency column: harga
+2025-08-04 22:13:52,697 - utils.Data_Processing - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-04 22:13:52,698 - utils.Data_Processing - INFO - Cleaning currency column: total_pembayaran
+2025-08-04 22:13:52,705 - utils.Data_Processing - INFO - Data processed successfully, 3 rows remaining
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:19
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:23
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:26
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:26
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:27
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:30
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:38
+INFO:__main__:Analytics page accessed at: 2025-08-04 23:07:46
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:37:11
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:37:42
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+ERROR:__main__:Error during file processing: cannot import name 'process_data' from 'core.data_processor' (C:\Skripsi_Prediksi_Penjualan\src\core\data_processor.py)
+INFO:__main__:Mode set to: Normal
+ERROR:__main__:Error during file processing: cannot import name 'process_data' from 'core.data_processor' (C:\Skripsi_Prediksi_Penjualan\src\core\data_processor.py)
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+ERROR:__main__:Error during file processing: cannot import name 'process_data' from 'core.data_processor' (C:\Skripsi_Prediksi_Penjualan\src\core\data_processor.py)
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:42:01
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:42:40
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:45:17
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:53:24
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-05 16:54:32
+INFO:__main__:Analytics page accessed at: 2025-08-05 17:04:12
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-05 17:20:56
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully parsed haluna_transaksi_2024_realistis (1).csv using separator ','
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully parsed haluna_transaksi_2023_realistis.csv using separator ','
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully parsed haluna_transaksi_2024_realistis (1).csv using separator ','
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully parsed haluna_transaksi_2023_realistis.csv using separator ','
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully parsed haluna_transaksi_2024_realistis (1).csv using separator ','
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully parsed haluna_transaksi_2023_realistis.csv using separator ','
+INFO:__main__:Analytics page accessed at: 2025-08-05 19:43:53
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113161 rows remaining
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113181 rows remaining
+INFO:__main__:Analytics page accessed at: 2025-08-05 19:59:48
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-08-05 20:00:20
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-05 20:00:43
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Model trained successfully. Test R²: 0.961, Test MAPE: 7.73%
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+ERROR:__main__:Prediction error: "['tahun', 'bulan', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'price_rank', 'price_vs_category_avg', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'seasonal_price_interaction', 'kategori_encoded'] not in index"
+INFO:__main__:Model trained successfully. Test R²: 0.952, Test MAPE: 6.57%
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Model trained successfully. Test R²: 0.961, Test MAPE: 7.73%
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:51:36
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:51:53
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:51:59
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:52:03
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113161 rows remaining
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113181 rows remaining
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:52:50
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:53:17
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:53:18
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Analytics page accessed at: 2025-08-06 02:53:32
+INFO:__main__:Mode set to: Advanced
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Model trained successfully. Test R²: 0.961, Test MAPE: 7.73%
+ERROR:__main__:Prediction error: "['tahun', 'bulan', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'price_rank', 'price_vs_category_avg', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'seasonal_price_interaction', 'kategori_encoded'] not in index"
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113161 rows remaining
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113181 rows remaining
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:04
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:30
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:38
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:39
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:49
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:55
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:19:57
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:27
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:32
+INFO:__main__:All filters reset from expander
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:33
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:46
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:47
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:48
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:20:49
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:21:07
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:21:09
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:21:10
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:21:43
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:21:54
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:00
+INFO:__main__:All filters reset from expander
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:02
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:10
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:29
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:30
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:31
+INFO:__main__:Analytics page accessed at: 2025-08-06 03:22:32
+ERROR:__main__:Prediction error: name 'logger' is not defined
+2025-08-06 15:18:17,927 - INFO - Mode set to: Normal
+2025-08-06 15:18:28,851 - INFO - Analytics page accessed at: 2025-08-06 15:18:28
+2025-08-06 15:18:31,712 - INFO - Mode set to: Normal
+2025-08-06 15:18:38,121 - INFO - Mode set to: Normal
+2025-08-06 15:18:38,133 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-06 15:18:38,448 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-06 15:18:38,521 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 15:18:38,628 - INFO - Cleaning currency column: harga
+2025-08-06 15:18:38,731 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 15:18:38,853 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 15:18:39,050 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-06 15:18:39,051 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-06 15:18:39,325 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-06 15:18:39,364 - INFO - Cleaning currency column: harga_satuan
+2025-08-06 15:18:39,479 - INFO - Cleaning currency column: harga
+2025-08-06 15:18:39,607 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-06 15:18:39,716 - INFO - Cleaning currency column: total_pembayaran
+2025-08-06 15:18:39,896 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-06 15:19:00,838 - INFO - Analytics page accessed at: 2025-08-06 15:19:00
+2025-08-06 15:19:23,026 - INFO - Analytics page accessed at: 2025-08-06 15:19:23
+2025-08-06 15:19:23,597 - INFO - Analytics page accessed at: 2025-08-06 15:19:23
+2025-08-06 15:19:24,881 - INFO - Analytics page accessed at: 2025-08-06 15:19:24
+2025-08-06 15:19:25,730 - INFO - Analytics page accessed at: 2025-08-06 15:19:25
+2025-08-06 15:19:38,628 - INFO - Analytics page accessed at: 2025-08-06 15:19:38
+2025-08-06 15:19:40,552 - INFO - Analytics page accessed at: 2025-08-06 15:19:40
+2025-08-06 15:19:42,071 - INFO - Analytics page accessed at: 2025-08-06 15:19:42
+2025-08-06 15:19:42,717 - INFO - Analytics page accessed at: 2025-08-06 15:19:42
+2025-08-06 15:19:52,897 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:19:57,982 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:19:59,220 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:19:59,221 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:19:59,223 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:19:59,225 - ERROR - Prediction error: "['tahun', 'bulan', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'price_rank', 'price_vs_category_avg', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'seasonal_price_interaction', 'kategori_encoded'] not in index"
+2025-08-06 15:20:30,910 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:32,244 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:33,372 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:33,373 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:33,375 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:34,356 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:34,357 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:34,360 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:35,330 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:35,331 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:35,333 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:36,287 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:36,288 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:36,290 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:37,265 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:37,266 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:37,268 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:37,468 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:38,692 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:38,693 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:38,696 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:20:39,687 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:20:39,689 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:20:39,691 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:21:03,195 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:21:04,703 - INFO - Loaded selected_features from artifacts: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:21:05,809 - INFO - pred_input_row columns before categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction']
+2025-08-06 15:21:05,810 - INFO - pred_input_row columns after categorical encoding: ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'volatility_6m', 'price_rank', 'price_vs_category_avg', 'product_popularity', 'monthly_pattern', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'price_popularity_interaction', 'seasonal_price_interaction', 'kategori_encoded']
+2025-08-06 15:21:05,813 - INFO - final_pred_input columns before scaling: ['harga', 'rolling_mean_3', 'rolling_std_3', 'rolling_median_3', 'rolling_mean_6', 'rolling_std_6', 'rolling_median_6', 'rolling_mean_12', 'rolling_std_12', 'rolling_median_12', 'penjualan_bulan_lalu_1', 'penjualan_bulan_lalu_2', 'penjualan_bulan_lalu_3', 'penjualan_bulan_lalu_4', 'penjualan_bulan_lalu_5', 'penjualan_bulan_lalu_6', 'volatility_6m', 'product_popularity', 'monthly_pattern', 'price_popularity_interaction']
+2025-08-06 15:21:05,815 - ERROR - Prediction error: "['tahun', 'bulan', 'harga_satuan', 'bulan_sin', 'bulan_cos', 'tahun_normalized', 'quarter', 'is_q1', 'is_q2', 'is_q3', 'is_q4', 'is_ramadan', 'is_year_end', 'is_mid_year', 'trend_3m', 'trend_6m', 'momentum_3m', 'momentum_6m', 'volatility_3m', 'price_rank', 'price_vs_category_avg', 'category_performance', 'seasonal_multiplier', 'yoy_growth', 'seasonal_price_interaction', 'kategori_encoded'] not in index"
