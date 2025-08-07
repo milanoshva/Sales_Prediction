@@ -77,13 +77,27 @@ else:
                 df['waktu'] = pd.to_datetime(df['waktu'], errors='coerce')
                 df.dropna(subset=['waktu'], inplace=True)
 
-            if 'date_range' not in st.session_state:
-                st.session_state.date_range = [df['waktu'].min().date(), df['waktu'].max().date()]
+            min_date = df['waktu'].min().date()
+            max_date = df['waktu'].max().date()
+
+            # Validate session state date range or initialize it
+            if 'date_range' in st.session_state:
+                # Clamp the stored date range to the new min/max dates
+                start_date = max(st.session_state.date_range[0], min_date)
+                end_date = min(st.session_state.date_range[1], max_date)
+                
+                # If the range is invalid (e.g., start > end), reset it
+                if start_date > end_date:
+                    st.session_state.date_range = [min_date, max_date]
+                else:
+                    st.session_state.date_range = [start_date, end_date]
+            else:
+                st.session_state.date_range = [min_date, max_date]
 
             date_range_tuple = st.date_input("Pilih Periode" if lang == "ID" else "Select Period",
                                     value=st.session_state.date_range,
-                                    min_value=df['waktu'].min().date(),
-                                    max_value=df['waktu'].max().date(),
+                                    min_value=min_date,
+                                    max_value=max_date,
                                     key="date_range_input")
 
             if date_range_tuple and len(date_range_tuple) == 2:
@@ -272,21 +286,22 @@ else:
     st.subheader("📊 Ringkasan Penjualan" if lang == "ID" else "Sales Summary")
 
     total_sales = df_filtered['total_pembayaran'].sum()
-    total_transactions = len(df_filtered['id_transaksi'].unique())
+    total_transactions = df_filtered.drop_duplicates(subset=['id_transaksi', 'waktu']).shape[0]
     total_products_sold = df_filtered['jumlah'].sum()
     
+    df_unique_transactions_for_avg = df_filtered.drop_duplicates(subset=['id_transaksi', 'waktu'])
+
     if time_granularity == "Harian":
-        daily_transactions_sales = df_filtered.drop_duplicates(subset='id_transaksi').groupby(df_filtered['waktu'].dt.date)['total_pembayaran'].sum()
-        avg_sales_per_period = daily_transactions_sales.mean() if not daily_transactions_sales.empty else 0
+        avg_sales_per_period = df_unique_transactions_for_avg.groupby(df_unique_transactions_for_avg['waktu'].dt.date)['total_pembayaran'].sum().mean()
     elif time_granularity == "Mingguan":
-        weekly_transactions_sales = df_filtered.drop_duplicates(subset='id_transaksi').groupby(df_filtered['waktu'].dt.isocalendar().week.astype(str) + '-' + df_filtered['waktu'].dt.year.astype(str))['total_pembayaran'].sum()
-        avg_sales_per_period = weekly_transactions_sales.mean() if not weekly_transactions_sales.empty else 0
+        avg_sales_per_period = df_unique_transactions_for_avg.groupby(df_unique_transactions_for_avg['waktu'].dt.isocalendar().week)['total_pembayaran'].sum().mean()
     elif time_granularity == "Bulanan":
-        monthly_transactions_sales = df_filtered.drop_duplicates(subset='id_transaksi').groupby(df_filtered['waktu'].dt.to_period('M').astype(str))['total_pembayaran'].sum()
-        avg_sales_per_period = monthly_transactions_sales.mean() if not monthly_transactions_sales.empty else 0
-    else:
-        yearly_transactions_sales = df_filtered.drop_duplicates(subset='id_transaksi').groupby(df_filtered['waktu'].dt.year)['total_pembayaran'].sum()
-        avg_sales_per_period = yearly_transactions_sales.mean() if not yearly_transactions_sales.empty else 0
+        avg_sales_per_period = df_unique_transactions_for_avg.groupby(df_unique_transactions_for_avg['waktu'].dt.to_period('M'))['total_pembayaran'].sum().mean()
+    else: # Tahunan
+        avg_sales_per_period = df_unique_transactions_for_avg.groupby(df_unique_transactions_for_avg['waktu'].dt.year)['total_pembayaran'].sum().mean()
+ 
+    if pd.isna(avg_sales_per_period):
+        avg_sales_per_period = 0
     
     col1, col2, col3, col4 = st.columns(4)
     with col1:
@@ -358,7 +373,7 @@ else:
     with st.container():
         st.markdown('<div class="card">', unsafe_allow_html=True)
         
-        df_unique_transactions = df_filtered.drop_duplicates(subset='id_transaksi')
+        df_unique_transactions = df_filtered.drop_duplicates(subset=['id_transaksi', 'waktu'])
 
         if time_granularity == "Harian":
             sales_over_time = df_unique_transactions.groupby(df_unique_transactions['waktu'].dt.date)['total_pembayaran'].sum().reset_index()
