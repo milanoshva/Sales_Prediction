@@ -1334,3 +1334,73 @@ Feature names seen at fit time, yet now missing:
 2025-08-07 00:13:13,840 - INFO - Mode set to: Normal
 2025-08-07 00:13:14,649 - INFO - Analytics page accessed at: 2025-08-07 00:13:14
 2025-08-07 00:13:18,210 - INFO - Mode set to: Normal
+2025-08-07 00:15:49,208 - INFO - Model trained successfully. Test R²: 0.970, Test MAPE: 5.84%
+2025-08-07 00:42:07,102 - INFO - Mode set to: Normal
+2025-08-07 00:42:29,081 - INFO - Mode set to: Normal
+2025-08-07 00:42:29,095 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-07 00:42:29,513 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-07 00:42:29,601 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 00:42:29,783 - INFO - Cleaning currency column: harga
+2025-08-07 00:42:29,984 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 00:42:30,229 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 00:42:30,664 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-07 00:42:30,665 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-07 00:42:31,214 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-07 00:42:31,293 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 00:42:31,519 - INFO - Cleaning currency column: harga
+2025-08-07 00:42:31,728 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 00:42:31,937 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 00:42:32,243 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-07 00:42:35,954 - INFO - Analytics page accessed at: 2025-08-07 00:42:35
+2025-08-07 00:44:14,246 - INFO - Mode set to: Normal
+2025-08-07 00:44:21,868 - INFO - Mode set to: Normal
+2025-08-07 00:44:21,879 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-07 00:44:22,347 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-07 00:44:22,422 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 00:44:22,615 - INFO - Cleaning currency column: harga
+2025-08-07 00:44:22,775 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 00:44:22,930 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 00:44:23,178 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-07 00:44:26,490 - INFO - Analytics page accessed at: 2025-08-07 00:44:26
+2025-08-07 00:46:45,022 - INFO - Model trained successfully. Test R²: -0.047, Test MAPE: 13.19%
+2025-08-07 00:53:12,268 - INFO - Mode set to: Normal
+2025-08-07 00:53:21,552 - INFO - Mode set to: Normal
+2025-08-07 00:53:21,564 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-07 00:53:21,937 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-07 00:53:22,001 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 00:53:22,165 - INFO - Cleaning currency column: harga
+2025-08-07 00:53:22,339 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 00:53:22,521 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 00:53:22,786 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-07 00:53:27,469 - INFO - Analytics page accessed at: 2025-08-07 00:53:27
+2025-08-07 00:54:08,811 - INFO - Analytics page accessed at: 2025-08-07 00:54:08
+2025-08-07 00:54:09,422 - INFO - Analytics page accessed at: 2025-08-07 00:54:09
+2025-08-07 00:54:10,807 - INFO - Analytics page accessed at: 2025-08-07 00:54:10
+2025-08-07 00:54:12,547 - INFO - Analytics page accessed at: 2025-08-07 00:54:12
+2025-08-07 00:54:13,738 - INFO - Analytics page accessed at: 2025-08-07 00:54:13
+2025-08-07 00:54:15,316 - INFO - Analytics page accessed at: 2025-08-07 00:54:15
+2025-08-07 00:54:16,360 - INFO - Analytics page accessed at: 2025-08-07 00:54:16
+2025-08-07 00:54:30,592 - INFO - Analytics page accessed at: 2025-08-07 00:54:30
+2025-08-07 00:54:30,636 - INFO - All filters reset from expander
+2025-08-07 00:54:30,735 - INFO - Analytics page accessed at: 2025-08-07 00:54:30
+2025-08-07 00:55:20,857 - INFO - Model trained successfully. Test R²: 0.952, Test MAPE: 3.34%
+2025-08-07 00:55:37,581 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 45
+2025-08-07 00:55:49,071 - INFO - Mode set to: Normal
+2025-08-07 16:53:31,601 - INFO - Mode set to: Normal
+2025-08-07 16:54:10,818 - INFO - Mode set to: Normal
+2025-08-07 16:54:10,831 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-07 16:54:11,152 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-07 16:54:11,207 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 16:54:11,325 - INFO - Cleaning currency column: harga
+2025-08-07 16:54:11,450 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 16:54:11,587 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 16:54:11,785 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-07 16:54:11,786 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-07 16:54:12,085 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-07 16:54:12,129 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 16:54:12,285 - INFO - Cleaning currency column: harga
+2025-08-07 16:54:12,415 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 16:54:12,542 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 16:54:12,750 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-07 16:54:17,835 - INFO - Analytics page accessed at: 2025-08-07 16:54:17
+2025-08-07 16:54:54,184 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 45
