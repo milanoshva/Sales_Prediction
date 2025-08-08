@@ -141,7 +141,8 @@ with st.container():
                         df_processed = process_data(df_read)
                         dfs.append(df_processed)
                         valid_files_processed += 1
-                        st.success(f"File {uploaded_file.name} berhasil diproses.")
+                        toast_message = f"File {uploaded_file.name} berhasil diproses." if st.session_state.language == "ID" else f"File {uploaded_file.name} processed successfully."
+                        st.toast(toast_message, icon="✅")
 
                     except Exception as e:
                         st.error(f"Error memproses file {uploaded_file.name}: {e}")
@@ -150,11 +151,39 @@ with st.container():
                 if dfs:
                     combined_df = pd.concat(dfs, ignore_index=True)
                     combined_df = combined_df.drop_duplicates(subset=['id_transaksi', 'waktu', 'nama_produk', 'tipe_pesanan'])
+                    
+                    # Sort by date to ensure correct chronological order before display and processing
+                    combined_df = combined_df.sort_values(by='waktu').reset_index(drop=True)
+                    
                     st.session_state.df = combined_df
                     
-                    st.success(f"{valid_files_processed} file berhasil diunggah dan digabungkan. Total {len(combined_df)} baris data.")
-                    st.dataframe(combined_df.head())
+                    summary_toast_message = f"{valid_files_processed} file berhasil digabungkan. Total {len(combined_df)} baris." if st.session_state.language == "ID" else f"{valid_files_processed} files successfully combined. Total {len(combined_df)} rows."
+                    st.toast(summary_toast_message, icon="🎉")
                     
+                    # --- Tampilan Data Mentah ---
+                    st.markdown("**{}:**".format("Data Transaksi yang Diunggah (5 Baris Pertama)" if st.session_state.language == "ID" else "Uploaded Transaction Data (First 5 Rows)"), unsafe_allow_html=True)
+                    st.dataframe(combined_df.head())
+
+                    # --- Tampilan Rangkuman Bulanan ---
+                    st.markdown("**{}:**".format("Rangkuman Penjualan Bulanan" if st.session_state.language == "ID" else "Monthly Sales Summary"), unsafe_allow_html=True)
+                    
+                    # Create a monthly summary
+                    monthly_summary = combined_df.groupby([pd.Grouper(key='waktu', freq='M'), 'nama_produk'])['jumlah'].sum().reset_index()
+                    monthly_summary['tahun'] = monthly_summary['waktu'].dt.year
+                    monthly_summary['bulan'] = monthly_summary['waktu'].dt.month
+                    monthly_summary = monthly_summary.sort_values(by=['nama_produk', 'waktu']).reset_index(drop=True)
+
+                    # Calculate features on the monthly summary
+                    monthly_summary['penjualan_bulan_lalu_1'] = monthly_summary.groupby('nama_produk')['jumlah'].shift(1).fillna(0)
+                    monthly_summary['rata_rata_3_bulan'] = monthly_summary.groupby('nama_produk')['jumlah'].rolling(window=3, min_periods=3).mean().reset_index(level=0, drop=True).fillna(0)
+                    
+                    # Reorder columns for better readability
+                    monthly_summary = monthly_summary[['tahun', 'bulan', 'nama_produk', 'jumlah', 'penjualan_bulan_lalu_1', 'rata_rata_3_bulan']]
+                    
+                    # Display a summary for each year (first 6 months)
+                    display_summary = monthly_summary.groupby('tahun').head(6).reset_index(drop=True)
+                    st.dataframe(display_summary)
+
                     if st.session_state.mode == 'Advanced':
                         # Validation metrics can be displayed here as before
                         pass

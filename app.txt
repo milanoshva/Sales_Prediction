@@ -1528,3 +1528,254 @@ Feature names seen at fit time, yet now missing:
 2025-08-07 17:36:19,110 - INFO - Analytics page accessed at: 2025-08-07 17:36:19
 2025-08-07 17:36:20,211 - INFO - Analytics page accessed at: 2025-08-07 17:36:20
 2025-08-07 17:36:30,901 - INFO - Mode set to: Normal
+2025-08-07 23:13:40,356 - INFO - Mode set to: Normal
+2025-08-07 23:13:44,794 - INFO - Mode set to: Normal
+2025-08-07 23:13:51,851 - INFO - Mode set to: Normal
+2025-08-07 23:13:58,114 - INFO - Mode set to: Normal
+2025-08-07 23:13:58,131 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-07 23:13:58,481 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-07 23:13:58,551 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 23:13:58,696 - INFO - Cleaning currency column: harga
+2025-08-07 23:13:58,821 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 23:13:58,955 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 23:13:59,143 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-07 23:13:59,143 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-07 23:13:59,446 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-07 23:13:59,495 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 23:13:59,610 - INFO - Cleaning currency column: harga
+2025-08-07 23:13:59,743 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 23:13:59,884 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 23:14:00,104 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-07 23:14:05,341 - INFO - Analytics page accessed at: 2025-08-07 23:14:05
+2025-08-07 23:47:39,499 - INFO - Model trained successfully. Test R²: 0.970, Test MAPE: 5.84%
+2025-08-07 23:52:22,662 - INFO - Prediction made for AGLIO e OLIO in 1/2025: 23
+2025-08-07 23:52:31,712 - INFO - Prediction made for Air Mineral in 1/2025: 522
+2025-08-07 23:52:39,355 - INFO - Analytics page accessed at: 2025-08-07 23:52:39
+2025-08-07 23:52:56,352 - INFO - Mode set to: Normal
+2025-08-07 23:53:09,807 - INFO - Analytics page accessed at: 2025-08-07 23:53:09
+2025-08-07 23:59:07,065 - INFO - Mode set to: Normal
+2025-08-07 23:59:07,082 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-07 23:59:07,400 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-07 23:59:07,472 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 23:59:07,591 - INFO - Cleaning currency column: harga
+2025-08-07 23:59:07,699 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 23:59:07,804 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 23:59:07,981 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-07 23:59:07,981 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-07 23:59:08,302 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-07 23:59:08,345 - INFO - Cleaning currency column: harga_satuan
+2025-08-07 23:59:08,476 - INFO - Cleaning currency column: harga
+2025-08-07 23:59:08,609 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-07 23:59:08,739 - INFO - Cleaning currency column: total_pembayaran
+2025-08-07 23:59:08,916 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-07 23:59:10,699 - INFO - Analytics page accessed at: 2025-08-07 23:59:10
+2025-08-08 00:26:46,594 - INFO - Mode set to: Normal
+2025-08-08 00:28:16,762 - INFO - Mode set to: Normal
+2025-08-08 15:29:51,546 - INFO - Mode set to: Normal
+2025-08-08 15:30:10,358 - INFO - Mode set to: Normal
+2025-08-08 15:30:10,373 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 15:30:10,703 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 15:30:10,776 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 15:30:10,891 - INFO - Cleaning currency column: harga
+2025-08-08 15:30:10,994 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 15:30:11,112 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 15:30:11,315 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 15:30:11,315 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 15:30:11,582 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 15:30:11,624 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 15:30:11,745 - INFO - Cleaning currency column: harga
+2025-08-08 15:30:11,852 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 15:30:11,988 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 15:30:12,176 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 15:30:25,978 - INFO - Analytics page accessed at: 2025-08-08 15:30:25
+2025-08-08 15:30:49,337 - INFO - Analytics page accessed at: 2025-08-08 15:30:49
+2025-08-08 15:31:28,007 - INFO - Mode set to: Normal
+2025-08-08 15:38:45,499 - INFO - Mode set to: Normal
+2025-08-08 15:38:48,334 - INFO - Mode set to: Normal
+2025-08-08 15:38:53,660 - INFO - Mode set to: Normal
+2025-08-08 15:39:07,223 - INFO - Mode set to: Normal
+2025-08-08 15:39:07,236 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 15:39:07,521 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 15:39:07,559 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 15:39:07,685 - INFO - Cleaning currency column: harga
+2025-08-08 15:39:07,816 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 15:39:07,924 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 15:39:08,241 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 15:39:08,242 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 15:39:08,517 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 15:39:08,558 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 15:39:08,681 - INFO - Cleaning currency column: harga
+2025-08-08 15:39:08,815 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 15:39:08,947 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 15:39:09,224 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 15:39:26,382 - INFO - Analytics page accessed at: 2025-08-08 15:39:26
+2025-08-08 15:39:26,624 - INFO - Mode set to: Normal
+2025-08-08 15:41:21,521 - INFO - Mode set to: Normal
+2025-08-08 15:41:21,532 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 15:41:21,817 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 15:41:21,854 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 15:41:21,984 - INFO - Cleaning currency column: harga
+2025-08-08 15:41:22,101 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 15:41:22,217 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 15:41:22,526 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 15:41:22,527 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 15:41:22,826 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 15:41:22,866 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 15:41:22,987 - INFO - Cleaning currency column: harga
+2025-08-08 15:41:23,096 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 15:41:23,218 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 15:41:23,491 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:02:08,277 - INFO - Mode set to: Normal
+2025-08-08 16:02:08,292 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:02:08,580 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:02:08,619 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:02:08,732 - INFO - Cleaning currency column: harga
+2025-08-08 16:02:08,843 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:02:08,962 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:02:09,220 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:02:09,221 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:02:09,514 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:02:09,553 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:02:09,671 - INFO - Cleaning currency column: harga
+2025-08-08 16:02:09,793 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:02:09,912 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:02:10,183 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:02:10,183 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:02:10,453 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:02:10,490 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:02:10,605 - INFO - Cleaning currency column: harga
+2025-08-08 16:02:10,729 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:02:10,848 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:02:11,104 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:02:17,249 - INFO - Mode set to: Normal
+2025-08-08 16:02:17,261 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:02:17,531 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:02:17,570 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:02:17,687 - INFO - Cleaning currency column: harga
+2025-08-08 16:02:17,803 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:02:17,923 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:02:18,051 - INFO - Mode set to: Normal
+2025-08-08 16:02:18,060 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:02:18,298 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:02:18,477 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:02:18,517 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:02:18,639 - INFO - Cleaning currency column: harga
+2025-08-08 16:02:18,769 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:02:18,888 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:02:19,152 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:02:30,006 - INFO - Mode set to: Normal
+2025-08-08 16:02:35,918 - INFO - Mode set to: Normal
+2025-08-08 16:02:35,925 - INFO - Reading file: igangebul_transaksi_2025_realistis.csv
+2025-08-08 16:02:35,981 - INFO - Successfully read igangebul_transaksi_2025_realistis.csv with separator ','.
+2025-08-08 16:02:35,988 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:02:36,006 - INFO - Cleaning currency column: harga
+2025-08-08 16:02:36,024 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:02:36,041 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:02:36,081 - INFO - Data processed successfully, 15411 rows remaining
+2025-08-08 16:09:59,063 - INFO - Mode set to: Normal
+2025-08-08 16:09:59,072 - INFO - Reading file: igangebul_transaksi_2025_realistis.csv
+2025-08-08 16:09:59,115 - INFO - Successfully read igangebul_transaksi_2025_realistis.csv with separator ','.
+2025-08-08 16:09:59,121 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:09:59,136 - INFO - Cleaning currency column: harga
+2025-08-08 16:09:59,151 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:09:59,166 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:09:59,191 - INFO - Data processed successfully, 15411 rows remaining
+2025-08-08 16:10:06,217 - INFO - Mode set to: Normal
+2025-08-08 16:10:12,921 - INFO - Mode set to: Normal
+2025-08-08 16:10:12,939 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:10:13,265 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:10:13,312 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:10:13,453 - INFO - Cleaning currency column: harga
+2025-08-08 16:10:13,576 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:10:13,700 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:10:13,901 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:10:13,901 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:10:14,190 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:10:14,234 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:10:14,374 - INFO - Cleaning currency column: harga
+2025-08-08 16:10:14,499 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:10:14,632 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:10:14,800 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:15:11,382 - INFO - Mode set to: Normal
+2025-08-08 16:15:11,399 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:15:11,767 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:15:11,822 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:15:11,986 - INFO - Cleaning currency column: harga
+2025-08-08 16:15:12,243 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:15:12,463 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:15:12,749 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:15:12,949 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:15:13,447 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:15:13,516 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:15:13,730 - INFO - Cleaning currency column: harga
+2025-08-08 16:15:13,941 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:15:14,132 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:15:14,398 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:18:34,307 - INFO - Mode set to: Normal
+2025-08-08 16:18:34,325 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:18:34,635 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:18:34,680 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:18:34,808 - INFO - Cleaning currency column: harga
+2025-08-08 16:18:34,922 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:18:35,041 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:18:35,245 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:18:35,246 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:18:35,680 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:18:35,758 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:18:35,977 - INFO - Cleaning currency column: harga
+2025-08-08 16:18:36,204 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:18:36,384 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:18:36,704 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:19:04,657 - INFO - Mode set to: Normal
+2025-08-08 16:19:16,940 - INFO - Mode set to: Normal
+2025-08-08 16:19:20,577 - INFO - Mode set to: Normal
+2025-08-08 16:19:26,033 - INFO - Mode set to: Normal
+2025-08-08 16:19:26,055 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:19:26,418 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:19:26,466 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:19:26,614 - INFO - Cleaning currency column: harga
+2025-08-08 16:19:26,754 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:19:26,876 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:19:27,077 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:19:27,077 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:19:27,361 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:19:27,402 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:19:27,528 - INFO - Cleaning currency column: harga
+2025-08-08 16:19:27,652 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:19:27,789 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:19:27,979 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:20:36,899 - INFO - Mode set to: Advanced
+2025-08-08 16:20:36,909 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:20:37,179 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:20:37,216 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:20:37,338 - INFO - Cleaning currency column: harga
+2025-08-08 16:20:37,458 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:20:37,575 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:20:37,749 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:20:37,750 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:20:38,011 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:20:38,048 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:20:38,173 - INFO - Cleaning currency column: harga
+2025-08-08 16:20:38,290 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:20:38,409 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:20:38,583 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:22:42,384 - INFO - Mode set to: Advanced
+2025-08-08 16:22:42,397 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 16:22:42,699 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 16:22:42,744 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:22:42,860 - INFO - Cleaning currency column: harga
+2025-08-08 16:22:42,992 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:22:43,123 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:22:43,312 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 16:22:43,312 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 16:22:43,635 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 16:22:43,682 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 16:22:43,822 - INFO - Cleaning currency column: harga
+2025-08-08 16:22:43,957 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 16:22:44,064 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 16:22:44,231 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 16:22:50,408 - INFO - Analytics page accessed at: 2025-08-08 16:22:50
+2025-08-08 16:23:10,890 - INFO - Analytics page accessed at: 2025-08-08 16:23:10
+2025-08-08 16:29:15,136 - INFO - Analytics page accessed at: 2025-08-08 16:29:15
+2025-08-08 16:29:15,758 - INFO - Mode set to: Advanced
+2025-08-08 16:29:16,655 - INFO - Analytics page accessed at: 2025-08-08 16:29:16
