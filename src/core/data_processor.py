@@ -11,17 +11,28 @@ logging.basicConfig(level=logging.INFO, filename='app.txt', format='%(asctime)s 
 
 # Fungsi pembersihan mata uang yang telah diperbaiki
 def clean_currency(value):
-    """Converts a currency string (e.g., 'Rp10.000,50') to a float."""
+    """Mengonversi string mata uang (misalnya, 'Rp10.000,50') menjadi float. Dibuat tangguh untuk menangani data yang kotor."""
     if isinstance(value, (int, float)):
         return float(value)
     if isinstance(value, str):
         try:
-            # Menghapus 'Rp', spasi, dan titik sebagai pemisah ribuan, lalu mengganti koma dengan titik desimal
-            return float(value.replace('Rp', '').strip().replace('.', '').replace(',', '.'))
-        except (ValueError, AttributeError) as e: # <-- PERBAIKAN: "as e" ditambahkan di sini
-            # Log error jika terjadi kegagalan konversi
-            logging.error(f"Failed to clean currency value '{value}': {e}", exc_info=True)
-            return np.nan # Mengembalikan NaN jika gagal
+            # Membersihkan string dari karakter umum mata uang
+            s = value.replace('Rp', '').strip()
+            
+            # Jika ada beberapa nilai yang digabungkan (misal '27.05625.289'),
+            # kita coba ambil bagian pertama.
+            # Ini adalah heuristik untuk data yang sangat kotor seperti 'Rp27.056Rp25.289'
+            if 'Rp' in value and value.count('Rp') > 1:
+                # Contoh: 'Rp27.056Rp25.289' -> split('Rp') -> ['', '27.056', '25.289'] -> ambil s = '27.056'
+                s = value.split('Rp')[1]
+
+            # Menghapus titik sebagai pemisah ribuan, lalu mengganti koma dengan titik desimal
+            cleaned_s = s.replace('.', '').replace(',', '.')
+            return float(cleaned_s)
+        except (ValueError, IndexError, AttributeError):
+            # IndexError jika split gagal, ValueError jika float() gagal
+            logging.warning(f"Tidak dapat mengonversi string mata uang: '{value}'. Mengembalikan NaN.")
+            return np.nan
     return np.nan
 
 def process_data(df):
@@ -148,7 +159,8 @@ def create_advanced_features(df, feature_maps=None, is_training=True):
     for col in numeric_cols:
         if col != 'jumlah':  # Don't fill target variable
             df_enhanced[col] = df_enhanced[col].fillna(df_enhanced[col].median())
-    return (df_enhanced, feature_maps) if is_training else df_enhanced
+    # FIX: Always return a tuple for consistent output
+    return df_enhanced, feature_maps
 
 def optimize_hyperparameters(X, y, model_name, cv_folds):
     # ... (kode tidak berubah)

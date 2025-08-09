@@ -168,7 +168,7 @@ with st.container():
                     st.markdown("**{}:**".format("Rangkuman Penjualan Bulanan" if st.session_state.language == "ID" else "Monthly Sales Summary"), unsafe_allow_html=True)
                     
                     # Create a monthly summary
-                    monthly_summary = combined_df.groupby([pd.Grouper(key='waktu', freq='M'), 'nama_produk'])['jumlah'].sum().reset_index()
+                    monthly_summary = combined_df.groupby([pd.Grouper(key='waktu', freq='ME'), 'nama_produk'])['jumlah'].sum().reset_index()
                     monthly_summary['tahun'] = monthly_summary['waktu'].dt.year
                     monthly_summary['bulan'] = monthly_summary['waktu'].dt.month
                     monthly_summary = monthly_summary.sort_values(by=['nama_produk', 'waktu']).reset_index(drop=True)

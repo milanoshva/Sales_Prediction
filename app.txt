@@ -1779,3 +1779,503 @@ Feature names seen at fit time, yet now missing:
 2025-08-08 16:29:15,136 - INFO - Analytics page accessed at: 2025-08-08 16:29:15
 2025-08-08 16:29:15,758 - INFO - Mode set to: Advanced
 2025-08-08 16:29:16,655 - INFO - Analytics page accessed at: 2025-08-08 16:29:16
+2025-08-08 17:09:25,972 - INFO - Mode set to: Advanced
+2025-08-08 17:10:43,877 - INFO - Analytics page accessed at: 2025-08-08 17:10:43
+2025-08-08 17:10:45,785 - INFO - Mode set to: Advanced
+2025-08-08 17:14:43,970 - INFO - Analytics page accessed at: 2025-08-08 17:14:43
+2025-08-08 17:14:46,431 - INFO - Mode set to: Advanced
+2025-08-08 17:14:53,658 - INFO - Analytics page accessed at: 2025-08-08 17:14:53
+2025-08-08 17:45:28,210 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-08 17:45:28,811 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-08 17:45:28,811 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-08 17:45:28,917 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 17:45:29,247 - INFO - Cleaning currency column: harga
+2025-08-08 17:45:29,633 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 17:45:30,021 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 17:45:30,528 - INFO - Data processed successfully, 226342 rows remaining
+2025-08-08 17:45:30,528 - INFO - Data setelah pembersihan awal: 226342 baris
+2025-08-08 17:45:30,529 - INFO - Mengagregasi data ke level bulanan...
+2025-08-08 17:45:30,641 - INFO - Data teragregasi: 3312 baris
+2025-08-08 17:45:30,676 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-08 17:45:33,327 - INFO - Jumlah fitur yang dibuat: 46
+2025-08-08 17:45:33,327 - INFO - Menangani outliers dan transformasi data...
+2025-08-08 17:45:33,333 - INFO - Menghapus 135 outliers (Z-score > 3.0)
+2025-08-08 17:45:33,343 - INFO - Menerapkan transformasi log pada target
+2025-08-08 17:45:33,344 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-08 17:45:33,350 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-08 17:45:33,430 - INFO - Memilih 20 fitur terbaik...
+2025-08-08 17:45:33,449 - INFO - Fitur terpilih: 20 dari 46
+2025-08-08 17:45:33,500 - INFO - Memulai pelatihan model...
+2025-08-08 17:45:33,500 - INFO - Melakukan optimasi hyperparameter...
+2025-08-08 17:46:53,609 - INFO - Melatih model Random Forest...
+2025-08-08 17:46:59,263 - INFO - Melatih model XGBoost...
+2025-08-08 17:46:59,382 - INFO - Melatih model LightGBM...
+2025-08-08 17:46:59,635 - INFO - Melatih model ensemble...
+2025-08-08 17:47:03,895 - INFO - Pelatihan semua model selesai!
+2025-08-08 17:47:03,895 - INFO - Mengevaluasi performa model...
+2025-08-08 17:47:03,896 - INFO - Evaluasi model Random Forest...
+2025-08-08 17:47:04,106 - INFO - Random Forest - Test R²: 0.940, Test MAPE: 7.43%
+2025-08-08 17:47:04,106 - INFO - Evaluasi model XGBoost...
+2025-08-08 17:47:04,171 - INFO - XGBoost - Test R²: 0.886, Test MAPE: 8.86%
+2025-08-08 17:47:04,172 - INFO - Evaluasi model LightGBM...
+2025-08-08 17:47:04,199 - INFO - LightGBM - Test R²: 0.931, Test MAPE: 6.29%
+2025-08-08 17:47:04,200 - INFO - Evaluasi model Gabungan...
+2025-08-08 17:47:04,490 - INFO - Gabungan - Test R²: 0.983, Test MAPE: 5.31%
+2025-08-08 17:47:04,490 - INFO - Menyimpan model dan artefak...
+2025-08-08 17:47:04,748 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-08 17:47:04,753 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-08 17:47:04,767 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-08 17:47:05,277 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-08 17:47:05,280 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-08 17:47:05,335 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-08 17:47:05,335 - INFO - === PELATIHAN SELESAI ===
+2025-08-08 17:47:54,494 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-08 17:47:55,105 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-08 17:47:55,105 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-08 17:47:55,219 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 17:47:55,559 - INFO - Cleaning currency column: harga
+2025-08-08 17:47:55,931 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 17:47:56,279 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 17:47:56,759 - INFO - Data processed successfully, 226342 rows remaining
+2025-08-08 17:47:56,759 - INFO - Data setelah pembersihan awal: 226342 baris
+2025-08-08 17:47:56,760 - INFO - Mengagregasi data ke level bulanan...
+2025-08-08 17:47:56,825 - INFO - Data teragregasi: 3312 baris
+2025-08-08 17:47:56,842 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-08 17:47:57,993 - INFO - Jumlah fitur yang dibuat: 46
+2025-08-08 17:47:57,993 - INFO - Menangani outliers dan transformasi data...
+2025-08-08 17:47:57,995 - INFO - Menghapus 135 outliers (Z-score > 3.0)
+2025-08-08 17:47:58,002 - INFO - Menerapkan transformasi log pada target
+2025-08-08 17:47:58,002 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-08 17:47:58,003 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-08 17:47:58,041 - INFO - Memilih 20 fitur terbaik...
+2025-08-08 17:47:58,045 - INFO - Fitur terpilih: 20 dari 46
+2025-08-08 17:47:58,069 - INFO - Memulai pelatihan model...
+2025-08-08 17:47:58,069 - INFO - Melakukan optimasi hyperparameter...
+2025-08-08 17:49:24,203 - INFO - Melatih model Random Forest...
+2025-08-08 17:49:28,704 - INFO - Melatih model XGBoost...
+2025-08-08 17:49:28,823 - INFO - Melatih model LightGBM...
+2025-08-08 17:49:29,077 - INFO - Melatih model ensemble...
+2025-08-08 17:49:33,093 - INFO - Pelatihan semua model selesai!
+2025-08-08 17:49:33,093 - INFO - Mengevaluasi performa model...
+2025-08-08 17:49:33,094 - INFO - Evaluasi model Random Forest...
+2025-08-08 17:49:33,364 - INFO - Random Forest - Test R²: 0.940, Test MAPE: 7.43%
+2025-08-08 17:49:33,364 - INFO - Evaluasi model XGBoost...
+2025-08-08 17:49:33,385 - INFO - XGBoost - Test R²: 0.886, Test MAPE: 8.86%
+2025-08-08 17:49:33,385 - INFO - Evaluasi model LightGBM...
+2025-08-08 17:49:33,424 - INFO - LightGBM - Test R²: 0.931, Test MAPE: 6.29%
+2025-08-08 17:49:33,424 - INFO - Evaluasi model Gabungan...
+2025-08-08 17:49:33,725 - INFO - Gabungan - Test R²: 0.983, Test MAPE: 5.31%
+2025-08-08 17:49:33,725 - INFO - Menyimpan model dan artefak...
+2025-08-08 17:49:33,975 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-08 17:49:33,981 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-08 17:49:33,993 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-08 17:49:34,457 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-08 17:49:34,460 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-08 17:49:34,505 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-08 17:49:34,505 - INFO - === PELATIHAN SELESAI ===
+2025-08-08 17:50:38,310 - INFO - Mode set to: Normal
+2025-08-08 17:50:52,931 - INFO - Mode set to: Normal
+2025-08-08 17:50:52,944 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 17:50:53,264 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 17:50:53,312 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 17:50:53,479 - INFO - Cleaning currency column: harga
+2025-08-08 17:50:53,635 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 17:50:53,780 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 17:50:53,996 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 17:50:54,108 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 17:50:54,413 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 17:50:54,463 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 17:50:54,638 - INFO - Cleaning currency column: harga
+2025-08-08 17:50:54,794 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 17:50:54,950 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 17:50:55,183 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 17:53:10,142 - INFO - Analytics page accessed at: 2025-08-08 17:53:10
+2025-08-08 17:53:15,993 - INFO - Mode set to: Normal
+2025-08-08 17:53:36,175 - INFO - Analytics page accessed at: 2025-08-08 17:53:36
+2025-08-08 17:53:39,086 - INFO - Analytics page accessed at: 2025-08-08 17:53:39
+2025-08-08 17:53:39,362 - INFO - Mode set to: Normal
+2025-08-08 17:58:50,709 - INFO - Analytics page accessed at: 2025-08-08 17:58:50
+2025-08-08 17:58:55,760 - INFO - Mode set to: Normal
+2025-08-08 17:59:00,540 - INFO - Analytics page accessed at: 2025-08-08 17:59:00
+2025-08-08 18:03:21,026 - INFO - Analytics page accessed at: 2025-08-08 18:03:21
+2025-08-08 18:05:33,233 - INFO - Mode set to: Normal
+2025-08-08 18:05:35,693 - INFO - Mode set to: Normal
+2025-08-08 18:05:39,904 - INFO - Mode set to: Normal
+2025-08-08 18:05:45,665 - INFO - Mode set to: Normal
+2025-08-08 18:05:45,676 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 18:05:46,018 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 18:05:46,063 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 18:05:46,229 - INFO - Cleaning currency column: harga
+2025-08-08 18:05:46,395 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 18:05:46,576 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 18:05:46,789 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 18:05:46,789 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 18:05:47,088 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 18:05:47,130 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 18:05:47,287 - INFO - Cleaning currency column: harga
+2025-08-08 18:05:47,445 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 18:05:47,609 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 18:05:47,835 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 18:08:23,278 - INFO - Mode set to: Normal
+2025-08-08 18:08:53,728 - INFO - Analytics page accessed at: 2025-08-08 18:08:53
+2025-08-08 21:09:03,746 - INFO - Mode set to: Normal
+2025-08-08 21:09:16,565 - INFO - Mode set to: Normal
+2025-08-08 21:09:16,579 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 21:09:16,970 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 21:09:17,039 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 21:09:17,241 - INFO - Cleaning currency column: harga
+2025-08-08 21:09:17,443 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 21:09:17,644 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 21:09:17,967 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 21:09:18,064 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 21:09:18,428 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 21:09:18,482 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 21:09:18,665 - INFO - Cleaning currency column: harga
+2025-08-08 21:09:18,835 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 21:09:20,082 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 21:09:21,998 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 21:11:18,619 - INFO - Mode set to: Normal
+2025-08-08 21:11:47,972 - INFO - Analytics page accessed at: 2025-08-08 21:11:47
+2025-08-08 21:11:53,702 - INFO - Mode set to: Normal
+2025-08-08 21:13:12,113 - INFO - Analytics page accessed at: 2025-08-08 21:13:12
+2025-08-08 21:14:08,394 - INFO - Analytics page accessed at: 2025-08-08 21:14:08
+2025-08-08 21:14:15,573 - INFO - Mode set to: Normal
+2025-08-08 21:15:42,918 - INFO - Analytics page accessed at: 2025-08-08 21:15:42
+2025-08-08 21:16:18,462 - INFO - Analytics page accessed at: 2025-08-08 21:16:18
+2025-08-08 21:16:21,547 - INFO - Analytics page accessed at: 2025-08-08 21:16:21
+2025-08-08 21:22:40,870 - INFO - Mode set to: Normal
+2025-08-08 21:22:43,915 - INFO - Analytics page accessed at: 2025-08-08 21:22:43
+2025-08-08 21:23:09,342 - INFO - Analytics page accessed at: 2025-08-08 21:23:09
+2025-08-08 21:23:09,674 - INFO - Mode set to: Normal
+2025-08-08 21:23:18,862 - INFO - Analytics page accessed at: 2025-08-08 21:23:18
+2025-08-08 21:24:21,743 - INFO - Mode set to: Normal
+2025-08-08 21:24:24,191 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2700' coro=<WebSocketProtocol13.write_message.<locals>.wrapper() done, defined at C:\Users\user\AppData\Roaming\Python\Python312\site-packages\tornado\websocket.py:1086> exception=WebSocketClosedError()>
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\web\bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\tornado\websocket.py", line 1088, in wrapper
+    await fut
+tornado.iostream.StreamClosedError: Stream is closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python312\site-packages\tornado\websocket.py", line 1090, in wrapper
+    raise WebSocketClosedError()
+tornado.websocket.WebSocketClosedError
+2025-08-08 21:48:19,197 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-08 21:48:21,408 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-08 21:48:21,408 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-08 21:48:21,908 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 21:48:23,546 - INFO - Cleaning currency column: harga
+2025-08-08 21:48:24,820 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 21:48:26,413 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 21:48:28,287 - INFO - Data processed successfully, 226342 rows remaining
+2025-08-08 21:48:28,288 - INFO - Data setelah pembersihan awal: 226342 baris
+2025-08-08 21:48:28,288 - INFO - Mengagregasi data ke level bulanan...
+2025-08-08 21:48:28,677 - INFO - Data teragregasi: 3312 baris
+2025-08-08 21:48:28,763 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-08 21:48:36,528 - INFO - Jumlah fitur yang dibuat: 184
+2025-08-08 21:48:36,531 - INFO - Menangani outliers dan transformasi data...
+2025-08-08 21:48:36,552 - INFO - Menghapus 135 outliers (Z-score > 3.0)
+2025-08-08 21:48:36,596 - INFO - Menerapkan transformasi log pada target
+2025-08-08 21:48:36,598 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-08 21:48:36,624 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-08 21:48:37,655 - INFO - Memilih 20 fitur terbaik...
+2025-08-08 21:48:37,776 - INFO - Fitur terpilih: 20 dari 184
+2025-08-08 21:48:38,348 - INFO - Memulai pelatihan model...
+2025-08-08 21:48:38,349 - INFO - Melakukan optimasi hyperparameter...
+2025-08-08 21:52:21,917 - INFO - Melatih model Random Forest...
+2025-08-08 21:52:32,995 - INFO - Melatih model XGBoost...
+2025-08-08 21:52:39,133 - INFO - Melatih model LightGBM...
+2025-08-08 21:52:40,643 - INFO - Melatih model ensemble...
+2025-08-08 21:52:58,196 - INFO - Pelatihan semua model selesai!
+2025-08-08 21:52:58,197 - INFO - Mengevaluasi performa model...
+2025-08-08 21:52:58,199 - INFO - Evaluasi model Random Forest...
+2025-08-08 21:52:58,729 - INFO - Random Forest - Test R²: 0.942, Test MAPE: 7.32%
+2025-08-08 21:52:58,730 - INFO - Evaluasi model XGBoost...
+2025-08-08 21:52:58,819 - INFO - XGBoost - Test R²: 0.842, Test MAPE: 7.57%
+2025-08-08 21:52:58,820 - INFO - Evaluasi model LightGBM...
+2025-08-08 21:52:58,928 - INFO - LightGBM - Test R²: 0.930, Test MAPE: 6.20%
+2025-08-08 21:52:58,928 - INFO - Evaluasi model Gabungan...
+2025-08-08 21:52:59,787 - INFO - Gabungan - Test R²: 0.978, Test MAPE: 4.93%
+2025-08-08 21:52:59,787 - INFO - Menyimpan model dan artefak...
+2025-08-08 21:53:00,447 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-08 21:53:00,548 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-08 21:53:00,607 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-08 21:53:01,972 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-08 21:53:01,978 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-08 21:53:02,071 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-08 21:53:02,071 - INFO - === PELATIHAN SELESAI ===
+2025-08-08 21:57:06,113 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-08 21:57:07,039 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-08 21:57:07,039 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-08 21:57:07,187 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 21:57:07,731 - INFO - Cleaning currency column: harga
+2025-08-08 21:57:08,217 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 21:57:08,681 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 21:57:09,280 - INFO - Data processed successfully, 226342 rows remaining
+2025-08-08 21:57:09,281 - INFO - Data setelah pembersihan awal: 226342 baris
+2025-08-08 21:57:09,281 - INFO - Mengagregasi data ke level bulanan...
+2025-08-08 21:57:09,365 - INFO - Data teragregasi: 3312 baris
+2025-08-08 21:57:09,384 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-08 21:57:11,171 - INFO - Jumlah fitur yang dibuat: 184
+2025-08-08 21:57:11,172 - INFO - Menangani outliers dan transformasi data...
+2025-08-08 21:57:11,176 - INFO - Menghapus 135 outliers (Z-score > 3.0)
+2025-08-08 21:57:11,187 - INFO - Menerapkan transformasi log pada target
+2025-08-08 21:57:11,188 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-08 21:57:11,193 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-08 21:57:11,420 - INFO - Memilih 20 fitur terbaik...
+2025-08-08 21:57:11,451 - INFO - Fitur terpilih: 20 dari 184
+2025-08-08 21:57:11,602 - INFO - Memulai pelatihan model...
+2025-08-08 21:57:11,602 - INFO - Melakukan optimasi hyperparameter...
+2025-08-08 21:58:58,352 - INFO - Melatih model Random Forest...
+2025-08-08 21:59:04,972 - INFO - Melatih model XGBoost...
+2025-08-08 21:59:06,330 - INFO - Melatih model LightGBM...
+2025-08-08 21:59:06,942 - INFO - Melatih model ensemble...
+2025-08-08 21:59:13,636 - INFO - Pelatihan semua model selesai!
+2025-08-08 21:59:13,636 - INFO - Mengevaluasi performa model...
+2025-08-08 21:59:13,637 - INFO - Evaluasi model Random Forest...
+2025-08-08 21:59:13,959 - INFO - Random Forest - Test R²: 0.942, Test MAPE: 7.32%
+2025-08-08 21:59:13,959 - INFO - Evaluasi model XGBoost...
+2025-08-08 21:59:14,000 - INFO - XGBoost - Test R²: 0.847, Test MAPE: 7.73%
+2025-08-08 21:59:14,000 - INFO - Evaluasi model LightGBM...
+2025-08-08 21:59:14,066 - INFO - LightGBM - Test R²: 0.930, Test MAPE: 6.20%
+2025-08-08 21:59:14,066 - INFO - Evaluasi model Gabungan...
+2025-08-08 21:59:14,487 - INFO - Gabungan - Test R²: 0.979, Test MAPE: 4.82%
+2025-08-08 21:59:14,488 - INFO - Menyimpan model dan artefak...
+2025-08-08 21:59:14,817 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-08 21:59:14,842 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-08 21:59:14,868 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-08 21:59:15,587 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-08 21:59:15,591 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-08 21:59:15,663 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-08 21:59:15,663 - INFO - === PELATIHAN SELESAI ===
+2025-08-08 23:44:29,411 - INFO - Mode set to: Normal
+2025-08-08 23:44:40,223 - INFO - Mode set to: Normal
+2025-08-08 23:44:40,238 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-08 23:44:40,522 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-08 23:44:40,561 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 23:44:40,711 - INFO - Cleaning currency column: harga
+2025-08-08 23:44:40,827 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 23:44:40,953 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 23:44:41,173 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-08 23:44:41,218 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-08 23:44:41,493 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-08 23:44:41,532 - INFO - Cleaning currency column: harga_satuan
+2025-08-08 23:44:41,660 - INFO - Cleaning currency column: harga
+2025-08-08 23:44:41,805 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-08 23:44:41,938 - INFO - Cleaning currency column: total_pembayaran
+2025-08-08 23:44:42,152 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-08 23:45:28,893 - INFO - Analytics page accessed at: 2025-08-08 23:45:28
+INFO:__main__:Analytics page accessed at: 2025-08-09 20:44:27
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Mode set to: Normal
+INFO:__main__:Reading file: haluna_transaksi_2024_realistis (1).csv
+INFO:__main__:Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113161 rows remaining
+INFO:__main__:Reading file: haluna_transaksi_2023_realistis.csv
+INFO:__main__:Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+INFO:root:Cleaning currency column: harga_satuan
+INFO:root:Cleaning currency column: harga
+INFO:root:Cleaning currency column: harga_setelah_pajak
+INFO:root:Cleaning currency column: total_pembayaran
+INFO:root:Data processed successfully, 113181 rows remaining
+INFO:__main__:Analytics page accessed at: 2025-08-09 20:45:11
+2025-08-09 20:52:50,401 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-09 20:52:51,612 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-09 20:52:51,612 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-09 20:52:51,791 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 20:52:52,331 - INFO - Cleaning currency column: harga
+2025-08-09 20:52:52,921 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 20:52:53,441 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 20:52:54,258 - INFO - Data processed successfully, 226342 rows remaining
+2025-08-09 20:52:54,258 - INFO - Data setelah pembersihan awal: 226342 baris
+2025-08-09 20:52:54,258 - INFO - Mengagregasi data ke level bulanan...
+2025-08-09 20:52:54,373 - INFO - Data teragregasi: 3312 baris
+2025-08-09 20:52:54,395 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-09 20:52:56,978 - INFO - Jumlah fitur yang dibuat: 184
+2025-08-09 20:52:56,979 - INFO - Menangani outliers dan transformasi data...
+2025-08-09 20:52:56,990 - INFO - Menghapus 135 outliers (Z-score > 3.0)
+2025-08-09 20:52:57,007 - INFO - Menerapkan transformasi log pada target
+2025-08-09 20:52:57,009 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-09 20:52:57,021 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-09 20:52:57,415 - INFO - Memilih 20 fitur terbaik...
+2025-08-09 20:52:57,459 - INFO - Fitur terpilih: 20 dari 184
+2025-08-09 20:52:57,703 - INFO - Memulai pelatihan model...
+2025-08-09 20:52:57,704 - INFO - Melakukan optimasi hyperparameter...
+2025-08-09 20:54:40,608 - INFO - Melatih model Random Forest...
+2025-08-09 20:54:46,390 - INFO - Melatih model XGBoost...
+2025-08-09 20:54:49,712 - INFO - Melatih model LightGBM...
+2025-08-09 20:54:50,826 - INFO - Melatih model ensemble...
+2025-08-09 20:55:04,019 - INFO - Pelatihan semua model selesai!
+2025-08-09 20:55:04,019 - INFO - Mengevaluasi performa model...
+2025-08-09 20:55:04,021 - INFO - Evaluasi model Random Forest...
+2025-08-09 20:55:04,547 - INFO - Random Forest - Test R²: 0.942, Test MAPE: 7.32%
+2025-08-09 20:55:04,547 - INFO - Evaluasi model XGBoost...
+2025-08-09 20:55:04,627 - INFO - XGBoost - Test R²: 0.842, Test MAPE: 7.57%
+2025-08-09 20:55:04,628 - INFO - Evaluasi model LightGBM...
+2025-08-09 20:55:04,710 - INFO - LightGBM - Test R²: 0.930, Test MAPE: 6.20%
+2025-08-09 20:55:04,710 - INFO - Evaluasi model Gabungan...
+2025-08-09 20:55:05,302 - INFO - Gabungan - Test R²: 0.978, Test MAPE: 4.93%
+2025-08-09 20:55:05,303 - INFO - Menyimpan model dan artefak...
+2025-08-09 20:55:05,849 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-09 20:55:05,892 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-09 20:55:05,928 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-09 20:55:06,708 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-09 20:55:06,712 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-09 20:55:06,783 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-09 20:55:06,784 - INFO - === PELATIHAN SELESAI ===
+2025-08-09 20:57:56,400 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-09 20:57:56,401 - ERROR - File tidak ditemukan: data\haluna_transaksi_gabungan.csv
+2025-08-09 20:57:56,401 - ERROR - Pelatihan gagal: [Errno 2] No such file or directory: 'data\\haluna_transaksi_gabungan.csv'
+Traceback (most recent call last):
+  File "C:\Skripsi_Prediksi_Penjualan\train_model.py", line 324, in main
+    df_agg = load_and_preprocess_data(data_file_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Skripsi_Prediksi_Penjualan\train_model.py", line 73, in load_and_preprocess_data
+    with open(file_path, 'r', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\haluna_transaksi_gabungan.csv'
+2025-08-09 21:01:41,831 - INFO - Memuat data dari data\haluna_transaksi_gabungan.csv...
+2025-08-09 21:01:41,831 - ERROR - File tidak ditemukan: data\haluna_transaksi_gabungan.csv
+2025-08-09 21:01:41,832 - ERROR - Pelatihan gagal: [Errno 2] No such file or directory: 'data\\haluna_transaksi_gabungan.csv'
+Traceback (most recent call last):
+  File "C:\Skripsi_Prediksi_Penjualan\train_model.py", line 324, in main
+    df_agg = load_and_preprocess_data(data_file_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Skripsi_Prediksi_Penjualan\train_model.py", line 73, in load_and_preprocess_data
+    with open(file_path, 'r', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\haluna_transaksi_gabungan.csv'
+2025-08-09 21:02:17,027 - INFO - Memuat data dari data\transaksi_haluna_2023-2024.csv...
+2025-08-09 21:02:18,220 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-09 21:02:18,221 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-09 21:02:18,444 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:02:19,131 - INFO - Cleaning currency column: harga
+2025-08-09 21:02:19,771 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:02:20,353 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:02:21,202 - INFO - Data processed successfully, 224121 rows remaining
+2025-08-09 21:02:21,202 - INFO - Data setelah pembersihan awal: 224121 baris
+2025-08-09 21:02:21,202 - INFO - Mengagregasi data ke level bulanan...
+2025-08-09 21:02:21,360 - INFO - Data teragregasi: 3216 baris
+2025-08-09 21:02:21,394 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-09 21:02:23,303 - INFO - Jumlah fitur yang dibuat: 180
+2025-08-09 21:02:23,304 - INFO - Menangani outliers dan transformasi data...
+2025-08-09 21:02:23,308 - INFO - Menghapus 131 outliers (Z-score > 3.0)
+2025-08-09 21:02:23,317 - INFO - Menerapkan transformasi log pada target
+2025-08-09 21:02:23,317 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-09 21:02:23,323 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-09 21:02:23,536 - INFO - Memilih 20 fitur terbaik...
+2025-08-09 21:02:23,562 - INFO - Fitur terpilih: 20 dari 180
+2025-08-09 21:02:23,766 - INFO - Memulai pelatihan model...
+2025-08-09 21:02:23,767 - INFO - Melakukan optimasi hyperparameter...
+2025-08-09 21:04:14,416 - INFO - Melatih model Random Forest...
+2025-08-09 21:04:18,971 - INFO - Melatih model XGBoost...
+2025-08-09 21:04:19,957 - INFO - Melatih model LightGBM...
+2025-08-09 21:04:20,394 - INFO - Melatih model ensemble...
+2025-08-09 21:04:26,026 - INFO - Pelatihan semua model selesai!
+2025-08-09 21:04:26,027 - INFO - Mengevaluasi performa model...
+2025-08-09 21:04:26,029 - INFO - Evaluasi model Random Forest...
+2025-08-09 21:04:26,339 - INFO - Random Forest - Test R²: 0.965, Test MAPE: 6.57%
+2025-08-09 21:04:26,340 - INFO - Evaluasi model XGBoost...
+2025-08-09 21:04:26,391 - INFO - XGBoost - Test R²: 0.840, Test MAPE: 8.20%
+2025-08-09 21:04:26,392 - INFO - Evaluasi model LightGBM...
+2025-08-09 21:04:26,430 - INFO - LightGBM - Test R²: 0.941, Test MAPE: 6.32%
+2025-08-09 21:04:26,431 - INFO - Evaluasi model Gabungan...
+2025-08-09 21:04:26,823 - INFO - Gabungan - Test R²: 0.970, Test MAPE: 5.43%
+2025-08-09 21:04:26,823 - INFO - Menyimpan model dan artefak...
+2025-08-09 21:04:27,135 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-09 21:04:27,157 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-09 21:04:27,210 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-09 21:04:27,925 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-09 21:04:27,927 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-09 21:04:27,950 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-09 21:04:27,951 - INFO - === PELATIHAN SELESAI ===
+2025-08-09 21:07:12,303 - INFO - Mode set to: Normal
+2025-08-09 21:07:27,601 - INFO - Mode set to: Normal
+2025-08-09 21:07:27,629 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-09 21:07:27,932 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-09 21:07:28,010 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:07:28,161 - INFO - Cleaning currency column: harga
+2025-08-09 21:07:28,312 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:07:28,443 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:07:28,655 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-09 21:07:28,741 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-09 21:07:28,997 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-09 21:07:29,034 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:07:29,169 - INFO - Cleaning currency column: harga
+2025-08-09 21:07:29,324 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:07:29,481 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:07:29,685 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-09 21:13:04,626 - INFO - Memuat data dari data\transaksi_haluna_2023-2024.csv...
+2025-08-09 21:13:05,267 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-09 21:13:05,268 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-09 21:13:05,373 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:13:05,726 - INFO - Cleaning currency column: harga
+2025-08-09 21:13:06,054 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:13:06,340 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:13:06,740 - INFO - Data processed successfully, 224121 rows remaining
+2025-08-09 21:13:06,741 - INFO - Data setelah pembersihan awal: 224121 baris
+2025-08-09 21:13:06,741 - INFO - Mengagregasi data ke level bulanan...
+2025-08-09 21:13:06,844 - INFO - Data teragregasi: 3216 baris
+2025-08-09 21:13:06,859 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-09 21:13:07,909 - INFO - Jumlah fitur yang dibuat: 180
+2025-08-09 21:13:07,909 - INFO - Menangani outliers dan transformasi data...
+2025-08-09 21:13:07,948 - INFO - Menghapus 131 outliers (Z-score > 3.0)
+2025-08-09 21:13:07,955 - INFO - Menerapkan transformasi log pada target
+2025-08-09 21:13:07,955 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-09 21:13:07,959 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-09 21:13:08,162 - INFO - Memulai pelatihan model...
+2025-08-09 21:13:08,162 - INFO - Melakukan optimasi hyperparameter...
+2025-08-09 21:15:33,441 - INFO - Melatih model Random Forest...
+2025-08-09 21:15:39,284 - INFO - Melatih model XGBoost...
+2025-08-09 21:15:41,583 - INFO - Melatih model LightGBM...
+2025-08-09 21:15:42,622 - INFO - Melatih model ensemble...
+2025-08-09 21:15:51,918 - INFO - Pelatihan semua model selesai!
+2025-08-09 21:15:51,918 - INFO - Mengevaluasi performa model...
+2025-08-09 21:15:51,920 - INFO - Evaluasi model Random Forest...
+2025-08-09 21:15:52,172 - INFO - Random Forest - Test R²: 0.952, Test MAPE: 5.30%
+2025-08-09 21:15:52,172 - INFO - Evaluasi model XGBoost...
+2025-08-09 21:15:52,264 - INFO - XGBoost - Test R²: 0.837, Test MAPE: 7.05%
+2025-08-09 21:15:52,265 - INFO - Evaluasi model LightGBM...
+2025-08-09 21:15:52,334 - INFO - LightGBM - Test R²: 0.940, Test MAPE: 5.00%
+2025-08-09 21:15:52,334 - INFO - Evaluasi model Gabungan...
+2025-08-09 21:15:52,732 - INFO - Gabungan - Test R²: 0.972, Test MAPE: 3.94%
+2025-08-09 21:15:52,732 - INFO - Menyimpan model dan artefak...
+2025-08-09 21:15:52,974 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-09 21:15:53,000 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-09 21:15:53,058 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-09 21:15:53,633 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-09 21:15:53,637 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-09 21:15:53,713 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-09 21:15:53,714 - INFO - === PELATIHAN SELESAI ===
+2025-08-09 21:19:34,009 - INFO - Mode set to: Normal
+2025-08-09 21:19:47,895 - INFO - Mode set to: Normal
+2025-08-09 21:19:47,906 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-09 21:19:48,195 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-09 21:19:48,234 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:19:48,395 - INFO - Cleaning currency column: harga
+2025-08-09 21:19:48,541 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:19:48,684 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:19:48,881 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-09 21:19:48,881 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-09 21:19:49,166 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-09 21:19:49,207 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:19:49,353 - INFO - Cleaning currency column: harga
+2025-08-09 21:19:49,504 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:19:49,674 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:19:49,887 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-09 21:19:57,027 - INFO - Analytics page accessed at: 2025-08-09 21:19:57
