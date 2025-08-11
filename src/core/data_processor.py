@@ -12,34 +12,15 @@ logging.basicConfig(level=logging.INFO, filename='app.txt', format='%(asctime)s 
 
 # Enhanced currency cleaning function
 def clean_currency(value):
-    """Enhanced currency converter with better handling of edge cases."""
+    """Cleans Indonesian Rupiah currency strings to floats."""
     if isinstance(value, (int, float)):
         return float(value)
     if isinstance(value, str):
         try:
-            # Remove common currency symbols and clean
-            s = value.replace('Rp', '').replace('$', '').replace(',', '').strip()
-            
-            # Handle multiple currency values in one string
-            if 'Rp' in value and value.count('Rp') > 1:
-                parts = [p.strip() for p in value.split('Rp') if p.strip()]
-                if parts:
-                    s = parts[0]  # Take the first value
-            
-            # Clean dots and commas properly for Indonesian format
-            if '.' in s and ',' in s:
-                # Indonesian format: 1.234.567,89
-                s = s.replace('.', '').replace(',', '.')
-            elif '.' in s and s.count('.') > 1:
-                # Multiple dots (thousands separator)
-                parts = s.split('.')
-                if len(parts[-1]) <= 2:  # Last part is decimal
-                    s = ''.join(parts[:-1]) + '.' + parts[-1]
-                else:  # All dots are thousands separators
-                    s = ''.join(parts)
-            
-            return float(s)
-        except (ValueError, IndexError, AttributeError):
+            # Remove "Rp", dots (thousands separators), commas, and strip whitespace
+            cleaned_string = value.replace('Rp', '').replace('.', '').replace(',', '').strip()
+            return float(cleaned_string)
+        except (ValueError, AttributeError):
             logging.warning(f"Cannot convert currency string: '{value}'. Returning NaN.")
             return np.nan
     return np.nan
@@ -65,7 +46,7 @@ def process_data(df):
                 df[col] = 'Unknown'
 
     # Convert datetime with multiple format support
-    df['waktu'] = pd.to_datetime(df['waktu'], errors='coerce', infer_datetime_format=True)
+    df['waktu'] = pd.to_datetime(df['waktu'], errors='coerce')
 
     # Enhanced currency cleaning
     currency_cols = ['harga_satuan', 'harga', 'harga_setelah_pajak', 'total_pembayaran']
@@ -224,7 +205,9 @@ def create_advanced_features(df, feature_maps=None, is_training=True):
     
     # Price vs category average with better handling
     price_category_stats = df_enhanced.groupby('kategori_produk')['harga_satuan'].agg(['mean', 'std']).rename(columns={'mean': 'mean_cat', 'std': 'std_cat'})
-    df_enhanced = df_enhanced.merge(price_category_stats, left_on='kategori_produk', right_index=True)
+    df_enhanced = df_enhanced.merge(price_category_stats, left_on='kategori_produk', right_index=True, how='left')
+    df_enhanced['mean_cat'].fillna(df_enhanced['harga_satuan'], inplace=True) # Fallback for missing categories
+    df_enhanced['std_cat'].fillna(0, inplace=True) # Fallback for missing categories
     df_enhanced['price_vs_category_avg'] = (df_enhanced['harga_satuan'] - df_enhanced['mean_cat']) / (df_enhanced['std_cat'] + 1)
     df_enhanced.drop(['mean_cat', 'std_cat'], axis=1, inplace=True)
     
@@ -327,7 +310,7 @@ def create_advanced_features(df, feature_maps=None, is_training=True):
     ).fillna(1)
     
     # Enhanced YoY growth with better handling
-    df_enhanced['yoy_growth'] = df_enhanced.groupby(['nama_produk', 'bulan'])['jumlah'].pct_change(periods=12)
+    df_enhanced['yoy_growth'] = df_enhanced.groupby(['nama_produk', 'bulan'])['jumlah'].pct_change(periods=1)
     df_enhanced['yoy_growth'] = df_enhanced['yoy_growth'].replace([np.inf, -np.inf], 0).fillna(0)
     
     # Clip extreme values
@@ -359,19 +342,89 @@ def create_advanced_features(df, feature_maps=None, is_training=True):
     # Final cleanup of all numeric features
     numeric_cols = df_enhanced.select_dtypes(include=[np.number]).columns
     for col in numeric_cols:
-        if col != 'jumlah':  # Don't modify target variable
+        if col not in ['jumlah', 'is_prediction']:  # Don't modify target variable or prediction marker
             # Replace inf/-inf with reasonable values
             col_median = df_enhanced[col].median()
-            df_enhanced[col] = df_enhanced[col].replace([np.inf, -np.inf], col_median)
+            fallback_value = col_median if not pd.isna(col_median) else 0
+            df_enhanced[col] = df_enhanced[col].replace([np.inf, -np.inf], fallback_value)
             
             # Fill remaining NaN values
-            df_enhanced[col] = df_enhanced[col].fillna(col_median)
+            df_enhanced[col] = df_enhanced[col].fillna(fallback_value)
             
             # Clip extreme outliers (beyond 99.9th percentile)
             if df_enhanced[col].std() > 0:  # Only if there's variation
                 q999 = df_enhanced[col].quantile(0.999)
                 q001 = df_enhanced[col].quantile(0.001)
                 df_enhanced[col] = df_enhanced[col].clip(q001, q999)
+    
+    return df_enhanced, feature_maps
+
+def create_volume_aware_features(df_enhanced, feature_maps, is_training=True):
+    """
+    Create additional features that help with high-volume product prediction
+    """
+    logger.info("Creating volume-aware features...")
+    
+    # Product volume category
+    df_enhanced['product_volume_category'] = pd.cut(
+        df_enhanced.groupby('nama_produk')['jumlah'].transform('mean'),
+        bins=[0, 50, 100, 200, 500, float('inf')],
+        labels=['very_low', 'low', 'medium', 'high', 'very_high']
+    )
+    
+    # Volume stability (coefficient of variation)
+    df_enhanced['volume_stability'] = df_enhanced.groupby('nama_produk')['jumlah'].transform(
+        lambda x: x.std() / (x.mean() + 1)
+    )
+    
+    # High volume indicators
+    df_enhanced['is_high_volume'] = (
+        df_enhanced.groupby('nama_produk')['jumlah'].transform('mean') >= 500
+    ).astype(int)
+    
+    df_enhanced['is_very_high_volume'] = (
+        df_enhanced.groupby('nama_produk')['jumlah'].transform('mean') >= 800
+    ).astype(int)
+    
+    # Volume-weighted seasonal patterns
+    if is_training:
+        # Create volume-weighted seasonal multipliers
+        volume_seasonal = df_enhanced.groupby(['bulan', 'product_volume_category'])['jumlah'].mean().unstack(fill_value=0)
+        feature_maps['volume_seasonal_patterns'] = volume_seasonal.to_dict()
+    
+    # Apply volume-seasonal patterns
+    def get_volume_seasonal_factor(row):
+        patterns = feature_maps.get('volume_seasonal_patterns', {})
+        month = row['bulan']
+        volume_cat = row['product_volume_category']
+        
+        if month in patterns and volume_cat in patterns[month]:
+            return patterns[month][volume_cat]
+        else:
+            # Fallback to general seasonal
+            general_seasonal = feature_maps.get('seasonal_multipliers', {})
+            return general_seasonal.get(month, 1.0)
+    
+    df_enhanced['volume_seasonal_factor'] = df_enhanced.apply(get_volume_seasonal_factor, axis=1)
+    
+    # Volume momentum (how much volume has changed recently)
+    df_enhanced['volume_momentum_3m'] = df_enhanced.groupby('nama_produk')['jumlah'].rolling(
+        window=3, min_periods=1
+    ).apply(lambda x: (x.iloc[-1] - x.iloc[0]) / (x.iloc[0] + 1) if len(x) > 1 else 0).reset_index(0, drop=True)
+    
+    # High-volume specific lag features (these products have more stable patterns)
+    for lag in [1, 2, 3, 6, 12]:
+        lag_col = f'high_volume_lag_{lag}'
+        df_enhanced[lag_col] = df_enhanced.groupby('nama_produk')['jumlah'].shift(lag)
+        
+        # For high-volume products, use more conservative fallbacks
+        mask = df_enhanced[lag_col].isna() & (df_enhanced['is_high_volume'] == 1)
+        if mask.any():
+            # Use recent mean instead of zero
+            recent_mean = df_enhanced.loc[mask].groupby('nama_produk')['jumlah'].transform(
+                lambda x: df_enhanced[df_enhanced['nama_produk'] == x.name]['jumlah'].tail(6).mean()
+            )
+            df_enhanced.loc[mask, lag_col] = recent_mean
     
     return df_enhanced, feature_maps
 
@@ -433,84 +486,65 @@ def optimize_hyperparameters(X, y, model_name, cv_folds):
     random_search.fit(X, y)
     return random_search.best_estimator_
 
-def create_prediction_input(df_original, df_agg, scaler, feature_maps, kategori_mapping,
-                            product_name, year, month, harga_satuan_per_produk,
-                            all_features, numeric_columns):
-    """Enhanced prediction input creation with better feature alignment."""
-    # Create prediction DataFrame
+def create_prediction_input(df_original, df_agg, feature_maps, kategori_mapping,
+                            product_name, year, month, harga_satuan_per_produk):
+    """
+    Creates a rich, single-row DataFrame for prediction with all necessary features 
+    before encoding and scaling.
+    """
+    # Create a prediction DataFrame with a marker
     pred_df = pd.DataFrame([{
         'nama_produk': product_name,
         'tahun': year,
         'bulan': month,
-        'jumlah': 0,  # Placeholder
+        'jumlah': 0,  # Placeholder, will be used to create lag/rolling features
+        'is_prediction': 1
     }])
 
-    # Add required fields
+    # Add required fields for feature generation
     pred_df['kategori_produk'] = pred_df['nama_produk'].map(kategori_mapping)
     pred_df['harga_satuan'] = pred_df['nama_produk'].map(harga_satuan_per_produk)
     
-    # Handle missing values with global averages
+    # Handle missing values for the prediction row
     if pred_df['harga_satuan'].isnull().any():
         pred_df['harga_satuan'].fillna(df_original['harga_satuan'].mean(), inplace=True)
     if pred_df['kategori_produk'].isnull().any():
         pred_df['kategori_produk'].fillna('Unknown', inplace=True)
 
     # Combine with historical data for proper feature engineering
+    # We need the same columns that create_advanced_features expects
     historical_columns = ['nama_produk', 'tahun', 'bulan', 'jumlah', 'kategori_produk', 'harga_satuan']
     df_for_features = df_agg[historical_columns].copy()
     
-    # Ensure prediction row has all required columns
+    # Ensure prediction row has all required columns before concat
     for col in historical_columns:
         if col not in pred_df.columns:
+            # This logic might be redundant now but safe to keep
             pred_df[col] = 0 if df_for_features[col].dtype in ['int64', 'float64'] else 'Unknown'
     
     combined_df = pd.concat([df_for_features, pred_df], ignore_index=True)
+    combined_df['is_prediction'] = combined_df['is_prediction'].fillna(0).astype(int)
+    
+    # Sort values to ensure correct order for time-series feature calculation
     combined_df = combined_df.sort_values(by=['nama_produk', 'tahun', 'bulan']).reset_index(drop=True)
 
-    # Apply enhanced feature engineering
+    # Apply advanced feature engineering
+    # is_training=False ensures it uses the provided feature_maps
     combined_df_enhanced, _ = create_advanced_features(combined_df, feature_maps=feature_maps, is_training=False)
+    combined_df_enhanced, _ = create_volume_aware_features(combined_df_enhanced, feature_maps=feature_maps, is_training=False)
 
-    # Extract the prediction row
-    pred_input_row = combined_df_enhanced[
-        (combined_df_enhanced['nama_produk'] == product_name) &
-        (combined_df_enhanced['tahun'] == year) &
-        (combined_df_enhanced['bulan'] == month)
-    ].iloc[-1:].copy()
+    # Extract the prediction row using the marker
+    pred_input_row = combined_df_enhanced[combined_df_enhanced['is_prediction'] == 1].copy()
 
     if pred_input_row.empty:
         raise ValueError(f"Could not create prediction input for {product_name} {year}-{month}")
 
-    # Create final prediction input with proper feature alignment
-    final_pred_input = pd.DataFrame(columns=all_features, index=pred_input_row.index)
-
-    # Populate features that exist
-    for col in all_features:
-        if col in pred_input_row.columns:
-            final_pred_input[col] = pred_input_row[col]
-        else:
-            # Use intelligent defaults for missing features
-            if 'rolling_mean' in col or 'monthly_pattern' in col:
-                # Use product popularity as proxy
-                product_pop = feature_maps.get('product_popularity', {}).get(product_name, 1)
-                global_mean = feature_maps.get('global_stats', {}).get('overall_mean', 10)
-                final_pred_input[col] = global_mean * product_pop
-            elif 'seasonal_multiplier' in col:
-                final_pred_input[col] = feature_maps.get('seasonal_multipliers', {}).get(month, 1)
-            else:
-                final_pred_input[col] = 0
-
-    # Fill any remaining NaN values
-    final_pred_input = final_pred_input.fillna(0)
-
-    # Apply scaling to numeric columns
-    numeric_cols_to_scale = [col for col in numeric_columns if col in final_pred_input.columns]
-    if numeric_cols_to_scale and scaler is not None:
-        try:
-            final_pred_input[numeric_cols_to_scale] = scaler.transform(final_pred_input[numeric_cols_to_scale])
-        except Exception as e:
-            logging.warning(f"Scaling failed: {e}. Using unscaled features.")
+    # Drop the marker column as it's no longer needed
+    if 'is_prediction' in pred_input_row.columns:
+        pred_input_row = pred_input_row.drop(columns=['is_prediction'])
 
     # Get unit price for revenue calculation
     unit_price = pred_input_row['harga_satuan'].iloc[0] if not pred_input_row.empty else 0
 
-    return final_pred_input, unit_price
+    # Return the rich feature row, ready for final encoding and scaling
+    return pred_input_row, unit_price

@@ -39,32 +39,35 @@ MODEL_DIR = "models"
 DATA_DIR = "data"
 TRAINING_DATA_FILE = "transaksi_haluna_2023-2024.csv"
 
-# Enhanced configuration with better default parameters
+# Enhanced configuration with volume-aware settings
 CONFIG = {
-    'cv_folds': 15,
-    'outlier_threshold': 3.0,
-    'k_best_features': 30,
-    'use_log_transform': False,
+    'cv_folds': 5,
+    'outlier_threshold': 3.5,  # More conservative - don't remove high sales as outliers
+    'k_best_features': 35,     # More features to capture volume patterns
+    'use_log_transform': True,  # Keep disabled
     'use_feature_selection': True,
     'enable_hyperparameter_tuning': True,
     'handle_outliers': True,
     'test_size': 0.2,
-    'min_samples_per_product': 10,
+    'min_samples_per_product': 6,  # Reduced to include more products
     'feature_importance_threshold': 0.001,
-    'ensemble_weights': [0.25, 0.35, 0.3, 0.1],  # RF, XGB, LGB, GB weights
-    'use_advanced_scaling': True,  # Use both robust and standard scaling
-    'prediction_boost_factor': 1.5
+    'ensemble_weights': [0.2, 0.4, 0.3, 0.1],  # XGB gets more weight
+    'use_advanced_scaling': True,
+    'prediction_boost_factor': 1.0,  # Will be calculated dynamically per product
+    'volume_aware_boosting': True,   # New feature
+    'preserve_high_volume_outliers': True,  # New feature
+    'dynamic_seasonal_patterns': True,      # New feature
 }
 
 MODEL_PATHS = {
-    'Random Forest': os.path.join(MODEL_DIR, 'model_rf_jumlah.pkl'),
-    'XGBoost': os.path.join(MODEL_DIR, 'model_xgb_jumlah.pkl'),
-    'LightGBM': os.path.join(MODEL_DIR, 'model_lgb_jumlah.pkl'),
-    'Gradient Boosting': os.path.join(MODEL_DIR, 'model_gb_jumlah.pkl'),
-    'Gabungan': os.path.join(MODEL_DIR, 'model_ensemble_jumlah.pkl')
+    'Random Forest': 'models/model_rf_jumlah.pkl',
+    'XGBoost': 'models/model_xgb_jumlah.pkl',
+    'LightGBM': 'models/model_lgb_jumlah.pkl',
+    'Gradient Boosting': 'models/model_gb_jumlah.pkl',
+    'Gabungan': 'models/model_ensemble_jumlah.pkl'
 }
-SCALER_PATH = os.path.join(MODEL_DIR, 'robust_scaler.pkl')
-ARTIFACTS_PATH = os.path.join(MODEL_DIR, 'training_artifacts.pkl')
+SCALER_PATH = 'models/robust_scaler.pkl'
+ARTIFACTS_PATH = 'models/training_artifacts.pkl'
 
 def load_and_preprocess_data(file_path):
     """Enhanced data loading with better validation and preprocessing."""
@@ -93,7 +96,7 @@ def load_and_preprocess_data(file_path):
             continue
     
     if df is None:
-        raise ValueError("Failed to read CSV file with common separators (, ; \\t).")
+        raise ValueError("Failed to read CSV file with common separators (, ; \t).")
 
     logger.info(f"Raw data loaded: {len(df)} rows, {df.shape[1]} columns")
     
@@ -147,16 +150,92 @@ def load_and_preprocess_data(file_path):
     
     return df_agg
 
+def create_volume_aware_features(df_enhanced, feature_maps, is_training=True):
+    """
+    Create additional features that help with high-volume product prediction
+    """
+    logger.info("Creating volume-aware features...")
+    
+    # Product volume category
+    df_enhanced['product_volume_category'] = pd.cut(
+        df_enhanced.groupby('nama_produk')['jumlah'].transform('mean'),
+        bins=[0, 50, 100, 200, 500, float('inf')],
+        labels=['very_low', 'low', 'medium', 'high', 'very_high']
+    )
+    
+    # Volume stability (coefficient of variation)
+    df_enhanced['volume_stability'] = df_enhanced.groupby('nama_produk')['jumlah'].transform(
+        lambda x: x.std() / (x.mean() + 1)
+    )
+    
+    # High volume indicators
+    df_enhanced['is_high_volume'] = (
+        df_enhanced.groupby('nama_produk')['jumlah'].transform('mean') >= 500
+    ).astype(int)
+    
+    df_enhanced['is_very_high_volume'] = (
+        df_enhanced.groupby('nama_produk')['jumlah'].transform('mean') >= 800
+    ).astype(int)
+    
+    # Volume-weighted seasonal patterns
+    if is_training:
+        # Create volume-weighted seasonal multipliers
+        volume_seasonal = df_enhanced.groupby(['bulan', 'product_volume_category'])['jumlah'].mean().unstack(fill_value=0)
+        feature_maps['volume_seasonal_patterns'] = volume_seasonal.to_dict()
+    
+    # Apply volume-seasonal patterns
+    def get_volume_seasonal_factor(row):
+        patterns = feature_maps.get('volume_seasonal_patterns', {})
+        month = row['bulan']
+        volume_cat = row['product_volume_category']
+        
+        if month in patterns and volume_cat in patterns[month]:
+            return patterns[month][volume_cat]
+        else:
+            # Fallback to general seasonal
+            general_seasonal = feature_maps.get('seasonal_multipliers', {})
+            return general_seasonal.get(month, 1.0)
+    
+    df_enhanced['volume_seasonal_factor'] = df_enhanced.apply(get_volume_seasonal_factor, axis=1)
+    
+    # Volume momentum (how much volume has changed recently)
+    df_enhanced['volume_momentum_3m'] = df_enhanced.groupby('nama_produk')['jumlah'].rolling(
+        window=3, min_periods=1
+    ).apply(lambda x: (x.iloc[-1] - x.iloc[0]) / (x.iloc[0] + 1) if len(x) > 1 else 0).reset_index(0, drop=True)
+    
+    # High-volume specific lag features (these products have more stable patterns)
+    for lag in [1, 2, 3, 6, 12]:
+        lag_col = f'high_volume_lag_{lag}'
+        df_enhanced[lag_col] = df_enhanced.groupby('nama_produk')['jumlah'].shift(lag)
+        
+        # For high-volume products, use more conservative fallbacks
+        mask = df_enhanced[lag_col].isna() & (df_enhanced['is_high_volume'] == 1)
+        if mask.any():
+            # Use recent mean instead of zero
+            recent_mean = df_enhanced.loc[mask].groupby('nama_produk')['jumlah'].transform(
+                lambda x: df_enhanced[df_enhanced['nama_produk'] == x.name]['jumlah'].tail(6).mean()
+            )
+            df_enhanced.loc[mask, lag_col] = recent_mean
+    
+    return df_enhanced, feature_maps
+
 def prepare_features_and_target(df_agg, config):
     """Enhanced feature preparation with better encoding and validation."""
     logger.info("Creating advanced features for training...")
     
+    def sanitize_feature_name(name):
+        """Sanitizes a string to be a valid feature name."""
+        import re
+        # Replace any non-alphanumeric characters with underscore
+        return re.sub(r'[^A-Za-z0-9_]+', '_', name)
+
     # Ensure proper sorting for time series features
     df_train_ready = df_agg.sort_values(['nama_produk', 'tahun', 'bulan']).copy()
     
     # Create enhanced features
     df_enhanced, feature_maps = create_advanced_features(df_train_ready, is_training=True)
-    
+    df_enhanced, feature_maps = create_volume_aware_features(df_enhanced, feature_maps, is_training=True)
+
     # Enhanced product encoding with frequency-based handling
     logger.info("Encoding categorical variables...")
     
@@ -171,7 +250,8 @@ def prepare_features_and_target(df_agg, config):
     
     # Create binary features for top products
     for product in top_products:
-        df_enhanced[f'is_product_{product}'] = (df_enhanced['nama_produk'] == product).astype(int)
+        sanitized_product_name = sanitize_feature_name(product)
+        df_enhanced[f'is_product_{sanitized_product_name}'] = (df_enhanced['nama_produk'] == product).astype(int)
     
     # Traditional one-hot encoding as well
     ohe = OneHotEncoder(handle_unknown='ignore', sparse_output=False, max_categories=30)
@@ -181,6 +261,7 @@ def prepare_features_and_target(df_agg, config):
         columns=ohe.get_feature_names_out(['nama_produk']), 
         index=df_enhanced.index
     )
+    product_df.columns = [sanitize_feature_name(col) for col in product_df.columns]
     df_enhanced = pd.concat([df_enhanced, product_df], axis=1)
 
     # Enhanced category encoding
@@ -188,6 +269,9 @@ def prepare_features_and_target(df_agg, config):
     feature_maps['all_categories'] = df_enhanced['kategori_produk'].cat.categories.tolist()
     df_enhanced['kategori_encoded'] = df_enhanced['kategori_produk'].cat.codes
     
+    # One-hot encode product_volume_category
+    df_enhanced = pd.get_dummies(df_enhanced, columns=['product_volume_category'], prefix='vol_cat')
+
     # Create category-based features
     category_stats = df_enhanced.groupby('kategori_produk')['jumlah'].agg(['mean', 'std', 'count'])
     df_enhanced = df_enhanced.merge(
@@ -251,7 +335,7 @@ def prepare_features_and_target(df_agg, config):
         
         # Store monthly patterns for this product
         product_defaults['monthly_patterns'] = monthly_patterns
-        feature_maps[f"{product}_defaults"] = product_defaults
+        feature_maps[f"{sanitize_feature_name(product)}_defaults"] = product_defaults
     
     # Identify feature columns (exclude non-feature columns)
     exclude_cols = ['jumlah', 'nama_produk', 'kategori_produk', 'waktu', 'year_month']
@@ -263,36 +347,75 @@ def prepare_features_and_target(df_agg, config):
     return df_enhanced, feature_maps, feature_columns, ohe
 
 def handle_outliers_and_transform(df_enhanced, feature_columns, config):
-    """Enhanced outlier handling with better preservation of valid high values."""
-    logger.info("Handling outliers and data transformation...")
+    """
+    Volume-aware outlier handling that preserves legitimate high sales
+    """
+    logger.info("Handling outliers with volume-aware approach...")
     
     if config['handle_outliers']:
-        # Use IQR method instead of Z-score for better handling of skewed data
-        Q1 = df_enhanced['jumlah'].quantile(0.25)
-        Q3 = df_enhanced['jumlah'].quantile(0.75)
-        IQR = Q3 - Q1
+        outliers_removed_by_product = {}
         
-        # More conservative outlier detection
-        lower_bound = Q1 - 2.0 * IQR  # Less aggressive than 1.5 * IQR
-        upper_bound = Q3 + 2.0 * IQR
+        for product in df_enhanced['nama_produk'].unique():
+            product_data = df_enhanced[df_enhanced['nama_produk'] == product].copy()
+            product_mean = product_data['jumlah'].mean()
+            
+            # Use different outlier thresholds based on product volume
+            if product_mean >= 500:  # High volume products like Air Mineral
+                # More conservative outlier removal
+                Q1 = product_data['jumlah'].quantile(0.15)  # Use 15th percentile instead of 25th
+                Q3 = product_data['jumlah'].quantile(0.85)  # Use 85th percentile instead of 75th
+                IQR = Q3 - Q1
+                multiplier = 3.0  # More conservative
+                
+            elif product_mean >= 100:  # Medium volume products
+                Q1 = product_data['jumlah'].quantile(0.2)
+                Q3 = product_data['jumlah'].quantile(0.8)
+                IQR = Q3 - Q1
+                multiplier = 2.5
+                
+            else:  # Low volume products
+                Q1 = product_data['jumlah'].quantile(0.25)
+                Q3 = product_data['jumlah'].quantile(0.75)
+                IQR = Q3 - Q1
+                multiplier = 2.0
+            
+            lower_bound = Q1 - multiplier * IQR
+            upper_bound = Q3 + multiplier * IQR
+            
+            # For high-volume products, ensure upper bound doesn't cut off legitimate peaks
+            if product_mean >= 500:
+                # Allow up to 3x the mean as legitimate
+                upper_bound = max(upper_bound, product_mean * 3)
+            
+            outlier_mask = (product_data['jumlah'] >= lower_bound) & (product_data['jumlah'] <= upper_bound)
+            
+            outliers_removed = len(product_data) - outlier_mask.sum()
+            outliers_removed_by_product[product] = {
+                'removed': outliers_removed,
+                'total': len(product_data),
+                'bounds': (lower_bound, upper_bound),
+                'mean': product_mean
+            }
+            
+            # Update the main dataframe
+            product_indices = df_enhanced['nama_produk'] == product
+            df_enhanced = df_enhanced[~product_indices | outlier_mask[df_enhanced[product_indices].index]]
         
-        outlier_mask = (df_enhanced['jumlah'] >= lower_bound) & (df_enhanced['jumlah'] <= upper_bound)
-        records_before = len(df_enhanced)
-        df_enhanced = df_enhanced[outlier_mask]
-        removed_outliers = records_before - len(df_enhanced)
-        logger.info(f"Removed {removed_outliers} outliers using IQR method (bounds: {lower_bound:.2f} - {upper_bound:.2f})")
+        # Log outlier removal details
+        for product, stats in outliers_removed_by_product.items():
+            if stats['removed'] > 0:
+                logger.info(f"Product {product} (mean={stats['mean']:.1f}): Removed {stats['removed']}/{stats['total']} outliers, bounds: {stats['bounds'][0]:.1f} - {stats['bounds'][1]:.1f}")
     
     X = df_enhanced[feature_columns].copy()
     y = df_enhanced['jumlah'].copy()
     
-    # Avoid log transform as it can suppress predictions
     if config.get('use_log_transform', False):
         y_transformed = np.log1p(y)
         logger.info("Applied log transformation to target")
     else:
         y_transformed = y.copy()
         logger.info("Using original scale for target variable")
-    
+
     return X, y_transformed, y
 
 def scale_and_select_features(X, y, config):
@@ -320,7 +443,8 @@ def scale_and_select_features(X, y, config):
         X_scaled[numeric_columns] = scaler.fit_transform(X[numeric_columns])
     
     # Fill any remaining NaN values
-    X_scaled = X_scaled.fillna(X_scaled.median())
+    numeric_cols = X_scaled.select_dtypes(include=np.number).columns.tolist()
+    X_scaled[numeric_cols] = X_scaled[numeric_cols].fillna(X_scaled[numeric_cols].median())
     
     if config['use_feature_selection']:
         logger.info(f"Selecting top {config['k_best_features']} features...")
@@ -346,7 +470,7 @@ def scale_and_select_features(X, y, config):
             f_scores_norm = (f_scores - f_scores.min()) / (f_scores.max() - f_scores.min() + 1e-8)
             mi_scores_norm = (mi_scores - mi_scores.min()) / (mi_scores.max() - mi_scores.min() + 1e-8)
             
-            combined_scores = 0.6 * f_scores_norm + 0.4 * mi_scores_norm
+            combined_scores = 0.6 * f_scores_norm + .4 * mi_scores_norm
             
             # Select top features based on combined scores
             top_indices = np.argsort(combined_scores)[-k_best:]
@@ -470,6 +594,12 @@ def evaluate_models(models, X_train, X_test, y_train, y_test, y_train_orig, y_te
     results = {}
     X_train_df = pd.DataFrame(X_train, columns=feature_names)
     X_test_df = pd.DataFrame(X_test, columns=feature_names)
+
+    # Ensure all columns are numeric, coercing errors and filling NaNs
+    for df in [X_train_df, X_test_df]:
+        for col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+        df.fillna(df.median(), inplace=True)
 
     for name, model in models.items():
         logger.info(f"Evaluating {name}...")
@@ -607,7 +737,8 @@ def main(custom_config=None):
         # Prepare test set
         X_test_scaled = X_test_raw.copy()
         X_test_scaled[numeric_columns] = scaler.transform(X_test_raw[numeric_columns])
-        X_test_scaled = X_test_scaled.fillna(X_train_raw.median())
+        numeric_cols = X_train_raw.select_dtypes(include=np.number).columns.tolist()
+        X_test_scaled[numeric_cols] = X_test_scaled[numeric_cols].fillna(X_train_raw[numeric_cols].median())
         
         if config['use_feature_selection'] and selector is not None:
             X_test = selector.transform(X_test_scaled[all_feature_names])
@@ -649,5 +780,5 @@ if __name__ == '__main__':
         print("\nTraining completed successfully!")
         print("Check 'training.log' for detailed results")
     except Exception as e:
-        print(f"\nTraining failed. Check 'training.log' for details. Error: {e}")
+        print(f"\nTraining failed. Check 'app.txt' for details. Error: {e}")
         exit(1)
