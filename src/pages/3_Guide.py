@@ -20,8 +20,6 @@ else:
     <p style="font-size: 1rem;">A step-by-step guide to using the Sales Prediction Application.</p>
     """, unsafe_allow_html=True)
 
-st.markdown("---")
-
 # Mode-specific instructions
 if mode == 'Normal':
     # --- NORMAL MODE GUIDE ---
