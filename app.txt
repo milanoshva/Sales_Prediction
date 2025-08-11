@@ -2279,3 +2279,861 @@ FileNotFoundError: [Errno 2] No such file or directory: 'data\\haluna_transaksi_
 2025-08-09 21:19:49,674 - INFO - Cleaning currency column: total_pembayaran
 2025-08-09 21:19:49,887 - INFO - Data processed successfully, 113181 rows remaining
 2025-08-09 21:19:57,027 - INFO - Analytics page accessed at: 2025-08-09 21:19:57
+2025-08-09 21:31:20,718 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:31:20,720 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:31:20,725 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:31:20,745 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:31:20,753 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:31:20,921 - INFO - Raw prediction for Vanilla Latte: 4.088187223596544
+2025-08-09 21:31:20,922 - INFO - Log-transformed prediction for Vanilla Latte: 58.63169473620351
+2025-08-09 21:31:20,922 - INFO - --- Final rounded prediction for Vanilla Latte: 59 ---
+2025-08-09 21:31:21,977 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:31:21,979 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:31:21,984 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:31:22,001 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:31:22,009 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:31:22,056 - INFO - Raw prediction for Vanilla Latte: 4.088187223596544
+2025-08-09 21:31:22,056 - INFO - Log-transformed prediction for Vanilla Latte: 58.63169473620351
+2025-08-09 21:31:22,056 - INFO - --- Final rounded prediction for Vanilla Latte: 59 ---
+2025-08-09 21:31:23,120 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:31:23,123 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:31:23,128 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:31:23,148 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:31:23,157 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:31:23,202 - INFO - Raw prediction for Vanilla Latte: 4.088187223596544
+2025-08-09 21:31:23,202 - INFO - Log-transformed prediction for Vanilla Latte: 58.63169473620351
+2025-08-09 21:31:23,202 - INFO - --- Final rounded prediction for Vanilla Latte: 59 ---
+2025-08-09 21:31:32,774 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:31:32,776 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:31:32,780 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:31:32,800 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:31:32,808 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:31:32,867 - INFO - Raw prediction for Vanilla Latte: 4.088187223596544
+2025-08-09 21:31:32,867 - INFO - Log-transformed prediction for Vanilla Latte: 58.63169473620351
+2025-08-09 21:31:32,867 - INFO - --- Final rounded prediction for Vanilla Latte: 59 ---
+2025-08-09 21:31:33,936 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:31:33,939 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:31:33,944 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:31:33,963 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:31:33,971 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:31:34,031 - INFO - Raw prediction for Vanilla Latte: 4.088187223596544
+2025-08-09 21:31:34,032 - INFO - Log-transformed prediction for Vanilla Latte: 58.63169473620351
+2025-08-09 21:31:34,032 - INFO - --- Final rounded prediction for Vanilla Latte: 59 ---
+2025-08-09 21:31:35,101 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:31:35,104 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:31:35,108 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:31:35,127 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:31:35,135 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:31:35,179 - INFO - Raw prediction for Vanilla Latte: 4.088187223596544
+2025-08-09 21:31:35,179 - INFO - Log-transformed prediction for Vanilla Latte: 58.63169473620351
+2025-08-09 21:31:35,179 - INFO - --- Final rounded prediction for Vanilla Latte: 59 ---
+2025-08-09 21:32:39,801 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:32:39,803 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:32:39,808 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:32:39,826 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:32:39,836 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:32:39,886 - INFO - Raw prediction for Vanilla Latte: 4.047333914518501
+2025-08-09 21:32:39,886 - INFO - Log-transformed prediction for Vanilla Latte: 56.244634328278245
+2025-08-09 21:32:39,886 - INFO - --- Final rounded prediction for Vanilla Latte: 56 ---
+2025-08-09 21:32:40,942 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:32:40,945 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:32:40,950 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:32:40,970 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:32:40,978 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:32:41,018 - INFO - Raw prediction for Vanilla Latte: 4.047333914518501
+2025-08-09 21:32:41,018 - INFO - Log-transformed prediction for Vanilla Latte: 56.244634328278245
+2025-08-09 21:32:41,019 - INFO - --- Final rounded prediction for Vanilla Latte: 56 ---
+2025-08-09 21:32:42,029 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:32:42,032 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:32:42,036 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:32:42,058 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:32:42,066 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:32:42,108 - INFO - Raw prediction for Vanilla Latte: 4.0473339145185
+2025-08-09 21:32:42,108 - INFO - Log-transformed prediction for Vanilla Latte: 56.24463432827819
+2025-08-09 21:32:42,108 - INFO - --- Final rounded prediction for Vanilla Latte: 56 ---
+2025-08-09 21:40:25,828 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:40:25,831 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:40:25,836 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:40:25,857 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:40:25,865 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:40:25,917 - INFO - Raw prediction for Vanilla Latte: 4.0473339145185
+2025-08-09 21:40:25,917 - INFO - Log-transformed prediction for Vanilla Latte: 56.24463432827819
+2025-08-09 21:40:25,917 - INFO - --- Final rounded prediction for Vanilla Latte: 56 ---
+2025-08-09 21:40:27,020 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:40:27,023 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:40:27,030 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:40:27,057 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:40:27,066 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:40:27,132 - INFO - Raw prediction for Vanilla Latte: 4.047333914518501
+2025-08-09 21:40:27,132 - INFO - Log-transformed prediction for Vanilla Latte: 56.244634328278245
+2025-08-09 21:40:27,132 - INFO - --- Final rounded prediction for Vanilla Latte: 56 ---
+2025-08-09 21:40:28,234 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:40:28,237 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:40:28,242 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:40:28,263 - INFO - Applying feature selection, keeping 20 features.
+2025-08-09 21:40:28,272 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337}
+2025-08-09 21:40:28,323 - INFO - Raw prediction for Vanilla Latte: 4.047333914518501
+2025-08-09 21:40:28,324 - INFO - Log-transformed prediction for Vanilla Latte: 56.244634328278245
+2025-08-09 21:40:28,324 - INFO - --- Final rounded prediction for Vanilla Latte: 56 ---
+2025-08-09 21:40:52,830 - INFO - Mode set to: Normal
+2025-08-09 21:41:48,325 - INFO - Mode set to: Normal
+2025-08-09 21:41:48,337 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-09 21:41:48,651 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-09 21:41:48,700 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:41:48,866 - INFO - Cleaning currency column: harga
+2025-08-09 21:41:49,026 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:41:49,153 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:41:49,363 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-09 21:41:49,459 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-09 21:41:49,740 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-09 21:41:49,784 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 21:41:49,935 - INFO - Cleaning currency column: harga
+2025-08-09 21:41:50,103 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 21:41:50,272 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 21:41:50,502 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-09 21:42:15,134 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:15,137 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:15,143 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:15,164 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:15,169 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:15,242 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:15,243 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:15,243 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:16,325 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:16,328 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:16,333 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:16,350 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:16,354 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:16,423 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:16,424 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:16,424 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:17,568 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:17,571 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:17,576 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:17,600 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:17,606 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:17,676 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:17,676 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:17,677 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:37,777 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:37,779 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:37,783 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:37,808 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:37,814 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:37,858 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277724
+2025-08-09 21:42:37,858 - INFO - Log-transformed prediction for Vanilla Latte: 49.03483138660474
+2025-08-09 21:42:37,858 - INFO - --- Final rounded prediction for Vanilla Latte: 49 ---
+2025-08-09 21:42:38,906 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:38,909 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:38,914 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:38,936 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:38,941 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:38,987 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277715
+2025-08-09 21:42:38,987 - INFO - Log-transformed prediction for Vanilla Latte: 49.0348313866047
+2025-08-09 21:42:38,988 - INFO - --- Final rounded prediction for Vanilla Latte: 49 ---
+2025-08-09 21:42:40,019 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:40,022 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:40,027 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:40,046 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:40,050 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:40,092 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277715
+2025-08-09 21:42:40,093 - INFO - Log-transformed prediction for Vanilla Latte: 49.0348313866047
+2025-08-09 21:42:40,093 - INFO - --- Final rounded prediction for Vanilla Latte: 49 ---
+2025-08-09 21:42:47,502 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:47,506 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:47,513 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:47,538 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:47,544 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:47,615 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:47,616 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:47,616 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:48,729 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:48,732 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:48,738 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:48,759 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:48,764 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:48,825 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:48,825 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:48,825 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:49,906 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:49,909 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:49,914 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:49,935 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:49,940 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:50,010 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:50,011 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:50,011 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:53,658 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:53,660 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:53,664 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:53,689 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:53,694 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:53,762 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:53,762 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:53,763 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:54,879 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:54,882 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:54,888 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:54,909 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:54,914 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:54,974 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:54,974 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:54,975 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:42:56,123 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:42:56,126 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:42:56,131 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:42:56,152 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:42:56,157 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:42:56,227 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:42:56,227 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:42:56,227 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:43:04,103 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:43:04,108 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:43:04,117 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:43:04,161 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:43:04,174 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:43:04,293 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:43:04,294 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:43:04,294 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:43:06,319 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:43:06,323 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:43:06,330 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:43:06,355 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:43:06,360 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:43:06,439 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:43:06,440 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:43:06,440 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:43:08,556 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:43:08,560 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:43:08,568 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:43:08,600 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:43:08,609 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:43:08,693 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:43:08,693 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:43:08,693 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:45:33,508 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:45:33,511 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:45:33,515 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:45:33,549 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:45:33,554 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:45:33,620 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:45:33,620 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:45:33,620 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:45:34,688 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:45:34,690 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:45:34,697 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:45:34,719 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:45:34,724 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:45:34,792 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:45:34,792 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:45:34,792 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 21:45:35,936 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 21:45:35,938 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 21:45:35,942 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 21:45:35,963 - INFO - Skipping feature selection, using all features.
+2025-08-09 21:45:35,969 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 21:45:36,031 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 21:45:36,031 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 21:45:36,031 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:01:17,628 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:01:17,634 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:01:17,639 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:01:17,662 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:01:17,667 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:01:17,720 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:01:17,721 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:01:17,721 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:01:18,850 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:01:18,852 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:01:18,856 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:01:18,875 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:01:18,880 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:01:18,940 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:01:18,940 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:01:18,940 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:01:19,989 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:01:19,991 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:01:19,999 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:01:20,021 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:01:20,030 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:01:20,096 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:01:20,096 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:01:20,097 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:02:26,696 - INFO - Mode set to: Normal
+2025-08-09 22:02:33,724 - INFO - Mode set to: Normal
+2025-08-09 22:02:33,744 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-09 22:02:34,127 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-09 22:02:34,168 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 22:02:34,378 - INFO - Cleaning currency column: harga
+2025-08-09 22:02:34,570 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 22:02:34,745 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 22:02:34,967 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-09 22:02:34,967 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-09 22:02:35,254 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-09 22:02:35,295 - INFO - Cleaning currency column: harga_satuan
+2025-08-09 22:02:35,448 - INFO - Cleaning currency column: harga
+2025-08-09 22:02:35,616 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-09 22:02:35,773 - INFO - Cleaning currency column: total_pembayaran
+2025-08-09 22:02:35,985 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-09 22:02:55,784 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:02:55,786 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:02:55,789 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:02:55,809 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:02:55,814 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:02:55,866 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:02:55,866 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:02:55,867 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:02:56,919 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:02:56,921 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:02:56,926 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:02:56,947 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:02:56,954 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:02:57,014 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:02:57,014 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:02:57,015 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:02:58,067 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:02:58,069 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:02:58,072 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:02:58,091 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:02:58,096 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:02:58,155 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:02:58,155 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:02:58,155 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:03:06,236 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:03:06,239 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:03:06,243 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:03:06,264 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:03:06,269 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:03:06,335 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:03:06,335 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:03:06,335 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:03:07,473 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:03:07,476 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:03:07,482 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:03:07,505 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:03:07,510 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:03:07,560 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:03:07,561 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:03:07,561 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:03:08,729 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:03:08,732 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:03:08,736 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:03:08,755 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:03:08,762 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:03:08,808 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:03:08,809 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:03:08,809 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:03:13,767 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:03:13,769 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:03:13,773 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:03:13,793 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:03:13,798 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:03:13,850 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:03:13,850 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:03:13,851 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:03:14,909 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:03:14,914 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:03:14,918 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:03:14,937 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:03:14,941 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:03:15,003 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:03:15,003 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:03:15,003 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-09 22:03:16,036 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-09 22:03:16,038 - INFO - Feature vector created for Vanilla Latte.
+2025-08-09 22:03:16,044 - INFO - Activated product column: nama_produk_Vanilla Latte
+2025-08-09 22:03:16,065 - INFO - Skipping feature selection, using all features.
+2025-08-09 22:03:16,070 - INFO - Sample feature values for Vanilla Latte: {'rolling_mean_3': 1.0333333333333337, 'bulan_sin': -2.6895110349073806e-16}
+2025-08-09 22:03:16,137 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-09 22:03:16,137 - INFO - Log-transformed prediction for Vanilla Latte: 51.735759094165836
+2025-08-09 22:03:16,138 - INFO - --- Final rounded prediction for Vanilla Latte: 52 ---
+2025-08-10 20:34:10,052 - INFO - Memuat data dari data\transaksi_haluna_2023-2024.csv...
+2025-08-10 20:34:11,725 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-10 20:34:11,725 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-10 20:34:12,453 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 20:34:14,090 - INFO - Cleaning currency column: harga
+2025-08-10 20:34:15,085 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 20:34:15,882 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 20:34:16,843 - INFO - Data processed successfully, 224121 rows remaining
+2025-08-10 20:34:16,843 - INFO - Data setelah pembersihan awal: 224121 baris
+2025-08-10 20:34:16,843 - INFO - Mengagregasi data ke level bulanan...
+2025-08-10 20:34:16,984 - INFO - Data teragregasi: 3216 baris
+2025-08-10 20:34:17,015 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-10 20:34:19,153 - INFO - Calculating product-specific feature defaults...
+2025-08-10 20:34:21,621 - INFO - Jumlah fitur yang dibuat: 180
+2025-08-10 20:34:21,623 - INFO - Product defaults stored for 134 products
+2025-08-10 20:34:21,624 - INFO - Menangani outliers dan transformasi data...
+2025-08-10 20:34:21,633 - INFO - Menghapus 131 outliers (Z-score > 3.0)
+2025-08-10 20:34:21,651 - INFO - Menerapkan transformasi log pada target
+2025-08-10 20:34:21,652 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-10 20:34:21,662 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-10 20:34:22,219 - INFO - Memulai pelatihan model...
+2025-08-10 20:34:22,220 - INFO - Melakukan optimasi hyperparameter...
+2025-08-10 20:37:49,987 - INFO - Melatih model Random Forest...
+2025-08-10 20:37:57,598 - INFO - Melatih model XGBoost...
+2025-08-10 20:37:59,909 - INFO - Melatih model LightGBM...
+2025-08-10 20:38:01,415 - INFO - Melatih model ensemble...
+2025-08-10 20:38:11,984 - INFO - Pelatihan semua model selesai!
+2025-08-10 20:38:11,984 - INFO - Mengevaluasi performa model...
+2025-08-10 20:38:11,986 - INFO - Evaluasi model Random Forest...
+2025-08-10 20:38:12,288 - INFO - Random Forest - Test R²: 0.952, Test MAPE: 5.30%
+2025-08-10 20:38:12,288 - INFO - Evaluasi model XGBoost...
+2025-08-10 20:38:12,412 - INFO - XGBoost - Test R²: 0.837, Test MAPE: 7.05%
+2025-08-10 20:38:12,413 - INFO - Evaluasi model LightGBM...
+2025-08-10 20:38:12,485 - INFO - LightGBM - Test R²: 0.940, Test MAPE: 5.00%
+2025-08-10 20:38:12,486 - INFO - Evaluasi model Gabungan...
+2025-08-10 20:38:12,917 - INFO - Gabungan - Test R²: 0.972, Test MAPE: 3.94%
+2025-08-10 20:38:12,917 - INFO - Menyimpan model dan artefak...
+2025-08-10 20:38:13,163 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-10 20:38:13,186 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-10 20:38:13,205 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-10 20:38:13,926 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-10 20:38:13,930 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-10 20:38:14,238 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-10 20:38:14,238 - INFO - === PELATIHAN SELESAI ===
+2025-08-10 20:38:23,372 - INFO - Memuat data dari data\transaksi_haluna_2023-2024.csv...
+2025-08-10 20:38:24,565 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-10 20:38:24,565 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-10 20:38:24,737 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 20:38:25,427 - INFO - Cleaning currency column: harga
+2025-08-10 20:38:26,097 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 20:38:26,721 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 20:38:27,575 - INFO - Data processed successfully, 224121 rows remaining
+2025-08-10 20:38:27,575 - INFO - Data setelah pembersihan awal: 224121 baris
+2025-08-10 20:38:27,575 - INFO - Mengagregasi data ke level bulanan...
+2025-08-10 20:38:27,676 - INFO - Data teragregasi: 3216 baris
+2025-08-10 20:38:27,700 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-10 20:38:30,349 - INFO - Calculating product-specific feature defaults...
+2025-08-10 20:38:31,705 - INFO - Jumlah fitur yang dibuat: 180
+2025-08-10 20:38:31,705 - INFO - Product defaults stored for 134 products
+2025-08-10 20:38:31,706 - INFO - Menangani outliers dan transformasi data...
+2025-08-10 20:38:31,711 - INFO - Menghapus 131 outliers (Z-score > 3.0)
+2025-08-10 20:38:31,722 - INFO - Menerapkan transformasi log pada target
+2025-08-10 20:38:31,722 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-10 20:38:31,728 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-10 20:38:32,079 - INFO - Memulai pelatihan model...
+2025-08-10 20:38:32,080 - INFO - Melakukan optimasi hyperparameter...
+2025-08-10 20:40:52,976 - INFO - Mode set to: Normal
+2025-08-10 20:41:57,009 - INFO - Mode set to: Normal
+2025-08-10 20:41:57,163 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-10 20:41:58,751 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-10 20:41:59,273 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 20:42:00,263 - INFO - Cleaning currency column: harga
+2025-08-10 20:42:01,192 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 20:42:02,142 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 20:42:03,291 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-10 20:42:03,655 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-10 20:42:05,297 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-10 20:42:05,669 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 20:42:07,285 - INFO - Cleaning currency column: harga
+2025-08-10 20:42:08,712 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 20:42:09,714 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 20:42:10,811 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-10 20:42:31,748 - INFO - Analytics page accessed at: 2025-08-10 20:42:31
+2025-08-10 20:42:35,636 - INFO - Melatih model Random Forest...
+2025-08-10 20:42:45,645 - INFO - Melatih model XGBoost...
+2025-08-10 20:42:50,326 - INFO - Melatih model LightGBM...
+2025-08-10 20:42:51,605 - INFO - Melatih model ensemble...
+2025-08-10 20:43:05,831 - INFO - Pelatihan semua model selesai!
+2025-08-10 20:43:05,831 - INFO - Mengevaluasi performa model...
+2025-08-10 20:43:05,833 - INFO - Evaluasi model Random Forest...
+2025-08-10 20:43:06,245 - INFO - Random Forest - Test R²: 0.952, Test MAPE: 5.30%
+2025-08-10 20:43:06,246 - INFO - Evaluasi model XGBoost...
+2025-08-10 20:43:06,409 - INFO - XGBoost - Test R²: 0.837, Test MAPE: 7.05%
+2025-08-10 20:43:06,409 - INFO - Evaluasi model LightGBM...
+2025-08-10 20:43:06,508 - INFO - LightGBM - Test R²: 0.940, Test MAPE: 5.00%
+2025-08-10 20:43:06,508 - INFO - Evaluasi model Gabungan...
+2025-08-10 20:43:06,993 - INFO - Gabungan - Test R²: 0.972, Test MAPE: 3.94%
+2025-08-10 20:43:06,994 - INFO - Menyimpan model dan artefak...
+2025-08-10 20:43:07,230 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-10 20:43:07,249 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-10 20:43:07,277 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-10 20:43:07,870 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-10 20:43:07,875 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-10 20:43:08,095 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-10 20:43:08,096 - INFO - === PELATIHAN SELESAI ===
+2025-08-10 20:43:24,503 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:43:24,577 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:43:24,585 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:43:24,721 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-10 20:43:24,721 - INFO - Final prediction for Vanilla Latte: 52
+2025-08-10 20:43:26,533 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:43:26,539 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:43:26,547 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:43:26,676 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-10 20:43:26,676 - INFO - Final prediction for Vanilla Latte: 52
+2025-08-10 20:43:28,406 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:43:28,412 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:43:28,423 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:43:28,562 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-10 20:43:28,562 - INFO - Final prediction for Vanilla Latte: 52
+2025-08-10 20:43:39,213 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:43:39,222 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:43:39,234 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:43:39,395 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-10 20:43:39,395 - INFO - Final prediction for Vanilla Latte: 52
+2025-08-10 20:43:41,662 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:43:41,671 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:43:41,684 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:43:41,830 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-10 20:43:41,831 - INFO - Final prediction for Vanilla Latte: 52
+2025-08-10 20:43:43,652 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:43:43,658 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:43:43,666 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:43:43,795 - INFO - Raw prediction for Vanilla Latte: 3.9652937661289283
+2025-08-10 20:43:43,795 - INFO - Final prediction for Vanilla Latte: 52
+2025-08-10 20:44:05,624 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:44:05,635 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:44:05,650 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:44:05,814 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277724
+2025-08-10 20:44:05,815 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:44:08,027 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:44:08,035 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:44:08,046 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:44:08,147 - INFO - Raw prediction for Vanilla Latte: 3.912719390627771
+2025-08-10 20:44:08,147 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:44:09,768 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:44:09,774 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:44:09,781 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:44:09,876 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277724
+2025-08-10 20:44:09,877 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:50:34,441 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:50:34,446 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:50:34,453 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:50:34,523 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277724
+2025-08-10 20:50:34,523 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:50:35,505 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:50:35,510 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:50:35,516 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:50:35,586 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277724
+2025-08-10 20:50:35,586 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:50:36,534 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:50:36,537 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:50:36,544 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:50:36,609 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277724
+2025-08-10 20:50:36,609 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:50:42,550 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:50:42,554 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:50:42,559 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:50:42,622 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277715
+2025-08-10 20:50:42,622 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:50:43,589 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:50:43,593 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:50:43,600 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:50:43,656 - INFO - Raw prediction for Vanilla Latte: 3.9127193906277715
+2025-08-10 20:50:43,657 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:50:44,626 - INFO - --- Starting prediction for product: Vanilla Latte ---
+2025-08-10 20:50:44,630 - INFO - Product encoding successful. Active feature: nama_produk_Vanilla Latte
+2025-08-10 20:50:44,636 - INFO - Active product features: ['nama_produk_Vanilla Latte']
+2025-08-10 20:50:44,704 - INFO - Raw prediction for Vanilla Latte: 3.912719390627771
+2025-08-10 20:50:44,704 - INFO - Final prediction for Vanilla Latte: 49
+2025-08-10 20:56:47,462 - INFO - Memuat data dari data\transaksi_haluna_2023-2024.csv...
+2025-08-10 20:56:48,041 - INFO - Berhasil membaca CSV dengan pemisah: '',''
+2025-08-10 20:56:48,041 - INFO - Data mentah berhasil dimuat: 226342 baris
+2025-08-10 20:56:48,126 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 20:56:48,457 - INFO - Cleaning currency column: harga
+2025-08-10 20:56:48,800 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 20:56:49,116 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 20:56:49,536 - INFO - Data processed successfully, 224121 rows remaining
+2025-08-10 20:56:49,536 - INFO - Data setelah pembersihan awal: 224121 baris
+2025-08-10 20:56:49,536 - INFO - Mengagregasi data ke level bulanan...
+2025-08-10 20:56:49,595 - INFO - Data teragregasi: 3216 baris
+2025-08-10 20:56:49,609 - INFO - Membuat fitur-fitur canggih untuk pelatihan...
+2025-08-10 20:56:52,851 - INFO - Calculating product-specific feature defaults...
+2025-08-10 20:56:53,506 - INFO - Jumlah fitur yang dibuat: 180
+2025-08-10 20:56:53,506 - INFO - Product defaults stored for 134 products
+2025-08-10 20:56:53,508 - INFO - Menangani outliers dan transformasi data...
+2025-08-10 20:56:53,510 - INFO - Menghapus 131 outliers (Z-score > 3.0)
+2025-08-10 20:56:53,516 - INFO - Menerapkan transformasi log pada target
+2025-08-10 20:56:53,516 - INFO - Melakukan train-test split dengan TimeSeriesSplit...
+2025-08-10 20:56:53,520 - INFO - Melakukan scaling pada fitur numerik...
+2025-08-10 20:56:53,700 - INFO - Memulai pelatihan model...
+2025-08-10 20:56:53,700 - INFO - Melakukan optimasi hyperparameter...
+2025-08-10 20:58:52,358 - INFO - Melatih model Random Forest...
+2025-08-10 20:58:57,044 - INFO - Melatih model XGBoost...
+2025-08-10 20:58:58,764 - INFO - Melatih model LightGBM...
+2025-08-10 20:58:59,588 - INFO - Melatih model ensemble...
+2025-08-10 20:59:06,837 - INFO - Pelatihan semua model selesai!
+2025-08-10 20:59:06,837 - INFO - Mengevaluasi performa model...
+2025-08-10 20:59:06,838 - INFO - Evaluasi model Random Forest...
+2025-08-10 20:59:07,076 - INFO - Random Forest - Test R²: 0.952, Test MAPE: 5.30%
+2025-08-10 20:59:07,076 - INFO - Evaluasi model XGBoost...
+2025-08-10 20:59:07,168 - INFO - XGBoost - Test R²: 0.837, Test MAPE: 7.05%
+2025-08-10 20:59:07,168 - INFO - Evaluasi model LightGBM...
+2025-08-10 20:59:07,217 - INFO - LightGBM - Test R²: 0.940, Test MAPE: 5.00%
+2025-08-10 20:59:07,217 - INFO - Evaluasi model Gabungan...
+2025-08-10 20:59:07,583 - INFO - Gabungan - Test R²: 0.972, Test MAPE: 3.94%
+2025-08-10 20:59:07,583 - INFO - Menyimpan model dan artefak...
+2025-08-10 20:59:07,769 - INFO - Model Random Forest disimpan ke models\model_rf_jumlah.pkl
+2025-08-10 20:59:07,789 - INFO - Model XGBoost disimpan ke models\model_xgb_jumlah.pkl
+2025-08-10 20:59:07,846 - INFO - Model LightGBM disimpan ke models\model_lgb_jumlah.pkl
+2025-08-10 20:59:08,294 - INFO - Model Gabungan disimpan ke models\model_ensemble_jumlah.pkl
+2025-08-10 20:59:08,298 - INFO - Scaler disimpan ke models\robust_scaler.pkl
+2025-08-10 20:59:08,464 - INFO - Artefak disimpan ke models\training_artifacts.pkl
+2025-08-10 20:59:08,465 - INFO - === PELATIHAN SELESAI ===
+2025-08-10 20:59:52,799 - INFO - Mode set to: Normal
+2025-08-10 20:59:59,111 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 20:59:59,192 - INFO - Raw prediction for AGLIO e OLIO: 3.0690165409962673
+2025-08-10 20:59:59,192 - INFO - Final prediction for AGLIO e OLIO: 21
+2025-08-10 20:59:59,308 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 20:59:59,412 - INFO - Raw prediction for AGLIO e OLIO: 3.146495977631174
+2025-08-10 20:59:59,413 - INFO - Final prediction for AGLIO e OLIO: 22
+2025-08-10 20:59:59,531 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 20:59:59,620 - INFO - Raw prediction for AGLIO e OLIO: 3.174620536684367
+2025-08-10 20:59:59,621 - INFO - Final prediction for AGLIO e OLIO: 23
+2025-08-10 21:00:10,139 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:00:10,219 - INFO - Raw prediction for Air Mineral: 6.347441362707272
+2025-08-10 21:00:10,219 - INFO - Final prediction for Air Mineral: 570
+2025-08-10 21:00:10,325 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:00:10,411 - INFO - Raw prediction for Air Mineral: 5.698840133080381
+2025-08-10 21:00:10,411 - INFO - Final prediction for Air Mineral: 298
+2025-08-10 21:00:10,526 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:00:10,616 - INFO - Raw prediction for Air Mineral: 5.151142862022801
+2025-08-10 21:00:10,616 - INFO - Final prediction for Air Mineral: 172
+2025-08-10 21:01:10,946 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:11,048 - INFO - Raw prediction for Air Mineral: 6.347441362707273
+2025-08-10 21:01:11,049 - INFO - Final prediction for Air Mineral: 570
+2025-08-10 21:01:11,155 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:11,245 - INFO - Raw prediction for Air Mineral: 5.69884013308038
+2025-08-10 21:01:11,245 - INFO - Final prediction for Air Mineral: 298
+2025-08-10 21:01:11,363 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:11,465 - INFO - Raw prediction for Air Mineral: 5.1511428620228
+2025-08-10 21:01:11,466 - INFO - Final prediction for Air Mineral: 172
+2025-08-10 21:01:17,833 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:17,902 - INFO - Raw prediction for Air Mineral: 6.402360105011687
+2025-08-10 21:01:17,902 - INFO - Final prediction for Air Mineral: 602
+2025-08-10 21:01:17,970 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:18,042 - INFO - Raw prediction for Air Mineral: 6.286648057405204
+2025-08-10 21:01:18,042 - INFO - Final prediction for Air Mineral: 536
+2025-08-10 21:01:18,099 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:18,168 - INFO - Raw prediction for Air Mineral: 6.41344835489679
+2025-08-10 21:01:18,168 - INFO - Final prediction for Air Mineral: 609
+2025-08-10 21:01:42,556 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:42,594 - INFO - Raw prediction for Air Mineral: 6.2694839304385095
+2025-08-10 21:01:42,595 - INFO - Final prediction for Air Mineral: 527
+2025-08-10 21:01:42,704 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:42,736 - INFO - Raw prediction for Air Mineral: 6.1944202804826265
+2025-08-10 21:01:42,736 - INFO - Final prediction for Air Mineral: 489
+2025-08-10 21:01:42,846 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:01:42,880 - INFO - Raw prediction for Air Mineral: 4.802623693366349
+2025-08-10 21:01:42,880 - INFO - Final prediction for Air Mineral: 121
+2025-08-10 21:01:48,338 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:01:48,441 - INFO - Raw prediction for AGLIO e OLIO: 3.1119424453122293
+2025-08-10 21:01:48,442 - INFO - Final prediction for AGLIO e OLIO: 21
+2025-08-10 21:01:48,551 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:01:48,623 - INFO - Raw prediction for AGLIO e OLIO: 3.4773612062488946
+2025-08-10 21:01:48,624 - INFO - Final prediction for AGLIO e OLIO: 31
+2025-08-10 21:01:48,737 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:01:48,834 - INFO - Raw prediction for AGLIO e OLIO: 3.2879195809739246
+2025-08-10 21:01:48,835 - INFO - Final prediction for AGLIO e OLIO: 26
+2025-08-10 21:01:48,949 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:01:49,037 - INFO - Raw prediction for AGLIO e OLIO: 3.1781185131309937
+2025-08-10 21:01:49,037 - INFO - Final prediction for AGLIO e OLIO: 23
+2025-08-10 21:01:49,157 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:01:49,258 - INFO - Raw prediction for AGLIO e OLIO: 3.3519688230239826
+2025-08-10 21:01:49,258 - INFO - Final prediction for AGLIO e OLIO: 28
+2025-08-10 21:01:49,376 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:01:49,474 - INFO - Raw prediction for AGLIO e OLIO: 3.0690165409962673
+2025-08-10 21:01:49,475 - INFO - Final prediction for AGLIO e OLIO: 21
+2025-08-10 21:01:49,591 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:01:49,676 - INFO - Raw prediction for Aglio e Olio BBQ: 3.4257307109539212
+2025-08-10 21:01:49,676 - INFO - Final prediction for Aglio e Olio BBQ: 30
+2025-08-10 21:01:49,797 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:01:49,891 - INFO - Raw prediction for Aglio e Olio BBQ: 3.367310020346425
+2025-08-10 21:01:49,891 - INFO - Final prediction for Aglio e Olio BBQ: 28
+2025-08-10 21:01:49,999 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:01:50,097 - INFO - Raw prediction for Aglio e Olio BBQ: 3.4175443558586642
+2025-08-10 21:01:50,097 - INFO - Final prediction for Aglio e Olio BBQ: 29
+2025-08-10 21:01:50,225 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:01:50,327 - INFO - Raw prediction for Aglio e Olio BBQ: 3.103039585935604
+2025-08-10 21:01:50,327 - INFO - Final prediction for Aglio e Olio BBQ: 21
+2025-08-10 21:01:50,461 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:01:50,586 - INFO - Raw prediction for Aglio e Olio BBQ: 3.1337507464879995
+2025-08-10 21:01:50,586 - INFO - Final prediction for Aglio e Olio BBQ: 22
+2025-08-10 21:01:50,728 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:01:50,864 - INFO - Raw prediction for Aglio e Olio BBQ: 3.129938231460975
+2025-08-10 21:01:50,864 - INFO - Final prediction for Aglio e Olio BBQ: 22
+2025-08-10 21:01:51,014 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:01:51,146 - INFO - Raw prediction for Aglio e Olio Blackpepper: 3.3040369293173586
+2025-08-10 21:01:51,147 - INFO - Final prediction for Aglio e Olio Blackpepper: 26
+2025-08-10 21:01:51,299 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:01:51,442 - INFO - Raw prediction for Aglio e Olio Blackpepper: 3.0820907613741975
+2025-08-10 21:01:51,443 - INFO - Final prediction for Aglio e Olio Blackpepper: 21
+2025-08-10 21:01:51,611 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:01:51,759 - INFO - Raw prediction for Aglio e Olio Blackpepper: 3.2900267573389907
+2025-08-10 21:01:51,759 - INFO - Final prediction for Aglio e Olio Blackpepper: 26
+2025-08-10 21:01:51,916 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:01:52,064 - INFO - Raw prediction for Aglio e Olio Blackpepper: 3.286675955825528
+2025-08-10 21:01:52,065 - INFO - Final prediction for Aglio e Olio Blackpepper: 26
+2025-08-10 21:01:52,273 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:01:52,417 - INFO - Raw prediction for Aglio e Olio Blackpepper: 3.394585502934971
+2025-08-10 21:01:52,417 - INFO - Final prediction for Aglio e Olio Blackpepper: 29
+2025-08-10 21:01:52,603 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:01:52,792 - INFO - Raw prediction for Aglio e Olio Blackpepper: 2.957024900003446
+2025-08-10 21:01:52,792 - INFO - Final prediction for Aglio e Olio Blackpepper: 18
+2025-08-10 21:05:00,913 - INFO - Mode set to: Normal
+2025-08-10 21:05:03,444 - INFO - Analytics page accessed at: 2025-08-10 21:05:03
+2025-08-10 21:07:28,159 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:07:28,267 - INFO - Raw prediction for AGLIO e OLIO: 3.0690165409962678
+2025-08-10 21:07:28,268 - INFO - Final prediction for AGLIO e OLIO: 21
+2025-08-10 21:07:28,402 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:07:28,502 - INFO - Raw prediction for AGLIO e OLIO: 3.146495977631174
+2025-08-10 21:07:28,503 - INFO - Final prediction for AGLIO e OLIO: 22
+2025-08-10 21:07:28,639 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:07:28,741 - INFO - Raw prediction for AGLIO e OLIO: 3.1746205366843676
+2025-08-10 21:07:28,742 - INFO - Final prediction for AGLIO e OLIO: 23
+2025-08-10 21:11:21,975 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:11:22,574 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:11:23,107 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:11:51,291 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:11:52,072 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:11:52,605 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:07,051 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:07,434 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:07,881 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:08,338 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:12:08,806 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:12:09,311 - INFO - --- Starting prediction for product: Aglio e Olio BBQ ---
+2025-08-10 21:12:09,837 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:12:10,320 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:12:10,802 - INFO - --- Starting prediction for product: Aglio e Olio Blackpepper ---
+2025-08-10 21:12:27,443 - INFO - Analytics page accessed at: 2025-08-10 21:12:27
+2025-08-10 21:12:46,275 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:46,500 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:46,717 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:12:53,688 - INFO - Mode set to: Normal
+2025-08-10 21:13:25,343 - INFO - Analytics page accessed at: 2025-08-10 21:13:25
+2025-08-10 21:13:26,444 - INFO - Mode set to: Normal
+2025-08-10 21:16:44,552 - INFO - Analytics page accessed at: 2025-08-10 21:16:44
+2025-08-10 21:16:53,581 - INFO - Mode set to: Normal
+2025-08-10 21:19:28,493 - INFO - Analytics page accessed at: 2025-08-10 21:19:28
+2025-08-10 21:19:30,935 - INFO - Mode set to: Normal
+2025-08-10 21:19:33,563 - INFO - Analytics page accessed at: 2025-08-10 21:19:33
+2025-08-10 21:27:44,828 - INFO - Analytics page accessed at: 2025-08-10 21:27:44
+2025-08-10 21:28:12,863 - INFO - Analytics page accessed at: 2025-08-10 21:28:12
+2025-08-10 21:28:55,021 - INFO - Mode set to: Normal
+2025-08-10 21:29:32,061 - INFO - Mode set to: Normal
+2025-08-10 21:32:34,376 - INFO - Mode set to: Normal
+2025-08-10 21:32:36,113 - INFO - Mode set to: Advanced
+2025-08-10 21:32:37,989 - INFO - Analytics page accessed at: 2025-08-10 21:32:37
+2025-08-10 21:32:41,544 - INFO - Analytics page accessed at: 2025-08-10 21:32:41
+2025-08-10 21:33:15,247 - INFO - Analytics page accessed at: 2025-08-10 21:33:15
+2025-08-10 21:33:17,239 - INFO - Mode set to: Advanced
+2025-08-10 21:33:18,667 - INFO - Mode set to: Advanced
+2025-08-10 21:33:19,684 - INFO - Analytics page accessed at: 2025-08-10 21:33:19
+2025-08-10 21:33:22,490 - INFO - Mode set to: Advanced
+2025-08-10 21:33:24,753 - INFO - Mode set to: Advanced
+2025-08-10 21:33:25,808 - INFO - Mode set to: Normal
+2025-08-10 21:33:37,196 - INFO - Mode set to: Normal
+2025-08-10 21:33:37,203 - INFO - Reading file: igangebul_transaksi_2025_realistis.csv
+2025-08-10 21:33:37,274 - INFO - Successfully read igangebul_transaksi_2025_realistis.csv with separator ','.
+2025-08-10 21:33:37,284 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 21:33:37,316 - INFO - Cleaning currency column: harga
+2025-08-10 21:33:37,349 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 21:33:37,381 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 21:33:37,429 - INFO - Data processed successfully, 15411 rows remaining
+2025-08-10 21:33:39,419 - INFO - Analytics page accessed at: 2025-08-10 21:33:39
+2025-08-10 21:34:08,070 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:08,314 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:08,661 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:26,539 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:34:26,794 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:34:26,985 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:34:27,198 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:34:27,568 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:34:27,736 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:28,349 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:28,356 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-10 21:34:29,110 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:29,170 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:30,037 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:30,200 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 300gr ---
+2025-08-10 21:34:30,764 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:31,119 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 300gr ---
+2025-08-10 21:34:32,073 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 300gr ---
+2025-08-10 21:34:32,218 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 300gr ---
+2025-08-10 21:34:33,066 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 300gr ---
+2025-08-10 21:34:33,517 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 300gr ---
+2025-08-10 21:34:55,697 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:56,039 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:56,474 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:56,909 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:57,354 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:57,815 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:58,248 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:58,696 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:59,160 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:34:59,695 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:00,301 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:00,880 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:13,264 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:13,454 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:13,651 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:13,869 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:14,108 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:14,356 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:14,614 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:14,888 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:15,171 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:15,470 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:15,780 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:16,091 - INFO - --- Starting prediction for product: Ayam Ngebul Bumbu Kacang 150gr ---
+2025-08-10 21:35:24,259 - INFO - Mode set to: Normal
+2025-08-10 21:35:35,827 - INFO - Mode set to: Normal
+2025-08-10 21:35:35,842 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-10 21:35:36,303 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-10 21:35:36,384 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 21:35:36,700 - INFO - Cleaning currency column: harga
+2025-08-10 21:35:37,021 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 21:35:37,356 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 21:35:37,890 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-10 21:35:37,890 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-10 21:35:38,614 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-10 21:35:38,786 - INFO - Cleaning currency column: harga_satuan
+2025-08-10 21:35:39,555 - INFO - Cleaning currency column: harga
+2025-08-10 21:35:41,804 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-10 21:35:42,677 - INFO - Cleaning currency column: total_pembayaran
+2025-08-10 21:35:43,675 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-10 21:36:03,585 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:03,902 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:04,375 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:04,929 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:05,597 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:06,117 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:06,580 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:07,036 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:07,618 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:08,304 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:08,962 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-10 21:36:09,647 - INFO - --- Starting prediction for product: AGLIO e OLIO ---
+2025-08-11 13:34:10,350 - INFO - Mode set to: Normal
+2025-08-11 13:34:18,810 - INFO - Analytics page accessed at: 2025-08-11 13:34:18
+2025-08-11 13:34:43,410 - INFO - Mode set to: Normal
+2025-08-11 13:34:49,480 - INFO - Mode set to: Normal
+2025-08-11 13:34:49,496 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-11 13:34:49,929 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-11 13:34:50,009 - INFO - Cleaning currency column: harga_satuan
+2025-08-11 13:34:50,233 - INFO - Cleaning currency column: harga
+2025-08-11 13:34:50,431 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-11 13:34:50,616 - INFO - Cleaning currency column: total_pembayaran
+2025-08-11 13:34:50,884 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-11 13:34:50,960 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-11 13:34:51,300 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-11 13:34:51,338 - INFO - Cleaning currency column: harga_satuan
+2025-08-11 13:34:51,512 - INFO - Cleaning currency column: harga
+2025-08-11 13:34:51,683 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-11 13:34:51,852 - INFO - Cleaning currency column: total_pembayaran
+2025-08-11 13:34:52,085 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-11 13:35:02,998 - INFO - Analytics page accessed at: 2025-08-11 13:35:02
+2025-08-11 13:35:32,216 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:32,547 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:32,834 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:33,127 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:33,439 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:33,785 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:34,131 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:34,485 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:34,820 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:35,159 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:35,517 - INFO - --- Starting prediction for product: Air Mineral ---
+2025-08-11 13:35:35,840 - INFO - --- Starting prediction for product: Air Mineral ---

@@ -115,7 +115,7 @@ def load_and_preprocess_data(file_path):
 
 def prepare_features_and_target(df_agg, config):
     """
-    Mempersiapkan fitur dan target untuk pelatihan model.
+    Modified version that stores product-specific feature defaults
     """
     logger.info("Membuat fitur-fitur canggih untuk pelatihan...")
     
@@ -133,12 +133,35 @@ def prepare_features_and_target(df_agg, config):
     feature_maps['all_categories'] = df_enhanced['kategori_produk'].cat.categories
     df_enhanced['kategori_encoded'] = df_enhanced['kategori_produk'].cat.codes
     
+    # NEW: Store product-specific defaults for rolling/lag features
+    logger.info("Calculating product-specific feature defaults...")
+    
+    rolling_lag_features = [col for col in df_enhanced.columns 
+                           if any(x in col for x in ['rolling_', 'penjualan_bulan_lalu_', 'trend_', 'momentum_', 'volatility_'])]
+    
+    for product in df_enhanced['nama_produk'].unique():
+        product_data = df_enhanced[df_enhanced['nama_produk'] == product]
+        product_defaults = {}
+        
+        for feature in rolling_lag_features:
+            if feature in product_data.columns:
+                # Use the median of the last 6 months or all available data
+                recent_data = product_data[feature].dropna()
+                if len(recent_data) > 0:
+                    product_defaults[feature] = recent_data.median()
+                else:
+                    product_defaults[feature] = 0
+        
+        feature_maps[f"{product}_defaults"] = product_defaults
+    
     # Update feature_columns to include one-hot encoded product features
     feature_columns = [col for col in df_enhanced.columns 
                       if col not in ['jumlah', 'nama_produk', 'kategori_produk', 'waktu']]
     
     logger.info(f"Jumlah fitur yang dibuat: {len(feature_columns)}")
-    return df_enhanced, feature_maps, feature_columns, ohe # Return the encoder
+    logger.info(f"Product defaults stored for {len(df_enhanced['nama_produk'].unique())} products")
+    
+    return df_enhanced, feature_maps, feature_columns, ohe
 
 
 def handle_outliers_and_transform(df_enhanced, feature_columns, config):
