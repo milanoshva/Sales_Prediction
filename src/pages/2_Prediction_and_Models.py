@@ -985,3 +985,4 @@ else:
                 st.warning(f"⚠️ {('Informasi performa tidak lengkap:' if lang == 'ID' else 'Incomplete performance information:')} {e}. {('Latih ulang model untuk data lengkap.' if lang == 'ID' else 'Retrain the model for complete data.')}")
             except Exception as e:
                 st.error(f"❌ {('Gagal memuat informasi performa:' if lang == 'ID' else 'Failed to load performance information:')} {e}")
+                
