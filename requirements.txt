@@ -13,3 +13,4 @@ catboost>=1.0.0
 scipy
 openpyxl
 xlsxwriter
+matplotlib
