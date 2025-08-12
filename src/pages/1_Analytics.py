@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 set_custom_ui()
 
 # Plotly theme
-plotly_template = get_plotly_template()
+plotly_template = get_plotly_template(go)
 
 # Debug mode
 logger.info(f"Analytics page accessed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

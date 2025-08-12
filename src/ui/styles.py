@@ -1,5 +1,4 @@
 import streamlit as st
-import plotly.graph_objects as go # Added: Import as go
 
 def set_custom_ui():
     st.markdown("""
@@ -398,7 +397,7 @@ def set_custom_ui():
         </style>
     """, unsafe_allow_html=True)
 
-def get_plotly_template():
+def get_plotly_template(go):
     # Plotly theme definition, moved here for centralization
     return go.layout.Template(
         layout=dict(

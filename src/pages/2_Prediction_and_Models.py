@@ -17,7 +17,7 @@ from core.data_processor import create_advanced_features
 # Setup
 warnings.filterwarnings('ignore')
 set_custom_ui()
-plotly_template = get_plotly_template()
+plotly_template = get_plotly_template(go)
 
 # Enhanced logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - PREDICTION - %(levelname)s - %(message)s')
