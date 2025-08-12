@@ -61,6 +61,14 @@ def load_artifacts():
         logger.error(f"Failed to load artifacts: {e}")
         return None, None, None
 
+def get_default_start_date(df):
+    if not df.empty and 'waktu' in df.columns:
+        latest_date = pd.to_datetime(df['waktu']).max()
+        # Calculate the first day of the month after the latest month
+        default_date = latest_date + relativedelta(months=1)
+        return default_date.replace(day=1)
+    return datetime.now() # Fallback to current date if data is empty or 'waktu' column is missing
+
 def enhanced_predict_sales(model, prediction_input, artifacts, scaler, product_name, target_date):
     """
     Enhanced prediction function with better handling of feature defaults and scaling.
@@ -547,6 +555,8 @@ else:
     latest_prices = df_raw.sort_values('waktu').groupby('nama_produk')['harga_satuan'].last().to_dict()
     category_map = df_raw.groupby('nama_produk')['kategori_produk'].first().to_dict()
 
+    default_batch_start_date = get_default_start_date(df_raw)
+
     model_name_mapping_id = {
         'Gabungan': 'Gabungan Model Terbaik (Disarankan)',
         'XGBoost': 'Akurasi Tinggi & Cepat',
@@ -673,6 +683,17 @@ else:
                     
                     st.dataframe(results_df, use_container_width=True)
 
+                    # Add download button for single prediction results
+                    csv_results_single = results_df.to_csv(index=False).encode('utf-8')
+                    st.download_button(
+                        "📥 " + ("Unduh Hasil Prediksi (.csv)" if lang == 'ID' else "Download Prediction Results (.csv)"),
+                        csv_results_single,
+                        f'prediksi_single_{selected_product}_{datetime.now().strftime("%Y%m%d_%H%M")}.csv',
+                        'text/csv',
+                        key='download_single_prediction',
+                        use_container_width=True
+                    )
+
                     st.subheader("📈 " + ("Visualisasi Tren" if lang == 'ID' else "Trend Visualization"))
                     fig = go.Figure()
                     
@@ -760,7 +781,7 @@ else:
             with col3:
                 prediction_start_date = st.date_input(
                     "Tanggal Mulai Prediksi" if lang == 'ID' else "Prediction Start Date", 
-                    datetime.now(), help="Pilih tanggal mulai untuk periode prediksi" if lang == 'ID' else "Select the start date for the prediction period"
+                    value=default_batch_start_date, help="Pilih tanggal mulai untuk periode prediksi" if lang == 'ID' else "Select the start date for the prediction period"
                 )
             with col4:
                 months_to_predict_batch = st.number_input(

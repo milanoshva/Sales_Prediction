@@ -6287,3 +6287,1835 @@ Best performing model: Gradient Boosting (R² = 0.921)
 2025-08-12 02:19:33,539 - INFO - After boost factor (1.0): 45.66951276084978
 2025-08-12 02:19:33,539 - INFO - After historical context adjustment: 293.9755607914019
 2025-08-12 02:19:33,539 - INFO - Final prediction for Original Chicken BBQ: 294
+2025-08-12 02:19:52,723 - INFO - Analytics page accessed at: 2025-08-12 02:19:52
+2025-08-12 02:19:57,040 - INFO - Mode set to: Normal
+2025-08-12 02:20:00,377 - INFO - Analytics page accessed at: 2025-08-12 02:20:00
+2025-08-12 02:21:41,635 - INFO - Analytics page accessed at: 2025-08-12 02:21:41
+2025-08-12 02:24:13,118 - INFO - Analytics page accessed at: 2025-08-12 02:24:13
+2025-08-12 02:26:26,528 - INFO - Analytics page accessed at: 2025-08-12 02:26:26
+2025-08-12 02:50:23,612 - INFO - Mode set to: Normal
+2025-08-12 02:50:37,827 - INFO - Mode set to: Normal
+2025-08-12 02:50:37,848 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-12 02:50:38,338 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-12 02:50:38,422 - INFO - Cleaning currency column: harga_satuan
+2025-08-12 02:50:38,615 - INFO - Cleaning currency column: harga
+2025-08-12 02:50:38,824 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-12 02:50:39,044 - INFO - Cleaning currency column: total_pembayaran
+2025-08-12 02:50:39,596 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-12 02:50:39,740 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-12 02:50:40,252 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-12 02:50:40,325 - INFO - Cleaning currency column: harga_satuan
+2025-08-12 02:50:40,537 - INFO - Cleaning currency column: harga
+2025-08-12 02:50:40,755 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-12 02:50:40,980 - INFO - Cleaning currency column: total_pembayaran
+2025-08-12 02:50:41,558 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-12 02:50:48,626 - INFO - Analytics page accessed at: 2025-08-12 02:50:48
+2025-08-12 02:51:00,326 - INFO - Loaded model: Random Forest
+2025-08-12 02:51:00,637 - INFO - Loaded model: XGBoost
+2025-08-12 02:51:00,709 - INFO - Loaded model: LightGBM
+2025-08-12 02:51:00,899 - INFO - Loaded model: Gradient Boosting
+2025-08-12 02:51:02,435 - INFO - Loaded model: Gabungan
+2025-08-12 02:51:03,219 - INFO - Loaded 5 models and artifacts successfully
+2025-08-12 02:51:10,777 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-01-31 00:00:00 ---
+2025-08-12 02:51:10,941 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 02:51:10,944 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:51:10,954 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:51:10,954 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:51:11,279 - INFO - Raw prediction: 3.560280235533677
+2025-08-12 02:51:11,280 - INFO - After exp transform: 34.17305250327065
+2025-08-12 02:51:11,280 - INFO - After boost factor (1.0): 34.17305250327065
+2025-08-12 02:51:11,280 - INFO - After historical context adjustment: 40.292413084043275
+2025-08-12 02:51:11,281 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-12 02:51:11,998 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-02-28 00:00:00 ---
+2025-08-12 02:51:12,114 - WARNING - Extreme scaled value for yoy_growth: -77.34986229800361
+2025-08-12 02:51:12,117 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:51:12,124 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:51:12,125 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:51:12,324 - INFO - Raw prediction: 3.5952235809554725
+2025-08-12 02:51:12,325 - INFO - After exp transform: 35.42384275512646
+2025-08-12 02:51:12,325 - INFO - After boost factor (1.0): 35.42384275512646
+2025-08-12 02:51:12,325 - INFO - After historical context adjustment: 39.80897155415915
+2025-08-12 02:51:12,325 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-12 02:51:12,923 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-03-31 00:00:00 ---
+2025-08-12 02:51:13,023 - WARNING - Extreme scaled value for yoy_growth: -76.83903145923644
+2025-08-12 02:51:13,025 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:51:13,032 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:51:13,032 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:51:13,208 - INFO - Raw prediction: 3.6326166391825025
+2025-08-12 02:51:13,209 - INFO - After exp transform: 36.81162666957444
+2025-08-12 02:51:13,209 - INFO - After boost factor (1.0): 36.81162666957444
+2025-08-12 02:51:13,209 - INFO - After historical context adjustment: 42.322665278356396
+2025-08-12 02:51:13,209 - INFO - Final prediction for AGLIO e OLIO: 42
+2025-08-12 02:51:13,777 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-04-30 00:00:00 ---
+2025-08-12 02:51:13,882 - WARNING - Extreme scaled value for yoy_growth: -76.32917455915138
+2025-08-12 02:51:13,883 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:51:13,890 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:51:13,890 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:51:14,078 - INFO - Raw prediction: 3.595463862529353
+2025-08-12 02:51:14,078 - INFO - After exp transform: 35.43259578494421
+2025-08-12 02:51:14,079 - INFO - After boost factor (1.0): 35.43259578494421
+2025-08-12 02:51:14,079 - INFO - After historical context adjustment: 39.85291987512289
+2025-08-12 02:51:14,079 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-12 02:51:14,718 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-05-31 00:00:00 ---
+2025-08-12 02:51:14,909 - WARNING - Extreme scaled value for yoy_growth: -75.82029159774845
+2025-08-12 02:51:14,911 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:51:14,922 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:51:14,922 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:51:15,213 - INFO - Raw prediction: 3.6420212557465304
+2025-08-12 02:51:15,214 - INFO - After exp transform: 37.16890793334773
+2025-08-12 02:51:15,214 - INFO - After boost factor (1.0): 37.16890793334773
+2025-08-12 02:51:15,214 - INFO - After historical context adjustment: 41.737530891494686
+2025-08-12 02:51:15,215 - INFO - Final prediction for AGLIO e OLIO: 42
+2025-08-12 02:51:15,946 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-06-30 00:00:00 ---
+2025-08-12 02:51:16,067 - WARNING - Extreme scaled value for yoy_growth: -75.31238257502761
+2025-08-12 02:51:16,070 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:51:16,076 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:51:16,077 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:51:16,294 - INFO - Raw prediction: 3.564946762779771
+2025-08-12 02:51:16,294 - INFO - After exp transform: 34.33757208009471
+2025-08-12 02:51:16,295 - INFO - After boost factor (1.0): 34.33757208009471
+2025-08-12 02:51:16,295 - INFO - After historical context adjustment: 39.25112496454388
+2025-08-12 02:51:16,295 - INFO - Final prediction for AGLIO e OLIO: 39
+2025-08-12 02:52:32,294 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-01-31 00:00:00 ---
+2025-08-12 02:52:32,371 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 02:52:32,372 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:52:32,377 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:52:32,377 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:52:32,390 - INFO - Raw prediction: 3.65042011766862
+2025-08-12 02:52:32,390 - INFO - After exp transform: 37.49083333187638
+2025-08-12 02:52:32,391 - INFO - After boost factor (1.0): 37.49083333187638
+2025-08-12 02:52:32,391 - INFO - After historical context adjustment: 42.07064324615684
+2025-08-12 02:52:32,391 - INFO - Final prediction for Aglio e Olio Blackpepper: 42
+2025-08-12 02:52:32,764 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-02-28 00:00:00 ---
+2025-08-12 02:52:32,841 - WARNING - Extreme scaled value for yoy_growth: -77.78525196081125
+2025-08-12 02:52:32,843 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:52:32,848 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:52:32,848 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:52:32,862 - INFO - Raw prediction: 3.822481335617174
+2025-08-12 02:52:32,862 - INFO - After exp transform: 44.71750817659951
+2025-08-12 02:52:32,862 - INFO - After boost factor (1.0): 44.71750817659951
+2025-08-12 02:52:32,862 - INFO - After historical context adjustment: 45.410320931279834
+2025-08-12 02:52:32,862 - INFO - Final prediction for Aglio e Olio Blackpepper: 45
+2025-08-12 02:52:33,238 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-03-31 00:00:00 ---
+2025-08-12 02:52:33,314 - WARNING - Extreme scaled value for yoy_growth: -77.29141549437098
+2025-08-12 02:52:33,315 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:52:33,319 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:52:33,319 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:52:33,333 - INFO - Raw prediction: 3.7815961671938036
+2025-08-12 02:52:33,333 - INFO - After exp transform: 42.88603530981761
+2025-08-12 02:52:33,334 - INFO - After boost factor (1.0): 42.88603530981761
+2025-08-12 02:52:33,334 - INFO - After historical context adjustment: 47.785534908616164
+2025-08-12 02:52:33,334 - INFO - Final prediction for Aglio e Olio Blackpepper: 48
+2025-08-12 02:52:33,835 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-04-30 00:00:00 ---
+2025-08-12 02:52:33,942 - WARNING - Extreme scaled value for yoy_growth: -76.79852056552163
+2025-08-12 02:52:33,943 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:52:33,950 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:52:33,951 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:52:33,970 - INFO - Raw prediction: 3.688965607015559
+2025-08-12 02:52:33,970 - INFO - After exp transform: 39.00344626451563
+2025-08-12 02:52:33,971 - INFO - After boost factor (1.0): 39.00344626451563
+2025-08-12 02:52:33,971 - INFO - After historical context adjustment: 41.13329879291244
+2025-08-12 02:52:33,971 - INFO - Final prediction for Aglio e Olio Blackpepper: 41
+2025-08-12 02:52:34,540 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-05-31 00:00:00 ---
+2025-08-12 02:52:34,647 - WARNING - Extreme scaled value for yoy_growth: -76.30656717426321
+2025-08-12 02:52:34,649 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:52:34,655 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:52:34,656 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:52:34,679 - INFO - Raw prediction: 3.6439404333040675
+2025-08-12 02:52:34,679 - INFO - After exp transform: 37.24223118251062
+2025-08-12 02:52:34,679 - INFO - After boost factor (1.0): 37.24223118251062
+2025-08-12 02:52:34,679 - INFO - After historical context adjustment: 40.47964074799825
+2025-08-12 02:52:34,680 - INFO - Final prediction for Aglio e Olio Blackpepper: 40
+2025-08-12 02:52:35,180 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-06-30 00:00:00 ---
+2025-08-12 02:52:35,273 - WARNING - Extreme scaled value for yoy_growth: -75.8155553205957
+2025-08-12 02:52:35,275 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:52:35,281 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:52:35,282 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:52:35,299 - INFO - Raw prediction: 3.746821556668167
+2025-08-12 02:52:35,299 - INFO - After exp transform: 41.38614570779604
+2025-08-12 02:52:35,299 - INFO - After boost factor (1.0): 41.38614570779604
+2025-08-12 02:52:35,299 - INFO - After historical context adjustment: 44.31591008602436
+2025-08-12 02:52:35,299 - INFO - Final prediction for Aglio e Olio Blackpepper: 44
+2025-08-12 02:53:04,935 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-01-31 00:00:00 ---
+2025-08-12 02:53:05,026 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 02:53:05,029 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:53:05,035 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:53:05,036 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:53:05,055 - INFO - Raw prediction: 3.65042011766862
+2025-08-12 02:53:05,055 - INFO - After exp transform: 37.49083333187638
+2025-08-12 02:53:05,056 - INFO - After boost factor (1.0): 37.49083333187638
+2025-08-12 02:53:05,056 - INFO - After historical context adjustment: 42.07064324615684
+2025-08-12 02:53:05,056 - INFO - Final prediction for Aglio e Olio Blackpepper: 42
+2025-08-12 02:53:05,696 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-02-28 00:00:00 ---
+2025-08-12 02:53:05,854 - WARNING - Extreme scaled value for yoy_growth: -77.78525196081125
+2025-08-12 02:53:05,857 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:53:05,868 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:53:05,868 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:53:05,895 - INFO - Raw prediction: 3.822481335617174
+2025-08-12 02:53:05,896 - INFO - After exp transform: 44.71750817659951
+2025-08-12 02:53:05,896 - INFO - After boost factor (1.0): 44.71750817659951
+2025-08-12 02:53:05,896 - INFO - After historical context adjustment: 45.410320931279834
+2025-08-12 02:53:05,897 - INFO - Final prediction for Aglio e Olio Blackpepper: 45
+2025-08-12 02:53:06,600 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-03-31 00:00:00 ---
+2025-08-12 02:53:06,720 - WARNING - Extreme scaled value for yoy_growth: -77.29141549437098
+2025-08-12 02:53:06,723 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:53:06,733 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:53:06,734 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:53:06,771 - INFO - Raw prediction: 3.7815961671938036
+2025-08-12 02:53:06,771 - INFO - After exp transform: 42.88603530981761
+2025-08-12 02:53:06,771 - INFO - After boost factor (1.0): 42.88603530981761
+2025-08-12 02:53:06,772 - INFO - After historical context adjustment: 47.785534908616164
+2025-08-12 02:53:06,772 - INFO - Final prediction for Aglio e Olio Blackpepper: 48
+2025-08-12 02:53:07,370 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-04-30 00:00:00 ---
+2025-08-12 02:53:07,465 - WARNING - Extreme scaled value for yoy_growth: -76.79852056552163
+2025-08-12 02:53:07,467 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:53:07,472 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:53:07,474 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:53:07,498 - INFO - Raw prediction: 3.688965607015559
+2025-08-12 02:53:07,498 - INFO - After exp transform: 39.00344626451563
+2025-08-12 02:53:07,498 - INFO - After boost factor (1.0): 39.00344626451563
+2025-08-12 02:53:07,498 - INFO - After historical context adjustment: 41.13329879291244
+2025-08-12 02:53:07,498 - INFO - Final prediction for Aglio e Olio Blackpepper: 41
+2025-08-12 02:53:08,009 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-05-31 00:00:00 ---
+2025-08-12 02:53:08,095 - WARNING - Extreme scaled value for yoy_growth: -76.30656717426321
+2025-08-12 02:53:08,097 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:53:08,103 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:53:08,103 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:53:08,127 - INFO - Raw prediction: 3.6439404333040675
+2025-08-12 02:53:08,127 - INFO - After exp transform: 37.24223118251062
+2025-08-12 02:53:08,127 - INFO - After boost factor (1.0): 37.24223118251062
+2025-08-12 02:53:08,128 - INFO - After historical context adjustment: 40.47964074799825
+2025-08-12 02:53:08,128 - INFO - Final prediction for Aglio e Olio Blackpepper: 40
+2025-08-12 02:53:08,636 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-06-30 00:00:00 ---
+2025-08-12 02:53:08,733 - WARNING - Extreme scaled value for yoy_growth: -75.8155553205957
+2025-08-12 02:53:08,735 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 02:53:08,740 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 02:53:08,741 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 02:53:08,758 - INFO - Raw prediction: 3.746821556668167
+2025-08-12 02:53:08,758 - INFO - After exp transform: 41.38614570779604
+2025-08-12 02:53:08,758 - INFO - After boost factor (1.0): 41.38614570779604
+2025-08-12 02:53:08,758 - INFO - After historical context adjustment: 44.31591008602436
+2025-08-12 02:53:08,758 - INFO - Final prediction for Aglio e Olio Blackpepper: 44
+2025-08-12 02:53:25,947 - INFO - Analytics page accessed at: 2025-08-12 02:53:25
+2025-08-12 02:55:19,455 - INFO - Mode set to: Normal
+2025-08-12 02:55:21,075 - INFO - Analytics page accessed at: 2025-08-12 02:55:21
+2025-08-12 02:59:18,767 - INFO - Mode set to: Normal
+2025-08-12 02:59:33,626 - INFO - Mode set to: Normal
+2025-08-12 02:59:33,638 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-12 02:59:33,926 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-12 02:59:33,967 - INFO - Cleaning currency column: harga_satuan
+2025-08-12 02:59:34,088 - INFO - Cleaning currency column: harga
+2025-08-12 02:59:34,205 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-12 02:59:34,326 - INFO - Cleaning currency column: total_pembayaran
+2025-08-12 02:59:34,654 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-12 02:59:34,709 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-12 02:59:34,988 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-12 02:59:35,032 - INFO - Cleaning currency column: harga_satuan
+2025-08-12 02:59:35,165 - INFO - Cleaning currency column: harga
+2025-08-12 02:59:35,305 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-12 02:59:35,445 - INFO - Cleaning currency column: total_pembayaran
+2025-08-12 02:59:35,843 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-12 02:59:42,135 - INFO - Analytics page accessed at: 2025-08-12 02:59:42
+2025-08-12 03:01:25,227 - INFO - Analytics page accessed at: 2025-08-12 03:01:25
+2025-08-12 03:01:26,233 - INFO - Loaded model: Random Forest
+2025-08-12 03:01:26,780 - INFO - Loaded model: XGBoost
+2025-08-12 03:01:26,995 - INFO - Loaded model: LightGBM
+2025-08-12 03:01:28,359 - INFO - Loaded model: Gradient Boosting
+2025-08-12 14:26:42,898 - INFO - Mode set to: Normal
+2025-08-12 14:26:56,330 - INFO - Mode set to: Normal
+2025-08-12 14:26:56,352 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-12 14:26:57,034 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-12 14:26:57,154 - INFO - Cleaning currency column: harga_satuan
+2025-08-12 14:26:57,497 - INFO - Cleaning currency column: harga
+2025-08-12 14:26:57,791 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-12 14:26:58,059 - INFO - Cleaning currency column: total_pembayaran
+2025-08-12 14:26:58,868 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-12 14:26:59,073 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-12 14:27:00,110 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-12 14:27:00,347 - INFO - Cleaning currency column: harga_satuan
+2025-08-12 14:27:00,990 - INFO - Cleaning currency column: harga
+2025-08-12 14:27:01,629 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-12 14:27:02,016 - INFO - Cleaning currency column: total_pembayaran
+2025-08-12 14:27:02,865 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-12 14:27:12,085 - INFO - Analytics page accessed at: 2025-08-12 14:27:12
+2025-08-12 14:30:27,491 - INFO - Analytics page accessed at: 2025-08-12 14:30:27
+2025-08-12 14:32:38,246 - INFO - Analytics page accessed at: 2025-08-12 14:32:38
+2025-08-12 14:36:40,936 - INFO - Mode set to: Normal
+2025-08-12 14:36:41,882 - INFO - Analytics page accessed at: 2025-08-12 14:36:41
+2025-08-12 14:39:36,478 - INFO - Mode set to: Normal
+2025-08-12 14:39:37,458 - INFO - Analytics page accessed at: 2025-08-12 14:39:37
+2025-08-12 14:39:41,002 - INFO - Analytics page accessed at: 2025-08-12 14:39:41
+2025-08-12 14:43:38,582 - INFO - Analytics page accessed at: 2025-08-12 14:43:38
+2025-08-12 14:43:45,453 - INFO - Analytics page accessed at: 2025-08-12 14:43:45
+2025-08-12 14:45:57,287 - INFO - Loaded model: Random Forest
+2025-08-12 14:45:57,949 - INFO - Loaded model: XGBoost
+2025-08-12 14:45:58,009 - INFO - Loaded model: LightGBM
+2025-08-12 14:45:58,145 - INFO - Loaded model: Gradient Boosting
+2025-08-12 14:45:59,289 - INFO - Loaded model: Gabungan
+2025-08-12 14:45:59,779 - INFO - Loaded 5 models and artifacts successfully
+2025-08-12 14:46:06,447 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-01-31 00:00:00 ---
+2025-08-12 14:46:06,522 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:06,523 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:06,527 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:06,527 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:06,698 - INFO - Raw prediction: 3.560280235533677
+2025-08-12 14:46:06,698 - INFO - After exp transform: 34.17305250327065
+2025-08-12 14:46:06,698 - INFO - After boost factor (1.0): 34.17305250327065
+2025-08-12 14:46:06,698 - INFO - After historical context adjustment: 40.292413084043275
+2025-08-12 14:46:06,699 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-12 14:46:07,238 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-02-28 00:00:00 ---
+2025-08-12 14:46:07,347 - WARNING - Extreme scaled value for yoy_growth: -77.34986229800361
+2025-08-12 14:46:07,348 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:07,355 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:07,356 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:07,561 - INFO - Raw prediction: 3.5952235809554725
+2025-08-12 14:46:07,561 - INFO - After exp transform: 35.42384275512646
+2025-08-12 14:46:07,562 - INFO - After boost factor (1.0): 35.42384275512646
+2025-08-12 14:46:07,562 - INFO - After historical context adjustment: 39.80897155415915
+2025-08-12 14:46:07,562 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-12 14:46:08,147 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-03-31 00:00:00 ---
+2025-08-12 14:46:08,244 - WARNING - Extreme scaled value for yoy_growth: -76.83903145923644
+2025-08-12 14:46:08,246 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:08,253 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:08,253 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:08,421 - INFO - Raw prediction: 3.6326166391825025
+2025-08-12 14:46:08,421 - INFO - After exp transform: 36.81162666957444
+2025-08-12 14:46:08,422 - INFO - After boost factor (1.0): 36.81162666957444
+2025-08-12 14:46:08,422 - INFO - After historical context adjustment: 42.322665278356396
+2025-08-12 14:46:08,422 - INFO - Final prediction for AGLIO e OLIO: 42
+2025-08-12 14:46:08,947 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-04-30 00:00:00 ---
+2025-08-12 14:46:09,038 - WARNING - Extreme scaled value for yoy_growth: -76.32917455915138
+2025-08-12 14:46:09,040 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:09,045 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:09,045 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:09,196 - INFO - Raw prediction: 3.595463862529353
+2025-08-12 14:46:09,197 - INFO - After exp transform: 35.43259578494421
+2025-08-12 14:46:09,197 - INFO - After boost factor (1.0): 35.43259578494421
+2025-08-12 14:46:09,197 - INFO - After historical context adjustment: 39.85291987512289
+2025-08-12 14:46:09,198 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-12 14:46:09,680 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-05-31 00:00:00 ---
+2025-08-12 14:46:09,758 - WARNING - Extreme scaled value for yoy_growth: -75.82029159774845
+2025-08-12 14:46:09,759 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:09,764 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:09,764 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:09,895 - INFO - Raw prediction: 3.6420212557465304
+2025-08-12 14:46:09,895 - INFO - After exp transform: 37.16890793334773
+2025-08-12 14:46:09,895 - INFO - After boost factor (1.0): 37.16890793334773
+2025-08-12 14:46:09,896 - INFO - After historical context adjustment: 41.737530891494686
+2025-08-12 14:46:09,896 - INFO - Final prediction for AGLIO e OLIO: 42
+2025-08-12 14:46:10,343 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-06-30 00:00:00 ---
+2025-08-12 14:46:10,432 - WARNING - Extreme scaled value for yoy_growth: -75.31238257502761
+2025-08-12 14:46:10,433 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:10,440 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:10,440 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:10,604 - INFO - Raw prediction: 3.564946762779771
+2025-08-12 14:46:10,604 - INFO - After exp transform: 34.33757208009471
+2025-08-12 14:46:10,605 - INFO - After boost factor (1.0): 34.33757208009471
+2025-08-12 14:46:10,605 - INFO - After historical context adjustment: 39.25112496454388
+2025-08-12 14:46:10,605 - INFO - Final prediction for AGLIO e OLIO: 39
+2025-08-12 14:46:37,736 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-01-01 ---
+2025-08-12 14:46:37,840 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:37,841 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:37,846 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:37,846 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:37,869 - INFO - Raw prediction: 3.6414633027804886
+2025-08-12 14:46:37,870 - INFO - After exp transform: 37.14761741806115
+2025-08-12 14:46:37,870 - INFO - After boost factor (1.0): 37.14761741806115
+2025-08-12 14:46:37,870 - INFO - After historical context adjustment: 42.37460852439663
+2025-08-12 14:46:37,870 - INFO - Final prediction for AGLIO e OLIO: 42
+2025-08-12 14:46:38,461 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-02-01 ---
+2025-08-12 14:46:38,633 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:38,636 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:38,643 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:38,644 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:38,674 - INFO - Raw prediction: 3.6414633027804886
+2025-08-12 14:46:38,674 - INFO - After exp transform: 37.14761741806115
+2025-08-12 14:46:38,674 - INFO - After boost factor (1.0): 37.14761741806115
+2025-08-12 14:46:38,675 - INFO - After historical context adjustment: 41.01561381821344
+2025-08-12 14:46:38,675 - INFO - Final prediction for AGLIO e OLIO: 41
+2025-08-12 14:46:39,628 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-03-01 ---
+2025-08-12 14:46:39,770 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:39,774 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:39,786 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:39,787 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:39,809 - INFO - Raw prediction: 3.6414633027804886
+2025-08-12 14:46:39,809 - INFO - After exp transform: 37.14761741806115
+2025-08-12 14:46:39,810 - INFO - After boost factor (1.0): 37.14761741806115
+2025-08-12 14:46:39,810 - INFO - After historical context adjustment: 42.55785880229709
+2025-08-12 14:46:39,810 - INFO - Final prediction for AGLIO e OLIO: 43
+2025-08-12 14:46:40,689 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-04-01 ---
+2025-08-12 14:46:40,825 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:40,826 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:40,833 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:40,833 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:40,853 - INFO - Raw prediction: 3.6548111283588347
+2025-08-12 14:46:40,853 - INFO - After exp transform: 37.66021860662867
+2025-08-12 14:46:40,853 - INFO - After boost factor (1.0): 37.66021860662867
+2025-08-12 14:46:40,853 - INFO - After historical context adjustment: 41.41225585030202
+2025-08-12 14:46:40,853 - INFO - Final prediction for AGLIO e OLIO: 41
+2025-08-12 14:46:41,736 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-05-01 ---
+2025-08-12 14:46:41,915 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:41,919 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:41,927 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:41,928 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:41,956 - INFO - Raw prediction: 3.6548111283588347
+2025-08-12 14:46:41,956 - INFO - After exp transform: 37.66021860662867
+2025-08-12 14:46:41,956 - INFO - After boost factor (1.0): 37.66021860662867
+2025-08-12 14:46:41,957 - INFO - After historical context adjustment: 42.081448362791335
+2025-08-12 14:46:41,957 - INFO - Final prediction for AGLIO e OLIO: 42
+2025-08-12 14:46:42,842 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-06-01 ---
+2025-08-12 14:46:43,142 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-12 14:46:43,146 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:43,165 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:43,166 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:43,198 - INFO - Raw prediction: 3.6414633027804886
+2025-08-12 14:46:43,199 - INFO - After exp transform: 37.14761741806115
+2025-08-12 14:46:43,199 - INFO - After boost factor (1.0): 37.14761741806115
+2025-08-12 14:46:43,200 - INFO - After historical context adjustment: 41.21815670112039
+2025-08-12 14:46:43,200 - INFO - Final prediction for AGLIO e OLIO: 41
+2025-08-12 14:46:44,126 - INFO - --- Enhanced prediction for Aglio e Olio BBQ at 2025-01-01 ---
+2025-08-12 14:46:44,313 - WARNING - Extreme scaled value for yoy_growth: -76.93534703819233
+2025-08-12 14:46:44,318 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:44,329 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:44,329 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:44,364 - INFO - Raw prediction: 3.697252542712216
+2025-08-12 14:46:44,365 - INFO - After exp transform: 39.33632963789461
+2025-08-12 14:46:44,365 - INFO - After boost factor (1.0): 39.33632963789461
+2025-08-12 14:46:44,365 - INFO - After historical context adjustment: 44.355139914100945
+2025-08-12 14:46:44,365 - INFO - Final prediction for Aglio e Olio BBQ: 44
+2025-08-12 14:46:45,299 - INFO - --- Enhanced prediction for Aglio e Olio BBQ at 2025-02-01 ---
+2025-08-12 14:46:45,480 - WARNING - Extreme scaled value for yoy_growth: -76.93534703819233
+2025-08-12 14:46:45,482 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:45,493 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:45,493 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:45,520 - INFO - Raw prediction: 3.6816501536936213
+2025-08-12 14:46:45,520 - INFO - After exp transform: 38.71187072460203
+2025-08-12 14:46:45,521 - INFO - After boost factor (1.0): 38.71187072460203
+2025-08-12 14:46:45,521 - INFO - After historical context adjustment: 42.19902396861295
+2025-08-12 14:46:45,521 - INFO - Final prediction for Aglio e Olio BBQ: 42
+2025-08-12 14:46:46,467 - INFO - --- Enhanced prediction for Aglio e Olio BBQ at 2025-03-01 ---
+2025-08-12 14:46:46,691 - WARNING - Extreme scaled value for yoy_growth: -76.93534703819233
+2025-08-12 14:46:46,694 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:46,713 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:46,715 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:46,755 - INFO - Raw prediction: 3.697252542712216
+2025-08-12 14:46:46,756 - INFO - After exp transform: 39.33632963789461
+2025-08-12 14:46:46,756 - INFO - After boost factor (1.0): 39.33632963789461
+2025-08-12 14:46:46,757 - INFO - After historical context adjustment: 45.393390192001405
+2025-08-12 14:46:46,757 - INFO - Final prediction for Aglio e Olio BBQ: 45
+2025-08-12 14:46:48,022 - INFO - --- Enhanced prediction for Aglio e Olio BBQ at 2025-04-01 ---
+2025-08-12 14:46:48,258 - WARNING - Extreme scaled value for yoy_growth: -76.93534703819233
+2025-08-12 14:46:48,261 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:48,276 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:48,277 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:48,310 - INFO - Raw prediction: 3.697252542712216
+2025-08-12 14:46:48,311 - INFO - After exp transform: 39.33632963789461
+2025-08-12 14:46:48,311 - INFO - After boost factor (1.0): 39.33632963789461
+2025-08-12 14:46:48,311 - INFO - After historical context adjustment: 42.85396640800907
+2025-08-12 14:46:48,312 - INFO - Final prediction for Aglio e Olio BBQ: 43
+2025-08-12 14:46:49,251 - INFO - --- Enhanced prediction for Aglio e Olio BBQ at 2025-05-01 ---
+2025-08-12 14:46:49,412 - WARNING - Extreme scaled value for yoy_growth: -76.93534703819233
+2025-08-12 14:46:49,414 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:49,427 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:49,427 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:49,462 - INFO - Raw prediction: 3.6816501536936213
+2025-08-12 14:46:49,463 - INFO - After exp transform: 38.71187072460203
+2025-08-12 14:46:49,463 - INFO - After boost factor (1.0): 38.71187072460203
+2025-08-12 14:46:49,463 - INFO - After historical context adjustment: 41.19603768119359
+2025-08-12 14:46:49,463 - INFO - Final prediction for Aglio e Olio BBQ: 41
+2025-08-12 14:46:50,336 - INFO - --- Enhanced prediction for Aglio e Olio BBQ at 2025-06-01 ---
+2025-08-12 14:46:50,528 - WARNING - Extreme scaled value for yoy_growth: -76.93534703819233
+2025-08-12 14:46:50,531 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:50,546 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:50,547 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:50,592 - INFO - Raw prediction: 3.6816501536936213
+2025-08-12 14:46:50,592 - INFO - After exp transform: 38.71187072460203
+2025-08-12 14:46:50,593 - INFO - After boost factor (1.0): 38.71187072460203
+2025-08-12 14:46:50,593 - INFO - After historical context adjustment: 41.861566851519896
+2025-08-12 14:46:50,593 - INFO - Final prediction for Aglio e Olio BBQ: 42
+2025-08-12 14:46:52,200 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-01-01 ---
+2025-08-12 14:46:52,426 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 14:46:52,429 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:52,441 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:52,443 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:52,478 - INFO - Raw prediction: 3.65042011766862
+2025-08-12 14:46:52,478 - INFO - After exp transform: 37.49083333187638
+2025-08-12 14:46:52,479 - INFO - After boost factor (1.0): 37.49083333187638
+2025-08-12 14:46:52,479 - INFO - After historical context adjustment: 42.07064324615684
+2025-08-12 14:46:52,479 - INFO - Final prediction for Aglio e Olio Blackpepper: 42
+2025-08-12 14:46:53,379 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-02-01 ---
+2025-08-12 14:46:53,541 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 14:46:53,544 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:53,555 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:53,555 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:53,584 - INFO - Raw prediction: 3.65042011766862
+2025-08-12 14:46:53,584 - INFO - After exp transform: 37.49083333187638
+2025-08-12 14:46:53,585 - INFO - After boost factor (1.0): 37.49083333187638
+2025-08-12 14:46:53,585 - INFO - After historical context adjustment: 40.351648539973645
+2025-08-12 14:46:53,585 - INFO - Final prediction for Aglio e Olio Blackpepper: 40
+2025-08-12 14:46:54,446 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-03-01 ---
+2025-08-12 14:46:54,645 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 14:46:54,649 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:54,660 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:54,661 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:54,702 - INFO - Raw prediction: 3.6681482511139896
+2025-08-12 14:46:54,702 - INFO - After exp transform: 38.179288442715226
+2025-08-12 14:46:54,703 - INFO - After boost factor (1.0): 38.179288442715226
+2025-08-12 14:46:54,703 - INFO - After historical context adjustment: 44.490812101644494
+2025-08-12 14:46:54,704 - INFO - Final prediction for Aglio e Olio Blackpepper: 44
+2025-08-12 14:46:55,815 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-04-01 ---
+2025-08-12 14:46:56,022 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 14:46:56,024 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:56,034 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:56,034 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:56,071 - INFO - Raw prediction: 3.65042011766862
+2025-08-12 14:46:56,071 - INFO - After exp transform: 37.49083333187638
+2025-08-12 14:46:56,073 - INFO - After boost factor (1.0): 37.49083333187638
+2025-08-12 14:46:56,073 - INFO - After historical context adjustment: 40.07446974006497
+2025-08-12 14:46:56,073 - INFO - Final prediction for Aglio e Olio Blackpepper: 40
+2025-08-12 14:46:56,978 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-05-01 ---
+2025-08-12 14:46:57,116 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 14:46:57,118 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:57,126 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:57,126 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:57,148 - INFO - Raw prediction: 3.65042011766862
+2025-08-12 14:46:57,148 - INFO - After exp transform: 37.49083333187638
+2025-08-12 14:46:57,149 - INFO - After boost factor (1.0): 37.49083333187638
+2025-08-12 14:46:57,149 - INFO - After historical context adjustment: 40.65366225255429
+2025-08-12 14:46:57,149 - INFO - Final prediction for Aglio e Olio Blackpepper: 41
+2025-08-12 14:46:57,876 - INFO - --- Enhanced prediction for Aglio e Olio Blackpepper at 2025-06-01 ---
+2025-08-12 14:46:58,008 - WARNING - Extreme scaled value for yoy_growth: -78.28002996484244
+2025-08-12 14:46:58,010 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:58,017 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:58,018 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:58,045 - INFO - Raw prediction: 3.662762297618978
+2025-08-12 14:46:58,046 - INFO - After exp transform: 37.968837864446535
+2025-08-12 14:46:58,046 - INFO - After boost factor (1.0): 37.968837864446535
+2025-08-12 14:46:58,046 - INFO - After historical context adjustment: 41.92379459567971
+2025-08-12 14:46:58,046 - INFO - Final prediction for Aglio e Olio Blackpepper: 42
+2025-08-12 14:46:59,006 - INFO - --- Enhanced prediction for Aglio e Olio Mushroom at 2025-01-01 ---
+2025-08-12 14:46:59,199 - WARNING - Extreme scaled value for yoy_growth: -80.10729140820571
+2025-08-12 14:46:59,202 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:46:59,211 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:46:59,211 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:46:59,246 - INFO - Raw prediction: 3.7866563626974057
+2025-08-12 14:46:59,246 - INFO - After exp transform: 43.10867004093856
+2025-08-12 14:46:59,246 - INFO - After boost factor (1.0): 43.10867004093856
+2025-08-12 14:46:59,247 - INFO - After historical context adjustment: 47.80700953951529
+2025-08-12 14:46:59,247 - INFO - Final prediction for Aglio e Olio Mushroom: 48
+2025-08-12 14:47:00,149 - INFO - --- Enhanced prediction for Aglio e Olio Mushroom at 2025-02-01 ---
+2025-08-12 14:47:00,343 - WARNING - Extreme scaled value for yoy_growth: -80.10729140820571
+2025-08-12 14:47:00,346 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:47:00,361 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:47:00,361 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:47:00,393 - INFO - Raw prediction: 3.7683902380297387
+2025-08-12 14:47:00,394 - INFO - After exp transform: 42.31028943317385
+2025-08-12 14:47:00,394 - INFO - After boost factor (1.0): 42.31028943317385
+2025-08-12 14:47:00,394 - INFO - After historical context adjustment: 44.4041484078968
+2025-08-12 14:47:00,394 - INFO - Final prediction for Aglio e Olio Mushroom: 44
+2025-08-12 14:47:01,446 - INFO - --- Enhanced prediction for Aglio e Olio Mushroom at 2025-03-01 ---
+2025-08-12 14:47:01,643 - WARNING - Extreme scaled value for yoy_growth: -80.10729140820571
+2025-08-12 14:47:01,646 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:47:01,659 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:47:01,659 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:47:01,687 - INFO - Raw prediction: 3.7809189349686316
+2025-08-12 14:47:01,687 - INFO - After exp transform: 42.856324334221384
+2025-08-12 14:47:01,687 - INFO - After boost factor (1.0): 42.856324334221384
+2025-08-12 14:47:01,688 - INFO - After historical context adjustment: 47.768617822713736
+2025-08-12 14:47:01,688 - INFO - Final prediction for Aglio e Olio Mushroom: 48
+2025-08-12 14:47:02,680 - INFO - --- Enhanced prediction for Aglio e Olio Mushroom at 2025-04-01 ---
+2025-08-12 14:47:02,837 - WARNING - Extreme scaled value for yoy_growth: -80.10729140820571
+2025-08-12 14:47:02,840 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:47:02,851 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:47:02,853 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:47:02,892 - INFO - Raw prediction: 3.7683902380297387
+2025-08-12 14:47:02,893 - INFO - After exp transform: 42.31028943317385
+2025-08-12 14:47:02,893 - INFO - After boost factor (1.0): 42.31028943317385
+2025-08-12 14:47:02,893 - INFO - After historical context adjustment: 43.721969607988115
+2025-08-12 14:47:02,893 - INFO - Final prediction for Aglio e Olio Mushroom: 44
+2025-08-12 14:47:03,971 - INFO - --- Enhanced prediction for Aglio e Olio Mushroom at 2025-05-01 ---
+2025-08-12 14:47:04,175 - WARNING - Extreme scaled value for yoy_growth: -80.10729140820571
+2025-08-12 14:47:04,179 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:47:04,193 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:47:04,193 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:47:04,225 - INFO - Raw prediction: 3.7683902380297387
+2025-08-12 14:47:04,225 - INFO - After exp transform: 42.31028943317385
+2025-08-12 14:47:04,225 - INFO - After boost factor (1.0): 42.31028943317385
+2025-08-12 14:47:04,225 - INFO - After historical context adjustment: 43.98616212047744
+2025-08-12 14:47:04,226 - INFO - Final prediction for Aglio e Olio Mushroom: 44
+2025-08-12 14:47:05,147 - INFO - --- Enhanced prediction for Aglio e Olio Mushroom at 2025-06-01 ---
+2025-08-12 14:47:05,277 - WARNING - Extreme scaled value for yoy_growth: -80.10729140820571
+2025-08-12 14:47:05,279 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:47:05,288 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:47:05,289 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:47:05,312 - INFO - Raw prediction: 3.7683902380297387
+2025-08-12 14:47:05,312 - INFO - After exp transform: 42.31028943317385
+2025-08-12 14:47:05,312 - INFO - After boost factor (1.0): 42.31028943317385
+2025-08-12 14:47:05,312 - INFO - After historical context adjustment: 44.47169129080375
+2025-08-12 14:47:05,312 - INFO - Final prediction for Aglio e Olio Mushroom: 44
+2025-08-12 14:56:23,590 - INFO - --- Enhanced prediction for Nasi Putih at 2025-01-01 ---
+2025-08-12 14:56:23,653 - WARNING - Extreme scaled value for rolling_mean_3: 130.71917343173436
+2025-08-12 14:56:23,653 - WARNING - Extreme scaled value for rolling_std_3: 143.78146709510187
+2025-08-12 14:56:23,654 - WARNING - Extreme scaled value for rolling_median_3: 177.41666666666666
+2025-08-12 14:56:23,654 - WARNING - Extreme scaled value for rolling_max_3: 154.13333333333333
+2025-08-12 14:56:23,654 - WARNING - Extreme scaled value for rolling_mean_6: 214.06879999999995
+2025-08-12 14:56:23,654 - WARNING - Extreme scaled value for rolling_std_6: 141.08747434319122
+2025-08-12 14:56:23,654 - WARNING - Extreme scaled value for rolling_median_6: 225.73684210526315
+2025-08-12 14:56:23,654 - WARNING - Extreme scaled value for rolling_max_6: 164.85714285714286
+2025-08-12 14:56:23,655 - WARNING - Extreme scaled value for rolling_mean_12: 310.875
+2025-08-12 14:56:23,655 - WARNING - Extreme scaled value for rolling_std_12: 122.12920731228178
+2025-08-12 14:56:23,655 - WARNING - Extreme scaled value for rolling_median_12: 295.85714285714283
+2025-08-12 14:56:23,655 - WARNING - Extreme scaled value for rolling_max_12: 164.64285714285714
+2025-08-12 14:56:23,655 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 128.88888888888889
+2025-08-12 14:56:23,656 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 125.23529411764706
+2025-08-12 14:56:23,656 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 128.0005490074634
+2025-08-12 14:56:23,656 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 120.3125
+2025-08-12 14:56:23,656 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 137.5625
+2025-08-12 14:56:23,656 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 142.13333333333333
+2025-08-12 14:56:23,656 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 137.70553882940249
+2025-08-12 14:56:23,657 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 129.2240857224073
+2025-08-12 14:56:23,657 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 141.8188272063871
+2025-08-12 14:56:23,657 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 179.4127951884571
+2025-08-12 14:56:23,657 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 156.22595287334372
+2025-08-12 14:56:23,657 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 184.60565766676163
+2025-08-12 14:56:23,657 - WARNING - Extreme scaled value for trend_3m: -101.6681904761904
+2025-08-12 14:56:23,658 - WARNING - Extreme scaled value for trend_6m: -63.71842038216561
+2025-08-12 14:56:23,658 - WARNING - Extreme scaled value for trend_12m: -26.7923211169284
+2025-08-12 14:56:23,658 - WARNING - Extreme scaled value for momentum_12m: 16.41921068814792
+2025-08-12 14:56:23,658 - WARNING - Extreme scaled value for product_popularity: 626.9358974358962
+2025-08-12 14:56:23,659 - WARNING - Extreme scaled value for monthly_pattern: 151.11111111111111
+2025-08-12 14:56:23,659 - WARNING - Extreme scaled value for category_performance: 369.3956547619048
+2025-08-12 14:56:23,659 - WARNING - Extreme scaled value for yoy_growth: -70.73776616770888
+2025-08-12 14:56:23,659 - WARNING - Extreme scaled value for price_popularity_interaction: 13.778036025673728
+2025-08-12 14:56:23,659 - WARNING - Extreme scaled value for trend_momentum_interaction: -1969.8046363636358
+2025-08-12 14:56:23,660 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:23,664 - WARNING - Extreme scaled value for category_mean_sales: 369.3956547619048
+2025-08-12 14:56:23,665 - WARNING - Extreme scaled value for category_std_sales: 221.1858312514617
+2025-08-12 14:56:23,665 - WARNING - Extreme scaled value for category_product_count: -1918.7380952380952
+2025-08-12 14:56:23,675 - INFO - Raw prediction: 4.719614545609527
+2025-08-12 14:56:23,675 - INFO - After exp transform: 111.12502525398018
+2025-08-12 14:56:23,675 - INFO - After boost factor (1.0): 111.12502525398018
+2025-08-12 14:56:23,675 - INFO - After historical context adjustment: 505.66374439008723
+2025-08-12 14:56:23,675 - INFO - Final prediction for Nasi Putih: 506
+2025-08-12 14:56:24,061 - INFO - --- Enhanced prediction for Nasi Putih at 2025-02-01 ---
+2025-08-12 14:56:24,141 - WARNING - Extreme scaled value for rolling_mean_3: 130.71917343173436
+2025-08-12 14:56:24,141 - WARNING - Extreme scaled value for rolling_std_3: 143.78146709510187
+2025-08-12 14:56:24,141 - WARNING - Extreme scaled value for rolling_median_3: 177.41666666666666
+2025-08-12 14:56:24,141 - WARNING - Extreme scaled value for rolling_max_3: 154.13333333333333
+2025-08-12 14:56:24,142 - WARNING - Extreme scaled value for rolling_mean_6: 214.06879999999995
+2025-08-12 14:56:24,142 - WARNING - Extreme scaled value for rolling_std_6: 141.08747434319122
+2025-08-12 14:56:24,142 - WARNING - Extreme scaled value for rolling_median_6: 225.73684210526315
+2025-08-12 14:56:24,142 - WARNING - Extreme scaled value for rolling_max_6: 164.85714285714286
+2025-08-12 14:56:24,143 - WARNING - Extreme scaled value for rolling_mean_12: 310.875
+2025-08-12 14:56:24,143 - WARNING - Extreme scaled value for rolling_std_12: 122.12920731228178
+2025-08-12 14:56:24,143 - WARNING - Extreme scaled value for rolling_median_12: 295.85714285714283
+2025-08-12 14:56:24,143 - WARNING - Extreme scaled value for rolling_max_12: 164.64285714285714
+2025-08-12 14:56:24,144 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 128.88888888888889
+2025-08-12 14:56:24,144 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 125.23529411764706
+2025-08-12 14:56:24,144 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 128.0005490074634
+2025-08-12 14:56:24,144 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 120.3125
+2025-08-12 14:56:24,144 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 137.5625
+2025-08-12 14:56:24,145 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 142.13333333333333
+2025-08-12 14:56:24,145 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 137.70553882940249
+2025-08-12 14:56:24,145 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 129.2240857224073
+2025-08-12 14:56:24,145 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 141.8188272063871
+2025-08-12 14:56:24,145 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 179.4127951884571
+2025-08-12 14:56:24,146 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 156.22595287334372
+2025-08-12 14:56:24,146 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 184.60565766676163
+2025-08-12 14:56:24,146 - WARNING - Extreme scaled value for trend_3m: -101.6681904761904
+2025-08-12 14:56:24,146 - WARNING - Extreme scaled value for trend_6m: -63.71842038216561
+2025-08-12 14:56:24,146 - WARNING - Extreme scaled value for trend_12m: -26.7923211169284
+2025-08-12 14:56:24,147 - WARNING - Extreme scaled value for momentum_12m: 16.41921068814792
+2025-08-12 14:56:24,147 - WARNING - Extreme scaled value for product_popularity: 626.9358974358962
+2025-08-12 14:56:24,147 - WARNING - Extreme scaled value for monthly_pattern: 138.37037037037035
+2025-08-12 14:56:24,147 - WARNING - Extreme scaled value for category_performance: 369.3956547619048
+2025-08-12 14:56:24,148 - WARNING - Extreme scaled value for yoy_growth: -70.73776616770888
+2025-08-12 14:56:24,148 - WARNING - Extreme scaled value for price_popularity_interaction: 13.778036025673728
+2025-08-12 14:56:24,148 - WARNING - Extreme scaled value for trend_momentum_interaction: -1999.188727272727
+2025-08-12 14:56:24,149 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:24,153 - WARNING - Extreme scaled value for category_mean_sales: 369.3956547619048
+2025-08-12 14:56:24,153 - WARNING - Extreme scaled value for category_std_sales: 221.1858312514617
+2025-08-12 14:56:24,153 - WARNING - Extreme scaled value for category_product_count: -1918.7380952380952
+2025-08-12 14:56:24,166 - INFO - Raw prediction: 4.719614545609527
+2025-08-12 14:56:24,166 - INFO - After exp transform: 111.12502525398018
+2025-08-12 14:56:24,166 - INFO - After boost factor (1.0): 111.12502525398018
+2025-08-12 14:56:24,166 - INFO - After historical context adjustment: 466.58275674232647
+2025-08-12 14:56:24,166 - INFO - Final prediction for Nasi Putih: 467
+2025-08-12 14:56:24,583 - INFO - --- Enhanced prediction for Nasi Putih at 2025-03-01 ---
+2025-08-12 14:56:24,664 - WARNING - Extreme scaled value for rolling_mean_3: 130.71917343173436
+2025-08-12 14:56:24,665 - WARNING - Extreme scaled value for rolling_std_3: 143.78146709510187
+2025-08-12 14:56:24,665 - WARNING - Extreme scaled value for rolling_median_3: 177.41666666666666
+2025-08-12 14:56:24,665 - WARNING - Extreme scaled value for rolling_max_3: 154.13333333333333
+2025-08-12 14:56:24,665 - WARNING - Extreme scaled value for rolling_mean_6: 214.06879999999995
+2025-08-12 14:56:24,666 - WARNING - Extreme scaled value for rolling_std_6: 141.08747434319122
+2025-08-12 14:56:24,666 - WARNING - Extreme scaled value for rolling_median_6: 225.73684210526315
+2025-08-12 14:56:24,666 - WARNING - Extreme scaled value for rolling_max_6: 164.85714285714286
+2025-08-12 14:56:24,666 - WARNING - Extreme scaled value for rolling_mean_12: 310.875
+2025-08-12 14:56:24,667 - WARNING - Extreme scaled value for rolling_std_12: 122.12920731228178
+2025-08-12 14:56:24,667 - WARNING - Extreme scaled value for rolling_median_12: 295.85714285714283
+2025-08-12 14:56:24,667 - WARNING - Extreme scaled value for rolling_max_12: 164.64285714285714
+2025-08-12 14:56:24,667 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 128.88888888888889
+2025-08-12 14:56:24,668 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 125.23529411764706
+2025-08-12 14:56:24,668 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 128.0005490074634
+2025-08-12 14:56:24,668 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 120.3125
+2025-08-12 14:56:24,668 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 137.5625
+2025-08-12 14:56:24,668 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 142.13333333333333
+2025-08-12 14:56:24,669 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 137.70553882940249
+2025-08-12 14:56:24,669 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 129.2240857224073
+2025-08-12 14:56:24,669 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 141.8188272063871
+2025-08-12 14:56:24,669 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 179.4127951884571
+2025-08-12 14:56:24,669 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 156.22595287334372
+2025-08-12 14:56:24,670 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 184.60565766676163
+2025-08-12 14:56:24,670 - WARNING - Extreme scaled value for trend_3m: -101.6681904761904
+2025-08-12 14:56:24,670 - WARNING - Extreme scaled value for trend_6m: -63.71842038216561
+2025-08-12 14:56:24,670 - WARNING - Extreme scaled value for trend_12m: -26.7923211169284
+2025-08-12 14:56:24,671 - WARNING - Extreme scaled value for momentum_12m: 16.41921068814792
+2025-08-12 14:56:24,671 - WARNING - Extreme scaled value for product_popularity: 626.9358974358962
+2025-08-12 14:56:24,672 - WARNING - Extreme scaled value for monthly_pattern: 153.11111111111111
+2025-08-12 14:56:24,672 - WARNING - Extreme scaled value for category_performance: 369.3956547619048
+2025-08-12 14:56:24,672 - WARNING - Extreme scaled value for yoy_growth: -70.73776616770888
+2025-08-12 14:56:24,672 - WARNING - Extreme scaled value for price_popularity_interaction: 13.778036025673728
+2025-08-12 14:56:24,672 - WARNING - Extreme scaled value for trend_momentum_interaction: -1969.8046363636358
+2025-08-12 14:56:24,674 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:24,680 - WARNING - Extreme scaled value for category_mean_sales: 369.3956547619048
+2025-08-12 14:56:24,680 - WARNING - Extreme scaled value for category_std_sales: 221.1858312514617
+2025-08-12 14:56:24,680 - WARNING - Extreme scaled value for category_product_count: -1918.7380952380952
+2025-08-12 14:56:24,697 - INFO - Raw prediction: 4.719614545609527
+2025-08-12 14:56:24,697 - INFO - After exp transform: 111.12502525398018
+2025-08-12 14:56:24,697 - INFO - After boost factor (1.0): 111.12502525398018
+2025-08-12 14:56:24,697 - INFO - After historical context adjustment: 512.286328371855
+2025-08-12 14:56:24,697 - INFO - Final prediction for Nasi Putih: 512
+2025-08-12 14:56:25,145 - INFO - --- Enhanced prediction for Nasi Putih at 2025-04-01 ---
+2025-08-12 14:56:25,226 - WARNING - Extreme scaled value for rolling_mean_3: 130.71917343173436
+2025-08-12 14:56:25,227 - WARNING - Extreme scaled value for rolling_std_3: 143.78146709510187
+2025-08-12 14:56:25,227 - WARNING - Extreme scaled value for rolling_median_3: 177.41666666666666
+2025-08-12 14:56:25,228 - WARNING - Extreme scaled value for rolling_max_3: 154.13333333333333
+2025-08-12 14:56:25,228 - WARNING - Extreme scaled value for rolling_mean_6: 214.06879999999995
+2025-08-12 14:56:25,228 - WARNING - Extreme scaled value for rolling_std_6: 141.08747434319122
+2025-08-12 14:56:25,228 - WARNING - Extreme scaled value for rolling_median_6: 225.73684210526315
+2025-08-12 14:56:25,229 - WARNING - Extreme scaled value for rolling_max_6: 164.85714285714286
+2025-08-12 14:56:25,229 - WARNING - Extreme scaled value for rolling_mean_12: 310.875
+2025-08-12 14:56:25,229 - WARNING - Extreme scaled value for rolling_std_12: 122.12920731228178
+2025-08-12 14:56:25,229 - WARNING - Extreme scaled value for rolling_median_12: 295.85714285714283
+2025-08-12 14:56:25,229 - WARNING - Extreme scaled value for rolling_max_12: 164.64285714285714
+2025-08-12 14:56:25,230 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 128.88888888888889
+2025-08-12 14:56:25,230 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 125.23529411764706
+2025-08-12 14:56:25,230 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 128.0005490074634
+2025-08-12 14:56:25,230 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 120.3125
+2025-08-12 14:56:25,231 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 137.5625
+2025-08-12 14:56:25,231 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 142.13333333333333
+2025-08-12 14:56:25,231 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 137.70553882940249
+2025-08-12 14:56:25,231 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 129.2240857224073
+2025-08-12 14:56:25,231 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 141.8188272063871
+2025-08-12 14:56:25,231 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 179.4127951884571
+2025-08-12 14:56:25,232 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 156.22595287334372
+2025-08-12 14:56:25,232 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 184.60565766676163
+2025-08-12 14:56:25,232 - WARNING - Extreme scaled value for trend_3m: -101.6681904761904
+2025-08-12 14:56:25,232 - WARNING - Extreme scaled value for trend_6m: -63.71842038216561
+2025-08-12 14:56:25,232 - WARNING - Extreme scaled value for trend_12m: -26.7923211169284
+2025-08-12 14:56:25,233 - WARNING - Extreme scaled value for momentum_12m: 16.41921068814792
+2025-08-12 14:56:25,233 - WARNING - Extreme scaled value for product_popularity: 626.9358974358962
+2025-08-12 14:56:25,233 - WARNING - Extreme scaled value for monthly_pattern: 130.88888888888889
+2025-08-12 14:56:25,234 - WARNING - Extreme scaled value for category_performance: 369.3956547619048
+2025-08-12 14:56:25,234 - WARNING - Extreme scaled value for yoy_growth: -70.73776616770888
+2025-08-12 14:56:25,234 - WARNING - Extreme scaled value for price_popularity_interaction: 13.778036025673728
+2025-08-12 14:56:25,234 - WARNING - Extreme scaled value for trend_momentum_interaction: -1969.8046363636358
+2025-08-12 14:56:25,235 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:25,239 - WARNING - Extreme scaled value for category_mean_sales: 369.3956547619048
+2025-08-12 14:56:25,240 - WARNING - Extreme scaled value for category_std_sales: 221.1858312514617
+2025-08-12 14:56:25,240 - WARNING - Extreme scaled value for category_product_count: -1918.7380952380952
+2025-08-12 14:56:25,256 - INFO - Raw prediction: 4.719614545609527
+2025-08-12 14:56:25,257 - INFO - After exp transform: 111.12502525398018
+2025-08-12 14:56:25,257 - INFO - After boost factor (1.0): 111.12502525398018
+2025-08-12 14:56:25,257 - INFO - After historical context adjustment: 443.88600620920624
+2025-08-12 14:56:25,257 - INFO - Final prediction for Nasi Putih: 444
+2025-08-12 14:56:25,796 - INFO - --- Enhanced prediction for Nasi Putih at 2025-05-01 ---
+2025-08-12 14:56:25,901 - WARNING - Extreme scaled value for rolling_mean_3: 130.71917343173436
+2025-08-12 14:56:25,901 - WARNING - Extreme scaled value for rolling_std_3: 143.78146709510187
+2025-08-12 14:56:25,902 - WARNING - Extreme scaled value for rolling_median_3: 177.41666666666666
+2025-08-12 14:56:25,902 - WARNING - Extreme scaled value for rolling_max_3: 154.13333333333333
+2025-08-12 14:56:25,902 - WARNING - Extreme scaled value for rolling_mean_6: 214.06879999999995
+2025-08-12 14:56:25,903 - WARNING - Extreme scaled value for rolling_std_6: 141.08747434319122
+2025-08-12 14:56:25,903 - WARNING - Extreme scaled value for rolling_median_6: 225.73684210526315
+2025-08-12 14:56:25,903 - WARNING - Extreme scaled value for rolling_max_6: 164.85714285714286
+2025-08-12 14:56:25,904 - WARNING - Extreme scaled value for rolling_mean_12: 310.875
+2025-08-12 14:56:25,904 - WARNING - Extreme scaled value for rolling_std_12: 122.12920731228178
+2025-08-12 14:56:25,904 - WARNING - Extreme scaled value for rolling_median_12: 295.85714285714283
+2025-08-12 14:56:25,904 - WARNING - Extreme scaled value for rolling_max_12: 164.64285714285714
+2025-08-12 14:56:25,905 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 128.88888888888889
+2025-08-12 14:56:25,905 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 125.23529411764706
+2025-08-12 14:56:25,905 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 128.0005490074634
+2025-08-12 14:56:25,906 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 120.3125
+2025-08-12 14:56:25,906 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 137.5625
+2025-08-12 14:56:25,906 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 142.13333333333333
+2025-08-12 14:56:25,906 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 137.70553882940249
+2025-08-12 14:56:25,907 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 129.2240857224073
+2025-08-12 14:56:25,907 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 141.8188272063871
+2025-08-12 14:56:25,907 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 179.4127951884571
+2025-08-12 14:56:25,907 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 156.22595287334372
+2025-08-12 14:56:25,908 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 184.60565766676163
+2025-08-12 14:56:25,908 - WARNING - Extreme scaled value for trend_3m: -101.6681904761904
+2025-08-12 14:56:25,908 - WARNING - Extreme scaled value for trend_6m: -63.71842038216561
+2025-08-12 14:56:25,908 - WARNING - Extreme scaled value for trend_12m: -26.7923211169284
+2025-08-12 14:56:25,909 - WARNING - Extreme scaled value for momentum_12m: 16.41921068814792
+2025-08-12 14:56:25,910 - WARNING - Extreme scaled value for product_popularity: 626.9358974358962
+2025-08-12 14:56:25,910 - WARNING - Extreme scaled value for monthly_pattern: 138.66666666666666
+2025-08-12 14:56:25,911 - WARNING - Extreme scaled value for category_performance: 369.3956547619048
+2025-08-12 14:56:25,911 - WARNING - Extreme scaled value for yoy_growth: -70.73776616770888
+2025-08-12 14:56:25,911 - WARNING - Extreme scaled value for price_popularity_interaction: 13.778036025673728
+2025-08-12 14:56:25,912 - WARNING - Extreme scaled value for trend_momentum_interaction: -1969.8046363636358
+2025-08-12 14:56:25,913 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:25,918 - WARNING - Extreme scaled value for category_mean_sales: 369.3956547619048
+2025-08-12 14:56:25,919 - WARNING - Extreme scaled value for category_std_sales: 221.1858312514617
+2025-08-12 14:56:25,919 - WARNING - Extreme scaled value for category_product_count: -1918.7380952380952
+2025-08-12 14:56:25,936 - INFO - Raw prediction: 4.719614545609527
+2025-08-12 14:56:25,936 - INFO - After exp transform: 111.12502525398018
+2025-08-12 14:56:25,936 - INFO - After boost factor (1.0): 111.12502525398018
+2025-08-12 14:56:25,936 - INFO - After historical context adjustment: 467.28745540501467
+2025-08-12 14:56:25,937 - INFO - Final prediction for Nasi Putih: 467
+2025-08-12 14:56:26,515 - INFO - --- Enhanced prediction for Nasi Putih at 2025-06-01 ---
+2025-08-12 14:56:26,617 - WARNING - Extreme scaled value for rolling_mean_3: 130.71917343173436
+2025-08-12 14:56:26,617 - WARNING - Extreme scaled value for rolling_std_3: 143.78146709510187
+2025-08-12 14:56:26,617 - WARNING - Extreme scaled value for rolling_median_3: 177.41666666666666
+2025-08-12 14:56:26,618 - WARNING - Extreme scaled value for rolling_max_3: 154.13333333333333
+2025-08-12 14:56:26,618 - WARNING - Extreme scaled value for rolling_mean_6: 214.06879999999995
+2025-08-12 14:56:26,618 - WARNING - Extreme scaled value for rolling_std_6: 141.08747434319122
+2025-08-12 14:56:26,618 - WARNING - Extreme scaled value for rolling_median_6: 225.73684210526315
+2025-08-12 14:56:26,619 - WARNING - Extreme scaled value for rolling_max_6: 164.85714285714286
+2025-08-12 14:56:26,619 - WARNING - Extreme scaled value for rolling_mean_12: 310.875
+2025-08-12 14:56:26,619 - WARNING - Extreme scaled value for rolling_std_12: 122.12920731228178
+2025-08-12 14:56:26,619 - WARNING - Extreme scaled value for rolling_median_12: 295.85714285714283
+2025-08-12 14:56:26,620 - WARNING - Extreme scaled value for rolling_max_12: 164.64285714285714
+2025-08-12 14:56:26,620 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 128.88888888888889
+2025-08-12 14:56:26,620 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 125.23529411764706
+2025-08-12 14:56:26,621 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 128.0005490074634
+2025-08-12 14:56:26,621 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 120.3125
+2025-08-12 14:56:26,621 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 137.5625
+2025-08-12 14:56:26,621 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 142.13333333333333
+2025-08-12 14:56:26,621 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 137.70553882940249
+2025-08-12 14:56:26,622 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 129.2240857224073
+2025-08-12 14:56:26,623 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 141.8188272063871
+2025-08-12 14:56:26,623 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 179.4127951884571
+2025-08-12 14:56:26,623 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 156.22595287334372
+2025-08-12 14:56:26,623 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 184.60565766676163
+2025-08-12 14:56:26,624 - WARNING - Extreme scaled value for trend_3m: -101.6681904761904
+2025-08-12 14:56:26,624 - WARNING - Extreme scaled value for trend_6m: -63.71842038216561
+2025-08-12 14:56:26,624 - WARNING - Extreme scaled value for trend_12m: -26.7923211169284
+2025-08-12 14:56:26,625 - WARNING - Extreme scaled value for momentum_12m: 16.41921068814792
+2025-08-12 14:56:26,625 - WARNING - Extreme scaled value for product_popularity: 626.9358974358962
+2025-08-12 14:56:26,626 - WARNING - Extreme scaled value for monthly_pattern: 137.22222222222223
+2025-08-12 14:56:26,626 - WARNING - Extreme scaled value for category_performance: 369.3956547619048
+2025-08-12 14:56:26,626 - WARNING - Extreme scaled value for yoy_growth: -70.73776616770888
+2025-08-12 14:56:26,626 - WARNING - Extreme scaled value for price_popularity_interaction: 13.778036025673728
+2025-08-12 14:56:26,626 - WARNING - Extreme scaled value for trend_momentum_interaction: -1969.8046363636358
+2025-08-12 14:56:26,629 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:26,633 - WARNING - Extreme scaled value for category_mean_sales: 369.3956547619048
+2025-08-12 14:56:26,634 - WARNING - Extreme scaled value for category_std_sales: 221.1858312514617
+2025-08-12 14:56:26,634 - WARNING - Extreme scaled value for category_product_count: -1918.7380952380952
+2025-08-12 14:56:26,652 - INFO - Raw prediction: 4.719614545609527
+2025-08-12 14:56:26,653 - INFO - After exp transform: 111.12502525398018
+2025-08-12 14:56:26,653 - INFO - After boost factor (1.0): 111.12502525398018
+2025-08-12 14:56:26,653 - INFO - After historical context adjustment: 463.2753568024427
+2025-08-12 14:56:26,653 - INFO - Final prediction for Nasi Putih: 463
+2025-08-12 14:56:27,187 - INFO - --- Enhanced prediction for Spaghetti Carbonara at 2025-01-01 ---
+2025-08-12 14:56:27,280 - WARNING - Extreme scaled value for rolling_mean_3: 67.9587896678967
+2025-08-12 14:56:27,281 - WARNING - Extreme scaled value for rolling_std_3: 76.23087830350077
+2025-08-12 14:56:27,281 - WARNING - Extreme scaled value for rolling_median_3: 96.08333333333333
+2025-08-12 14:56:27,281 - WARNING - Extreme scaled value for rolling_max_3: 78.33333333333333
+2025-08-12 14:56:27,282 - WARNING - Extreme scaled value for rolling_mean_6: 114.69135999999997
+2025-08-12 14:56:27,283 - WARNING - Extreme scaled value for rolling_std_6: 75.784162223822
+2025-08-12 14:56:27,283 - WARNING - Extreme scaled value for rolling_median_6: 121.10526315789474
+2025-08-12 14:56:27,283 - WARNING - Extreme scaled value for rolling_max_6: 83.64285714285714
+2025-08-12 14:56:27,283 - WARNING - Extreme scaled value for rolling_mean_12: 168.1605555555556
+2025-08-12 14:56:27,284 - WARNING - Extreme scaled value for rolling_std_12: 65.27863757970265
+2025-08-12 14:56:27,284 - WARNING - Extreme scaled value for rolling_median_12: 157.71428571428572
+2025-08-12 14:56:27,284 - WARNING - Extreme scaled value for rolling_max_12: 86.0
+2025-08-12 14:56:27,284 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 65.72222222222223
+2025-08-12 14:56:27,285 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 67.82352941176471
+2025-08-12 14:56:27,285 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 66.57840370794753
+2025-08-12 14:56:27,285 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 72.875
+2025-08-12 14:56:27,285 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.75
+2025-08-12 14:56:27,286 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 72.06666666666666
+2025-08-12 14:56:27,286 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 71.38512773313458
+2025-08-12 14:56:27,286 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 71.41648765659389
+2025-08-12 14:56:27,286 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 80.20704633788354
+2025-08-12 14:56:27,287 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.40581043157958
+2025-08-12 14:56:27,287 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 90.2568621232127
+2025-08-12 14:56:27,287 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 107.23752701671359
+2025-08-12 14:56:27,287 - WARNING - Extreme scaled value for trend_3m: -56.24228571428564
+2025-08-12 14:56:27,288 - WARNING - Extreme scaled value for trend_6m: -37.51592356687901
+2025-08-12 14:56:27,288 - WARNING - Extreme scaled value for trend_12m: -18.164048865619563
+2025-08-12 14:56:27,289 - WARNING - Extreme scaled value for product_popularity: 339.26923076923015
+2025-08-12 14:56:27,289 - WARNING - Extreme scaled value for monthly_pattern: 86.62962962962963
+2025-08-12 14:56:27,290 - WARNING - Extreme scaled value for yoy_growth: -69.33009543242977
+2025-08-12 14:56:27,290 - WARNING - Extreme scaled value for price_popularity_interaction: 30.631942522972377
+2025-08-12 14:56:27,290 - WARNING - Extreme scaled value for trend_momentum_interaction: -414.0455454545452
+2025-08-12 14:56:27,292 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:27,298 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:27,298 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:27,315 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:27,315 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:27,315 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:27,316 - INFO - After historical context adjustment: 320.8234421578154
+2025-08-12 14:56:27,316 - INFO - Final prediction for Spaghetti Carbonara: 321
+2025-08-12 14:56:27,778 - INFO - --- Enhanced prediction for Spaghetti Carbonara at 2025-02-01 ---
+2025-08-12 14:56:27,850 - WARNING - Extreme scaled value for rolling_mean_3: 67.9587896678967
+2025-08-12 14:56:27,850 - WARNING - Extreme scaled value for rolling_std_3: 76.23087830350077
+2025-08-12 14:56:27,851 - WARNING - Extreme scaled value for rolling_median_3: 96.08333333333333
+2025-08-12 14:56:27,851 - WARNING - Extreme scaled value for rolling_max_3: 78.33333333333333
+2025-08-12 14:56:27,851 - WARNING - Extreme scaled value for rolling_mean_6: 114.69135999999997
+2025-08-12 14:56:27,851 - WARNING - Extreme scaled value for rolling_std_6: 75.784162223822
+2025-08-12 14:56:27,851 - WARNING - Extreme scaled value for rolling_median_6: 121.10526315789474
+2025-08-12 14:56:27,852 - WARNING - Extreme scaled value for rolling_max_6: 83.64285714285714
+2025-08-12 14:56:27,852 - WARNING - Extreme scaled value for rolling_mean_12: 168.1605555555556
+2025-08-12 14:56:27,852 - WARNING - Extreme scaled value for rolling_std_12: 65.27863757970265
+2025-08-12 14:56:27,852 - WARNING - Extreme scaled value for rolling_median_12: 157.71428571428572
+2025-08-12 14:56:27,853 - WARNING - Extreme scaled value for rolling_max_12: 86.0
+2025-08-12 14:56:27,853 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 65.72222222222223
+2025-08-12 14:56:27,853 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 67.82352941176471
+2025-08-12 14:56:27,853 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 66.57840370794753
+2025-08-12 14:56:27,853 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 72.875
+2025-08-12 14:56:27,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.75
+2025-08-12 14:56:27,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 72.06666666666666
+2025-08-12 14:56:27,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 71.38512773313458
+2025-08-12 14:56:27,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 71.41648765659389
+2025-08-12 14:56:27,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 80.20704633788354
+2025-08-12 14:56:27,855 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.40581043157958
+2025-08-12 14:56:27,855 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 90.2568621232127
+2025-08-12 14:56:27,855 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 107.23752701671359
+2025-08-12 14:56:27,855 - WARNING - Extreme scaled value for trend_3m: -56.24228571428564
+2025-08-12 14:56:27,855 - WARNING - Extreme scaled value for trend_6m: -37.51592356687901
+2025-08-12 14:56:27,856 - WARNING - Extreme scaled value for trend_12m: -18.164048865619563
+2025-08-12 14:56:27,856 - WARNING - Extreme scaled value for product_popularity: 339.26923076923015
+2025-08-12 14:56:27,856 - WARNING - Extreme scaled value for monthly_pattern: 75.59259259259258
+2025-08-12 14:56:27,857 - WARNING - Extreme scaled value for yoy_growth: -69.33009543242977
+2025-08-12 14:56:27,857 - WARNING - Extreme scaled value for price_popularity_interaction: 30.631942522972377
+2025-08-12 14:56:27,857 - WARNING - Extreme scaled value for trend_momentum_interaction: -415.90909090909065
+2025-08-12 14:56:27,858 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:27,863 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:27,863 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:27,879 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:27,879 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:27,879 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:27,880 - INFO - After historical context adjustment: 236.3667651813272
+2025-08-12 14:56:27,880 - INFO - Final prediction for Spaghetti Carbonara: 236
+2025-08-12 14:56:28,259 - INFO - --- Enhanced prediction for Spaghetti Carbonara at 2025-03-01 ---
+2025-08-12 14:56:28,340 - WARNING - Extreme scaled value for rolling_mean_3: 67.9587896678967
+2025-08-12 14:56:28,340 - WARNING - Extreme scaled value for rolling_std_3: 76.23087830350077
+2025-08-12 14:56:28,340 - WARNING - Extreme scaled value for rolling_median_3: 96.08333333333333
+2025-08-12 14:56:28,341 - WARNING - Extreme scaled value for rolling_max_3: 78.33333333333333
+2025-08-12 14:56:28,341 - WARNING - Extreme scaled value for rolling_mean_6: 114.69135999999997
+2025-08-12 14:56:28,341 - WARNING - Extreme scaled value for rolling_std_6: 75.784162223822
+2025-08-12 14:56:28,341 - WARNING - Extreme scaled value for rolling_median_6: 121.10526315789474
+2025-08-12 14:56:28,341 - WARNING - Extreme scaled value for rolling_max_6: 83.64285714285714
+2025-08-12 14:56:28,342 - WARNING - Extreme scaled value for rolling_mean_12: 168.1605555555556
+2025-08-12 14:56:28,342 - WARNING - Extreme scaled value for rolling_std_12: 65.27863757970265
+2025-08-12 14:56:28,342 - WARNING - Extreme scaled value for rolling_median_12: 157.71428571428572
+2025-08-12 14:56:28,342 - WARNING - Extreme scaled value for rolling_max_12: 86.0
+2025-08-12 14:56:28,343 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 65.72222222222223
+2025-08-12 14:56:28,343 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 67.82352941176471
+2025-08-12 14:56:28,343 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 66.57840370794753
+2025-08-12 14:56:28,344 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 72.875
+2025-08-12 14:56:28,345 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.75
+2025-08-12 14:56:28,345 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 72.06666666666666
+2025-08-12 14:56:28,345 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 71.38512773313458
+2025-08-12 14:56:28,345 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 71.41648765659389
+2025-08-12 14:56:28,345 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 80.20704633788354
+2025-08-12 14:56:28,346 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.40581043157958
+2025-08-12 14:56:28,346 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 90.2568621232127
+2025-08-12 14:56:28,346 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 107.23752701671359
+2025-08-12 14:56:28,346 - WARNING - Extreme scaled value for trend_3m: -56.24228571428564
+2025-08-12 14:56:28,346 - WARNING - Extreme scaled value for trend_6m: -37.51592356687901
+2025-08-12 14:56:28,347 - WARNING - Extreme scaled value for trend_12m: -18.164048865619563
+2025-08-12 14:56:28,347 - WARNING - Extreme scaled value for product_popularity: 339.26923076923015
+2025-08-12 14:56:28,347 - WARNING - Extreme scaled value for monthly_pattern: 86.62962962962963
+2025-08-12 14:56:28,348 - WARNING - Extreme scaled value for yoy_growth: -69.33009543242977
+2025-08-12 14:56:28,348 - WARNING - Extreme scaled value for price_popularity_interaction: 30.631942522972377
+2025-08-12 14:56:28,348 - WARNING - Extreme scaled value for trend_momentum_interaction: -414.0455454545452
+2025-08-12 14:56:28,349 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:28,354 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:28,355 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:28,370 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:28,370 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:28,370 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:28,370 - INFO - After historical context adjustment: 321.77602613958317
+2025-08-12 14:56:28,370 - INFO - Final prediction for Spaghetti Carbonara: 322
+2025-08-12 14:56:28,820 - INFO - --- Enhanced prediction for Spaghetti Carbonara at 2025-04-01 ---
+2025-08-12 14:56:28,912 - WARNING - Extreme scaled value for rolling_mean_3: 67.9587896678967
+2025-08-12 14:56:28,913 - WARNING - Extreme scaled value for rolling_std_3: 76.23087830350077
+2025-08-12 14:56:28,913 - WARNING - Extreme scaled value for rolling_median_3: 96.08333333333333
+2025-08-12 14:56:28,913 - WARNING - Extreme scaled value for rolling_max_3: 78.33333333333333
+2025-08-12 14:56:28,913 - WARNING - Extreme scaled value for rolling_mean_6: 114.69135999999997
+2025-08-12 14:56:28,914 - WARNING - Extreme scaled value for rolling_std_6: 75.784162223822
+2025-08-12 14:56:28,914 - WARNING - Extreme scaled value for rolling_median_6: 121.10526315789474
+2025-08-12 14:56:28,914 - WARNING - Extreme scaled value for rolling_max_6: 83.64285714285714
+2025-08-12 14:56:28,914 - WARNING - Extreme scaled value for rolling_mean_12: 168.1605555555556
+2025-08-12 14:56:28,915 - WARNING - Extreme scaled value for rolling_std_12: 65.27863757970265
+2025-08-12 14:56:28,915 - WARNING - Extreme scaled value for rolling_median_12: 157.71428571428572
+2025-08-12 14:56:28,915 - WARNING - Extreme scaled value for rolling_max_12: 86.0
+2025-08-12 14:56:28,915 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 65.72222222222223
+2025-08-12 14:56:28,916 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 67.82352941176471
+2025-08-12 14:56:28,916 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 66.57840370794753
+2025-08-12 14:56:28,916 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 72.875
+2025-08-12 14:56:28,916 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.75
+2025-08-12 14:56:28,916 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 72.06666666666666
+2025-08-12 14:56:28,917 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 71.38512773313458
+2025-08-12 14:56:28,917 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 71.41648765659389
+2025-08-12 14:56:28,917 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 80.20704633788354
+2025-08-12 14:56:28,917 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.40581043157958
+2025-08-12 14:56:28,918 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 90.2568621232127
+2025-08-12 14:56:28,918 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 107.23752701671359
+2025-08-12 14:56:28,918 - WARNING - Extreme scaled value for trend_3m: -56.24228571428564
+2025-08-12 14:56:28,918 - WARNING - Extreme scaled value for trend_6m: -37.51592356687901
+2025-08-12 14:56:28,918 - WARNING - Extreme scaled value for trend_12m: -18.164048865619563
+2025-08-12 14:56:28,919 - WARNING - Extreme scaled value for product_popularity: 339.26923076923015
+2025-08-12 14:56:28,919 - WARNING - Extreme scaled value for monthly_pattern: 72.59259259259258
+2025-08-12 14:56:28,920 - WARNING - Extreme scaled value for yoy_growth: -69.33009543242977
+2025-08-12 14:56:28,920 - WARNING - Extreme scaled value for price_popularity_interaction: 30.631942522972377
+2025-08-12 14:56:28,920 - WARNING - Extreme scaled value for trend_momentum_interaction: -414.0455454545452
+2025-08-12 14:56:28,922 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:28,927 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:28,927 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:28,942 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:28,943 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:28,943 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:28,943 - INFO - After historical context adjustment: 229.2298005148127
+2025-08-12 14:56:28,943 - INFO - Final prediction for Spaghetti Carbonara: 229
+2025-08-12 14:56:29,480 - INFO - --- Enhanced prediction for Spaghetti Carbonara at 2025-05-01 ---
+2025-08-12 14:56:29,603 - WARNING - Extreme scaled value for rolling_mean_3: 67.9587896678967
+2025-08-12 14:56:29,603 - WARNING - Extreme scaled value for rolling_std_3: 76.23087830350077
+2025-08-12 14:56:29,603 - WARNING - Extreme scaled value for rolling_median_3: 96.08333333333333
+2025-08-12 14:56:29,604 - WARNING - Extreme scaled value for rolling_max_3: 78.33333333333333
+2025-08-12 14:56:29,604 - WARNING - Extreme scaled value for rolling_mean_6: 114.69135999999997
+2025-08-12 14:56:29,604 - WARNING - Extreme scaled value for rolling_std_6: 75.784162223822
+2025-08-12 14:56:29,605 - WARNING - Extreme scaled value for rolling_median_6: 121.10526315789474
+2025-08-12 14:56:29,605 - WARNING - Extreme scaled value for rolling_max_6: 83.64285714285714
+2025-08-12 14:56:29,605 - WARNING - Extreme scaled value for rolling_mean_12: 168.1605555555556
+2025-08-12 14:56:29,606 - WARNING - Extreme scaled value for rolling_std_12: 65.27863757970265
+2025-08-12 14:56:29,606 - WARNING - Extreme scaled value for rolling_median_12: 157.71428571428572
+2025-08-12 14:56:29,606 - WARNING - Extreme scaled value for rolling_max_12: 86.0
+2025-08-12 14:56:29,607 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 65.72222222222223
+2025-08-12 14:56:29,607 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 67.82352941176471
+2025-08-12 14:56:29,607 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 66.57840370794753
+2025-08-12 14:56:29,608 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 72.875
+2025-08-12 14:56:29,608 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.75
+2025-08-12 14:56:29,608 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 72.06666666666666
+2025-08-12 14:56:29,609 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 71.38512773313458
+2025-08-12 14:56:29,609 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 71.41648765659389
+2025-08-12 14:56:29,609 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 80.20704633788354
+2025-08-12 14:56:29,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.40581043157958
+2025-08-12 14:56:29,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 90.2568621232127
+2025-08-12 14:56:29,611 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 107.23752701671359
+2025-08-12 14:56:29,611 - WARNING - Extreme scaled value for trend_3m: -56.24228571428564
+2025-08-12 14:56:29,611 - WARNING - Extreme scaled value for trend_6m: -37.51592356687901
+2025-08-12 14:56:29,612 - WARNING - Extreme scaled value for trend_12m: -18.164048865619563
+2025-08-12 14:56:29,613 - WARNING - Extreme scaled value for product_popularity: 339.26923076923015
+2025-08-12 14:56:29,613 - WARNING - Extreme scaled value for monthly_pattern: 72.44444444444444
+2025-08-12 14:56:29,613 - WARNING - Extreme scaled value for yoy_growth: -69.33009543242977
+2025-08-12 14:56:29,614 - WARNING - Extreme scaled value for price_popularity_interaction: 30.631942522972377
+2025-08-12 14:56:29,614 - WARNING - Extreme scaled value for trend_momentum_interaction: -414.0455454545452
+2025-08-12 14:56:29,616 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:29,624 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:29,624 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:29,648 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:29,648 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:29,649 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:29,649 - INFO - After historical context adjustment: 229.89512136896158
+2025-08-12 14:56:29,649 - INFO - Final prediction for Spaghetti Carbonara: 230
+2025-08-12 14:56:30,287 - INFO - --- Enhanced prediction for Spaghetti Carbonara at 2025-06-01 ---
+2025-08-12 14:56:30,394 - WARNING - Extreme scaled value for rolling_mean_3: 67.9587896678967
+2025-08-12 14:56:30,395 - WARNING - Extreme scaled value for rolling_std_3: 76.23087830350077
+2025-08-12 14:56:30,395 - WARNING - Extreme scaled value for rolling_median_3: 96.08333333333333
+2025-08-12 14:56:30,395 - WARNING - Extreme scaled value for rolling_max_3: 78.33333333333333
+2025-08-12 14:56:30,396 - WARNING - Extreme scaled value for rolling_mean_6: 114.69135999999997
+2025-08-12 14:56:30,396 - WARNING - Extreme scaled value for rolling_std_6: 75.784162223822
+2025-08-12 14:56:30,396 - WARNING - Extreme scaled value for rolling_median_6: 121.10526315789474
+2025-08-12 14:56:30,397 - WARNING - Extreme scaled value for rolling_max_6: 83.64285714285714
+2025-08-12 14:56:30,397 - WARNING - Extreme scaled value for rolling_mean_12: 168.1605555555556
+2025-08-12 14:56:30,397 - WARNING - Extreme scaled value for rolling_std_12: 65.27863757970265
+2025-08-12 14:56:30,398 - WARNING - Extreme scaled value for rolling_median_12: 157.71428571428572
+2025-08-12 14:56:30,398 - WARNING - Extreme scaled value for rolling_max_12: 86.0
+2025-08-12 14:56:30,398 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 65.72222222222223
+2025-08-12 14:56:30,399 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 67.82352941176471
+2025-08-12 14:56:30,399 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 66.57840370794753
+2025-08-12 14:56:30,399 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 72.875
+2025-08-12 14:56:30,400 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.75
+2025-08-12 14:56:30,400 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 72.06666666666666
+2025-08-12 14:56:30,400 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 71.38512773313458
+2025-08-12 14:56:30,400 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 71.41648765659389
+2025-08-12 14:56:30,401 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 80.20704633788354
+2025-08-12 14:56:30,401 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.40581043157958
+2025-08-12 14:56:30,401 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 90.2568621232127
+2025-08-12 14:56:30,402 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 107.23752701671359
+2025-08-12 14:56:30,402 - WARNING - Extreme scaled value for trend_3m: -56.24228571428564
+2025-08-12 14:56:30,402 - WARNING - Extreme scaled value for trend_6m: -37.51592356687901
+2025-08-12 14:56:30,402 - WARNING - Extreme scaled value for trend_12m: -18.164048865619563
+2025-08-12 14:56:30,403 - WARNING - Extreme scaled value for product_popularity: 339.26923076923015
+2025-08-12 14:56:30,404 - WARNING - Extreme scaled value for monthly_pattern: 70.59259259259258
+2025-08-12 14:56:30,404 - WARNING - Extreme scaled value for yoy_growth: -69.33009543242977
+2025-08-12 14:56:30,404 - WARNING - Extreme scaled value for price_popularity_interaction: 30.631942522972377
+2025-08-12 14:56:30,405 - WARNING - Extreme scaled value for trend_momentum_interaction: -414.0455454545452
+2025-08-12 14:56:30,406 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:30,413 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:30,413 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:30,434 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:30,434 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:30,435 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:30,435 - INFO - After historical context adjustment: 226.20433665283878
+2025-08-12 14:56:30,435 - INFO - Final prediction for Spaghetti Carbonara: 226
+2025-08-12 14:56:31,045 - INFO - --- Enhanced prediction for Beef Sambal Matah at 2025-01-01 ---
+2025-08-12 14:56:31,168 - WARNING - Extreme scaled value for rolling_mean_3: 70.78848708487087
+2025-08-12 14:56:31,169 - WARNING - Extreme scaled value for rolling_std_3: 79.35654502704558
+2025-08-12 14:56:31,169 - WARNING - Extreme scaled value for rolling_median_3: 101.41666666666667
+2025-08-12 14:56:31,169 - WARNING - Extreme scaled value for rolling_max_3: 80.66666666666667
+2025-08-12 14:56:31,170 - WARNING - Extreme scaled value for rolling_mean_6: 117.81935999999996
+2025-08-12 14:56:31,170 - WARNING - Extreme scaled value for rolling_std_6: 78.31183482320863
+2025-08-12 14:56:31,170 - WARNING - Extreme scaled value for rolling_median_6: 123.6842105263158
+2025-08-12 14:56:31,170 - WARNING - Extreme scaled value for rolling_max_6: 89.07142857142857
+2025-08-12 14:56:31,171 - WARNING - Extreme scaled value for rolling_mean_12: 168.7132222222222
+2025-08-12 14:56:31,171 - WARNING - Extreme scaled value for rolling_std_12: 67.87482514027248
+2025-08-12 14:56:31,171 - WARNING - Extreme scaled value for rolling_median_12: 157.92857142857142
+2025-08-12 14:56:31,172 - WARNING - Extreme scaled value for rolling_max_12: 89.0
+2025-08-12 14:56:31,172 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 67.66666666666667
+2025-08-12 14:56:31,172 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 71.58823529411765
+2025-08-12 14:56:31,172 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.1119937732908
+2025-08-12 14:56:31,173 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.0625
+2025-08-12 14:56:31,173 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 78.8125
+2025-08-12 14:56:31,173 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.66666666666667
+2025-08-12 14:56:31,173 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 73.7806018181391
+2025-08-12 14:56:31,174 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.62056461288788
+2025-08-12 14:56:31,174 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.41856595950244
+2025-08-12 14:56:31,174 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 103.87214431068651
+2025-08-12 14:56:31,175 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 79.83191099329314
+2025-08-12 14:56:31,175 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.29062339622459
+2025-08-12 14:56:31,175 - WARNING - Extreme scaled value for trend_3m: -59.150476190476134
+2025-08-12 14:56:31,175 - WARNING - Extreme scaled value for trend_6m: -38.852280254777085
+2025-08-12 14:56:31,176 - WARNING - Extreme scaled value for trend_12m: -14.305410122164048
+2025-08-12 14:56:31,177 - WARNING - Extreme scaled value for product_popularity: 337.8333333333327
+2025-08-12 14:56:31,178 - WARNING - Extreme scaled value for monthly_pattern: 83.33333333333333
+2025-08-12 14:56:31,178 - WARNING - Extreme scaled value for yoy_growth: -70.41603149604906
+2025-08-12 14:56:31,178 - WARNING - Extreme scaled value for price_popularity_interaction: 46.78555532273681
+2025-08-12 14:56:31,179 - WARNING - Extreme scaled value for trend_momentum_interaction: -617.8079999999998
+2025-08-12 14:56:31,180 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:31,186 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:31,186 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:31,205 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:31,206 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:31,206 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:31,206 - INFO - After historical context adjustment: 311.46869091403437
+2025-08-12 14:56:31,206 - INFO - Final prediction for Beef Sambal Matah: 311
+2025-08-12 14:56:31,763 - INFO - --- Enhanced prediction for Beef Sambal Matah at 2025-02-01 ---
+2025-08-12 14:56:31,850 - WARNING - Extreme scaled value for rolling_mean_3: 70.78848708487087
+2025-08-12 14:56:31,851 - WARNING - Extreme scaled value for rolling_std_3: 79.35654502704558
+2025-08-12 14:56:31,851 - WARNING - Extreme scaled value for rolling_median_3: 101.41666666666667
+2025-08-12 14:56:31,851 - WARNING - Extreme scaled value for rolling_max_3: 80.66666666666667
+2025-08-12 14:56:31,851 - WARNING - Extreme scaled value for rolling_mean_6: 117.81935999999996
+2025-08-12 14:56:31,852 - WARNING - Extreme scaled value for rolling_std_6: 78.31183482320863
+2025-08-12 14:56:31,852 - WARNING - Extreme scaled value for rolling_median_6: 123.6842105263158
+2025-08-12 14:56:31,852 - WARNING - Extreme scaled value for rolling_max_6: 89.07142857142857
+2025-08-12 14:56:31,853 - WARNING - Extreme scaled value for rolling_mean_12: 168.7132222222222
+2025-08-12 14:56:31,853 - WARNING - Extreme scaled value for rolling_std_12: 67.87482514027248
+2025-08-12 14:56:31,853 - WARNING - Extreme scaled value for rolling_median_12: 157.92857142857142
+2025-08-12 14:56:31,853 - WARNING - Extreme scaled value for rolling_max_12: 89.0
+2025-08-12 14:56:31,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 67.66666666666667
+2025-08-12 14:56:31,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 71.58823529411765
+2025-08-12 14:56:31,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.1119937732908
+2025-08-12 14:56:31,854 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.0625
+2025-08-12 14:56:31,855 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 78.8125
+2025-08-12 14:56:31,855 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.66666666666667
+2025-08-12 14:56:31,855 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 73.7806018181391
+2025-08-12 14:56:31,856 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.62056461288788
+2025-08-12 14:56:31,856 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.41856595950244
+2025-08-12 14:56:31,856 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 103.87214431068651
+2025-08-12 14:56:31,856 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 79.83191099329314
+2025-08-12 14:56:31,857 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.29062339622459
+2025-08-12 14:56:31,857 - WARNING - Extreme scaled value for trend_3m: -59.150476190476134
+2025-08-12 14:56:31,857 - WARNING - Extreme scaled value for trend_6m: -38.852280254777085
+2025-08-12 14:56:31,857 - WARNING - Extreme scaled value for trend_12m: -14.305410122164048
+2025-08-12 14:56:31,858 - WARNING - Extreme scaled value for product_popularity: 337.8333333333327
+2025-08-12 14:56:31,858 - WARNING - Extreme scaled value for monthly_pattern: 72.59259259259258
+2025-08-12 14:56:31,859 - WARNING - Extreme scaled value for yoy_growth: -70.41603149604906
+2025-08-12 14:56:31,859 - WARNING - Extreme scaled value for price_popularity_interaction: 46.78555532273681
+2025-08-12 14:56:31,860 - WARNING - Extreme scaled value for trend_momentum_interaction: -624.8181818181816
+2025-08-12 14:56:31,862 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:31,867 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:31,868 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:31,885 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:31,886 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:31,886 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:31,886 - INFO - After historical context adjustment: 230.28480000719784
+2025-08-12 14:56:31,886 - INFO - Final prediction for Beef Sambal Matah: 230
+2025-08-12 14:56:32,387 - INFO - --- Enhanced prediction for Beef Sambal Matah at 2025-03-01 ---
+2025-08-12 14:56:32,473 - WARNING - Extreme scaled value for rolling_mean_3: 70.78848708487087
+2025-08-12 14:56:32,473 - WARNING - Extreme scaled value for rolling_std_3: 79.35654502704558
+2025-08-12 14:56:32,473 - WARNING - Extreme scaled value for rolling_median_3: 101.41666666666667
+2025-08-12 14:56:32,473 - WARNING - Extreme scaled value for rolling_max_3: 80.66666666666667
+2025-08-12 14:56:32,474 - WARNING - Extreme scaled value for rolling_mean_6: 117.81935999999996
+2025-08-12 14:56:32,474 - WARNING - Extreme scaled value for rolling_std_6: 78.31183482320863
+2025-08-12 14:56:32,474 - WARNING - Extreme scaled value for rolling_median_6: 123.6842105263158
+2025-08-12 14:56:32,474 - WARNING - Extreme scaled value for rolling_max_6: 89.07142857142857
+2025-08-12 14:56:32,475 - WARNING - Extreme scaled value for rolling_mean_12: 168.7132222222222
+2025-08-12 14:56:32,475 - WARNING - Extreme scaled value for rolling_std_12: 67.87482514027248
+2025-08-12 14:56:32,475 - WARNING - Extreme scaled value for rolling_median_12: 157.92857142857142
+2025-08-12 14:56:32,476 - WARNING - Extreme scaled value for rolling_max_12: 89.0
+2025-08-12 14:56:32,476 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 67.66666666666667
+2025-08-12 14:56:32,476 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 71.58823529411765
+2025-08-12 14:56:32,477 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.1119937732908
+2025-08-12 14:56:32,477 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.0625
+2025-08-12 14:56:32,477 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 78.8125
+2025-08-12 14:56:32,477 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.66666666666667
+2025-08-12 14:56:32,478 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 73.7806018181391
+2025-08-12 14:56:32,478 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.62056461288788
+2025-08-12 14:56:32,478 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.41856595950244
+2025-08-12 14:56:32,478 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 103.87214431068651
+2025-08-12 14:56:32,479 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 79.83191099329314
+2025-08-12 14:56:32,479 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.29062339622459
+2025-08-12 14:56:32,479 - WARNING - Extreme scaled value for trend_3m: -59.150476190476134
+2025-08-12 14:56:32,479 - WARNING - Extreme scaled value for trend_6m: -38.852280254777085
+2025-08-12 14:56:32,480 - WARNING - Extreme scaled value for trend_12m: -14.305410122164048
+2025-08-12 14:56:32,480 - WARNING - Extreme scaled value for product_popularity: 337.8333333333327
+2025-08-12 14:56:32,480 - WARNING - Extreme scaled value for monthly_pattern: 89.14814814814814
+2025-08-12 14:56:32,481 - WARNING - Extreme scaled value for yoy_growth: -70.41603149604906
+2025-08-12 14:56:32,481 - WARNING - Extreme scaled value for price_popularity_interaction: 46.78555532273681
+2025-08-12 14:56:32,481 - WARNING - Extreme scaled value for trend_momentum_interaction: -617.8079999999998
+2025-08-12 14:56:32,483 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:32,488 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:32,488 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:32,503 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:32,503 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:32,503 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:32,504 - INFO - After historical context adjustment: 328.9062748958021
+2025-08-12 14:56:32,504 - INFO - Final prediction for Beef Sambal Matah: 329
+2025-08-12 14:56:32,953 - INFO - --- Enhanced prediction for Beef Sambal Matah at 2025-04-01 ---
+2025-08-12 14:56:33,034 - WARNING - Extreme scaled value for rolling_mean_3: 70.78848708487087
+2025-08-12 14:56:33,034 - WARNING - Extreme scaled value for rolling_std_3: 79.35654502704558
+2025-08-12 14:56:33,035 - WARNING - Extreme scaled value for rolling_median_3: 101.41666666666667
+2025-08-12 14:56:33,035 - WARNING - Extreme scaled value for rolling_max_3: 80.66666666666667
+2025-08-12 14:56:33,035 - WARNING - Extreme scaled value for rolling_mean_6: 117.81935999999996
+2025-08-12 14:56:33,035 - WARNING - Extreme scaled value for rolling_std_6: 78.31183482320863
+2025-08-12 14:56:33,035 - WARNING - Extreme scaled value for rolling_median_6: 123.6842105263158
+2025-08-12 14:56:33,036 - WARNING - Extreme scaled value for rolling_max_6: 89.07142857142857
+2025-08-12 14:56:33,036 - WARNING - Extreme scaled value for rolling_mean_12: 168.7132222222222
+2025-08-12 14:56:33,036 - WARNING - Extreme scaled value for rolling_std_12: 67.87482514027248
+2025-08-12 14:56:33,036 - WARNING - Extreme scaled value for rolling_median_12: 157.92857142857142
+2025-08-12 14:56:33,037 - WARNING - Extreme scaled value for rolling_max_12: 89.0
+2025-08-12 14:56:33,037 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 67.66666666666667
+2025-08-12 14:56:33,037 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 71.58823529411765
+2025-08-12 14:56:33,037 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.1119937732908
+2025-08-12 14:56:33,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.0625
+2025-08-12 14:56:33,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 78.8125
+2025-08-12 14:56:33,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.66666666666667
+2025-08-12 14:56:33,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 73.7806018181391
+2025-08-12 14:56:33,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.62056461288788
+2025-08-12 14:56:33,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.41856595950244
+2025-08-12 14:56:33,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 103.87214431068651
+2025-08-12 14:56:33,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 79.83191099329314
+2025-08-12 14:56:33,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.29062339622459
+2025-08-12 14:56:33,039 - WARNING - Extreme scaled value for trend_3m: -59.150476190476134
+2025-08-12 14:56:33,040 - WARNING - Extreme scaled value for trend_6m: -38.852280254777085
+2025-08-12 14:56:33,040 - WARNING - Extreme scaled value for trend_12m: -14.305410122164048
+2025-08-12 14:56:33,040 - WARNING - Extreme scaled value for product_popularity: 337.8333333333327
+2025-08-12 14:56:33,040 - WARNING - Extreme scaled value for monthly_pattern: 66.88888888888889
+2025-08-12 14:56:33,041 - WARNING - Extreme scaled value for yoy_growth: -70.41603149604906
+2025-08-12 14:56:33,041 - WARNING - Extreme scaled value for price_popularity_interaction: 46.78555532273681
+2025-08-12 14:56:33,041 - WARNING - Extreme scaled value for trend_momentum_interaction: -617.8079999999998
+2025-08-12 14:56:33,043 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:33,048 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:33,048 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:33,065 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:33,065 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:33,065 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:33,065 - INFO - After historical context adjustment: 217.67283534068338
+2025-08-12 14:56:33,065 - INFO - Final prediction for Beef Sambal Matah: 218
+2025-08-12 14:56:33,506 - INFO - --- Enhanced prediction for Beef Sambal Matah at 2025-05-01 ---
+2025-08-12 14:56:33,589 - WARNING - Extreme scaled value for rolling_mean_3: 70.78848708487087
+2025-08-12 14:56:33,589 - WARNING - Extreme scaled value for rolling_std_3: 79.35654502704558
+2025-08-12 14:56:33,589 - WARNING - Extreme scaled value for rolling_median_3: 101.41666666666667
+2025-08-12 14:56:33,590 - WARNING - Extreme scaled value for rolling_max_3: 80.66666666666667
+2025-08-12 14:56:33,590 - WARNING - Extreme scaled value for rolling_mean_6: 117.81935999999996
+2025-08-12 14:56:33,590 - WARNING - Extreme scaled value for rolling_std_6: 78.31183482320863
+2025-08-12 14:56:33,590 - WARNING - Extreme scaled value for rolling_median_6: 123.6842105263158
+2025-08-12 14:56:33,591 - WARNING - Extreme scaled value for rolling_max_6: 89.07142857142857
+2025-08-12 14:56:33,591 - WARNING - Extreme scaled value for rolling_mean_12: 168.7132222222222
+2025-08-12 14:56:33,591 - WARNING - Extreme scaled value for rolling_std_12: 67.87482514027248
+2025-08-12 14:56:33,591 - WARNING - Extreme scaled value for rolling_median_12: 157.92857142857142
+2025-08-12 14:56:33,592 - WARNING - Extreme scaled value for rolling_max_12: 89.0
+2025-08-12 14:56:33,592 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 67.66666666666667
+2025-08-12 14:56:33,592 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 71.58823529411765
+2025-08-12 14:56:33,592 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.1119937732908
+2025-08-12 14:56:33,593 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.0625
+2025-08-12 14:56:33,593 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 78.8125
+2025-08-12 14:56:33,593 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.66666666666667
+2025-08-12 14:56:33,593 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 73.7806018181391
+2025-08-12 14:56:33,593 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.62056461288788
+2025-08-12 14:56:33,594 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.41856595950244
+2025-08-12 14:56:33,594 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 103.87214431068651
+2025-08-12 14:56:33,595 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 79.83191099329314
+2025-08-12 14:56:33,595 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.29062339622459
+2025-08-12 14:56:33,595 - WARNING - Extreme scaled value for trend_3m: -59.150476190476134
+2025-08-12 14:56:33,595 - WARNING - Extreme scaled value for trend_6m: -38.852280254777085
+2025-08-12 14:56:33,596 - WARNING - Extreme scaled value for trend_12m: -14.305410122164048
+2025-08-12 14:56:33,596 - WARNING - Extreme scaled value for product_popularity: 337.8333333333327
+2025-08-12 14:56:33,596 - WARNING - Extreme scaled value for monthly_pattern: 73.07407407407408
+2025-08-12 14:56:33,597 - WARNING - Extreme scaled value for yoy_growth: -70.41603149604906
+2025-08-12 14:56:33,597 - WARNING - Extreme scaled value for price_popularity_interaction: 46.78555532273681
+2025-08-12 14:56:33,597 - WARNING - Extreme scaled value for trend_momentum_interaction: -617.8079999999998
+2025-08-12 14:56:33,598 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:33,602 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:33,602 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:33,616 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:33,616 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:33,616 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:33,617 - INFO - After historical context adjustment: 231.16315619483223
+2025-08-12 14:56:33,617 - INFO - Final prediction for Beef Sambal Matah: 231
+2025-08-12 14:56:34,077 - INFO - --- Enhanced prediction for Beef Sambal Matah at 2025-06-01 ---
+2025-08-12 14:56:34,162 - WARNING - Extreme scaled value for rolling_mean_3: 70.78848708487087
+2025-08-12 14:56:34,162 - WARNING - Extreme scaled value for rolling_std_3: 79.35654502704558
+2025-08-12 14:56:34,163 - WARNING - Extreme scaled value for rolling_median_3: 101.41666666666667
+2025-08-12 14:56:34,163 - WARNING - Extreme scaled value for rolling_max_3: 80.66666666666667
+2025-08-12 14:56:34,163 - WARNING - Extreme scaled value for rolling_mean_6: 117.81935999999996
+2025-08-12 14:56:34,163 - WARNING - Extreme scaled value for rolling_std_6: 78.31183482320863
+2025-08-12 14:56:34,164 - WARNING - Extreme scaled value for rolling_median_6: 123.6842105263158
+2025-08-12 14:56:34,164 - WARNING - Extreme scaled value for rolling_max_6: 89.07142857142857
+2025-08-12 14:56:34,164 - WARNING - Extreme scaled value for rolling_mean_12: 168.7132222222222
+2025-08-12 14:56:34,164 - WARNING - Extreme scaled value for rolling_std_12: 67.87482514027248
+2025-08-12 14:56:34,164 - WARNING - Extreme scaled value for rolling_median_12: 157.92857142857142
+2025-08-12 14:56:34,165 - WARNING - Extreme scaled value for rolling_max_12: 89.0
+2025-08-12 14:56:34,165 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 67.66666666666667
+2025-08-12 14:56:34,165 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 71.58823529411765
+2025-08-12 14:56:34,165 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.1119937732908
+2025-08-12 14:56:34,166 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.0625
+2025-08-12 14:56:34,166 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 78.8125
+2025-08-12 14:56:34,166 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.66666666666667
+2025-08-12 14:56:34,166 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 73.7806018181391
+2025-08-12 14:56:34,167 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.62056461288788
+2025-08-12 14:56:34,167 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.41856595950244
+2025-08-12 14:56:34,167 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 103.87214431068651
+2025-08-12 14:56:34,167 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 79.83191099329314
+2025-08-12 14:56:34,167 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.29062339622459
+2025-08-12 14:56:34,168 - WARNING - Extreme scaled value for trend_3m: -59.150476190476134
+2025-08-12 14:56:34,168 - WARNING - Extreme scaled value for trend_6m: -38.852280254777085
+2025-08-12 14:56:34,168 - WARNING - Extreme scaled value for trend_12m: -14.305410122164048
+2025-08-12 14:56:34,169 - WARNING - Extreme scaled value for product_popularity: 337.8333333333327
+2025-08-12 14:56:34,169 - WARNING - Extreme scaled value for monthly_pattern: 72.18518518518519
+2025-08-12 14:56:34,169 - WARNING - Extreme scaled value for yoy_growth: -70.41603149604906
+2025-08-12 14:56:34,170 - WARNING - Extreme scaled value for price_popularity_interaction: 46.78555532273681
+2025-08-12 14:56:34,170 - WARNING - Extreme scaled value for trend_momentum_interaction: -617.8079999999998
+2025-08-12 14:56:34,171 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:34,178 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:34,178 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:34,195 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:34,195 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:34,195 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:34,195 - INFO - After historical context adjustment: 229.42237147870944
+2025-08-12 14:56:34,195 - INFO - Final prediction for Beef Sambal Matah: 229
+2025-08-12 14:56:34,716 - INFO - --- Enhanced prediction for Mie Hotplate Nusantara Lv 1-5 at 2025-01-01 ---
+2025-08-12 14:56:34,792 - WARNING - Extreme scaled value for rolling_mean_3: 69.72528413284134
+2025-08-12 14:56:34,792 - WARNING - Extreme scaled value for rolling_std_3: 78.18805617892014
+2025-08-12 14:56:34,792 - WARNING - Extreme scaled value for rolling_median_3: 99.41666666666667
+2025-08-12 14:56:34,793 - WARNING - Extreme scaled value for rolling_max_3: 79.8
+2025-08-12 14:56:34,793 - WARNING - Extreme scaled value for rolling_mean_6: 112.69903999999995
+2025-08-12 14:56:34,793 - WARNING - Extreme scaled value for rolling_std_6: 75.51932525811564
+2025-08-12 14:56:34,794 - WARNING - Extreme scaled value for rolling_median_6: 120.73684210526316
+2025-08-12 14:56:34,794 - WARNING - Extreme scaled value for rolling_max_6: 85.21428571428571
+2025-08-12 14:56:34,794 - WARNING - Extreme scaled value for rolling_mean_12: 165.90277777777777
+2025-08-12 14:56:34,794 - WARNING - Extreme scaled value for rolling_std_12: 66.76042831212607
+2025-08-12 14:56:34,794 - WARNING - Extreme scaled value for rolling_median_12: 157.35714285714286
+2025-08-12 14:56:34,795 - WARNING - Extreme scaled value for rolling_max_12: 90.35714285714286
+2025-08-12 14:56:34,795 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 66.22222222222223
+2025-08-12 14:56:34,795 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 70.94117647058823
+2025-08-12 14:56:34,795 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.82344719374852
+2025-08-12 14:56:34,796 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 61.5
+2025-08-12 14:56:34,796 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.875
+2025-08-12 14:56:34,796 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 76.93333333333334
+2025-08-12 14:56:34,796 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 72.4117594838508
+2025-08-12 14:56:34,796 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 67.26038583486874
+2025-08-12 14:56:34,797 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.01952592797068
+2025-08-12 14:56:34,797 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 105.3991230130373
+2025-08-12 14:56:34,797 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 82.50069848255255
+2025-08-12 14:56:34,797 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 101.75690383016945
+2025-08-12 14:56:34,797 - WARNING - Extreme scaled value for trend_3m: -58.681523809523725
+2025-08-12 14:56:34,798 - WARNING - Extreme scaled value for trend_6m: -33.726114649681556
+2025-08-12 14:56:34,798 - WARNING - Extreme scaled value for trend_12m: -16.246073298429295
+2025-08-12 14:56:34,799 - WARNING - Extreme scaled value for product_popularity: 334.78205128205065
+2025-08-12 14:56:34,799 - WARNING - Extreme scaled value for monthly_pattern: 82.33333333333333
+2025-08-12 14:56:34,799 - WARNING - Extreme scaled value for yoy_growth: -71.05438211848805
+2025-08-12 14:56:34,799 - WARNING - Extreme scaled value for price_popularity_interaction: 31.976623563631243
+2025-08-12 14:56:34,799 - WARNING - Extreme scaled value for trend_momentum_interaction: -346.7124999999997
+2025-08-12 14:56:34,800 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:34,806 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:34,806 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:34,822 - INFO - Raw prediction: 4.717061029972392
+2025-08-12 14:56:34,823 - INFO - After exp transform: 110.83907749009865
+2025-08-12 14:56:34,823 - INFO - After boost factor (1.0): 110.83907749009865
+2025-08-12 14:56:34,823 - INFO - After historical context adjustment: 308.60893021017654
+2025-08-12 14:56:34,823 - INFO - Final prediction for Mie Hotplate Nusantara Lv 1-5: 309
+2025-08-12 14:56:35,257 - INFO - --- Enhanced prediction for Mie Hotplate Nusantara Lv 1-5 at 2025-02-01 ---
+2025-08-12 14:56:35,347 - WARNING - Extreme scaled value for rolling_mean_3: 69.72528413284134
+2025-08-12 14:56:35,348 - WARNING - Extreme scaled value for rolling_std_3: 78.18805617892014
+2025-08-12 14:56:35,348 - WARNING - Extreme scaled value for rolling_median_3: 99.41666666666667
+2025-08-12 14:56:35,348 - WARNING - Extreme scaled value for rolling_max_3: 79.8
+2025-08-12 14:56:35,349 - WARNING - Extreme scaled value for rolling_mean_6: 112.69903999999995
+2025-08-12 14:56:35,349 - WARNING - Extreme scaled value for rolling_std_6: 75.51932525811564
+2025-08-12 14:56:35,349 - WARNING - Extreme scaled value for rolling_median_6: 120.73684210526316
+2025-08-12 14:56:35,349 - WARNING - Extreme scaled value for rolling_max_6: 85.21428571428571
+2025-08-12 14:56:35,350 - WARNING - Extreme scaled value for rolling_mean_12: 165.90277777777777
+2025-08-12 14:56:35,350 - WARNING - Extreme scaled value for rolling_std_12: 66.76042831212607
+2025-08-12 14:56:35,350 - WARNING - Extreme scaled value for rolling_median_12: 157.35714285714286
+2025-08-12 14:56:35,350 - WARNING - Extreme scaled value for rolling_max_12: 90.35714285714286
+2025-08-12 14:56:35,350 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 66.22222222222223
+2025-08-12 14:56:35,351 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 70.94117647058823
+2025-08-12 14:56:35,351 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.82344719374852
+2025-08-12 14:56:35,351 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 61.5
+2025-08-12 14:56:35,351 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.875
+2025-08-12 14:56:35,352 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 76.93333333333334
+2025-08-12 14:56:35,352 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 72.4117594838508
+2025-08-12 14:56:35,352 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 67.26038583486874
+2025-08-12 14:56:35,352 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.01952592797068
+2025-08-12 14:56:35,353 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 105.3991230130373
+2025-08-12 14:56:35,353 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 82.50069848255255
+2025-08-12 14:56:35,353 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 101.75690383016945
+2025-08-12 14:56:35,353 - WARNING - Extreme scaled value for trend_3m: -58.681523809523725
+2025-08-12 14:56:35,354 - WARNING - Extreme scaled value for trend_6m: -33.726114649681556
+2025-08-12 14:56:35,354 - WARNING - Extreme scaled value for trend_12m: -16.246073298429295
+2025-08-12 14:56:35,354 - WARNING - Extreme scaled value for product_popularity: 334.78205128205065
+2025-08-12 14:56:35,355 - WARNING - Extreme scaled value for monthly_pattern: 72.0
+2025-08-12 14:56:35,355 - WARNING - Extreme scaled value for yoy_growth: -71.05438211848805
+2025-08-12 14:56:35,355 - WARNING - Extreme scaled value for price_popularity_interaction: 31.976623563631243
+2025-08-12 14:56:35,356 - WARNING - Extreme scaled value for trend_momentum_interaction: -348.8465909090906
+2025-08-12 14:56:35,357 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:35,363 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:35,363 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:35,379 - INFO - Raw prediction: 4.717061029972392
+2025-08-12 14:56:35,379 - INFO - After exp transform: 110.83907749009865
+2025-08-12 14:56:35,380 - INFO - After boost factor (1.0): 110.83907749009865
+2025-08-12 14:56:35,380 - INFO - After historical context adjustment: 229.06326682746806
+2025-08-12 14:56:35,380 - INFO - Final prediction for Mie Hotplate Nusantara Lv 1-5: 229
+2025-08-12 14:56:35,808 - INFO - --- Enhanced prediction for Mie Hotplate Nusantara Lv 1-5 at 2025-03-01 ---
+2025-08-12 14:56:35,889 - WARNING - Extreme scaled value for rolling_mean_3: 69.72528413284134
+2025-08-12 14:56:35,890 - WARNING - Extreme scaled value for rolling_std_3: 78.18805617892014
+2025-08-12 14:56:35,890 - WARNING - Extreme scaled value for rolling_median_3: 99.41666666666667
+2025-08-12 14:56:35,890 - WARNING - Extreme scaled value for rolling_max_3: 79.8
+2025-08-12 14:56:35,890 - WARNING - Extreme scaled value for rolling_mean_6: 112.69903999999995
+2025-08-12 14:56:35,891 - WARNING - Extreme scaled value for rolling_std_6: 75.51932525811564
+2025-08-12 14:56:35,891 - WARNING - Extreme scaled value for rolling_median_6: 120.73684210526316
+2025-08-12 14:56:35,891 - WARNING - Extreme scaled value for rolling_max_6: 85.21428571428571
+2025-08-12 14:56:35,891 - WARNING - Extreme scaled value for rolling_mean_12: 165.90277777777777
+2025-08-12 14:56:35,892 - WARNING - Extreme scaled value for rolling_std_12: 66.76042831212607
+2025-08-12 14:56:35,893 - WARNING - Extreme scaled value for rolling_median_12: 157.35714285714286
+2025-08-12 14:56:35,893 - WARNING - Extreme scaled value for rolling_max_12: 90.35714285714286
+2025-08-12 14:56:35,893 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 66.22222222222223
+2025-08-12 14:56:35,893 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 70.94117647058823
+2025-08-12 14:56:35,894 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.82344719374852
+2025-08-12 14:56:35,894 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 61.5
+2025-08-12 14:56:35,894 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.875
+2025-08-12 14:56:35,894 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 76.93333333333334
+2025-08-12 14:56:35,895 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 72.4117594838508
+2025-08-12 14:56:35,895 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 67.26038583486874
+2025-08-12 14:56:35,895 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.01952592797068
+2025-08-12 14:56:35,895 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 105.3991230130373
+2025-08-12 14:56:35,895 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 82.50069848255255
+2025-08-12 14:56:35,896 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 101.75690383016945
+2025-08-12 14:56:35,896 - WARNING - Extreme scaled value for trend_3m: -58.681523809523725
+2025-08-12 14:56:35,896 - WARNING - Extreme scaled value for trend_6m: -33.726114649681556
+2025-08-12 14:56:35,896 - WARNING - Extreme scaled value for trend_12m: -16.246073298429295
+2025-08-12 14:56:35,897 - WARNING - Extreme scaled value for product_popularity: 334.78205128205065
+2025-08-12 14:56:35,897 - WARNING - Extreme scaled value for monthly_pattern: 85.14814814814814
+2025-08-12 14:56:35,898 - WARNING - Extreme scaled value for yoy_growth: -71.05438211848805
+2025-08-12 14:56:35,898 - WARNING - Extreme scaled value for price_popularity_interaction: 31.976623563631243
+2025-08-12 14:56:35,898 - WARNING - Extreme scaled value for trend_momentum_interaction: -346.7124999999997
+2025-08-12 14:56:35,899 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:35,904 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:35,905 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:35,920 - INFO - Raw prediction: 4.717061029972392
+2025-08-12 14:56:35,921 - INFO - After exp transform: 110.83907749009865
+2025-08-12 14:56:35,921 - INFO - After boost factor (1.0): 110.83907749009865
+2025-08-12 14:56:35,921 - INFO - After historical context adjustment: 317.5415141919443
+2025-08-12 14:56:35,921 - INFO - Final prediction for Mie Hotplate Nusantara Lv 1-5: 318
+2025-08-12 14:56:36,347 - INFO - --- Enhanced prediction for Mie Hotplate Nusantara Lv 1-5 at 2025-04-01 ---
+2025-08-12 14:56:36,426 - WARNING - Extreme scaled value for rolling_mean_3: 69.72528413284134
+2025-08-12 14:56:36,426 - WARNING - Extreme scaled value for rolling_std_3: 78.18805617892014
+2025-08-12 14:56:36,427 - WARNING - Extreme scaled value for rolling_median_3: 99.41666666666667
+2025-08-12 14:56:36,427 - WARNING - Extreme scaled value for rolling_max_3: 79.8
+2025-08-12 14:56:36,427 - WARNING - Extreme scaled value for rolling_mean_6: 112.69903999999995
+2025-08-12 14:56:36,427 - WARNING - Extreme scaled value for rolling_std_6: 75.51932525811564
+2025-08-12 14:56:36,428 - WARNING - Extreme scaled value for rolling_median_6: 120.73684210526316
+2025-08-12 14:56:36,428 - WARNING - Extreme scaled value for rolling_max_6: 85.21428571428571
+2025-08-12 14:56:36,428 - WARNING - Extreme scaled value for rolling_mean_12: 165.90277777777777
+2025-08-12 14:56:36,428 - WARNING - Extreme scaled value for rolling_std_12: 66.76042831212607
+2025-08-12 14:56:36,428 - WARNING - Extreme scaled value for rolling_median_12: 157.35714285714286
+2025-08-12 14:56:36,429 - WARNING - Extreme scaled value for rolling_max_12: 90.35714285714286
+2025-08-12 14:56:36,429 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 66.22222222222223
+2025-08-12 14:56:36,429 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 70.94117647058823
+2025-08-12 14:56:36,429 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.82344719374852
+2025-08-12 14:56:36,430 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 61.5
+2025-08-12 14:56:36,430 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.875
+2025-08-12 14:56:36,430 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 76.93333333333334
+2025-08-12 14:56:36,430 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 72.4117594838508
+2025-08-12 14:56:36,430 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 67.26038583486874
+2025-08-12 14:56:36,431 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.01952592797068
+2025-08-12 14:56:36,431 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 105.3991230130373
+2025-08-12 14:56:36,431 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 82.50069848255255
+2025-08-12 14:56:36,431 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 101.75690383016945
+2025-08-12 14:56:36,432 - WARNING - Extreme scaled value for trend_3m: -58.681523809523725
+2025-08-12 14:56:36,432 - WARNING - Extreme scaled value for trend_6m: -33.726114649681556
+2025-08-12 14:56:36,432 - WARNING - Extreme scaled value for trend_12m: -16.246073298429295
+2025-08-12 14:56:36,433 - WARNING - Extreme scaled value for product_popularity: 334.78205128205065
+2025-08-12 14:56:36,433 - WARNING - Extreme scaled value for monthly_pattern: 65.55555555555556
+2025-08-12 14:56:36,433 - WARNING - Extreme scaled value for yoy_growth: -71.05438211848805
+2025-08-12 14:56:36,433 - WARNING - Extreme scaled value for price_popularity_interaction: 31.976623563631243
+2025-08-12 14:56:36,433 - WARNING - Extreme scaled value for trend_momentum_interaction: -346.7124999999997
+2025-08-12 14:56:36,435 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:36,440 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:36,440 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:36,454 - INFO - Raw prediction: 4.717061029972392
+2025-08-12 14:56:36,454 - INFO - After exp transform: 110.83907749009865
+2025-08-12 14:56:36,454 - INFO - After boost factor (1.0): 110.83907749009865
+2025-08-12 14:56:36,454 - INFO - After historical context adjustment: 214.95130216095356
+2025-08-12 14:56:36,455 - INFO - Final prediction for Mie Hotplate Nusantara Lv 1-5: 215
+2025-08-12 14:56:36,890 - INFO - --- Enhanced prediction for Mie Hotplate Nusantara Lv 1-5 at 2025-05-01 ---
+2025-08-12 14:56:36,972 - WARNING - Extreme scaled value for rolling_mean_3: 69.72528413284134
+2025-08-12 14:56:36,973 - WARNING - Extreme scaled value for rolling_std_3: 78.18805617892014
+2025-08-12 14:56:36,973 - WARNING - Extreme scaled value for rolling_median_3: 99.41666666666667
+2025-08-12 14:56:36,973 - WARNING - Extreme scaled value for rolling_max_3: 79.8
+2025-08-12 14:56:36,973 - WARNING - Extreme scaled value for rolling_mean_6: 112.69903999999995
+2025-08-12 14:56:36,973 - WARNING - Extreme scaled value for rolling_std_6: 75.51932525811564
+2025-08-12 14:56:36,974 - WARNING - Extreme scaled value for rolling_median_6: 120.73684210526316
+2025-08-12 14:56:36,974 - WARNING - Extreme scaled value for rolling_max_6: 85.21428571428571
+2025-08-12 14:56:36,974 - WARNING - Extreme scaled value for rolling_mean_12: 165.90277777777777
+2025-08-12 14:56:36,974 - WARNING - Extreme scaled value for rolling_std_12: 66.76042831212607
+2025-08-12 14:56:36,975 - WARNING - Extreme scaled value for rolling_median_12: 157.35714285714286
+2025-08-12 14:56:36,975 - WARNING - Extreme scaled value for rolling_max_12: 90.35714285714286
+2025-08-12 14:56:36,975 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 66.22222222222223
+2025-08-12 14:56:36,975 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 70.94117647058823
+2025-08-12 14:56:36,976 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.82344719374852
+2025-08-12 14:56:36,976 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 61.5
+2025-08-12 14:56:36,976 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.875
+2025-08-12 14:56:36,976 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 76.93333333333334
+2025-08-12 14:56:36,976 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 72.4117594838508
+2025-08-12 14:56:36,977 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 67.26038583486874
+2025-08-12 14:56:36,977 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.01952592797068
+2025-08-12 14:56:36,977 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 105.3991230130373
+2025-08-12 14:56:36,977 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 82.50069848255255
+2025-08-12 14:56:36,978 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 101.75690383016945
+2025-08-12 14:56:36,978 - WARNING - Extreme scaled value for trend_3m: -58.681523809523725
+2025-08-12 14:56:36,978 - WARNING - Extreme scaled value for trend_6m: -33.726114649681556
+2025-08-12 14:56:36,978 - WARNING - Extreme scaled value for trend_12m: -16.246073298429295
+2025-08-12 14:56:36,979 - WARNING - Extreme scaled value for product_popularity: 334.78205128205065
+2025-08-12 14:56:36,979 - WARNING - Extreme scaled value for monthly_pattern: 72.96296296296298
+2025-08-12 14:56:36,979 - WARNING - Extreme scaled value for yoy_growth: -71.05438211848805
+2025-08-12 14:56:36,980 - WARNING - Extreme scaled value for price_popularity_interaction: 31.976623563631243
+2025-08-12 14:56:36,980 - WARNING - Extreme scaled value for trend_momentum_interaction: -346.7124999999997
+2025-08-12 14:56:36,981 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:36,986 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:36,986 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:37,003 - INFO - Raw prediction: 4.717061029972392
+2025-08-12 14:56:37,003 - INFO - After exp transform: 110.83907749009865
+2025-08-12 14:56:37,003 - INFO - After boost factor (1.0): 110.83907749009865
+2025-08-12 14:56:37,003 - INFO - After historical context adjustment: 230.91662301510243
+2025-08-12 14:56:37,003 - INFO - Final prediction for Mie Hotplate Nusantara Lv 1-5: 231
+2025-08-12 14:56:37,422 - INFO - --- Enhanced prediction for Mie Hotplate Nusantara Lv 1-5 at 2025-06-01 ---
+2025-08-12 14:56:37,505 - WARNING - Extreme scaled value for rolling_mean_3: 69.72528413284134
+2025-08-12 14:56:37,505 - WARNING - Extreme scaled value for rolling_std_3: 78.18805617892014
+2025-08-12 14:56:37,506 - WARNING - Extreme scaled value for rolling_median_3: 99.41666666666667
+2025-08-12 14:56:37,506 - WARNING - Extreme scaled value for rolling_max_3: 79.8
+2025-08-12 14:56:37,506 - WARNING - Extreme scaled value for rolling_mean_6: 112.69903999999995
+2025-08-12 14:56:37,506 - WARNING - Extreme scaled value for rolling_std_6: 75.51932525811564
+2025-08-12 14:56:37,507 - WARNING - Extreme scaled value for rolling_median_6: 120.73684210526316
+2025-08-12 14:56:37,507 - WARNING - Extreme scaled value for rolling_max_6: 85.21428571428571
+2025-08-12 14:56:37,507 - WARNING - Extreme scaled value for rolling_mean_12: 165.90277777777777
+2025-08-12 14:56:37,507 - WARNING - Extreme scaled value for rolling_std_12: 66.76042831212607
+2025-08-12 14:56:37,508 - WARNING - Extreme scaled value for rolling_median_12: 157.35714285714286
+2025-08-12 14:56:37,508 - WARNING - Extreme scaled value for rolling_max_12: 90.35714285714286
+2025-08-12 14:56:37,508 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 66.22222222222223
+2025-08-12 14:56:37,508 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 70.94117647058823
+2025-08-12 14:56:37,509 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 67.82344719374852
+2025-08-12 14:56:37,509 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 61.5
+2025-08-12 14:56:37,509 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 71.875
+2025-08-12 14:56:37,509 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 76.93333333333334
+2025-08-12 14:56:37,509 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 72.4117594838508
+2025-08-12 14:56:37,510 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 67.26038583486874
+2025-08-12 14:56:37,510 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 75.01952592797068
+2025-08-12 14:56:37,510 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 105.3991230130373
+2025-08-12 14:56:37,510 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 82.50069848255255
+2025-08-12 14:56:37,510 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 101.75690383016945
+2025-08-12 14:56:37,511 - WARNING - Extreme scaled value for trend_3m: -58.681523809523725
+2025-08-12 14:56:37,511 - WARNING - Extreme scaled value for trend_6m: -33.726114649681556
+2025-08-12 14:56:37,511 - WARNING - Extreme scaled value for trend_12m: -16.246073298429295
+2025-08-12 14:56:37,513 - WARNING - Extreme scaled value for product_popularity: 334.78205128205065
+2025-08-12 14:56:37,513 - WARNING - Extreme scaled value for monthly_pattern: 74.51851851851853
+2025-08-12 14:56:37,513 - WARNING - Extreme scaled value for yoy_growth: -71.05438211848805
+2025-08-12 14:56:37,513 - WARNING - Extreme scaled value for price_popularity_interaction: 31.976623563631243
+2025-08-12 14:56:37,513 - WARNING - Extreme scaled value for trend_momentum_interaction: -346.7124999999997
+2025-08-12 14:56:37,514 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:37,519 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:37,519 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:37,534 - INFO - Raw prediction: 4.717061029972392
+2025-08-12 14:56:37,535 - INFO - After exp transform: 110.83907749009865
+2025-08-12 14:56:37,535 - INFO - After boost factor (1.0): 110.83907749009865
+2025-08-12 14:56:37,535 - INFO - After historical context adjustment: 234.12583829897963
+2025-08-12 14:56:37,535 - INFO - Final prediction for Mie Hotplate Nusantara Lv 1-5: 234
+2025-08-12 14:56:37,957 - INFO - --- Enhanced prediction for Original Chicken BBQ at 2025-01-01 ---
+2025-08-12 14:56:38,035 - WARNING - Extreme scaled value for rolling_mean_3: 70.62081180811809
+2025-08-12 14:56:38,035 - WARNING - Extreme scaled value for rolling_std_3: 79.45695209829343
+2025-08-12 14:56:38,035 - WARNING - Extreme scaled value for rolling_median_3: 96.58333333333333
+2025-08-12 14:56:38,035 - WARNING - Extreme scaled value for rolling_max_3: 84.26666666666667
+2025-08-12 14:56:38,036 - WARNING - Extreme scaled value for rolling_mean_6: 117.82671999999997
+2025-08-12 14:56:38,036 - WARNING - Extreme scaled value for rolling_std_6: 78.27686741030743
+2025-08-12 14:56:38,036 - WARNING - Extreme scaled value for rolling_median_6: 123.89473684210526
+2025-08-12 14:56:38,036 - WARNING - Extreme scaled value for rolling_max_6: 90.0
+2025-08-12 14:56:38,037 - WARNING - Extreme scaled value for rolling_mean_12: 167.33333333333331
+2025-08-12 14:56:38,037 - WARNING - Extreme scaled value for rolling_std_12: 67.2869577891459
+2025-08-12 14:56:38,037 - WARNING - Extreme scaled value for rolling_median_12: 157.85714285714286
+2025-08-12 14:56:38,037 - WARNING - Extreme scaled value for rolling_max_12: 89.78571428571429
+2025-08-12 14:56:38,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 70.59333333333333
+2025-08-12 14:56:38,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 68.17647058823529
+2025-08-12 14:56:38,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 71.32142651099895
+2025-08-12 14:56:38,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.3125
+2025-08-12 14:56:38,038 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 74.6875
+2025-08-12 14:56:38,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.33333333333333
+2025-08-12 14:56:38,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 69.74251693198863
+2025-08-12 14:56:38,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.54499912522014
+2025-08-12 14:56:38,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 72.22624570724837
+2025-08-12 14:56:38,039 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.27669575269228
+2025-08-12 14:56:38,040 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 83.7516926181429
+2025-08-12 14:56:38,040 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.5646545555518
+2025-08-12 14:56:38,040 - WARNING - Extreme scaled value for trend_3m: -56.482285714285645
+2025-08-12 14:56:38,040 - WARNING - Extreme scaled value for trend_6m: -36.69426751592358
+2025-08-12 14:56:38,041 - WARNING - Extreme scaled value for trend_12m: -13.036649214659661
+2025-08-12 14:56:38,041 - WARNING - Extreme scaled value for product_popularity: 332.2051282051276
+2025-08-12 14:56:38,042 - WARNING - Extreme scaled value for monthly_pattern: 84.07407407407408
+2025-08-12 14:56:38,042 - WARNING - Extreme scaled value for yoy_growth: -68.79431879245479
+2025-08-12 14:56:38,042 - WARNING - Extreme scaled value for price_popularity_interaction: 34.33112119657496
+2025-08-12 14:56:38,043 - WARNING - Extreme scaled value for trend_momentum_interaction: -477.5543181818179
+2025-08-12 14:56:38,044 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:38,049 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:38,050 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:38,065 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:38,065 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:38,066 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:38,066 - INFO - After historical context adjustment: 313.53046952099953
+2025-08-12 14:56:38,066 - INFO - Final prediction for Original Chicken BBQ: 314
+2025-08-12 14:56:38,480 - INFO - --- Enhanced prediction for Original Chicken BBQ at 2025-02-01 ---
+2025-08-12 14:56:38,559 - WARNING - Extreme scaled value for rolling_mean_3: 70.62081180811809
+2025-08-12 14:56:38,559 - WARNING - Extreme scaled value for rolling_std_3: 79.45695209829343
+2025-08-12 14:56:38,559 - WARNING - Extreme scaled value for rolling_median_3: 96.58333333333333
+2025-08-12 14:56:38,560 - WARNING - Extreme scaled value for rolling_max_3: 84.26666666666667
+2025-08-12 14:56:38,560 - WARNING - Extreme scaled value for rolling_mean_6: 117.82671999999997
+2025-08-12 14:56:38,560 - WARNING - Extreme scaled value for rolling_std_6: 78.27686741030743
+2025-08-12 14:56:38,560 - WARNING - Extreme scaled value for rolling_median_6: 123.89473684210526
+2025-08-12 14:56:38,560 - WARNING - Extreme scaled value for rolling_max_6: 90.0
+2025-08-12 14:56:38,561 - WARNING - Extreme scaled value for rolling_mean_12: 167.33333333333331
+2025-08-12 14:56:38,561 - WARNING - Extreme scaled value for rolling_std_12: 67.2869577891459
+2025-08-12 14:56:38,561 - WARNING - Extreme scaled value for rolling_median_12: 157.85714285714286
+2025-08-12 14:56:38,561 - WARNING - Extreme scaled value for rolling_max_12: 89.78571428571429
+2025-08-12 14:56:38,562 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 70.59333333333333
+2025-08-12 14:56:38,563 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 68.17647058823529
+2025-08-12 14:56:38,563 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 71.32142651099895
+2025-08-12 14:56:38,563 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.3125
+2025-08-12 14:56:38,563 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 74.6875
+2025-08-12 14:56:38,563 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.33333333333333
+2025-08-12 14:56:38,564 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 69.74251693198863
+2025-08-12 14:56:38,564 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.54499912522014
+2025-08-12 14:56:38,564 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 72.22624570724837
+2025-08-12 14:56:38,564 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.27669575269228
+2025-08-12 14:56:38,564 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 83.7516926181429
+2025-08-12 14:56:38,565 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.5646545555518
+2025-08-12 14:56:38,565 - WARNING - Extreme scaled value for trend_3m: -56.482285714285645
+2025-08-12 14:56:38,565 - WARNING - Extreme scaled value for trend_6m: -36.69426751592358
+2025-08-12 14:56:38,565 - WARNING - Extreme scaled value for trend_12m: -13.036649214659661
+2025-08-12 14:56:38,566 - WARNING - Extreme scaled value for product_popularity: 332.2051282051276
+2025-08-12 14:56:38,566 - WARNING - Extreme scaled value for monthly_pattern: 73.88888888888889
+2025-08-12 14:56:38,566 - WARNING - Extreme scaled value for yoy_growth: -68.79431879245479
+2025-08-12 14:56:38,566 - WARNING - Extreme scaled value for price_popularity_interaction: 34.33112119657496
+2025-08-12 14:56:38,567 - WARNING - Extreme scaled value for trend_momentum_interaction: -479.65909090909065
+2025-08-12 14:56:38,568 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:38,573 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:38,573 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:38,588 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:38,588 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:38,588 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:38,588 - INFO - After historical context adjustment: 232.88249901217296
+2025-08-12 14:56:38,588 - INFO - Final prediction for Original Chicken BBQ: 233
+2025-08-12 14:56:39,006 - INFO - --- Enhanced prediction for Original Chicken BBQ at 2025-03-01 ---
+2025-08-12 14:56:39,086 - WARNING - Extreme scaled value for rolling_mean_3: 70.62081180811809
+2025-08-12 14:56:39,086 - WARNING - Extreme scaled value for rolling_std_3: 79.45695209829343
+2025-08-12 14:56:39,086 - WARNING - Extreme scaled value for rolling_median_3: 96.58333333333333
+2025-08-12 14:56:39,086 - WARNING - Extreme scaled value for rolling_max_3: 84.26666666666667
+2025-08-12 14:56:39,087 - WARNING - Extreme scaled value for rolling_mean_6: 117.82671999999997
+2025-08-12 14:56:39,087 - WARNING - Extreme scaled value for rolling_std_6: 78.27686741030743
+2025-08-12 14:56:39,087 - WARNING - Extreme scaled value for rolling_median_6: 123.89473684210526
+2025-08-12 14:56:39,087 - WARNING - Extreme scaled value for rolling_max_6: 90.0
+2025-08-12 14:56:39,088 - WARNING - Extreme scaled value for rolling_mean_12: 167.33333333333331
+2025-08-12 14:56:39,088 - WARNING - Extreme scaled value for rolling_std_12: 67.2869577891459
+2025-08-12 14:56:39,088 - WARNING - Extreme scaled value for rolling_median_12: 157.85714285714286
+2025-08-12 14:56:39,088 - WARNING - Extreme scaled value for rolling_max_12: 89.78571428571429
+2025-08-12 14:56:39,089 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 70.59333333333333
+2025-08-12 14:56:39,089 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 68.17647058823529
+2025-08-12 14:56:39,089 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 71.32142651099895
+2025-08-12 14:56:39,089 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.3125
+2025-08-12 14:56:39,089 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 74.6875
+2025-08-12 14:56:39,090 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.33333333333333
+2025-08-12 14:56:39,090 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 69.74251693198863
+2025-08-12 14:56:39,090 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.54499912522014
+2025-08-12 14:56:39,090 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 72.22624570724837
+2025-08-12 14:56:39,091 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.27669575269228
+2025-08-12 14:56:39,091 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 83.7516926181429
+2025-08-12 14:56:39,091 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.5646545555518
+2025-08-12 14:56:39,093 - WARNING - Extreme scaled value for trend_3m: -56.482285714285645
+2025-08-12 14:56:39,093 - WARNING - Extreme scaled value for trend_6m: -36.69426751592358
+2025-08-12 14:56:39,093 - WARNING - Extreme scaled value for trend_12m: -13.036649214659661
+2025-08-12 14:56:39,093 - WARNING - Extreme scaled value for product_popularity: 332.2051282051276
+2025-08-12 14:56:39,093 - WARNING - Extreme scaled value for monthly_pattern: 84.77777777777777
+2025-08-12 14:56:39,093 - WARNING - Extreme scaled value for yoy_growth: -68.79431879245479
+2025-08-12 14:56:39,094 - WARNING - Extreme scaled value for price_popularity_interaction: 34.33112119657496
+2025-08-12 14:56:39,094 - WARNING - Extreme scaled value for trend_momentum_interaction: -477.5543181818179
+2025-08-12 14:56:39,095 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:39,100 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:39,100 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:39,116 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:39,116 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:39,116 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:39,116 - INFO - After historical context adjustment: 316.47805350276724
+2025-08-12 14:56:39,116 - INFO - Final prediction for Original Chicken BBQ: 316
+2025-08-12 14:56:39,532 - INFO - --- Enhanced prediction for Original Chicken BBQ at 2025-04-01 ---
+2025-08-12 14:56:39,606 - WARNING - Extreme scaled value for rolling_mean_3: 70.62081180811809
+2025-08-12 14:56:39,606 - WARNING - Extreme scaled value for rolling_std_3: 79.45695209829343
+2025-08-12 14:56:39,606 - WARNING - Extreme scaled value for rolling_median_3: 96.58333333333333
+2025-08-12 14:56:39,606 - WARNING - Extreme scaled value for rolling_max_3: 84.26666666666667
+2025-08-12 14:56:39,607 - WARNING - Extreme scaled value for rolling_mean_6: 117.82671999999997
+2025-08-12 14:56:39,607 - WARNING - Extreme scaled value for rolling_std_6: 78.27686741030743
+2025-08-12 14:56:39,607 - WARNING - Extreme scaled value for rolling_median_6: 123.89473684210526
+2025-08-12 14:56:39,607 - WARNING - Extreme scaled value for rolling_max_6: 90.0
+2025-08-12 14:56:39,608 - WARNING - Extreme scaled value for rolling_mean_12: 167.33333333333331
+2025-08-12 14:56:39,608 - WARNING - Extreme scaled value for rolling_std_12: 67.2869577891459
+2025-08-12 14:56:39,609 - WARNING - Extreme scaled value for rolling_median_12: 157.85714285714286
+2025-08-12 14:56:39,609 - WARNING - Extreme scaled value for rolling_max_12: 89.78571428571429
+2025-08-12 14:56:39,609 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 70.59333333333333
+2025-08-12 14:56:39,609 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 68.17647058823529
+2025-08-12 14:56:39,609 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 71.32142651099895
+2025-08-12 14:56:39,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.3125
+2025-08-12 14:56:39,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 74.6875
+2025-08-12 14:56:39,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.33333333333333
+2025-08-12 14:56:39,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 69.74251693198863
+2025-08-12 14:56:39,610 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.54499912522014
+2025-08-12 14:56:39,611 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 72.22624570724837
+2025-08-12 14:56:39,611 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.27669575269228
+2025-08-12 14:56:39,611 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 83.7516926181429
+2025-08-12 14:56:39,611 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.5646545555518
+2025-08-12 14:56:39,611 - WARNING - Extreme scaled value for trend_3m: -56.482285714285645
+2025-08-12 14:56:39,612 - WARNING - Extreme scaled value for trend_6m: -36.69426751592358
+2025-08-12 14:56:39,613 - WARNING - Extreme scaled value for trend_12m: -13.036649214659661
+2025-08-12 14:56:39,613 - WARNING - Extreme scaled value for product_popularity: 332.2051282051276
+2025-08-12 14:56:39,613 - WARNING - Extreme scaled value for monthly_pattern: 65.44444444444444
+2025-08-12 14:56:39,614 - WARNING - Extreme scaled value for yoy_growth: -68.79431879245479
+2025-08-12 14:56:39,614 - WARNING - Extreme scaled value for price_popularity_interaction: 34.33112119657496
+2025-08-12 14:56:39,614 - WARNING - Extreme scaled value for trend_momentum_interaction: -477.5543181818179
+2025-08-12 14:56:39,615 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:39,619 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:39,619 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:39,633 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:39,633 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:39,633 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:39,633 - INFO - After historical context adjustment: 214.72053434565848
+2025-08-12 14:56:39,633 - INFO - Final prediction for Original Chicken BBQ: 215
+2025-08-12 14:56:40,055 - INFO - --- Enhanced prediction for Original Chicken BBQ at 2025-05-01 ---
+2025-08-12 14:56:40,134 - WARNING - Extreme scaled value for rolling_mean_3: 70.62081180811809
+2025-08-12 14:56:40,134 - WARNING - Extreme scaled value for rolling_std_3: 79.45695209829343
+2025-08-12 14:56:40,134 - WARNING - Extreme scaled value for rolling_median_3: 96.58333333333333
+2025-08-12 14:56:40,134 - WARNING - Extreme scaled value for rolling_max_3: 84.26666666666667
+2025-08-12 14:56:40,135 - WARNING - Extreme scaled value for rolling_mean_6: 117.82671999999997
+2025-08-12 14:56:40,135 - WARNING - Extreme scaled value for rolling_std_6: 78.27686741030743
+2025-08-12 14:56:40,135 - WARNING - Extreme scaled value for rolling_median_6: 123.89473684210526
+2025-08-12 14:56:40,135 - WARNING - Extreme scaled value for rolling_max_6: 90.0
+2025-08-12 14:56:40,135 - WARNING - Extreme scaled value for rolling_mean_12: 167.33333333333331
+2025-08-12 14:56:40,136 - WARNING - Extreme scaled value for rolling_std_12: 67.2869577891459
+2025-08-12 14:56:40,136 - WARNING - Extreme scaled value for rolling_median_12: 157.85714285714286
+2025-08-12 14:56:40,136 - WARNING - Extreme scaled value for rolling_max_12: 89.78571428571429
+2025-08-12 14:56:40,136 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 70.59333333333333
+2025-08-12 14:56:40,137 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 68.17647058823529
+2025-08-12 14:56:40,137 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 71.32142651099895
+2025-08-12 14:56:40,137 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.3125
+2025-08-12 14:56:40,137 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 74.6875
+2025-08-12 14:56:40,137 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.33333333333333
+2025-08-12 14:56:40,137 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 69.74251693198863
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.54499912522014
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 72.22624570724837
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.27669575269228
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 83.7516926181429
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.5646545555518
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for trend_3m: -56.482285714285645
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for trend_6m: -36.69426751592358
+2025-08-12 14:56:40,138 - WARNING - Extreme scaled value for trend_12m: -13.036649214659661
+2025-08-12 14:56:40,139 - WARNING - Extreme scaled value for product_popularity: 332.2051282051276
+2025-08-12 14:56:40,139 - WARNING - Extreme scaled value for monthly_pattern: 69.11111111111111
+2025-08-12 14:56:40,139 - WARNING - Extreme scaled value for yoy_growth: -68.79431879245479
+2025-08-12 14:56:40,140 - WARNING - Extreme scaled value for price_popularity_interaction: 34.33112119657496
+2025-08-12 14:56:40,140 - WARNING - Extreme scaled value for trend_momentum_interaction: -477.5543181818179
+2025-08-12 14:56:40,143 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:40,146 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:40,146 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:40,160 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:40,161 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:40,161 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:40,161 - INFO - After historical context adjustment: 223.11085519980736
+2025-08-12 14:56:40,161 - INFO - Final prediction for Original Chicken BBQ: 223
+2025-08-12 14:56:40,581 - INFO - --- Enhanced prediction for Original Chicken BBQ at 2025-06-01 ---
+2025-08-12 14:56:40,662 - WARNING - Extreme scaled value for rolling_mean_3: 70.62081180811809
+2025-08-12 14:56:40,662 - WARNING - Extreme scaled value for rolling_std_3: 79.45695209829343
+2025-08-12 14:56:40,663 - WARNING - Extreme scaled value for rolling_median_3: 96.58333333333333
+2025-08-12 14:56:40,663 - WARNING - Extreme scaled value for rolling_max_3: 84.26666666666667
+2025-08-12 14:56:40,663 - WARNING - Extreme scaled value for rolling_mean_6: 117.82671999999997
+2025-08-12 14:56:40,663 - WARNING - Extreme scaled value for rolling_std_6: 78.27686741030743
+2025-08-12 14:56:40,664 - WARNING - Extreme scaled value for rolling_median_6: 123.89473684210526
+2025-08-12 14:56:40,664 - WARNING - Extreme scaled value for rolling_max_6: 90.0
+2025-08-12 14:56:40,664 - WARNING - Extreme scaled value for rolling_mean_12: 167.33333333333331
+2025-08-12 14:56:40,664 - WARNING - Extreme scaled value for rolling_std_12: 67.2869577891459
+2025-08-12 14:56:40,664 - WARNING - Extreme scaled value for rolling_median_12: 157.85714285714286
+2025-08-12 14:56:40,665 - WARNING - Extreme scaled value for rolling_max_12: 89.78571428571429
+2025-08-12 14:56:40,665 - WARNING - Extreme scaled value for penjualan_bulan_lalu_1: 70.59333333333333
+2025-08-12 14:56:40,665 - WARNING - Extreme scaled value for penjualan_bulan_lalu_2: 68.17647058823529
+2025-08-12 14:56:40,665 - WARNING - Extreme scaled value for penjualan_bulan_lalu_3: 71.32142651099895
+2025-08-12 14:56:40,665 - WARNING - Extreme scaled value for penjualan_bulan_lalu_4: 69.3125
+2025-08-12 14:56:40,666 - WARNING - Extreme scaled value for penjualan_bulan_lalu_5: 74.6875
+2025-08-12 14:56:40,666 - WARNING - Extreme scaled value for penjualan_bulan_lalu_6: 73.33333333333333
+2025-08-12 14:56:40,666 - WARNING - Extreme scaled value for penjualan_bulan_lalu_7: 69.74251693198863
+2025-08-12 14:56:40,666 - WARNING - Extreme scaled value for penjualan_bulan_lalu_8: 68.54499912522014
+2025-08-12 14:56:40,666 - WARNING - Extreme scaled value for penjualan_bulan_lalu_9: 72.22624570724837
+2025-08-12 14:56:40,667 - WARNING - Extreme scaled value for penjualan_bulan_lalu_10: 100.27669575269228
+2025-08-12 14:56:40,667 - WARNING - Extreme scaled value for penjualan_bulan_lalu_11: 83.7516926181429
+2025-08-12 14:56:40,667 - WARNING - Extreme scaled value for penjualan_bulan_lalu_12: 99.5646545555518
+2025-08-12 14:56:40,667 - WARNING - Extreme scaled value for trend_3m: -56.482285714285645
+2025-08-12 14:56:40,667 - WARNING - Extreme scaled value for trend_6m: -36.69426751592358
+2025-08-12 14:56:40,668 - WARNING - Extreme scaled value for trend_12m: -13.036649214659661
+2025-08-12 14:56:40,668 - WARNING - Extreme scaled value for product_popularity: 332.2051282051276
+2025-08-12 14:56:40,668 - WARNING - Extreme scaled value for monthly_pattern: 71.14814814814814
+2025-08-12 14:56:40,669 - WARNING - Extreme scaled value for yoy_growth: -68.79431879245479
+2025-08-12 14:56:40,669 - WARNING - Extreme scaled value for price_popularity_interaction: 34.33112119657496
+2025-08-12 14:56:40,669 - WARNING - Extreme scaled value for trend_momentum_interaction: -477.5543181818179
+2025-08-12 14:56:40,670 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-12 14:56:40,676 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-12 14:56:40,676 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-12 14:56:40,693 - INFO - Raw prediction: 4.717181413288184
+2025-08-12 14:56:40,693 - INFO - After exp transform: 110.85254185950852
+2025-08-12 14:56:40,693 - INFO - After boost factor (1.0): 110.85254185950852
+2025-08-12 14:56:40,693 - INFO - After historical context adjustment: 227.29507048368455
+2025-08-12 14:56:40,693 - INFO - Final prediction for Original Chicken BBQ: 227
+2025-08-12 15:01:06,022 - INFO - Analytics page accessed at: 2025-08-12 15:01:06
+2025-08-12 15:01:07,214 - INFO - Mode set to: Normal
+2025-08-12 15:01:09,898 - INFO - Mode set to: Normal
+2025-08-12 15:01:11,102 - INFO - Mode set to: Advanced
+2025-08-12 15:01:12,971 - INFO - Analytics page accessed at: 2025-08-12 15:01:12
+2025-08-12 15:03:19,883 - INFO - Analytics page accessed at: 2025-08-12 15:03:19
+2025-08-12 15:03:20,239 - INFO - Mode set to: Advanced
+2025-08-12 15:03:21,631 - INFO - Mode set to: Normal
+2025-08-12 15:03:25,972 - INFO - Analytics page accessed at: 2025-08-12 15:03:25
+2025-08-12 15:03:28,683 - INFO - Mode set to: Normal
+2025-08-12 15:03:30,171 - INFO - Mode set to: Normal
+2025-08-12 15:03:30,914 - INFO - Analytics page accessed at: 2025-08-12 15:03:30
+2025-08-12 15:03:41,973 - INFO - Analytics page accessed at: 2025-08-12 15:03:41
+2025-08-12 15:03:48,333 - INFO - Analytics page accessed at: 2025-08-12 15:03:48
+2025-08-12 15:03:56,823 - INFO - Mode set to: Normal
+2025-08-12 15:04:03,106 - INFO - Analytics page accessed at: 2025-08-12 15:04:03
+2025-08-12 15:04:16,352 - INFO - Mode set to: Normal
+2025-08-12 15:04:17,923 - INFO - Mode set to: Advanced

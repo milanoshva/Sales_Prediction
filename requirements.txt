@@ -11,3 +11,5 @@ python-dateutil==2.9.0.post0
 optuna==3.5.0
 catboost>=1.0.0
 scipy
+openpyxl
+xlsxwriter

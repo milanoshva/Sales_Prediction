@@ -601,10 +601,25 @@ else:
                     st.warning("No suitable numeric data for outlier detection.")
             st.markdown('</div>', unsafe_allow_html=True)
 
-    # Download Data
+    # --- Download Section ---
+    st.subheader("📥 " + ("Unduh Data Analisis" if lang == "ID" else "Download Analysis Data"))
+
+    # Create summary data with improved metrics
+    summary_data = df_filtered.groupby(['kategori_produk', 'nama_produk']).agg(
+        total_penjualan_rp=('total_pembayaran', 'sum'),
+        jumlah_terjual_unit=('jumlah', 'sum'),
+        frekuensi_pembelian=('nama_produk', 'size')  # Count how many times each product was purchased
+    ).reset_index()
+
+    # Sort and format the data
+    summary_data = summary_data.sort_values(by='total_penjualan_rp', ascending=False)
+    summary_data['total_penjualan_rp'] = summary_data['total_penjualan_rp'].round(0).astype(int)
+
+    # The button will now render much faster as it only processes the smaller summary_data
     st.download_button(
-        label="💾 Unduh Data" if lang == "ID" else "Download Data",
-        data=df_filtered.to_csv(index=False, sep=';', decimal=',').encode('utf-8'),
-        file_name="data_penjualan_filtered.csv",
-        mime='text/csv'
+        label="💾 " + ("Unduh Ringkasan Produk (.csv)" if lang == "ID" else "Download Product Summary (.csv)"),
+        data=summary_data.to_csv(index=False, sep=';', decimal=',').encode('utf-8'),
+        file_name="ringkasan_produk.csv",
+        mime='text/csv',
+        use_container_width=True
     )
