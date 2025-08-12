@@ -10,6 +10,37 @@ import plotly.graph_objects as go
 from scipy import stats
 import warnings
 
+# --- START DIAGNOSTIC CODE ---
+st.subheader("Diagnostic Information")
+st.write("Current Working Directory:", os.getcwd())
+
+models_dir = "models"
+debug_info = []
+
+if os.path.exists(models_dir):
+    st.write(f"'{models_dir}' directory exists.")
+    try:
+        file_list = os.listdir(models_dir)
+        if not file_list:
+            st.warning(f"The '{models_dir}' directory is empty.")
+        else:
+            for filename in file_list:
+                filepath = os.path.join(models_dir, filename)
+                try:
+                    filesize = os.path.getsize(filepath)
+                    debug_info.append(f"- {filepath}: {filesize} bytes")
+                except OSError as e:
+                    debug_info.append(f"- {filepath}: Error getting size - {e}")
+        
+        if debug_info:
+            st.code("\n".join(debug_info))
+
+    except Exception as e:
+        st.error(f"Could not read '{models_dir}' directory: {e}")
+else:
+    st.error(f"'{models_dir}' directory does NOT exist in the current working directory.")
+# --- END DIAGNOSTIC CODE ---
+
 # Import custom modules
 from ui.styles import set_custom_ui, get_plotly_template
 from core.data_processor import create_advanced_features
