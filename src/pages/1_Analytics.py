@@ -533,7 +533,7 @@ else:
                 buf = io.BytesIO()
                 plt.savefig(buf, format='png', bbox_inches='tight')
                 buf.seek(0)
-                st.image(buf, use_container_width=True)
+                st.image(buf)
                 buf.close()
                 plt.close(fig=plt.gcf())
             else:

@@ -118,7 +118,7 @@ Aplikasi akan terbuka secara otomatis di browser web Anda.
 
 3.  **Prediksi Menggunakan Model Pre-trained (`/src/pages/2_Prediction_and_Models.py`)**
     -   **Tanpa Pelatihan Ulang**: Aplikasi **tidak** melakukan pelatihan model secara langsung. Sebaliknya, aplikasi ini memuat model machine learning yang sudah ada dan telah dioptimalkan sebelumnya dari direktori `/models`.
-    -   **Pemilihan Model**: Pengguna dapat memilih salah satu dari beberapa model yang tersedia (misalnya, `Ensemble`, `XGBoost`, `Random Forest`) untuk membuat prediksi.
+    -   **Pemilihan Model**: Pengguna dapat memilih salah satu dari beberapa model yang tersedia (misalnya, `Ensemble`, `XGBoost`, `Random Forest`, `GradientBoost`) untuk membuat prediksi.
     -   **Proses Inferensi**: Saat pengguna meminta prediksi, aplikasi akan:
         1.  Memuat model (`.pkl`) dan artefak prapemrosesan yang relevan.
         2.  Membuat fitur-fitur yang diperlukan untuk data masa depan berdasarkan data historis yang diunggah pengguna.
