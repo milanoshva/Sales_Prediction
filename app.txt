@@ -5656,3 +5656,187 @@ FileNotFoundError: [Errno 2] No such file or directory: 'data\\transaksi_haluna_
 2025-08-13 00:43:05,757 - INFO - Creating volume-aware features...
 2025-08-13 00:43:06,650 - INFO - Processed data saved to data\processed_data_output.csv
 2025-08-13 02:50:14,410 - INFO - Mode set to: Normal
+2025-08-13 14:21:07,165 - INFO - Mode set to: Normal
+2025-08-13 14:21:23,217 - INFO - Mode set to: Normal
+2025-08-13 14:21:23,232 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-13 14:21:23,736 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-13 14:21:23,814 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 14:21:24,015 - INFO - Cleaning currency column: harga
+2025-08-13 14:21:24,302 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 14:21:24,548 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 14:21:25,189 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-13 14:21:25,305 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-13 14:21:25,854 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-13 14:21:25,939 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 14:21:26,217 - INFO - Cleaning currency column: harga
+2025-08-13 14:21:26,471 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 14:21:26,685 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 14:21:27,233 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-13 14:21:36,071 - INFO - Loaded model: Random Forest
+2025-08-13 14:21:37,048 - INFO - Loaded model: XGBoost
+2025-08-13 14:21:37,099 - INFO - Loaded model: LightGBM
+2025-08-13 14:21:37,116 - ERROR - Failed to load artifacts: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-08-13 14:22:27,596 - INFO - Mode set to: Normal
+2025-08-13 14:22:31,887 - INFO - Loaded model: Random Forest
+2025-08-13 14:22:31,974 - INFO - Loaded model: XGBoost
+2025-08-13 14:22:32,003 - INFO - Loaded model: LightGBM
+2025-08-13 14:22:32,145 - INFO - Loaded model: Gradient Boosting
+2025-08-13 14:22:33,375 - INFO - Loaded model: Gabungan
+2025-08-13 14:22:33,775 - INFO - Loaded 5 models and artifacts successfully
+2025-08-13 14:22:37,486 - INFO - Mode set to: Normal
+2025-08-13 14:22:45,975 - INFO - Mode set to: Normal
+2025-08-13 14:22:45,997 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-13 14:22:46,516 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-13 14:22:46,606 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 14:22:46,838 - INFO - Cleaning currency column: harga
+2025-08-13 14:22:47,056 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 14:22:47,306 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 14:22:48,039 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-13 14:22:48,156 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-13 14:22:48,672 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-13 14:22:48,739 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 14:22:48,906 - INFO - Cleaning currency column: harga
+2025-08-13 14:22:49,072 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 14:22:49,289 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 14:22:49,990 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-13 14:24:25,827 - INFO - Analytics page accessed at: 2025-08-13 14:24:25
+2025-08-13 14:25:23,783 - INFO - Mode set to: Normal
+2025-08-13 14:25:26,610 - INFO - Mode set to: Advanced
+2025-08-13 14:25:31,038 - INFO - Mode set to: Advanced
+2025-08-13 14:25:35,682 - INFO - Mode set to: Advanced
+2025-08-13 14:25:45,296 - INFO - Mode set to: Advanced
+2025-08-13 14:25:47,998 - INFO - Mode set to: Normal
+2025-08-13 14:25:54,830 - INFO - Mode set to: Normal
+2025-08-13 14:25:57,014 - INFO - Mode set to: Normal
+2025-08-13 14:29:36,516 - INFO - Analytics page accessed at: 2025-08-13 14:29:36
+2025-08-13 14:29:57,801 - INFO - Mode set to: Normal
+2025-08-13 14:30:02,182 - INFO - Mode set to: Normal
+2025-08-13 14:30:39,819 - INFO - Mode set to: Normal
+2025-08-13 14:30:46,346 - INFO - Mode set to: Normal
+2025-08-13 14:30:49,946 - INFO - Analytics page accessed at: 2025-08-13 14:30:49
+2025-08-13 14:32:26,346 - INFO - Mode set to: Normal
+2025-08-13 14:32:29,148 - INFO - Mode set to: Normal
+2025-08-13 14:32:35,396 - INFO - Mode set to: Normal
+2025-08-13 14:50:22,087 - INFO - Mode set to: Normal
+2025-08-13 14:50:45,910 - INFO - Mode set to: Normal
+2025-08-13 14:50:45,928 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-13 14:50:46,242 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-13 14:50:46,273 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 14:50:46,382 - INFO - Cleaning currency column: harga
+2025-08-13 14:50:46,492 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 14:50:46,625 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 14:50:46,958 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-13 14:50:46,958 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-13 14:50:47,258 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-13 14:50:47,308 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 14:50:47,408 - INFO - Cleaning currency column: harga
+2025-08-13 14:50:47,541 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 14:50:47,658 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 14:50:47,990 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-13 14:51:03,877 - INFO - Analytics page accessed at: 2025-08-13 14:51:03
+2025-08-13 14:51:09,049 - INFO - Mode set to: Normal
+2025-08-13 14:51:11,522 - INFO - Mode set to: Advanced
+2025-08-13 14:51:16,163 - INFO - Analytics page accessed at: 2025-08-13 14:51:16
+2025-08-13 14:54:19,569 - INFO - Mode set to: Advanced
+2025-08-13 14:56:21,966 - INFO - Analytics page accessed at: 2025-08-13 14:56:21
+2025-08-13 15:01:18,588 - INFO - Mode set to: Advanced
+2025-08-13 15:01:38,892 - INFO - Analytics page accessed at: 2025-08-13 15:01:38
+2025-08-13 15:01:43,472 - INFO - Mode set to: Advanced
+2025-08-13 15:07:04,819 - INFO - Mode set to: Advanced
+2025-08-13 15:10:36,677 - INFO - Mode set to: Advanced
+2025-08-13 15:10:46,590 - INFO - Mode set to: Advanced
+2025-08-13 15:10:46,590 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-13 15:10:46,923 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-13 15:10:46,969 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 15:10:47,119 - INFO - Cleaning currency column: harga
+2025-08-13 15:10:47,272 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 15:10:47,405 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 15:10:47,772 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-13 15:10:47,772 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-13 15:10:48,072 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-13 15:10:48,122 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 15:10:48,272 - INFO - Cleaning currency column: harga
+2025-08-13 15:10:48,405 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 15:10:48,522 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 15:10:48,888 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-13 15:49:22,344 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-01-31 00:00:00 ---
+2025-08-13 15:49:22,455 - WARNING - Extreme scaled value for yoy_growth: -77.86166707545287
+2025-08-13 15:49:22,456 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-13 15:49:22,460 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-13 15:49:22,460 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-13 15:49:22,942 - INFO - Raw prediction: 3.571334322050896
+2025-08-13 15:49:22,942 - INFO - After exp transform: 34.564015356254124
+2025-08-13 15:49:22,942 - INFO - After boost factor (1.0): 34.564015356254124
+2025-08-13 15:49:22,942 - INFO - After historical context adjustment: 40.56608708113171
+2025-08-13 15:49:22,942 - INFO - Final prediction for AGLIO e OLIO: 41
+2025-08-13 15:49:23,518 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-02-28 00:00:00 ---
+2025-08-13 15:49:23,626 - WARNING - Extreme scaled value for yoy_growth: -77.34986229800361
+2025-08-13 15:49:23,628 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-13 15:49:23,632 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-13 15:49:23,632 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-13 15:49:23,798 - INFO - Raw prediction: 3.588439672747297
+2025-08-13 15:49:23,798 - INFO - After exp transform: 35.17758299552333
+2025-08-13 15:49:23,798 - INFO - After boost factor (1.0): 35.17758299552333
+2025-08-13 15:49:23,799 - INFO - After historical context adjustment: 39.63658972243696
+2025-08-13 15:49:23,799 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-13 15:49:24,313 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-03-31 00:00:00 ---
+2025-08-13 15:49:24,429 - WARNING - Extreme scaled value for yoy_growth: -76.83903145923644
+2025-08-13 15:49:24,431 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-13 15:49:24,433 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-13 15:49:24,433 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-13 15:49:24,679 - INFO - Raw prediction: 3.6409445029215943
+2025-08-13 15:49:24,679 - INFO - After exp transform: 37.12783157241826
+2025-08-13 15:49:24,679 - INFO - After boost factor (1.0): 37.12783157241826
+2025-08-13 15:49:24,680 - INFO - After historical context adjustment: 42.54400871034707
+2025-08-13 15:49:24,680 - INFO - Final prediction for AGLIO e OLIO: 43
+2025-08-13 15:49:25,481 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-04-30 00:00:00 ---
+2025-08-13 15:49:25,615 - WARNING - Extreme scaled value for yoy_growth: -76.32917455915138
+2025-08-13 15:49:25,615 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-13 15:49:25,632 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-13 15:49:25,632 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-13 15:49:25,827 - INFO - Raw prediction: 3.5974197333696902
+2025-08-13 15:49:25,828 - INFO - After exp transform: 35.50392296731775
+2025-08-13 15:49:25,828 - INFO - After boost factor (1.0): 35.50392296731775
+2025-08-13 15:49:25,829 - INFO - After historical context adjustment: 39.90284890278437
+2025-08-13 15:49:25,829 - INFO - Final prediction for AGLIO e OLIO: 40
+2025-08-13 15:49:26,447 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-05-31 00:00:00 ---
+2025-08-13 15:49:26,593 - WARNING - Extreme scaled value for yoy_growth: -75.82029159774845
+2025-08-13 15:49:26,597 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-13 15:49:26,610 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-13 15:49:26,611 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-13 15:49:26,773 - INFO - Raw prediction: 3.7291389667932404
+2025-08-13 15:49:26,773 - INFO - After exp transform: 40.643236513429315
+2025-08-13 15:49:26,773 - INFO - After boost factor (1.0): 40.643236513429315
+2025-08-13 15:49:26,773 - INFO - After historical context adjustment: 44.16956089755179
+2025-08-13 15:49:26,773 - INFO - Final prediction for AGLIO e OLIO: 44
+2025-08-13 15:49:27,273 - INFO - --- Enhanced prediction for AGLIO e OLIO at 2025-06-30 00:00:00 ---
+2025-08-13 15:49:27,377 - WARNING - Extreme scaled value for yoy_growth: -75.31238257502761
+2025-08-13 15:49:27,392 - WARNING - Extreme scaled value for product_frequency: -24.0
+2025-08-13 15:49:27,392 - WARNING - Extreme scaled value for category_std_sales: -148.20982351044307
+2025-08-13 15:49:27,392 - WARNING - Extreme scaled value for category_product_count: -2288.13375
+2025-08-13 15:49:27,575 - INFO - Raw prediction: 3.543534252640136
+2025-08-13 15:49:27,575 - INFO - After exp transform: 33.588949506965704
+2025-08-13 15:49:27,575 - INFO - After boost factor (1.0): 33.588949506965704
+2025-08-13 15:49:27,575 - INFO - After historical context adjustment: 38.727089163353575
+2025-08-13 15:49:27,575 - INFO - Final prediction for AGLIO e OLIO: 39
+2025-08-13 16:04:10,063 - INFO - Mode set to: Advanced
+2025-08-13 16:04:17,353 - INFO - Mode set to: Normal
+2025-08-13 16:12:56,446 - INFO - Mode set to: Normal
+2025-08-13 16:12:56,474 - INFO - Reading file: haluna_transaksi_2024_realistis (1).csv
+2025-08-13 16:12:57,036 - INFO - Successfully read haluna_transaksi_2024_realistis (1).csv with separator ','.
+2025-08-13 16:12:57,133 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 16:12:57,395 - INFO - Cleaning currency column: harga
+2025-08-13 16:12:57,678 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 16:12:57,929 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 16:12:58,745 - INFO - Data processed successfully, 113161 rows remaining
+2025-08-13 16:12:58,745 - INFO - Reading file: haluna_transaksi_2023_realistis.csv
+2025-08-13 16:12:59,327 - INFO - Successfully read haluna_transaksi_2023_realistis.csv with separator ','.
+2025-08-13 16:12:59,420 - INFO - Cleaning currency column: harga_satuan
+2025-08-13 16:12:59,623 - INFO - Cleaning currency column: harga
+2025-08-13 16:12:59,927 - INFO - Cleaning currency column: harga_setelah_pajak
+2025-08-13 16:13:00,246 - INFO - Cleaning currency column: total_pembayaran
+2025-08-13 16:13:01,158 - INFO - Data processed successfully, 113181 rows remaining
+2025-08-13 16:13:04,126 - INFO - Analytics page accessed at: 2025-08-13 16:13:04
+2025-08-13 16:13:05,597 - INFO - Mode set to: Normal
+2025-08-13 16:13:07,500 - INFO - Mode set to: Advanced
+2025-08-13 16:13:08,717 - INFO - Analytics page accessed at: 2025-08-13 16:13:08

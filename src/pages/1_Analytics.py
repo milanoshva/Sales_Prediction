@@ -525,9 +525,9 @@ else:
                 plt.figure(figsize=(8, 6))
                 correlation_matrix = df_filtered[numeric_cols].corr()
                 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, center=0, fmt=".2f")
-                plt.title("Korelasi Antara Variabel Numerik" if lang == "ID" else "Correlation Between Numeric Variables", color='white')
-                plt.xticks(color='white', rotation=45, ha='right')
-                plt.yticks(color='white', rotation=0)
+                plt.title("Korelasi Antara Variabel Numerik" if lang == "ID" else "Correlation Between Numeric Variables", color='black')
+                plt.xticks(color='black', rotation=45, ha='right')
+                plt.yticks(color='black', rotation=0)
                 plt.tight_layout()
                 
                 buf = io.BytesIO()

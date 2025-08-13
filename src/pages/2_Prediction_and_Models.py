@@ -577,11 +577,85 @@ else:
     # --- UI Tabs ---
     tab1_text = "Prediksi 1 Produk" if lang == 'ID' else "Predict 1 Product"
     tab2_text = "Prediksi Banyak Produk" if lang == 'ID' else "Predict Multiple Products"
+    tab3_text = "Data Pra-pemrosesan" if lang == 'ID' else "Preprocessed Data"
     if mode == 'Advanced':
         tab1_text = f"🎯 {tab1_text}"
         tab2_text = f"📦 {tab2_text}"
+        tab3_text = f"🔬 {tab3_text}" # Add icon for advanced mode
 
-    tab1, tab2 = st.tabs([tab1_text, tab2_text])
+    tab1, tab2, tab3 = st.tabs([tab1_text, tab2_text, tab3_text])
+
+    # --- TAB 3: Data Preprocessing Display ---
+    with tab3:
+        st.header("📊 " + ("Data Siap Analisis" if lang == 'ID' else "Data Ready for Analysis"))
+        st.markdown(
+            ("Bagian ini menunjukkan bagaimana data penjualan Anda telah disiapkan dan diolah, siap untuk dianalisis lebih lanjut dan digunakan dalam prediksi." if lang == 'ID' else
+             "This section shows how your sales data has been prepared and processed, ready for further analysis and use in predictions.")
+        )
+
+        # 1. Display Aggregated Data
+        st.subheader("1. " + ("Ringkasan Penjualan Bulanan" if lang == 'ID' else "Monthly Sales Summary"))
+        st.markdown(
+            ("Ini adalah rangkuman penjualan Anda setiap bulan per produk. Data ini sudah dibersihkan dan dikelompokkan, menjadi dasar penting sebelum kami melakukan analisis lebih dalam." if lang == 'ID' else
+             "This is a summary of your monthly sales per product. This data has been cleaned and grouped, forming an important foundation before we perform deeper analysis.")
+        )
+        st.dataframe(df_agg.head(10))
+        
+        csv_agg = df_agg.to_csv(index=False).encode('utf-8')
+        st.download_button(
+            "📥 " + ("Unduh Data Agregat (.csv)" if lang == 'ID' else "Download Aggregated Data (.csv)"),
+            csv_agg,
+            "data_agregat.csv",
+            "text/csv",
+            key='download-agg'
+        )
+
+        # 2. Display Feature-Engineered Data
+        st.subheader("2. " + ("Contoh Data untuk Prediksi (Siap Digunakan)" if lang == 'ID' else "Sample Data for Prediction (Model-Ready)"))
+        st.markdown(
+            ("Tabel ini menunjukkan contoh data yang sudah diperkaya dengan berbagai informasi tambahan (fitur) yang penting untuk membuat prediksi akurat. Ini adalah data yang akan digunakan oleh sistem untuk memperkirakan penjualan Anda. Contoh ini diambil dari produk pertama dalam daftar Anda." if lang == 'ID' else
+             "This table shows an example of data that has been enriched with various additional information (features) crucial for making accurate predictions. This is the data the system will use to forecast your sales. This example is taken from the first product in your list.")
+        )
+        
+        if not df_agg.empty:
+            try:
+                # Generate features for a sample product to display
+                sample_product_name = df_agg['nama_produk'].iloc[0]
+                sample_history = df_agg[df_agg['nama_produk'] == sample_product_name].copy()
+                
+                # Create a dummy row for a future prediction to see how features are generated
+                last_known_date_sample = sample_history['waktu'].max()
+                prediction_date_sample = last_known_date_sample + relativedelta(months=1)
+                
+                pred_input_row_sample = pd.DataFrame([{
+                    'waktu': prediction_date_sample, 'nama_produk': sample_product_name, 'jumlah': 0, 'harga': 0, 
+                    'harga_satuan': latest_prices.get(sample_product_name, 0), 
+                    'kategori_produk': category_map.get(sample_product_name, 'N/A'), 
+                    'tahun': prediction_date_sample.year, 'bulan': prediction_date_sample.month
+                }])
+                
+                combined_df_sample = pd.concat([sample_history, pred_input_row_sample], ignore_index=True)
+                
+                # We need the feature_maps for this
+                feature_maps_sample = artifacts.get('feature_maps', {})
+                
+                enhanced_df_sample, _ = create_advanced_features(combined_df_sample, feature_maps_sample, is_training=False)
+                
+                # Display the last few rows which include historical and the new prediction row
+                st.dataframe(enhanced_df_sample.tail(5))
+
+                csv_enhanced = enhanced_df_sample.to_csv(index=False).encode('utf-8')
+                st.download_button(
+                    "📥 " + ("Unduh Contoh Data dengan Fitur Lengkap (.csv)" if lang == 'ID' else "Download Sample Feature-Engineered Data (.csv)"),
+                    csv_enhanced,
+                    f"contoh_data_fitur_lengkap_{sample_product_name}.csv",
+                    "text/csv",
+                    key='download-enhanced'
+                )
+            except Exception as e:
+                st.warning(f"Tidak dapat membuat contoh data dengan fitur lengkap: {e}")
+        else:
+            st.info("Tidak ada data agregat yang tersedia untuk menampilkan contoh fitur lengkap.")
 
     # --- TAB 1: Interactive Prediction ---
     with tab1:
@@ -634,6 +708,7 @@ else:
 
         if st.button("Buat Prediksi" if lang == 'ID' else "Generate Prediction", type="primary", key='interactive_button', use_container_width=True):
             selected_model_name = selected_model_name_advanced if mode == 'Advanced' else reversed_model_mapping[selected_model_name_normal]
+            st.session_state.last_selected_prediction_model = selected_model_name
 
             spinner_text = f"Menganalisis pola penjualan {selected_product}..." if lang == 'ID' else f"Analyzing sales patterns for {selected_product}..."
             with st.spinner(f"🧠 {spinner_text}"):
@@ -812,6 +887,7 @@ else:
                 st.warning("⚠️ " + ("Silakan pilih setidaknya satu produk untuk dianalisis." if lang == 'ID' else "Please select at least one product to analyze."))
             else:
                 selected_model_batch = selected_model_batch_adv if mode == 'Advanced' else reversed_model_mapping[selected_model_batch_normal]
+                st.session_state.last_selected_prediction_model = selected_model_batch
 
                 progress_bar = st.progress(0)
                 status_text = st.empty()
@@ -968,18 +1044,41 @@ else:
                 
                 if 'feature_importance' in artifacts and artifacts['feature_importance']:
                     st.markdown("**🎯 " + ("Pentingnya Fitur (Top 10):" if lang == 'ID' else "Feature Importance (Top 10):") + "**")
-                    best_model_name = max(training_results.keys(), key=lambda x: training_results[x]['test_r2'])
+                    best_model_name_overall = max(training_results.keys(), key=lambda x: training_results[x]['test_r2']) # Keep this to fall back to
+                    model_for_feature_importance = st.session_state.get('last_selected_prediction_model', best_model_name_overall)
                     
-                    if best_model_name in artifacts['feature_importance']:
-                        importance = artifacts['feature_importance'][best_model_name]
+                    if model_for_feature_importance in artifacts['feature_importance']:
+                        importance = artifacts['feature_importance'][model_for_feature_importance]
                         importance_df = pd.DataFrame(list(importance.items()), columns=['Feature', 'Importance']).sort_values('Importance', ascending=False).head(10)
                         
                         fig_importance = go.Figure(go.Bar(x=importance_df['Importance'], y=importance_df['Feature'], orientation='h', marker_color='#E74C3C'))
                         fig_importance.update_layout(
-                            title=f"🎯 {('Pentingnya Fitur' if lang == 'ID' else 'Feature Importance')} - {best_model_name}",
+                            title=f"🎯 {('Pentingnya Fitur' if lang == 'ID' else 'Feature Importance')} - {model_for_feature_importance}",
                             height=400, template=plotly_template
                         )
                         st.plotly_chart(fig_importance, use_container_width=True)
+
+                        # Display full feature importance table
+                        st.markdown("---")
+                        st.subheader("📋 " + ("Daftar Lengkap Kepentingan Fitur" if lang == 'ID' else "Full Feature Importance List"))
+                        st.markdown(
+                            ("Angka-angka ini menunjukkan seberapa besar kontribusi setiap fitur dalam membuat keputusan prediksi." if lang == 'ID' else
+                             "These numbers indicate how much each feature contributes to making prediction decisions.")
+                        )
+                        
+                        # Ensure the full importance DataFrame is available
+                        full_importance_df = pd.DataFrame(list(importance.items()), columns=['Nama Fitur' if lang == 'ID' else 'Feature Name', 'Skor Kepentingan' if lang == 'ID' else 'Importance Score']).sort_values('Skor Kepentingan' if lang == 'ID' else 'Importance Score', ascending=False)
+                        st.dataframe(full_importance_df, use_container_width=True)
+
+                        # Add download button for full feature importance
+                        csv_feature_importance = full_importance_df.to_csv(index=False).encode('utf-8')
+                        st.download_button(
+                            "📥 " + ("Unduh Daftar Kepentingan Fitur (.csv)" if lang == 'ID' else "Download Feature Importance List (.csv)"),
+                            csv_feature_importance,
+                            f'feature_importance_{model_for_feature_importance}_{datetime.now().strftime("%Y%m%d_%H%M")}.csv',
+                            'text/csv',
+                            key='download_feature_importance'
+                        )
                 
             except KeyError as e:
                 st.warning(f"⚠️ {('Informasi performa tidak lengkap:' if lang == 'ID' else 'Incomplete performance information:')} {e}. {('Latih ulang model untuk data lengkap.' if lang == 'ID' else 'Retrain the model for complete data.')}")
