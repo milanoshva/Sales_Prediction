@@ -93,12 +93,26 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lingkungan Anda.
 
 ### 3. Menjalankan Aplikasi
 
-Untuk memulai server Streamlit, jalankan perintah berikut dari direktori root proyek:
+Aplikasi ini memerlukan model yang sudah dilatih untuk dapat berfungsi.
 
+**a. Latih Model (Langkah Penting)**
+
+Sebelum menjalankan aplikasi, Anda harus melatih model terlebih dahulu. Proses ini akan membuat file-file model (`.pkl`) yang akan digunakan oleh aplikasi.
+
+Jalankan skrip pelatihan berikut dari direktori root proyek:
+```bash
+python train_model.py
+```
+
+
+*Catatan: Skrip ini akan menggunakan data sampel yang ada di `data/transaksi_haluna_2023-2024.csv` untuk menghasilkan model di dalam folder `/models`. Jika Anda ingin menggunakan data Anda sendiri untuk pelatihan, ganti file CSV tersebut.*
+
+**b. Jalankan Aplikasi Streamlit**
+
+Setelah proses pelatihan selesai dan file-file model telah dibuat di dalam folder `/models`, Anda dapat memulai server Streamlit:
 ```bash
 streamlit run src/Home.py
 ```
-
 Aplikasi akan terbuka secara otomatis di browser web Anda.
 
 ---
