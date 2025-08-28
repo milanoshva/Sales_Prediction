@@ -50,10 +50,11 @@ htmlcov/
 # Environments
 .env
 .venv
-.venv-new
+.venv-py39
 venv/
 env/
-venv-new/
+venv-py39/
+
 
 # Streamlit secrets
 .streamlit/secrets.toml
