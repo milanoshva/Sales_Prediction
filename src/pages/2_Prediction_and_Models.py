@@ -558,16 +558,16 @@ else:
     default_batch_start_date = get_default_start_date(df_raw)
 
     model_name_mapping_id = {
-        'Gabungan': 'Gabungan Model Terbaik (Disarankan)',
+        'LightGBM': 'Efisien & Stabil (Direkomendasikan)', 
+        'Gabungan': 'Gabungan Model Terbaik',
         'XGBoost': 'Akurasi Tinggi & Cepat',
-        'LightGBM': 'Efisien & Stabil', 
         'Random Forest': 'Robust & Andal',
         'Gradient Boosting': 'Presisi Tinggi'
     }
     model_name_mapping_en = {
-        'Gabungan': 'Best Ensemble Model (Recommended)',
+        'LightGBM': 'Efficient & Stable (Recommended)',
+        'Gabungan': 'Best Ensemble Model',
         'XGBoost': 'High Accuracy & Fast',
-        'LightGBM': 'Efficient & Stable',
         'Random Forest': 'Robust & Reliable',
         'Gradient Boosting': 'High Precision'
     }

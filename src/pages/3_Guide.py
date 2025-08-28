@@ -46,7 +46,7 @@ if mode == 'Normal':
         - **Langkah-langkah di tab `Prediksi 1 Produk`**:
             1. **Pilih Produk**: Tentukan produk yang ingin Anda lihat masa depannya.
             2. **Tentukan Periode**: Geser slider untuk memilih berapa bulan ke depan yang ingin diprediksi.
-            3. **Pilih Pendekatan**: Pilih metode prediksi. Opsi "Gabungan Terbaik (Disarankan)" adalah pilihan yang paling seimbang.
+            3. **Pilih Pendekatan**: Pilih metode prediksi. Opsi "Efisien & Stabil (Direkomendasikan)" adalah pilihan yang paling seimbang.
             4. **Klik "Buat Prediksi"**: Tombol biru besar untuk memulai proses.
         - **Memahami Hasil**:
             - **Tabel & Grafik**: Menampilkan angka prediksi penjualan di masa depan dibandingkan data historis.
@@ -77,7 +77,7 @@ if mode == 'Normal':
         - **Steps in the `Predict 1 Product` tab**:
             1. **Select Product**: Choose the product whose future you want to see.
             2. **Set Period**: Use the slider to select how many months ahead to predict.
-            3. **Choose Approach**: Select a prediction method. The "Best Combination (Recommended)" option is the most balanced choice.
+            3. **Choose Approach**: Select a prediction method. The "Efficient & Stable (Recommended)" option is the most balanced choice.
             4. **Click "Generate Prediction"**: The large blue button to start the process.
         - **Understanding the Results**:
             - **Table & Chart**: Shows future sales predictions compared to historical data.
