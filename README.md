@@ -1,3 +1,74 @@
+# 🍜 Culinary SME Sales Prediction
+
+A Streamlit web app that turns raw transaction data into sales forecasts and
+actionable insights for small food & beverage (F&B) businesses. Built as my
+final-year thesis project at Gunadarma University.
+
+> **English below · [Versi Bahasa Indonesia](#-versi-bahasa-indonesia)**
+
+<!-- Add a screenshot: save it to docs/screenshot.png and it will render here -->
+![App screenshot](docs/screenshot.png)
+
+## Highlights
+
+- **58K+ transaction records** processed and cleaned into model-ready features.
+- **5 ML models benchmarked** — Random Forest, XGBoost, LightGBM, Gradient
+  Boosting, Logistic Regression — reaching **up to 91% accuracy** after tuning.
+- **Interactive analytics dashboard**: sales trends, product performance, KPIs
+  with dynamic filters, correlation heatmaps, and outlier detection.
+- **Flexible forecasting**: predict a single product or run bulk predictions
+  across all products for a chosen period, using pre-trained models.
+- **Strategic recommendations** for stock planning and promotions, plus a
+  simplified "Normal" mode for non-technical users and an "Advanced" mode for
+  deeper analysis. Bilingual UI (Indonesian / English).
+
+## Tech stack
+
+Python · Streamlit · scikit-learn · XGBoost · LightGBM · Plotly · pandas
+
+## Quickstart
+
+```bash
+# 1. install
+python -m venv venv && .\venv\Scripts\activate      # Windows
+pip install -r requirements.txt
+
+# 2. train models (creates the .pkl files in /models)
+python train_model.py
+
+# 3. run
+streamlit run src/Home.py
+```
+
+## Project structure
+
+```text
+├── models/                   # trained models (.pkl)
+├── src/
+│   ├── core/data_processor.py   # data cleaning & feature engineering
+│   ├── pages/                   # Streamlit pages (Analytics, Prediction, Guide)
+│   ├── ui/styles.py             # custom styling
+│   └── Home.py                  # entry point
+├── train_model.py            # (developer) retrain models from scratch
+└── requirements.txt
+```
+
+## How it works
+
+1. **Data processing** (`src/core/data_processor.py`) — validates columns, cleans
+   currency formats (e.g. `"Rp10.000"` → `10000.0`), parses timestamps, and
+   engineers time features (year, month, …) for analysis and modeling.
+2. **Analytics** (`src/pages/1_Analytics.py`) — filterable KPIs and interactive
+   Plotly charts over the processed data.
+3. **Prediction** (`src/pages/2_Prediction_and_Models.py`) — loads pre-trained,
+   pre-optimized models from `/models` (no live retraining) and runs inference,
+   returning tables, charts, and plain-language recommendations. The heavy
+   training runs separately in `train_model.py`.
+
+---
+
+# 🇮🇩 Versi Bahasa Indonesia
+
 # Aplikasi Prediksi Penjualan UMKM Kuliner
 
 Selamat datang di Aplikasi Prediksi Penjualan UMKM Kuliner. Aplikasi ini adalah sebuah alat bantu berbasis web yang dirancang untuk membantu para pelaku Usaha Mikro, Kecil, dan Menengah (UMKM) di bidang kuliner dalam menganalisis data penjualan dan memprediksi penjualan di masa depan. Dibangun dengan Streamlit, aplikasi ini menyediakan antarmuka yang intuitif untuk mengubah data transaksi mentah menjadi wawasan bisnis yang dapat ditindaklanjuti.
@@ -13,11 +84,7 @@ Selamat datang di Aplikasi Prediksi Penjualan UMKM Kuliner. Aplikasi ini adalah 
 -   **Sistem Prediksi Fleksibel**: Buat prediksi untuk satu produk atau prediksi massal untuk semua produk dalam rentang waktu tertentu menggunakan model machine learning yang sudah dilatih sebelumnya.
 -   **Rekomendasi Strategis**: Dapatkan saran yang dapat ditindaklanjuti berdasarkan hasil prediksi untuk membantu dalam perencanaan stok dan strategi promosi.
 
----
-
 ## 📊 Diagram Alur Aplikasi
-
-Diagram berikut mengilustrasikan alur kerja utama dalam aplikasi, dari pengunggahan data hingga mendapatkan hasil prediksi.
 
 ```mermaid
 graph TD
@@ -32,17 +99,11 @@ graph TD
     G --> J{Pilih Produk & Model};
     J --> K[Gunakan Model Tersimpan<br>dari /models];
     K --> L[Tampilkan Hasil Prediksi & Rekomendasi];
-
 ```
-
----
 
 ## ⚙️ Struktur Proyek
 
-Proyek ini diorganisir dengan struktur yang bersih dan modular untuk kemudahan pemeliharaan dan pengembangan.
-
 ```text
-c:/Skripsi_Prediksi_Penjualan/
 ├── models/                   # Direktori untuk menyimpan model terlatih (.pkl)
 ├── src/                      # Direktori utama kode sumber aplikasi
 │   ├── core/                 # Logika inti aplikasi
@@ -54,88 +115,43 @@ c:/Skripsi_Prediksi_Penjualan/
 │   ├── ui/                   # Komponen antarmuka pengguna
 │   │   └── styles.py         # CSS dan styling kustom untuk UI
 │   └── Home.py               # Skrip utama dan halaman entry point aplikasi
-├── .gitignore                # File untuk mengabaikan file/folder tertentu
-├── README.md                 # Dokumentasi utama proyek (file ini)
+├── .gitignore
+├── README.md
 ├── requirements.txt          # Daftar pustaka Python yang dibutuhkan
 └── train_model.py            # Skrip developer untuk melatih ulang model dari awal
 ```
 
----
-
 ## 🚀 Cara Menjalankan Aplikasi Lokal
 
-Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lingkungan Anda.
-
 ### 1. Prasyarat
-
 -   Python 3.9+
--   `pip` (package installer for Python)
+-   `pip`
 
 ### 2. Instalasi
+```bash
+# (Direkomendasikan) Buat dan Aktifkan Virtual Environment
+python -m venv venv
+.\venv\Scripts\activate
 
-1.  **Clone Repositori** (jika menggunakan Git) atau unduh dan ekstrak kode sumber.
-    ```bash
-    cd Skripsi_Prediksi_Penjualan
-    ```
-
-2.  **(Direkomendasikan) Buat dan Aktifkan Virtual Environment**
-    ```bash
-    # Windows
-    python -m venv venv
-    .\venv\Scripts\activate
-    ```
-
-3.  **Instal Dependensi**
-    Instal semua pustaka yang diperlukan dari file `requirements.txt`.
-    ```bash
-    pip install -r requirements.txt
-    ```
+# Instal Dependensi
+pip install -r requirements.txt
+```
 
 ### 3. Menjalankan Aplikasi
 
-Aplikasi ini memerlukan model yang sudah dilatih untuk dapat berfungsi.
-
-**a. Latih Model (Langkah Penting)**
-
-Sebelum menjalankan aplikasi, Anda harus melatih model terlebih dahulu. Proses ini akan membuat file-file model (`.pkl`) yang akan digunakan oleh aplikasi.
-
-Jalankan skrip pelatihan berikut dari direktori root proyek:
+**a. Latih Model (Langkah Penting)** — membuat file model (`.pkl`) di folder `/models`:
 ```bash
 python train_model.py
 ```
+*Catatan: skrip ini menggunakan data sampel untuk menghasilkan model. Ganti file CSV-nya jika ingin memakai data sendiri.*
 
-
-*Catatan: Skrip ini akan menggunakan data sampel yang ada di `data/transaksi_haluna_2023-2024.csv` untuk menghasilkan model di dalam folder `/models`. Jika Anda ingin menggunakan data Anda sendiri untuk pelatihan, ganti file CSV tersebut.*
-
-**b. Jalankan Aplikasi Streamlit**
-
-Setelah proses pelatihan selesai dan file-file model telah dibuat di dalam folder `/models`, Anda dapat memulai server Streamlit:
+**b. Jalankan Aplikasi Streamlit**:
 ```bash
 streamlit run src/Home.py
 ```
-Aplikasi akan terbuka secara otomatis di browser web Anda.
-
----
 
 ## 🧠 Logika Aplikasi
 
-1.  **Pemrosesan Data (`/src/core/data_processor.py`)**
-    -   Saat pengguna mengunggah file CSV, fungsi `process_data` dipanggil.
-    -   Fungsi ini melakukan validasi kolom, membersihkan format mata uang (misalnya, mengubah "Rp10.000" menjadi `10000.0`), dan mengubah kolom `waktu` menjadi objek datetime.
-    -   Fitur-fitur baru seperti `tahun`, `bulan`, dan lainnya diekstrak dari data waktu untuk digunakan dalam analisis dan pemodelan.
-
-2.  **Analisis dan Visualisasi (`/src/pages/1_Analytics.py`)**
-    -   Halaman ini mengambil data yang telah diproses dari session state Streamlit.
-    -   Pengguna dapat memfilter data berdasarkan rentang tanggal, produk, kategori, dan lainnya.
-    -   Metrik utama (KPI) dihitung secara dinamis berdasarkan data yang difilter.
-    -   Grafik interaktif (dibuat dengan Plotly) digunakan untuk menampilkan tren penjualan, perbandingan produk, dan analisis lanjutan.
-
-3.  **Prediksi Menggunakan Model Pre-trained (`/src/pages/2_Prediction_and_Models.py`)**
-    -   **Tanpa Pelatihan Ulang**: Aplikasi **tidak** melakukan pelatihan model secara langsung. Sebaliknya, aplikasi ini memuat model machine learning yang sudah ada dan telah dioptimalkan sebelumnya dari direktori `/models`.
-    -   **Pemilihan Model**: Pengguna dapat memilih salah satu dari beberapa model yang tersedia (misalnya, `Ensemble`, `XGBoost`, `Random Forest`, `GradientBoost`) untuk membuat prediksi.
-    -   **Proses Inferensi**: Saat pengguna meminta prediksi, aplikasi akan:
-        1.  Memuat model (`.pkl`) dan artefak prapemrosesan yang relevan.
-        2.  Membuat fitur-fitur yang diperlukan untuk data masa depan berdasarkan data historis yang diunggah pengguna.
-        3.  Menjalankan prediksi menggunakan model yang dipilih.
-        4.  Menyajikan hasil prediksi dalam bentuk tabel, grafik, dan rekomendasi strategis yang mudah dipahami.
-    -   **Pelatihan Model (Untuk Developer)**: Proses pelatihan model yang kompleks dan memakan waktu dilakukan secara terpisah menggunakan skrip `train_model.py`. Skrip ini menghasilkan file-file model di direktori `/models` yang kemudian digunakan oleh aplikasi web.
+1.  **Pemrosesan Data (`/src/core/data_processor.py`)** — validasi kolom, membersihkan format mata uang (misalnya "Rp10.000" → `10000.0`), mengubah kolom `waktu` menjadi datetime, dan mengekstrak fitur `tahun`, `bulan`, dll.
+2.  **Analisis dan Visualisasi (`/src/pages/1_Analytics.py`)** — data yang diproses difilter berdasarkan tanggal/produk/kategori; KPI dihitung dinamis; grafik interaktif dengan Plotly.
+3.  **Prediksi Menggunakan Model Pre-trained (`/src/pages/2_Prediction_and_Models.py`)** — aplikasi memuat model yang sudah dioptimalkan dari `/models` (tanpa pelatihan ulang), menjalankan inferensi, dan menyajikan hasil dalam tabel, grafik, serta rekomendasi strategis. Pelatihan yang berat dilakukan terpisah lewat `train_model.py`.
