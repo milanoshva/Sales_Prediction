@@ -4,7 +4,9 @@ A Streamlit web app that turns raw transaction data into sales forecasts and
 actionable insights for small food & beverage (F&B) businesses. Built as my
 final-year thesis project at Gunadarma University.
 
-> **English below · [Versi Bahasa Indonesia](#-versi-bahasa-indonesia)**
+**▶ [Live demo](https://app-sales-prediction.streamlit.app/)** &nbsp;·&nbsp; English below &nbsp;·&nbsp; [Versi Bahasa Indonesia](#-versi-bahasa-indonesia)
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-sales-prediction.streamlit.app/)
 
 <!-- Add a screenshot: save it to docs/screenshot.png and it will render here -->
 ![App screenshot](docs/screenshot.png)
